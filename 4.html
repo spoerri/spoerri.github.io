@@ -9,6 +9,29 @@
 <head>
   <meta xmlns="http://www.w3.org/1999/xhtml" content="text/html;charset=utf-8" http-equiv="Content-Type"/>
   <title>Num 1:1 - 36:13</title>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+    if (localStorage.getItem("shmos-quote-scroll") != null) {
+        $(window).scrollTop(localStorage.getItem("shmos-quote-scroll"));
+    }
+
+    $(window).on("scroll", function() {
+        localStorage.setItem("shmos-quote-scroll", $(window).scrollTop());
+    });
+
+  });
+
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('/offline.js')
+           .then(function() { console.log("Service Worker Registered"); });
+}
+
+</script>
 
 <!--  Definition of CSS styles.                                                   -->
 
