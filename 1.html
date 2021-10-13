@@ -25,15 +25,12 @@ $(document).ready(function () {
 
   });
 
-this.addEventListener('install', function(event) {
-  event.waitUntil(
-    caches.open('shmos-cache').then(function(cache) {
-      return cache.addAll([
-        '/1.html',
-      ]);
-    })
-  );
-});
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('/offline.js')
+           .then(function() { console.log("Service Worker Registered"); });
+}
+
 </script>
 
 <!--  Definition of CSS styles.                                                   -->
