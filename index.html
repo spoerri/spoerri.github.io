@@ -1,3 +1,14 @@
+<head>
+<script type="text/javascript">
+
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('/offline.js')
+           .then(function() { console.log("Service Worker Registered"); });
+}
+
+</script>
+</head>
 <h1>Shenayim mikra v'echad targum</h1>
 
 <ul>
