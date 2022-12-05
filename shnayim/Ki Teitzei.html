@@ -1,0 +1,845 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/@hebcal/core@3.45.2/dist/bundle.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    if (localStorage.getItem("shmos-scroll") != null) {
+      $(window).scrollTop(localStorage.getItem("shmos-scroll"));
+    }
+
+    $(window).on("scroll", function() {
+      localStorage.setItem("shmos-scroll", $(window).scrollTop());
+    });
+
+  });
+
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('/offline.js')
+             .then(function() { console.log("Service Worker Registered"); });
+  }
+</script>
+<style>
+  div.h { font-size:24pt; margin-right:auto; margin-left:auto; width:95%; padding:10pt; text-align:right; border-style:none; direction:rtl; }
+  span.h { font-size:16pt; line-height:150%; }
+</style>
+</head>
+<body>
+<div style="position:fixed; top:0; width:100%">
+<button onclick="window.location.href=(new hebcal.Sedra(new hebcal.HDate().getFullYear(), false).get(new hebcal.HDate()))+'.html'">start this week!</button>
+</div>
+<span class=h>
+<div class=h>
+<h3>Ki Seitzei</h3>
+
+</div>
+</span>
+<span class=h>
+<div class=h>
+
+כִּֽי־תֵצֵ֥א לַמִּלְחָמָ֖ה עַל־אֹיְבֶ֑יךָ וּנְתָנ֞וֹ יְהוָ֧ה אֱלֹהֶ֛יךָ בְּיָדֶ֖ךָ וְשָׁבִ֥יתָ שִׁבְיֽוֹ׃
+כִּֽי־תֵצֵ֥א לַמִּלְחָמָ֖ה עַל־אֹיְבֶ֑יךָ וּנְתָנ֞וֹ יְהוָ֧ה אֱלֹהֶ֛יךָ בְּיָדֶ֖ךָ וְשָׁבִ֥יתָ שִׁבְיֽוֹ׃
+</div>
+If you should go to war against your enemies, and Adonoy, your God, puts them in your hand, and you capture prisoners from them;
+</span>
+<span class=h>
+<div class=h>
+וְרָאִיתָ֙ בַּשִּׁבְיָ֔ה אֵ֖שֶׁת יְפַת־תֹּ֑אַר וְחָשַׁקְתָּ֣ בָ֔הּ וְלָקַחְתָּ֥ לְךָ֖ לְאִשָּֽׁה׃
+וְרָאִיתָ֙ בַּשִּׁבְיָ֔ה אֵ֖שֶׁת יְפַת־תֹּ֑אַר וְחָשַׁקְתָּ֣ בָ֔הּ וְלָקַחְתָּ֥ לְךָ֖ לְאִשָּֽׁה׃
+</div>
+And you see among the prisoners a beautifully formed woman; if you desire her, you may take her as your wife.
+</span>
+<span class=h>
+<div class=h>
+וַהֲבֵאתָ֖הּ אֶל־תּ֣וֹךְ בֵּיתֶ֑ךָ וְגִלְּחָה֙ אֶת־רֹאשָׁ֔הּ וְעָשְׂתָ֖ה אֶת־צִפָּרְנֶֽיהָ׃
+וַהֲבֵאתָ֖הּ אֶל־תּ֣וֹךְ בֵּיתֶ֑ךָ וְגִלְּחָה֙ אֶת־רֹאשָׁ֔הּ וְעָשְׂתָ֖ה אֶת־צִפָּרְנֶֽיהָ׃
+</div>
+You will bring her into your house and she will shave her head and allow her nails to grow.
+</span>
+<span class=h>
+<div class=h>
+וְהֵסִ֩ירָה֩ אֶת־שִׂמְלַ֨ת שִׁבְיָ֜הּ מֵעָלֶ֗יהָ וְיָֽשְׁבָה֙ בְּבֵיתֶ֔ךָ וּבָֽכְתָ֛ה אֶת־אָבִ֥יהָ וְאֶת־אִמָּ֖הּ יֶ֣רַח יָמִ֑ים וְאַ֨חַר כֵּ֜ן תָּב֤וֹא אֵלֶ֙יהָ֙ וּבְעַלְתָּ֔הּ וְהָיְתָ֥ה לְךָ֖ לְאִשָּֽׁה׃
+וְהֵסִ֩ירָה֩ אֶת־שִׂמְלַ֨ת שִׁבְיָ֜הּ מֵעָלֶ֗יהָ וְיָֽשְׁבָה֙ בְּבֵיתֶ֔ךָ וּבָֽכְתָ֛ה אֶת־אָבִ֥יהָ וְאֶת־אִמָּ֖הּ יֶ֣רַח יָמִ֑ים וְאַ֨חַר כֵּ֜ן תָּב֤וֹא אֵלֶ֙יהָ֙ וּבְעַלְתָּ֔הּ וְהָיְתָ֥ה לְךָ֖ לְאִשָּֽׁה׃
+</div>
+She must discard her prisoner’s garb from upon her, and she will remain in your home and weep for her father and her mother a month of days; and afterwards you may come to her and consummate with her, and she will become your wife.
+</span>
+<span class=h>
+<div class=h>
+וְהָיָ֞ה אִם־לֹ֧א חָפַ֣צְתָּ בָּ֗הּ וְשִׁלַּחְתָּהּ֙ לְנַפְשָׁ֔הּ וּמָכֹ֥ר לֹא־תִמְכְּרֶ֖נָּה בַּכָּ֑סֶף לֹא־תִתְעַמֵּ֣ר בָּ֔הּ תַּ֖חַת אֲשֶׁ֥ר עִנִּיתָֽהּ׃ (ס)
+וְהָיָ֞ה אִם־לֹ֧א חָפַ֣צְתָּ בָּ֗הּ וְשִׁלַּחְתָּהּ֙ לְנַפְשָׁ֔הּ וּמָכֹ֥ר לֹא־תִמְכְּרֶ֖נָּה בַּכָּ֑סֶף לֹא־תִתְעַמֵּ֣ר בָּ֔הּ תַּ֖חַת אֲשֶׁ֥ר עִנִּיתָֽהּ׃ (ס)
+</div>
+But it shall come to pass, that if you do not desire her you will send her free, but to sell—you may not sell her for money; you may not exploit her since you have oppressed her.
+</span>
+<span class=h>
+<div class=h>
+כִּֽי־תִהְיֶ֨יןָ לְאִ֜ישׁ שְׁתֵּ֣י נָשִׁ֗ים הָאַחַ֤ת אֲהוּבָה֙ וְהָאַחַ֣ת שְׂנוּאָ֔ה וְיָֽלְדוּ־ל֣וֹ בָנִ֔ים הָאֲהוּבָ֖ה וְהַשְּׂנוּאָ֑ה וְהָיָ֛ה הַבֵּ֥ן הַבְּכ֖וֹר לַשְּׂנִיאָֽה׃
+כִּֽי־תִהְיֶ֨יןָ לְאִ֜ישׁ שְׁתֵּ֣י נָשִׁ֗ים הָאַחַ֤ת אֲהוּבָה֙ וְהָאַחַ֣ת שְׂנוּאָ֔ה וְיָֽלְדוּ־ל֣וֹ בָנִ֔ים הָאֲהוּבָ֖ה וְהַשְּׂנוּאָ֑ה וְהָיָ֛ה הַבֵּ֥ן הַבְּכ֖וֹר לַשְּׂנִיאָֽה׃
+</div>
+If a man has two wives, one loved and the other hated, and they bear him sons, the loved [one] and the hated [one], and the firstborn son will be the hated one’s.
+</span>
+<span class=h>
+<div class=h>
+וְהָיָ֗ה בְּיוֹם֙ הַנְחִיל֣וֹ אֶת־בָּנָ֔יו אֵ֥ת אֲשֶׁר־יִהְיֶ֖ה ל֑וֹ לֹ֣א יוּכַ֗ל לְבַכֵּר֙ אֶת־בֶּן־הָ֣אֲהוּבָ֔ה עַל־פְּנֵ֥י בֶן־הַשְּׂנוּאָ֖ה הַבְּכֹֽר׃
+וְהָיָ֗ה בְּיוֹם֙ הַנְחִיל֣וֹ אֶת־בָּנָ֔יו אֵ֥ת אֲשֶׁר־יִהְיֶ֖ה ל֑וֹ לֹ֣א יוּכַ֗ל לְבַכֵּר֙ אֶת־בֶּן־הָ֣אֲהוּבָ֔ה עַל־פְּנֵ֥י בֶן־הַשְּׂנוּאָ֖ה הַבְּכֹֽר׃
+</div>
+When the day comes for him to will to his sons what he owns, he may not prefer the son of the loved one over the son of the hated one—the firstborn.
+</span>
+<span class=h>
+<div class=h>
+כִּי֩ אֶת־הַבְּכֹ֨ר בֶּן־הַשְּׂנוּאָ֜ה יַכִּ֗יר לָ֤תֶת לוֹ֙ פִּ֣י שְׁנַ֔יִם בְּכֹ֥ל אֲשֶׁר־יִמָּצֵ֖א ל֑וֹ כִּי־הוּא֙ רֵאשִׁ֣ית אֹנ֔וֹ ל֖וֹ מִשְׁפַּ֥ט הַבְּכֹרָֽה׃ (ס)
+כִּי֩ אֶת־הַבְּכֹ֨ר בֶּן־הַשְּׂנוּאָ֜ה יַכִּ֗יר לָ֤תֶת לוֹ֙ פִּ֣י שְׁנַ֔יִם בְּכֹ֥ל אֲשֶׁר־יִמָּצֵ֖א ל֑וֹ כִּי־הוּא֙ רֵאשִׁ֣ית אֹנ֔וֹ ל֖וֹ מִשְׁפַּ֥ט הַבְּכֹרָֽה׃ (ס)
+</div>
+Rather, the firstborn son of the hated one is he to recognize to give him doublefold of all that he possesses; for he is the first of his power, he has the rights of primogeniture.
+</span>
+<span class=h>
+<div class=h>
+כִּֽי־יִהְיֶ֣ה לְאִ֗ישׁ בֵּ֚ן סוֹרֵ֣ר וּמוֹרֶ֔ה אֵינֶ֣נּוּ שֹׁמֵ֔עַ בְּק֥וֹל אָבִ֖יו וּבְק֣וֹל אִמּ֑וֹ וְיסְּר֣וּ אֹת֔וֹ וְלֹ֥א יִשְׁמַ֖ע אֲלֵיהֶֽם׃
+כִּֽי־יִהְיֶ֣ה לְאִ֗ישׁ בֵּ֚ן סוֹרֵ֣ר וּמוֹרֶ֔ה אֵינֶ֣נּוּ שֹׁמֵ֔עַ בְּק֥וֹל אָבִ֖יו וּבְק֣וֹל אִמּ֑וֹ וְיסְּר֣וּ אֹת֔וֹ וְלֹ֥א יִשְׁמַ֖ע אֲלֵיהֶֽם׃
+</div>
+If a man has a wayward and rebellious son who does not obey his father and his mother; though they chasten him; he does not listen to them.
+</span>
+<span class=h>
+<div class=h>
+וְתָ֥פְשׂוּ ב֖וֹ אָבִ֣יו וְאִמּ֑וֹ וְהוֹצִ֧יאוּ אֹת֛וֹ אֶל־זִקְנֵ֥י עִיר֖וֹ וְאֶל־שַׁ֥עַר מְקֹמֽוֹ׃
+וְתָ֥פְשׂוּ ב֖וֹ אָבִ֣יו וְאִמּ֑וֹ וְהוֹצִ֧יאוּ אֹת֛וֹ אֶל־זִקְנֵ֥י עִיר֖וֹ וְאֶל־שַׁ֥עַר מְקֹמֽוֹ׃
+</div>
+His father and mother are to grasp him and take him out to the judges of his city and to the court in his location.
+</span>
+<span class=h>
+<div class=h>
+וְאָמְר֞וּ אֶל־זִקְנֵ֣י עִיר֗וֹ בְּנֵ֤נוּ זֶה֙ סוֹרֵ֣ר וּמֹרֶ֔ה אֵינֶ֥נּוּ שֹׁמֵ֖עַ בְּקֹלֵ֑נוּ זוֹלֵ֖ל וְסֹבֵֽא׃
+וְאָמְר֞וּ אֶל־זִקְנֵ֣י עִיר֗וֹ בְּנֵ֤נוּ זֶה֙ סוֹרֵ֣ר וּמֹרֶ֔ה אֵינֶ֥נּוּ שֹׁמֵ֖עַ בְּקֹלֵ֑נוּ זוֹלֵ֖ל וְסֹבֵֽא׃
+</div>
+They will say to the judges of his city, ‘‘This son of ours is wayward and rebellious—he does not obey—gluttonous and drunken.’’
+</span>
+<span class=h>
+<div class=h>
+וּ֠רְגָמֻהוּ כָּל־אַנְשֵׁ֨י עִיר֤וֹ בָֽאֲבָנִים֙ וָמֵ֔ת וּבִֽעַרְתָּ֥ הָרָ֖ע מִקִּרְבֶּ֑ךָ וְכָל־יִשְׂרָאֵ֖ל יִשְׁמְע֥וּ וְיִרָֽאוּ׃ (ס)
+וּ֠רְגָמֻהוּ כָּל־אַנְשֵׁ֨י עִיר֤וֹ בָֽאֲבָנִים֙ וָמֵ֔ת וּבִֽעַרְתָּ֥ הָרָ֖ע מִקִּרְבֶּ֑ךָ וְכָל־יִשְׂרָאֵ֖ל יִשְׁמְע֥וּ וְיִרָֽאוּ׃ (ס)
+</div>
+And all the men of his city will stone him with stones so that he dies, and you will eliminate the evil within you; and let all Yisroel hear and be fearful.
+</span>
+<span class=h>
+<div class=h>
+וְכִֽי־יִהְיֶ֣ה בְאִ֗ישׁ חֵ֛טְא מִשְׁפַּט־מָ֖וֶת וְהוּמָ֑ת וְתָלִ֥יתָ אֹת֖וֹ עַל־עֵֽץ׃
+וְכִֽי־יִהְיֶ֣ה בְאִ֗ישׁ חֵ֛טְא מִשְׁפַּט־מָ֖וֶת וְהוּמָ֑ת וְתָלִ֥יתָ אֹת֖וֹ עַל־עֵֽץ׃
+</div>
+If a man is guilty of a capital offense and is executed; you shall hang him from a tree.
+</span>
+<span class=h>
+<div class=h>
+לֹא־תָלִ֨ין נִבְלָת֜וֹ עַל־הָעֵ֗ץ כִּֽי־קָב֤וֹר תִּקְבְּרֶ֙נּוּ֙ בַּיּ֣וֹם הַה֔וּא כִּֽי־קִלְלַ֥ת אֱלֹהִ֖ים תָּל֑וּי וְלֹ֤א תְטַמֵּא֙ אֶת־אַדְמָ֣תְךָ֔ אֲשֶׁר֙ יְהוָ֣ה אֱלֹהֶ֔יךָ נֹתֵ֥ן לְךָ֖ נַחֲלָֽה׃ (ס)
+לֹא־תָלִ֨ין נִבְלָת֜וֹ עַל־הָעֵ֗ץ כִּֽי־קָב֤וֹר תִּקְבְּרֶ֙נּוּ֙ בַּיּ֣וֹם הַה֔וּא כִּֽי־קִלְלַ֥ת אֱלֹהִ֖ים תָּל֑וּי וְלֹ֤א תְטַמֵּא֙ אֶת־אַדְמָ֣תְךָ֔ אֲשֶׁר֙ יְהוָ֣ה אֱלֹהֶ֔יךָ נֹתֵ֥ן לְךָ֖ נַחֲלָֽה׃ (ס)
+</div>
+Do not leave his corpse overnight on the tree, but you are surely to bury him on that day, for a hanging corpse is an affront to God; so do not defile your land that Adonoy, your God, is giving you as territory.
+</span>
+<span class=h>
+<div class=h>
+
+
+
+<h4>Chapter 22</h4>
+
+
+
+
+
+לֹֽא־תִרְאֶה֩ אֶת־שׁ֨וֹר אָחִ֜יךָ א֤וֹ אֶת־שֵׂיוֹ֙ נִדָּחִ֔ים וְהִתְעַלַּמְתָּ֖ מֵהֶ֑ם הָשֵׁ֥ב תְּשִׁיבֵ֖ם לְאָחִֽיךָ׃
+לֹֽא־תִרְאֶה֩ אֶת־שׁ֨וֹר אָחִ֜יךָ א֤וֹ אֶת־שֵׂיוֹ֙ נִדָּחִ֔ים וְהִתְעַלַּמְתָּ֖ מֵהֶ֑ם הָשֵׁ֥ב תְּשִׁיבֵ֖ם לְאָחִֽיךָ׃
+</div>
+You may not observe your brother’s ox or his sheep lost and conceal yourself from them; you must surely return them to your brother.
+</span>
+<span class=h>
+<div class=h>
+וְאִם־לֹ֨א קָר֥וֹב אָחִ֛יךָ אֵלֶ֖יךָ וְלֹ֣א יְדַעְתּ֑וֹ וַאֲסַפְתּוֹ֙ אֶל־תּ֣וֹךְ בֵּיתֶ֔ךָ וְהָיָ֣ה עִמְּךָ֗ עַ֣ד דְּרֹ֤שׁ אָחִ֙יךָ֙ אֹת֔וֹ וַהֲשֵׁבֹת֖וֹ לֽוֹ׃
+וְאִם־לֹ֨א קָר֥וֹב אָחִ֛יךָ אֵלֶ֖יךָ וְלֹ֣א יְדַעְתּ֑וֹ וַאֲסַפְתּוֹ֙ אֶל־תּ֣וֹךְ בֵּיתֶ֔ךָ וְהָיָ֣ה עִמְּךָ֗ עַ֣ד דְּרֹ֤שׁ אָחִ֙יךָ֙ אֹת֔וֹ וַהֲשֵׁבֹת֖וֹ לֽוֹ׃
+</div>
+But if your brother is not near you or you do not know him, gather it into your house and let it stay with you until your brother seeks it, when you must return it to him.
+</span>
+<span class=h>
+<div class=h>
+וְכֵ֧ן תַּעֲשֶׂ֣ה לַחֲמֹר֗וֹ וְכֵ֣ן תַּעֲשֶׂה֮ לְשִׂמְלָתוֹ֒ וְכֵ֣ן תַּעֲשֶׂ֜ה לְכָל־אֲבֵדַ֥ת אָחִ֛יךָ אֲשֶׁר־תֹּאבַ֥ד מִמֶּ֖נּוּ וּמְצָאתָ֑הּ לֹ֥א תוּכַ֖ל לְהִתְעַלֵּֽם׃ (ס)
+וְכֵ֧ן תַּעֲשֶׂ֣ה לַחֲמֹר֗וֹ וְכֵ֣ן תַּעֲשֶׂה֮ לְשִׂמְלָתוֹ֒ וְכֵ֣ן תַּעֲשֶׂ֜ה לְכָל־אֲבֵדַ֥ת אָחִ֛יךָ אֲשֶׁר־תֹּאבַ֥ד מִמֶּ֖נּוּ וּמְצָאתָ֑הּ לֹ֥א תוּכַ֖ל לְהִתְעַלֵּֽם׃ (ס)
+</div>
+And so are you to do for his donkey, and so are you to do for his garment, and so are you to do for any lost object of your brother’s that is lost from him which you find. You may not conceal yourself.
+</span>
+<span class=h>
+<div class=h>
+לֹא־תִרְאֶה֩ אֶת־חֲמ֨וֹר אָחִ֜יךָ א֤וֹ שׁוֹרוֹ֙ נֹפְלִ֣ים בַּדֶּ֔רֶךְ וְהִתְעַלַּמְתָּ֖ מֵהֶ֑ם הָקֵ֥ם תָּקִ֖ים עִמּֽוֹ׃ (ס)
+לֹא־תִרְאֶה֩ אֶת־חֲמ֨וֹר אָחִ֜יךָ א֤וֹ שׁוֹרוֹ֙ נֹפְלִ֣ים בַּדֶּ֔רֶךְ וְהִתְעַלַּמְתָּ֖ מֵהֶ֑ם הָקֵ֥ם תָּקִ֖ים עִמּֽוֹ׃ (ס)
+</div>
+Do not observe your brother’s donkey or his ox collapsing on the road and ignore them. You must surely lift it up with him.
+</span>
+<span class=h>
+<div class=h>
+לֹא־יִהְיֶ֤ה כְלִי־גֶ֙בֶר֙ עַל־אִשָּׁ֔ה וְלֹא־יִלְבַּ֥שׁ גֶּ֖בֶר שִׂמְלַ֣ת אִשָּׁ֑ה כִּ֧י תוֹעֲבַ֛ת יְהוָ֥ה אֱלֹהֶ֖יךָ כָּל־עֹ֥שֵׂה אֵֽלֶּה׃ (פ)
+לֹא־יִהְיֶ֤ה כְלִי־גֶ֙בֶר֙ עַל־אִשָּׁ֔ה וְלֹא־יִלְבַּ֥שׁ גֶּ֖בֶר שִׂמְלַ֣ת אִשָּׁ֑ה כִּ֧י תוֹעֲבַ֛ת יְהוָ֥ה אֱלֹהֶ֖יךָ כָּל־עֹ֥שֵׂה אֵֽלֶּה׃ (פ)
+</div>
+A man’s attire may not be on a woman nor may a man wear a woman’s garment; for the abomination of Adonoy, your God, are all who do these [things].
+</span>
+<span class=h>
+<div class=h>
+כִּ֣י יִקָּרֵ֣א קַן־צִפּ֣וֹר ׀ לְפָנֶ֡יךָ בַּדֶּ֜רֶךְ בְּכָל־עֵ֣ץ ׀ א֣וֹ עַל־הָאָ֗רֶץ אֶפְרֹחִים֙ א֣וֹ בֵיצִ֔ים וְהָאֵ֤ם רֹבֶ֙צֶת֙ עַל־הָֽאֶפְרֹחִ֔ים א֖וֹ עַל־הַבֵּיצִ֑ים לֹא־תִקַּ֥ח הָאֵ֖ם עַל־הַבָּנִֽים׃
+כִּ֣י יִקָּרֵ֣א קַן־צִפּ֣וֹר ׀ לְפָנֶ֡יךָ בַּדֶּ֜רֶךְ בְּכָל־עֵ֣ץ ׀ א֣וֹ עַל־הָאָ֗רֶץ אֶפְרֹחִים֙ א֣וֹ בֵיצִ֔ים וְהָאֵ֤ם רֹבֶ֙צֶת֙ עַל־הָֽאֶפְרֹחִ֔ים א֖וֹ עַל־הַבֵּיצִ֑ים לֹא־תִקַּ֥ח הָאֵ֖ם עַל־הַבָּנִֽים׃
+</div>
+If you should chance upon a bird’s nest before you on the road in any tree, or on the ground, [with] fledglings or eggs, and the mother is sitting on the fledglings or on the eggs; do not take the mother with her offspring.
+</span>
+<span class=h>
+<div class=h>
+שַׁלֵּ֤חַ תְּשַׁלַּח֙ אֶת־הָאֵ֔ם וְאֶת־הַבָּנִ֖ים תִּֽקַּֽח־לָ֑ךְ לְמַ֙עַן֙ יִ֣יטַב לָ֔ךְ וְהַאֲרַכְתָּ֖ יָמִֽים׃ (ס)
+שַׁלֵּ֤חַ תְּשַׁלַּח֙ אֶת־הָאֵ֔ם וְאֶת־הַבָּנִ֖ים תִּֽקַּֽח־לָ֑ךְ לְמַ֙עַן֙ יִ֣יטַב לָ֔ךְ וְהַאֲרַכְתָּ֖ יָמִֽים׃ (ס)
+</div>
+You must surely send away the mother and the offspring take for yourself, so that you will benefit and you will live long.
+</span>
+<span class=h>
+<div class=h>
+כִּ֤י תִבְנֶה֙ בַּ֣יִת חָדָ֔שׁ וְעָשִׂ֥יתָ מַעֲקֶ֖ה לְגַגֶּ֑ךָ וְלֹֽא־תָשִׂ֤ים דָּמִים֙ בְּבֵיתֶ֔ךָ כִּֽי־יִפֹּ֥ל הַנֹּפֵ֖ל מִמֶּֽנּוּ׃ (ס)
+כִּ֤י תִבְנֶה֙ בַּ֣יִת חָדָ֔שׁ וְעָשִׂ֥יתָ מַעֲקֶ֖ה לְגַגֶּ֑ךָ וְלֹֽא־תָשִׂ֤ים דָּמִים֙ בְּבֵיתֶ֔ךָ כִּֽי־יִפֹּ֥ל הַנֹּפֵ֖ל מִמֶּֽנּוּ׃ (ס)
+</div>
+When you build a new home, you are to make a fence for your roof; and do not place blood [liability] in your house, for someone who should fall may fall from it.
+</span>
+<span class=h>
+<div class=h>
+לֹא־תִזְרַ֥ע כַּרְמְךָ֖ כִּלְאָ֑יִם פֶּן־תִּקְדַּ֗שׁ הַֽמְלֵאָ֤ה הַזֶּ֙רַע֙ אֲשֶׁ֣ר תִּזְרָ֔ע וּתְבוּאַ֖ת הַכָּֽרֶם׃ (ס)
+לֹא־תִזְרַ֥ע כַּרְמְךָ֖ כִּלְאָ֑יִם פֶּן־תִּקְדַּ֗שׁ הַֽמְלֵאָ֤ה הַזֶּ֙רַע֙ אֲשֶׁ֣ר תִּזְרָ֔ע וּתְבוּאַ֖ת הַכָּֽרֶם׃ (ס)
+</div>
+Do not plant in your vineyard mixed species, lest the expansion become obnoxious—the seed that you plant—and the produce of the vineyard.
+</span>
+<span class=h>
+<div class=h>
+לֹֽא־תַחֲרֹ֥שׁ בְּשׁוֹר־וּבַחֲמֹ֖ר יַחְדָּֽו׃ (ס)
+לֹֽא־תַחֲרֹ֥שׁ בְּשׁוֹר־וּבַחֲמֹ֖ר יַחְדָּֽו׃ (ס)
+</div>
+You may not plow with an ox and with a donkey together.
+</span>
+<span class=h>
+<div class=h>
+לֹ֤א תִלְבַּשׁ֙ שַֽׁעַטְנֵ֔ז צֶ֥מֶר וּפִשְׁתִּ֖ים יַחְדָּֽו׃ (ס)
+לֹ֤א תִלְבַּשׁ֙ שַֽׁעַטְנֵ֔ז צֶ֥מֶר וּפִשְׁתִּ֖ים יַחְדָּֽו׃ (ס)
+</div>
+Do not don a mixture of threads, wool and flax together.
+</span>
+<span class=h>
+<div class=h>
+גְּדִלִ֖ים תַּעֲשֶׂה־לָּ֑ךְ עַל־אַרְבַּ֛ע כַּנְפ֥וֹת כְּסוּתְךָ֖ אֲשֶׁ֥ר תְּכַסֶּה־בָּֽהּ׃ (ס)
+גְּדִלִ֖ים תַּעֲשֶׂה־לָּ֑ךְ עַל־אַרְבַּ֛ע כַּנְפ֥וֹת כְּסוּתְךָ֖ אֲשֶׁ֥ר תְּכַסֶּה־בָּֽהּ׃ (ס)
+</div>
+Make yourself pendant threads upon four corners of your garment that you cover with.
+</span>
+<span class=h>
+<div class=h>
+כִּֽי־יִקַּ֥ח אִ֖ישׁ אִשָּׁ֑ה וּבָ֥א אֵלֶ֖יהָ וּשְׂנֵאָֽהּ׃
+כִּֽי־יִקַּ֥ח אִ֖ישׁ אִשָּׁ֑ה וּבָ֥א אֵלֶ֖יהָ וּשְׂנֵאָֽהּ׃
+</div>
+If a man marries a woman, and he has relations with her and hates her.
+</span>
+<span class=h>
+<div class=h>
+וְשָׂ֥ם לָהּ֙ עֲלִילֹ֣ת דְּבָרִ֔ים וְהוֹצִ֥יא עָלֶ֖יהָ שֵׁ֣ם רָ֑ע וְאָמַ֗ר אֶת־הָאִשָּׁ֤ה הַזֹּאת֙ לָקַ֔חְתִּי וָאֶקְרַ֣ב אֵלֶ֔יהָ וְלֹא־מָצָ֥אתִי לָ֖הּ בְּתוּלִֽים׃
+וְשָׂ֥ם לָהּ֙ עֲלִילֹ֣ת דְּבָרִ֔ים וְהוֹצִ֥יא עָלֶ֖יהָ שֵׁ֣ם רָ֑ע וְאָמַ֗ר אֶת־הָאִשָּׁ֤ה הַזֹּאת֙ לָקַ֔חְתִּי וָאֶקְרַ֣ב אֵלֶ֔יהָ וְלֹא־מָצָ֥אתִי לָ֖הּ בְּתוּלִֽים׃
+</div>
+Then berates her with calumnies and alleges defamation about her, and he claims, ‘‘I married this woman and was intimate with her, and did not find signs of her virginity.’’
+</span>
+<span class=h>
+<div class=h>
+וְלָקַ֛ח אֲבִ֥י הנער [הַֽנַּעֲרָ֖ה] וְאִמָּ֑הּ וְהוֹצִ֜יאוּ אֶת־בְּתוּלֵ֧י הנער [הַֽנַּעֲרָ֛ה] אֶל־זִקְנֵ֥י הָעִ֖יר הַשָּֽׁעְרָה׃
+וְלָקַ֛ח אֲבִ֥י הנער [הַֽנַּעֲרָ֖ה] וְאִמָּ֑הּ וְהוֹצִ֜יאוּ אֶת־בְּתוּלֵ֧י הנער [הַֽנַּעֲרָ֛ה] אֶל־זִקְנֵ֥י הָעִ֖יר הַשָּֽׁעְרָה׃
+</div>
+The girl’s father and mother will take and will prove the girl’s virginity to the city judges in the court.
+</span>
+<span class=h>
+<div class=h>
+וְאָמַ֛ר אֲבִ֥י הנער [הַֽנַּעַרָ֖ה] אֶל־הַזְּקֵנִ֑ים אֶת־בִּתִּ֗י נָתַ֜תִּי לָאִ֥ישׁ הַזֶּ֛ה לְאִשָּׁ֖ה וַיִּשְׂנָאֶֽהָ׃
+וְאָמַ֛ר אֲבִ֥י הנער [הַֽנַּעַרָ֖ה] אֶל־הַזְּקֵנִ֑ים אֶת־בִּתִּ֗י נָתַ֜תִּי לָאִ֥ישׁ הַזֶּ֛ה לְאִשָּׁ֖ה וַיִּשְׂנָאֶֽהָ׃
+</div>
+The girl’s father should assert to the judges, ‘‘My daughter did I marry to this man as a wife and he hates her.
+</span>
+<span class=h>
+<div class=h>
+וְהִנֵּה־ה֡וּא שָׂם֩ עֲלִילֹ֨ת דְּבָרִ֜ים לֵאמֹ֗ר לֹֽא־מָצָ֤אתִי לְבִתְּךָ֙ בְּתוּלִ֔ים וְאֵ֖לֶּה בְּתוּלֵ֣י בִתִּ֑י וּפָֽרְשׂוּ֙ הַשִּׂמְלָ֔ה לִפְנֵ֖י זִקְנֵ֥י הָעִֽיר׃
+וְהִנֵּה־ה֡וּא שָׂם֩ עֲלִילֹ֨ת דְּבָרִ֜ים לֵאמֹ֗ר לֹֽא־מָצָ֤אתִי לְבִתְּךָ֙ בְּתוּלִ֔ים וְאֵ֖לֶּה בְּתוּלֵ֣י בִתִּ֑י וּפָֽרְשׂוּ֙ הַשִּׂמְלָ֔ה לִפְנֵ֖י זִקְנֵ֥י הָעִֽיר׃
+</div>
+Look! He has promulgated libelous words, claiming ‘I did not find signs of your daughter’s virginity.’ But this is [the proof of] my daughter’s virginity.’’ And let them spread the cloth before the city judges.
+</span>
+<span class=h>
+<div class=h>
+וְלָֽקְח֛וּ זִקְנֵ֥י הָֽעִיר־הַהִ֖וא אֶת־הָאִ֑ישׁ וְיִסְּר֖וּ אֹתֽוֹ׃
+וְלָֽקְח֛וּ זִקְנֵ֥י הָֽעִיר־הַהִ֖וא אֶת־הָאִ֑ישׁ וְיִסְּר֖וּ אֹתֽוֹ׃
+</div>
+The judges of that city will take the man and will chastise him.
+</span>
+<span class=h>
+<div class=h>
+וְעָנְשׁ֨וּ אֹת֜וֹ מֵ֣אָה כֶ֗סֶף וְנָתְנוּ֙ לַאֲבִ֣י הַֽנַּעֲרָ֔ה כִּ֤י הוֹצִיא֙ שֵׁ֣ם רָ֔ע עַ֖ל בְּתוּלַ֣ת יִשְׂרָאֵ֑ל וְלֽוֹ־תִהְיֶ֣ה לְאִשָּׁ֔ה לֹא־יוּכַ֥ל לְשַּׁלְּחָ֖הּ כָּל־יָמָֽיו׃ (ס)
+וְעָנְשׁ֨וּ אֹת֜וֹ מֵ֣אָה כֶ֗סֶף וְנָתְנוּ֙ לַאֲבִ֣י הַֽנַּעֲרָ֔ה כִּ֤י הוֹצִיא֙ שֵׁ֣ם רָ֔ע עַ֖ל בְּתוּלַ֣ת יִשְׂרָאֵ֑ל וְלֽוֹ־תִהְיֶ֣ה לְאִשָּׁ֔ה לֹא־יוּכַ֥ל לְשַּׁלְּחָ֖הּ כָּל־יָמָֽיו׃ (ס)
+</div>
+And they will fine him one hundred silver [shekels] and give [them] to the girl’s father, because he defamed a virgin of Yisroel; and she shall remain his wife, he may not divorce her all his life.
+</span>
+<span class=h>
+<div class=h>
+וְאִם־אֱמֶ֣ת הָיָ֔ה הַדָּבָ֖ר הַזֶּ֑ה לֹא־נִמְצְא֥וּ בְתוּלִ֖ים לנער [לַֽנַּעֲרָֽה׃]
+וְאִם־אֱמֶ֣ת הָיָ֔ה הַדָּבָ֖ר הַזֶּ֑ה לֹא־נִמְצְא֥וּ בְתוּלִ֖ים לנער [לַֽנַּעֲרָֽה׃]
+</div>
+However, if the allegation is true; signs of the girl’s virginity were not found.
+</span>
+<span class=h>
+<div class=h>
+וְהוֹצִ֨יאוּ אֶת־הנער [הַֽנַּעֲרָ֜ה] אֶל־פֶּ֣תַח בֵּית־אָבִ֗יהָ וּסְקָלוּהָ֩ אַנְשֵׁ֨י עִירָ֤הּ בָּאֲבָנִים֙ וָמֵ֔תָה כִּֽי־עָשְׂתָ֤ה נְבָלָה֙ בְּיִשְׂרָאֵ֔ל לִזְנ֖וֹת בֵּ֣ית אָבִ֑יהָ וּבִֽעַרְתָּ֥ הָרָ֖ע מִקִּרְבֶּֽךָ׃ (ס)
+וְהוֹצִ֨יאוּ אֶת־הנער [הַֽנַּעֲרָ֜ה] אֶל־פֶּ֣תַח בֵּית־אָבִ֗יהָ וּסְקָלוּהָ֩ אַנְשֵׁ֨י עִירָ֤הּ בָּאֲבָנִים֙ וָמֵ֔תָה כִּֽי־עָשְׂתָ֤ה נְבָלָה֙ בְּיִשְׂרָאֵ֔ל לִזְנ֖וֹת בֵּ֣ית אָבִ֑יהָ וּבִֽעַרְתָּ֥ הָרָ֖ע מִקִּרְבֶּֽךָ׃ (ס)
+</div>
+They are to take the girl out to the entrance of her father’s home and the people of her city will stone her with stones to death, because she committed a disgraceful act against Yisroel by behaving promiscuously [in] her father’s house; and you will eliminate the evil within you.
+</span>
+<span class=h>
+<div class=h>
+כִּֽי־יִמָּצֵ֨א אִ֜ישׁ שֹׁכֵ֣ב ׀ עִם־אִשָּׁ֣ה בְעֻֽלַת־בַּ֗עַל וּמֵ֙תוּ֙ גַּם־שְׁנֵיהֶ֔ם הָאִ֛ישׁ הַשֹּׁכֵ֥ב עִם־הָאִשָּׁ֖ה וְהָאִשָּׁ֑ה וּבִֽעַרְתָּ֥ הָרָ֖ע מִיִּשְׂרָאֵֽל׃ (ס)
+כִּֽי־יִמָּצֵ֨א אִ֜ישׁ שֹׁכֵ֣ב ׀ עִם־אִשָּׁ֣ה בְעֻֽלַת־בַּ֗עַל וּמֵ֙תוּ֙ גַּם־שְׁנֵיהֶ֔ם הָאִ֛ישׁ הַשֹּׁכֵ֥ב עִם־הָאִשָּׁ֖ה וְהָאִשָּׁ֑ה וּבִֽעַרְתָּ֥ הָרָ֖ע מִיִּשְׂרָאֵֽל׃ (ס)
+</div>
+If a man is found having intercourse with a woman who is the wife of a man, even both of them shall die—the man who had intercourse with the woman and the woman—and you will eliminate the evil from Yisroel.
+</span>
+<span class=h>
+<div class=h>
+כִּ֤י יִהְיֶה֙ נער [נַעֲרָ֣ה] בְתוּלָ֔ה מְאֹרָשָׂ֖ה לְאִ֑ישׁ וּמְצָאָ֥הּ אִ֛ישׁ בָּעִ֖יר וְשָׁכַ֥ב עִמָּֽהּ׃
+כִּ֤י יִהְיֶה֙ נער [נַעֲרָ֣ה] בְתוּלָ֔ה מְאֹרָשָׂ֖ה לְאִ֑ישׁ וּמְצָאָ֥הּ אִ֛ישׁ בָּעִ֖יר וְשָׁכַ֥ב עִמָּֽהּ׃
+</div>
+If there will be a virgin girl married to a man, and a man encounters her in the city and has intercourse with her,
+</span>
+<span class=h>
+<div class=h>
+וְהוֹצֵאתֶ֨ם אֶת־שְׁנֵיהֶ֜ם אֶל־שַׁ֣עַר ׀ הָעִ֣יר הַהִ֗וא וּסְקַלְתֶּ֨ם אֹתָ֥ם בָּאֲבָנִים֮ וָמֵתוּ֒ אֶת־הנער [הַֽנַּעֲרָ֗ה] עַל־דְּבַר֙ אֲשֶׁ֣ר לֹא־צָעֲקָ֣ה בָעִ֔יר וְאֶ֨ת־הָאִ֔ישׁ עַל־דְּבַ֥ר אֲשֶׁר־עִנָּ֖ה אֶת־אֵ֣שֶׁת רֵעֵ֑הוּ וּבִֽעַרְתָּ֥ הָרָ֖ע מִקִּרְבֶּֽךָ׃ (ס)
+וְהוֹצֵאתֶ֨ם אֶת־שְׁנֵיהֶ֜ם אֶל־שַׁ֣עַר ׀ הָעִ֣יר הַהִ֗וא וּסְקַלְתֶּ֨ם אֹתָ֥ם בָּאֲבָנִים֮ וָמֵתוּ֒ אֶת־הנער [הַֽנַּעֲרָ֗ה] עַל־דְּבַר֙ אֲשֶׁ֣ר לֹא־צָעֲקָ֣ה בָעִ֔יר וְאֶ֨ת־הָאִ֔ישׁ עַל־דְּבַ֥ר אֲשֶׁר־עִנָּ֖ה אֶת־אֵ֣שֶׁת רֵעֵ֑הוּ וּבִֽעַרְתָּ֥ הָרָ֖ע מִקִּרְבֶּֽךָ׃ (ס)
+</div>
+You are to take them both out to the court of that city and stone them with stones to death, the girl for the fact that she did not scream in the city and the man for the fact that he oppressed the wife of his peer; and you will eliminate the evil within you.
+</span>
+<span class=h>
+<div class=h>
+וְֽאִם־בַּשָּׂדֶ֞ה יִמְצָ֣א הָאִ֗ישׁ אֶת־הנער [הַֽנַּעֲרָה֙] הַמְאֹ֣רָשָׂ֔ה וְהֶחֱזִֽיק־בָּ֥הּ הָאִ֖ישׁ וְשָׁכַ֣ב עִמָּ֑הּ וּמֵ֗ת הָאִ֛ישׁ אֲשֶׁר־שָׁכַ֥ב עִמָּ֖הּ לְבַדּֽוֹ׃
+וְֽאִם־בַּשָּׂדֶ֞ה יִמְצָ֣א הָאִ֗ישׁ אֶת־הנער [הַֽנַּעֲרָה֙] הַמְאֹ֣רָשָׂ֔ה וְהֶחֱזִֽיק־בָּ֥הּ הָאִ֖ישׁ וְשָׁכַ֣ב עִמָּ֑הּ וּמֵ֗ת הָאִ֛ישׁ אֲשֶׁר־שָׁכַ֥ב עִמָּ֖הּ לְבַדּֽוֹ׃
+</div>
+But if in the field the man encounters the married girl, and the man holds her and had intercourse with her; then he shall die—only the man who had intercourse with her.
+</span>
+<span class=h>
+<div class=h>
+ולנער [וְלַֽנַּעֲרָה֙] לֹא־תַעֲשֶׂ֣ה דָבָ֔ר אֵ֥ין לנער [לַֽנַּעֲרָ֖ה] חֵ֣טְא מָ֑וֶת כִּ֡י כַּאֲשֶׁר֩ יָק֨וּם אִ֤ישׁ עַל־רֵעֵ֙הוּ֙ וּרְצָח֣וֹ נֶ֔פֶשׁ כֵּ֖ן הַדָּבָ֥ר הַזֶּֽה׃
+ולנער [וְלַֽנַּעֲרָה֙] לֹא־תַעֲשֶׂ֣ה דָבָ֔ר אֵ֥ין לנער [לַֽנַּעֲרָ֖ה] חֵ֣טְא מָ֑וֶת כִּ֡י כַּאֲשֶׁר֩ יָק֨וּם אִ֤ישׁ עַל־רֵעֵ֙הוּ֙ וּרְצָח֣וֹ נֶ֔פֶשׁ כֵּ֖ן הַדָּבָ֥ר הַזֶּֽה׃
+</div>
+But to the girl you will not do a thing, the girl has no death liability; for, just as if a man rises up against his peer and murders him, so is this matter.
+</span>
+<span class=h>
+<div class=h>
+כִּ֥י בַשָּׂדֶ֖ה מְצָאָ֑הּ צָעֲקָ֗ה הנער [הַֽנַּעֲרָה֙] הַמְאֹ֣רָשָׂ֔ה וְאֵ֥ין מוֹשִׁ֖יעַ לָֽהּ׃ (ס)
+כִּ֥י בַשָּׂדֶ֖ה מְצָאָ֑הּ צָעֲקָ֗ה הנער [הַֽנַּעֲרָה֙] הַמְאֹ֣רָשָׂ֔ה וְאֵ֥ין מוֹשִׁ֖יעַ לָֽהּ׃ (ס)
+</div>
+For he encountered her in the field; the married girl screamed, but there was no one to rescue her.
+</span>
+<span class=h>
+<div class=h>
+כִּֽי־יִמְצָ֣א אִ֗ישׁ נער [נַעֲרָ֤ה] בְתוּלָה֙ אֲשֶׁ֣ר לֹא־אֹרָ֔שָׂה וּתְפָשָׂ֖הּ וְשָׁכַ֣ב עִמָּ֑הּ וְנִמְצָֽאוּ׃
+כִּֽי־יִמְצָ֣א אִ֗ישׁ נער [נַעֲרָ֤ה] בְתוּלָה֙ אֲשֶׁ֣ר לֹא־אֹרָ֔שָׂה וּתְפָשָׂ֖הּ וְשָׁכַ֣ב עִמָּ֑הּ וְנִמְצָֽאוּ׃
+</div>
+If a man encounters a virgin girl who was not married and grabs her and has intercourse with her; and they are discovered.
+</span>
+<span class=h>
+<div class=h>
+וְ֠נָתַן הָאִ֨ישׁ הַשֹּׁכֵ֥ב עִמָּ֛הּ לַאֲבִ֥י הנער [הַֽנַּעֲרָ֖ה] חֲמִשִּׁ֣ים כָּ֑סֶף וְלֽוֹ־תִהְיֶ֣ה לְאִשָּׁ֗ה תַּ֚חַת אֲשֶׁ֣ר עִנָּ֔הּ לֹא־יוּכַ֥ל שַׁלְּחָ֖ה כָּל־יָמָֽיו׃ (ס)
+וְ֠נָתַן הָאִ֨ישׁ הַשֹּׁכֵ֥ב עִמָּ֛הּ לַאֲבִ֥י הנער [הַֽנַּעֲרָ֖ה] חֲמִשִּׁ֣ים כָּ֑סֶף וְלֽוֹ־תִהְיֶ֣ה לְאִשָּׁ֗ה תַּ֚חַת אֲשֶׁ֣ר עִנָּ֔הּ לֹא־יוּכַ֥ל שַׁלְּחָ֖ה כָּל־יָמָֽיו׃ (ס)
+</div>
+The man who had intercourse with her must give to the girl’s father fifty silver [shekels]; and she shall be his wife, since he oppressed her; he may not divorce her all his life.
+</span>
+<span class=h>
+<div class=h>
+
+
+
+<h4>Chapter 23</h4>
+
+
+
+
+
+לֹא־יִקַּ֥ח אִ֖ישׁ אֶת־אֵ֣שֶׁת אָבִ֑יו וְלֹ֥א יְגַלֶּ֖ה כְּנַ֥ף אָבִֽיו׃ (ס)
+לֹא־יִקַּ֥ח אִ֖ישׁ אֶת־אֵ֣שֶׁת אָבִ֑יו וְלֹ֥א יְגַלֶּ֖ה כְּנַ֥ף אָבִֽיו׃ (ס)
+</div>
+A man may not marry his father’s wife, and may not expose the edge of his father’s garment.
+</span>
+<span class=h>
+<div class=h>
+לֹֽא־יָבֹ֧א פְצֽוּעַ־דַּכָּ֛א וּכְר֥וּת שָׁפְכָ֖ה בִּקְהַ֥ל יְהוָֽה׃ (ס)
+לֹֽא־יָבֹ֧א פְצֽוּעַ־דַּכָּ֛א וּכְר֥וּת שָׁפְכָ֖ה בִּקְהַ֥ל יְהוָֽה׃ (ס)
+</div>
+One may not enter—with injured or crushed genitals or with a gash causing spilling—into Adonoy’s community.
+</span>
+<span class=h>
+<div class=h>
+לֹא־יָבֹ֥א מַמְזֵ֖ר בִּקְהַ֣ל יְהוָ֑ה גַּ֚ם דּ֣וֹר עֲשִׂירִ֔י לֹא־יָ֥בֹא ל֖וֹ בִּקְהַ֥ל יְהוָֽה׃ (ס)
+לֹא־יָבֹ֥א מַמְזֵ֖ר בִּקְהַ֣ל יְהוָ֑ה גַּ֚ם דּ֣וֹר עֲשִׂירִ֔י לֹא־יָ֥בֹא ל֖וֹ בִּקְהַ֥ל יְהוָֽה׃ (ס)
+</div>
+A base-born may not enter into Adonoy’s community, even his tenth generation may not enter into Adonoy’s community.
+</span>
+<span class=h>
+<div class=h>
+לֹֽא־יָבֹ֧א עַמּוֹנִ֛י וּמוֹאָבִ֖י בִּקְהַ֣ל יְהוָ֑ה גַּ֚ם דּ֣וֹר עֲשִׂירִ֔י לֹא־יָבֹ֥א לָהֶ֛ם בִּקְהַ֥ל יְהוָ֖ה עַד־עוֹלָֽם׃
+לֹֽא־יָבֹ֧א עַמּוֹנִ֛י וּמוֹאָבִ֖י בִּקְהַ֣ל יְהוָ֑ה גַּ֚ם דּ֣וֹר עֲשִׂירִ֔י לֹא־יָבֹ֥א לָהֶ֛ם בִּקְהַ֥ל יְהוָ֖ה עַד־עוֹלָֽם׃
+</div>
+[Neither] an Ammonite nor a Moavite may enter into Adonoy’s community; even their tenth generation may not enter into Adonoy’s community forever.
+</span>
+<span class=h>
+<div class=h>
+עַל־דְּבַ֞ר אֲשֶׁ֨ר לֹא־קִדְּמ֤וּ אֶתְכֶם֙ בַּלֶּ֣חֶם וּבַמַּ֔יִם בַּדֶּ֖רֶךְ בְּצֵאתְכֶ֣ם מִמִּצְרָ֑יִם וַאֲשֶׁר֩ שָׂכַ֨ר עָלֶ֜יךָ אֶת־בִּלְעָ֣ם בֶּן־בְּע֗וֹר מִפְּת֛וֹר אֲרַ֥ם נַהֲרַ֖יִם לְקַֽלְלֶֽךָּ׃
+עַל־דְּבַ֞ר אֲשֶׁ֨ר לֹא־קִדְּמ֤וּ אֶתְכֶם֙ בַּלֶּ֣חֶם וּבַמַּ֔יִם בַּדֶּ֖רֶךְ בְּצֵאתְכֶ֣ם מִמִּצְרָ֑יִם וַאֲשֶׁר֩ שָׂכַ֨ר עָלֶ֜יךָ אֶת־בִּלְעָ֣ם בֶּן־בְּע֗וֹר מִפְּת֛וֹר אֲרַ֥ם נַהֲרַ֖יִם לְקַֽלְלֶֽךָּ׃
+</div>
+Because of the matter that they did not greet you with bread and water on the way when you came out of Egypt; and because he hired against you Bilam son of Beor from Pesor in Aram Naharayim to curse you.
+</span>
+<span class=h>
+<div class=h>
+וְלֹֽא־אָבָ֞ה יְהוָ֤ה אֱלֹהֶ֙יךָ֙ לִשְׁמֹ֣עַ אֶל־בִּלְעָ֔ם וַיַּהֲפֹךְ֩ יְהוָ֨ה אֱלֹהֶ֧יךָ לְּךָ֛ אֶת־הַקְּלָלָ֖ה לִבְרָכָ֑ה כִּ֥י אֲהֵֽבְךָ֖ יְהוָ֥ה אֱלֹהֶֽיךָ׃
+וְלֹֽא־אָבָ֞ה יְהוָ֤ה אֱלֹהֶ֙יךָ֙ לִשְׁמֹ֣עַ אֶל־בִּלְעָ֔ם וַיַּהֲפֹךְ֩ יְהוָ֨ה אֱלֹהֶ֧יךָ לְּךָ֛ אֶת־הַקְּלָלָ֖ה לִבְרָכָ֑ה כִּ֥י אֲהֵֽבְךָ֖ יְהוָ֥ה אֱלֹהֶֽיךָ׃
+</div>
+Adonoy, your God, was unwilling to heed Bilam, and Adonoy, your God, turned for you the curse into a blessing, because Adonoy, your God, loved you.
+</span>
+<span class=h>
+<div class=h>
+לֹא־תִדְרֹ֥שׁ שְׁלֹמָ֖ם וְטֹבָתָ֑ם כָּל־יָמֶ֖יךָ לְעוֹלָֽם׃ (ס)
+לֹא־תִדְרֹ֥שׁ שְׁלֹמָ֖ם וְטֹבָתָ֑ם כָּל־יָמֶ֖יךָ לְעוֹלָֽם׃ (ס)
+</div>
+Do not pursue their peace and their benefit all your life forever.
+</span>
+<span class=h>
+<div class=h>
+לֹֽא־תְתַעֵ֣ב אֲדֹמִ֔י כִּ֥י אָחִ֖יךָ ה֑וּא (ס) לֹא־תְתַעֵ֣ב מִצְרִ֔י כִּי־גֵ֖ר הָיִ֥יתָ בְאַרְצֽוֹ׃
+לֹֽא־תְתַעֵ֣ב אֲדֹמִ֔י כִּ֥י אָחִ֖יךָ ה֑וּא (ס) לֹא־תְתַעֵ֣ב מִצְרִ֔י כִּי־גֵ֖ר הָיִ֥יתָ בְאַרְצֽוֹ׃
+</div>
+Do not despise the Edomite, for he is your brother; do not despise the Egyptian, for you were a stranger in his land.
+</span>
+<span class=h>
+<div class=h>
+בָּנִ֛ים אֲשֶׁר־יִוָּלְד֥וּ לָהֶ֖ם דּ֣וֹר שְׁלִישִׁ֑י יָבֹ֥א לָהֶ֖ם בִּקְהַ֥ל יְהוָֽה׃ (ס)
+בָּנִ֛ים אֲשֶׁר־יִוָּלְד֥וּ לָהֶ֖ם דּ֣וֹר שְׁלִישִׁ֑י יָבֹ֥א לָהֶ֖ם בִּקְהַ֥ל יְהוָֽה׃ (ס)
+</div>
+Children who will be born to them, in the third generation, will enter into Adonoy’s community.
+</span>
+<span class=h>
+<div class=h>
+כִּֽי־תֵצֵ֥א מַחֲנֶ֖ה עַל־אֹיְבֶ֑יךָ וְנִ֨שְׁמַרְתָּ֔ מִכֹּ֖ל דָּבָ֥ר רָֽע׃
+כִּֽי־תֵצֵ֥א מַחֲנֶ֖ה עַל־אֹיְבֶ֑יךָ וְנִ֨שְׁמַרְתָּ֔ מִכֹּ֖ל דָּבָ֥ר רָֽע׃
+</div>
+When you go out to encamp against your enemies take precautions from every evil thing.
+</span>
+<span class=h>
+<div class=h>
+כִּֽי־יִהְיֶ֤ה בְךָ֙ אִ֔ישׁ אֲשֶׁ֛ר לֹא־יִהְיֶ֥ה טָה֖וֹר מִקְּרֵה־לָ֑יְלָה וְיָצָא֙ אֶל־מִח֣וּץ לַֽמַּחֲנֶ֔ה לֹ֥א יָבֹ֖א אֶל־תּ֥וֹךְ הַֽמַּחֲנֶֽה׃
+כִּֽי־יִהְיֶ֤ה בְךָ֙ אִ֔ישׁ אֲשֶׁ֛ר לֹא־יִהְיֶ֥ה טָה֖וֹר מִקְּרֵה־לָ֑יְלָה וְיָצָא֙ אֶל־מִח֣וּץ לַֽמַּחֲנֶ֔ה לֹ֥א יָבֹ֖א אֶל־תּ֥וֹךְ הַֽמַּחֲנֶֽה׃
+</div>
+If there is a man among you who is not undefiled [because of] a nocturnal incident; he must go out of the camp, he may not enter into the midst of the camp.
+</span>
+<span class=h>
+<div class=h>
+וְהָיָ֥ה לִפְנֽוֹת־עֶ֖רֶב יִרְחַ֣ץ בַּמָּ֑יִם וּכְבֹ֣א הַשֶּׁ֔מֶשׁ יָבֹ֖א אֶל־תּ֥וֹךְ הַֽמַּחֲנֶה׃
+וְהָיָ֥ה לִפְנֽוֹת־עֶ֖רֶב יִרְחַ֣ץ בַּמָּ֑יִם וּכְבֹ֣א הַשֶּׁ֔מֶשׁ יָבֹ֖א אֶל־תּ֥וֹךְ הַֽמַּחֲנֶה׃
+</div>
+As sunset nears he is to immerse in water; and after the sun has set he may enter the the midst of the camp.
+</span>
+<span class=h>
+<div class=h>
+וְיָד֙ תִּהְיֶ֣ה לְךָ֔ מִח֖וּץ לַֽמַּחֲנֶ֑ה וְיָצָ֥אתָ שָׁ֖מָּה חֽוּץ׃
+וְיָד֙ תִּהְיֶ֣ה לְךָ֔ מִח֖וּץ לַֽמַּחֲנֶ֑ה וְיָצָ֥אתָ שָׁ֖מָּה חֽוּץ׃
+</div>
+Have a designated place outside the camp, and you will go out there to excrete.
+</span>
+<span class=h>
+<div class=h>
+וְיָתֵ֛ד תִּהְיֶ֥ה לְךָ֖ עַל־אֲזֵנֶ֑ךָ וְהָיָה֙ בְּשִׁבְתְּךָ֣ ח֔וּץ וְחָפַרְתָּ֣ה בָ֔הּ וְשַׁבְתָּ֖ וְכִסִּ֥יתָ אֶת־צֵאָתֶֽךָ׃
+וְיָתֵ֛ד תִּהְיֶ֥ה לְךָ֖ עַל־אֲזֵנֶ֑ךָ וְהָיָה֙ בְּשִׁבְתְּךָ֣ ח֔וּץ וְחָפַרְתָּ֣ה בָ֔הּ וְשַׁבְתָּ֖ וְכִסִּ֥יתָ אֶת־צֵאָתֶֽךָ׃
+</div>
+And a peg are you to have in addition to your weapons; when you need to sit to excrete dig with it, then use it again to cover your excrement.
+</span>
+<span class=h>
+<div class=h>
+כִּי֩ יְהוָ֨ה אֱלֹהֶ֜יךָ מִתְהַלֵּ֣ךְ ׀ בְּקֶ֣רֶב מַחֲנֶ֗ךָ לְהַצִּֽילְךָ֙ וְלָתֵ֤ת אֹיְבֶ֙יךָ֙ לְפָנֶ֔יךָ וְהָיָ֥ה מַחֲנֶ֖יךָ קָד֑וֹשׁ וְלֹֽא־יִרְאֶ֤ה בְךָ֙ עֶרְוַ֣ת דָּבָ֔ר וְשָׁ֖ב מֵאַחֲרֶֽיךָ׃ (ס)
+כִּי֩ יְהוָ֨ה אֱלֹהֶ֜יךָ מִתְהַלֵּ֣ךְ ׀ בְּקֶ֣רֶב מַחֲנֶ֗ךָ לְהַצִּֽילְךָ֙ וְלָתֵ֤ת אֹיְבֶ֙יךָ֙ לְפָנֶ֔יךָ וְהָיָ֥ה מַחֲנֶ֖יךָ קָד֑וֹשׁ וְלֹֽא־יִרְאֶ֤ה בְךָ֙ עֶרְוַ֣ת דָּבָ֔ר וְשָׁ֖ב מֵאַחֲרֶֽיךָ׃ (ס)
+</div>
+For Adonoy, your God, is moving within your camp to save you and to defeat your enemies before you, so your camp must be holy; let Him not see within you disgraceful objects lest He turn away from you.
+</span>
+<span class=h>
+<div class=h>
+לֹא־תַסְגִּ֥יר עֶ֖בֶד אֶל־אֲדֹנָ֑יו אֲשֶׁר־יִנָּצֵ֥ל אֵלֶ֖יךָ מֵעִ֥ם אֲדֹנָֽיו׃
+לֹא־תַסְגִּ֥יר עֶ֖בֶד אֶל־אֲדֹנָ֑יו אֲשֶׁר־יִנָּצֵ֥ל אֵלֶ֖יךָ מֵעִ֥ם אֲדֹנָֽיו׃
+</div>
+Do not deliver a slave to his master, who escaped to you from his master.
+</span>
+<span class=h>
+<div class=h>
+עִמְּךָ֞ יֵשֵׁ֣ב בְּקִרְבְּךָ֗ בַּמָּק֧וֹם אֲשֶׁר־יִבְחַ֛ר בְּאַחַ֥ד שְׁעָרֶ֖יךָ בַּטּ֣וֹב ל֑וֹ לֹ֖א תּוֹנֶֽנּוּ׃ (ס)
+עִמְּךָ֞ יֵשֵׁ֣ב בְּקִרְבְּךָ֗ בַּמָּק֧וֹם אֲשֶׁר־יִבְחַ֛ר בְּאַחַ֥ד שְׁעָרֶ֖יךָ בַּטּ֣וֹב ל֑וֹ לֹ֖א תּוֹנֶֽנּוּ׃ (ס)
+</div>
+With you will he live among you, in the place that he chooses in any of your cities, wherever it is good for him; do not distress him.
+</span>
+<span class=h>
+<div class=h>
+לֹא־תִהְיֶ֥ה קְדֵשָׁ֖ה מִבְּנ֣וֹת יִשְׂרָאֵ֑ל וְלֹֽא־יִהְיֶ֥ה קָדֵ֖שׁ מִבְּנֵ֥י יִשְׂרָאֵל׃
+לֹא־תִהְיֶ֥ה קְדֵשָׁ֖ה מִבְּנ֣וֹת יִשְׂרָאֵ֑ל וְלֹֽא־יִהְיֶ֥ה קָדֵ֖שׁ מִבְּנֵ֥י יִשְׂרָאֵל׃
+</div>
+There is not to be a harlot from the daughters of Yisroel; and there shall not be a male prostitute from the sons of Yisroel.
+</span>
+<span class=h>
+<div class=h>
+לֹא־תָבִיא֩ אֶתְנַ֨ן זוֹנָ֜ה וּמְחִ֣יר כֶּ֗לֶב בֵּ֛ית יְהוָ֥ה אֱלֹהֶ֖יךָ לְכָל־נֶ֑דֶר כִּ֧י תוֹעֲבַ֛ת יְהוָ֥ה אֱלֹהֶ֖יךָ גַּם־שְׁנֵיהֶֽם׃
+לֹא־תָבִיא֩ אֶתְנַ֨ן זוֹנָ֜ה וּמְחִ֣יר כֶּ֗לֶב בֵּ֛ית יְהוָ֥ה אֱלֹהֶ֖יךָ לְכָל־נֶ֑דֶר כִּ֧י תוֹעֲבַ֛ת יְהוָ֥ה אֱלֹהֶ֖יךָ גַּם־שְׁנֵיהֶֽם׃
+</div>
+Do not bring a harlot’s fee or payment for a dog to the house of Adonoy, your God, in fulfillment of any vow; because Adonoy, your God’s abominations are even both of them.
+</span>
+<span class=h>
+<div class=h>
+לֹא־תַשִּׁ֣יךְ לְאָחִ֔יךָ נֶ֥שֶׁךְ כֶּ֖סֶף נֶ֣שֶׁךְ אֹ֑כֶל נֶ֕שֶׁךְ כָּל־דָּבָ֖ר אֲשֶׁ֥ר יִשָּֽׁךְ׃
+לֹא־תַשִּׁ֣יךְ לְאָחִ֔יךָ נֶ֥שֶׁךְ כֶּ֖סֶף נֶ֣שֶׁךְ אֹ֑כֶל נֶ֕שֶׁךְ כָּל־דָּבָ֖ר אֲשֶׁ֥ר יִשָּֽׁךְ׃
+</div>
+You may not pay usury to your brother, usury on money, usury on food; usury on any matter where it is paid.
+</span>
+<span class=h>
+<div class=h>
+לַנָּכְרִ֣י תַשִּׁ֔יךְ וּלְאָחִ֖יךָ לֹ֣א תַשִּׁ֑יךְ לְמַ֨עַן יְבָרֶכְךָ֜ יְהוָ֣ה אֱלֹהֶ֗יךָ בְּכֹל֙ מִשְׁלַ֣ח יָדֶ֔ךָ עַל־הָאָ֕רֶץ אֲשֶׁר־אַתָּ֥ה בָא־שָׁ֖מָּה לְרִשְׁתָּֽהּ׃ (ס)
+לַנָּכְרִ֣י תַשִּׁ֔יךְ וּלְאָחִ֖יךָ לֹ֣א תַשִּׁ֑יךְ לְמַ֨עַן יְבָרֶכְךָ֜ יְהוָ֣ה אֱלֹהֶ֗יךָ בְּכֹל֙ מִשְׁלַ֣ח יָדֶ֔ךָ עַל־הָאָ֕רֶץ אֲשֶׁר־אַתָּ֥ה בָא־שָׁ֖מָּה לְרִשְׁתָּֽהּ׃ (ס)
+</div>
+You may pay usury to the stranger, but to your brother do not pay usury; in order that Adonoy, your God, will bless you in all your commerce on the land that you are coming there to inherit.
+</span>
+<span class=h>
+<div class=h>
+כִּֽי־תִדֹּ֥ר נֶ֙דֶר֙ לַיהוָ֣ה אֱלֹהֶ֔יךָ לֹ֥א תְאַחֵ֖ר לְשַׁלְּמ֑וֹ כִּֽי־דָּרֹ֨שׁ יִדְרְשֶׁ֜נּוּ יְהוָ֤ה אֱלֹהֶ֙יךָ֙ מֵֽעִמָּ֔ךְ וְהָיָ֥ה בְךָ֖ חֵֽטְא׃
+כִּֽי־תִדֹּ֥ר נֶ֙דֶר֙ לַיהוָ֣ה אֱלֹהֶ֔יךָ לֹ֥א תְאַחֵ֖ר לְשַׁלְּמ֑וֹ כִּֽי־דָּרֹ֨שׁ יִדְרְשֶׁ֜נּוּ יְהוָ֤ה אֱלֹהֶ֙יךָ֙ מֵֽעִמָּ֔ךְ וְהָיָ֥ה בְךָ֖ חֵֽטְא׃
+</div>
+If you make a vow to Adonoy, your God, do not delay in discharging it; for Adonoy, your God, will surely demand it from you, and you will be at fault.
+</span>
+<span class=h>
+<div class=h>
+וְכִ֥י תֶחְדַּ֖ל לִנְדֹּ֑ר לֹֽא־יִהְיֶ֥ה בְךָ֖ חֵֽטְא׃
+וְכִ֥י תֶחְדַּ֖ל לִנְדֹּ֑ר לֹֽא־יִהְיֶ֥ה בְךָ֖ חֵֽטְא׃
+</div>
+But if you desist from vowing, no fault will be found with you.
+</span>
+<span class=h>
+<div class=h>
+מוֹצָ֥א שְׂפָתֶ֖יךָ תִּשְׁמֹ֣ר וְעָשִׂ֑יתָ כַּאֲשֶׁ֨ר נָדַ֜רְתָּ לַיהוָ֤ה אֱלֹהֶ֙יךָ֙ נְדָבָ֔ה אֲשֶׁ֥ר דִּבַּ֖רְתָּ בְּפִֽיךָ׃ (ס)
+מוֹצָ֥א שְׂפָתֶ֖יךָ תִּשְׁמֹ֣ר וְעָשִׂ֑יתָ כַּאֲשֶׁ֨ר נָדַ֜רְתָּ לַיהוָ֤ה אֱלֹהֶ֙יךָ֙ נְדָבָ֔ה אֲשֶׁ֥ר דִּבַּ֖רְתָּ בְּפִֽיךָ׃ (ס)
+</div>
+Keep what you have articulated; and perform whatever you vow; to Adonoy, your God, voluntarily—whatever you say with your mouth.
+</span>
+<span class=h>
+<div class=h>
+כִּ֤י תָבֹא֙ בְּכֶ֣רֶם רֵעֶ֔ךָ וְאָכַלְתָּ֧ עֲנָבִ֛ים כְּנַפְשְׁךָ֖ שָׂבְעֶ֑ךָ וְאֶֽל־כֶּלְיְךָ֖ לֹ֥א תִתֵּֽן׃ (ס)
+כִּ֤י תָבֹא֙ בְּכֶ֣רֶם רֵעֶ֔ךָ וְאָכַלְתָּ֧ עֲנָבִ֛ים כְּנַפְשְׁךָ֖ שָׂבְעֶ֑ךָ וְאֶֽל־כֶּלְיְךָ֖ לֹ֥א תִתֵּֽן׃ (ס)
+</div>
+When you enter your fellow’s vineyard, you may eat grapes as you desire, to your satisfaction; but you may not place it in your container.
+</span>
+<span class=h>
+<div class=h>
+כִּ֤י תָבֹא֙ בְּקָמַ֣ת רֵעֶ֔ךָ וְקָטַפְתָּ֥ מְלִילֹ֖ת בְּיָדֶ֑ךָ וְחֶרְמֵשׁ֙ לֹ֣א תָנִ֔יף עַ֖ל קָמַ֥ת רֵעֶֽךָ׃ (ס)
+כִּ֤י תָבֹא֙ בְּקָמַ֣ת רֵעֶ֔ךָ וְקָטַפְתָּ֥ מְלִילֹ֖ת בְּיָדֶ֑ךָ וְחֶרְמֵשׁ֙ לֹ֣א תָנִ֔יף עַ֖ל קָמַ֥ת רֵעֶֽךָ׃ (ס)
+</div>
+When you enter your fellow’s standing grainstalks, you may cut off stalks by hand, but do not lift a sickle over your fellow’s standing grainstalks.
+</span>
+<span class=h>
+<div class=h>
+
+
+
+<h4>Chapter 24</h4>
+
+
+
+
+
+כִּֽי־יִקַּ֥ח אִ֛ישׁ אִשָּׁ֖ה וּבְעָלָ֑הּ וְהָיָ֞ה אִם־לֹ֧א תִמְצָא־חֵ֣ן בְּעֵינָ֗יו כִּי־מָ֤צָא בָהּ֙ עֶרְוַ֣ת דָּבָ֔ר וְכָ֨תַב לָ֜הּ סֵ֤פֶר כְּרִיתֻת֙ וְנָתַ֣ן בְּיָדָ֔הּ וְשִׁלְּחָ֖הּ מִבֵּיתֽוֹ׃
+כִּֽי־יִקַּ֥ח אִ֛ישׁ אִשָּׁ֖ה וּבְעָלָ֑הּ וְהָיָ֞ה אִם־לֹ֧א תִמְצָא־חֵ֣ן בְּעֵינָ֗יו כִּי־מָ֤צָא בָהּ֙ עֶרְוַ֣ת דָּבָ֔ר וְכָ֨תַב לָ֜הּ סֵ֤פֶר כְּרִיתֻת֙ וְנָתַ֣ן בְּיָדָ֔הּ וְשִׁלְּחָ֖הּ מִבֵּיתֽוֹ׃
+</div>
+If a man marries a woman and consummates with her; should she not find favor in his eyes because he found in her something lecherous, he is to write for her a document of severance and place [it] in her hand and send her from his home.
+</span>
+<span class=h>
+<div class=h>
+וְיָצְאָ֖ה מִבֵּית֑וֹ וְהָלְכָ֖ה וְהָיְתָ֥ה לְאִישׁ־אַחֵֽר׃
+וְיָצְאָ֖ה מִבֵּית֑וֹ וְהָלְכָ֖ה וְהָיְתָ֥ה לְאִישׁ־אַחֵֽר׃
+</div>
+If she leaves his home and goes and becomes [wife] to another man.
+</span>
+<span class=h>
+<div class=h>
+וּשְׂנֵאָהּ֮ הָאִ֣ישׁ הָאַחֲרוֹן֒ וְכָ֨תַב לָ֜הּ סֵ֤פֶר כְּרִיתֻת֙ וְנָתַ֣ן בְּיָדָ֔הּ וְשִׁלְּחָ֖הּ מִבֵּית֑וֹ א֣וֹ כִ֤י יָמוּת֙ הָאִ֣ישׁ הָאַחֲר֔וֹן אֲשֶׁר־לְקָחָ֥הּ ל֖וֹ לְאִשָּֽׁה׃
+וּשְׂנֵאָהּ֮ הָאִ֣ישׁ הָאַחֲרוֹן֒ וְכָ֨תַב לָ֜הּ סֵ֤פֶר כְּרִיתֻת֙ וְנָתַ֣ן בְּיָדָ֔הּ וְשִׁלְּחָ֖הּ מִבֵּית֑וֹ א֣וֹ כִ֤י יָמוּת֙ הָאִ֣ישׁ הָאַחֲר֔וֹן אֲשֶׁר־לְקָחָ֥הּ ל֖וֹ לְאִשָּֽׁה׃
+</div>
+If her last husband hates her and writes for her a document of severance and places [it] in her hand and sends her from his house, or if the latter man dies, who had taken her as his wife;
+</span>
+<span class=h>
+<div class=h>
+לֹא־יוּכַ֣ל בַּעְלָ֣הּ הָרִאשׁ֣וֹן אֲשֶֽׁר־שִׁ֠לְּחָהּ לָשׁ֨וּב לְקַחְתָּ֜הּ לִהְי֧וֹת ל֣וֹ לְאִשָּׁ֗ה אַחֲרֵי֙ אֲשֶׁ֣ר הֻטַּמָּ֔אָה כִּֽי־תוֹעֵבָ֥ה הִ֖וא לִפְנֵ֣י יְהוָ֑ה וְלֹ֤א תַחֲטִיא֙ אֶת־הָאָ֔רֶץ אֲשֶׁר֙ יְהוָ֣ה אֱלֹהֶ֔יךָ נֹתֵ֥ן לְךָ֖ נַחֲלָֽה׃ (ס)
+לֹא־יוּכַ֣ל בַּעְלָ֣הּ הָרִאשׁ֣וֹן אֲשֶֽׁר־שִׁ֠לְּחָהּ לָשׁ֨וּב לְקַחְתָּ֜הּ לִהְי֧וֹת ל֣וֹ לְאִשָּׁ֗ה אַחֲרֵי֙ אֲשֶׁ֣ר הֻטַּמָּ֔אָה כִּֽי־תוֹעֵבָ֥ה הִ֖וא לִפְנֵ֣י יְהוָ֑ה וְלֹ֤א תַחֲטִיא֙ אֶת־הָאָ֔רֶץ אֲשֶׁר֙ יְהוָ֣ה אֱלֹהֶ֔יךָ נֹתֵ֥ן לְךָ֖ נַחֲלָֽה׃ (ס)
+</div>
+Her first husband who divorced her may not remarry her to be his wife after her having been defiled, for it is an abomination before Adonoy; and you are not to make liable the land that Adonoy, your God, is giving you as territory.
+</span>
+<span class=h>
+<div class=h>
+כִּֽי־יִקַּ֥ח אִישׁ֙ אִשָּׁ֣ה חֲדָשָׁ֔ה לֹ֤א יֵצֵא֙ בַּצָּבָ֔א וְלֹא־יַעֲבֹ֥ר עָלָ֖יו לְכָל־דָּבָ֑ר נָקִ֞י יִהְיֶ֤ה לְבֵיתוֹ֙ שָׁנָ֣ה אֶחָ֔ת וְשִׂמַּ֖ח אֶת־אִשְׁתּ֥וֹ אֲשֶׁר־לָקָֽח׃ (ס)
+כִּֽי־יִקַּ֥ח אִישׁ֙ אִשָּׁ֣ה חֲדָשָׁ֔ה לֹ֤א יֵצֵא֙ בַּצָּבָ֔א וְלֹא־יַעֲבֹ֥ר עָלָ֖יו לְכָל־דָּבָ֑ר נָקִ֞י יִהְיֶ֤ה לְבֵיתוֹ֙ שָׁנָ֣ה אֶחָ֔ת וְשִׂמַּ֖ח אֶת־אִשְׁתּ֥וֹ אֲשֶׁר־לָקָֽח׃ (ס)
+</div>
+When a man marries a new wife, he is not to be mobilized into the army, it shall not impose itself over him in any matter; he shall be free for his home one year and he shall bring joy to the wife he married.
+</span>
+<span class=h>
+<div class=h>
+לֹא־יַחֲבֹ֥ל רֵחַ֖יִם וָרָ֑כֶב כִּי־נֶ֖פֶשׁ ה֥וּא חֹבֵֽל׃ (ס)
+לֹא־יַחֲבֹ֥ל רֵחַ֖יִם וָרָ֑כֶב כִּי־נֶ֖פֶשׁ ה֥וּא חֹבֵֽל׃ (ס)
+</div>
+He may not secure as collateral a mortar or pestle, for his is taking life as security.
+</span>
+<span class=h>
+<div class=h>
+כִּי־יִמָּצֵ֣א אִ֗ישׁ גֹּנֵ֨ב נֶ֤פֶשׁ מֵאֶחָיו֙ מִבְּנֵ֣י יִשְׂרָאֵ֔ל וְהִתְעַמֶּר־בּ֖וֹ וּמְכָר֑וֹ וּמֵת֙ הַגַּנָּ֣ב הַה֔וּא וּבִֽעַרְתָּ֥ הָרָ֖ע מִקִּרְבֶּֽךָ׃
+כִּי־יִמָּצֵ֣א אִ֗ישׁ גֹּנֵ֨ב נֶ֤פֶשׁ מֵאֶחָיו֙ מִבְּנֵ֣י יִשְׂרָאֵ֔ל וְהִתְעַמֶּר־בּ֖וֹ וּמְכָר֑וֹ וּמֵת֙ הַגַּנָּ֣ב הַה֔וּא וּבִֽעַרְתָּ֥ הָרָ֖ע מִקִּרְבֶּֽךָ׃
+</div>
+If a man is apprehended having kidnaped a person from his brothers, from the descendants of Yisroel, and he exploited him and sold him; that kidnaper is to be put to death and you will eliminate the evil within you.
+</span>
+<span class=h>
+<div class=h>
+הִשָּׁ֧מֶר בְּנֶֽגַע־הַצָּרַ֛עַת לִשְׁמֹ֥ר מְאֹ֖ד וְלַעֲשׂ֑וֹת כְּכֹל֩ אֲשֶׁר־יוֹר֨וּ אֶתְכֶ֜ם הַכֹּהֲנִ֧ים הַלְוִיִּ֛ם כַּאֲשֶׁ֥ר צִוִּיתִ֖ם תִּשְׁמְר֥וּ לַעֲשֽׂוֹת׃ (ס)
+הִשָּׁ֧מֶר בְּנֶֽגַע־הַצָּרַ֛עַת לִשְׁמֹ֥ר מְאֹ֖ד וְלַעֲשׂ֑וֹת כְּכֹל֩ אֲשֶׁר־יוֹר֨וּ אֶתְכֶ֜ם הַכֹּהֲנִ֧ים הַלְוִיִּ֛ם כַּאֲשֶׁ֥ר צִוִּיתִ֖ם תִּשְׁמְר֥וּ לַעֲשֽׂוֹת׃ (ס)
+</div>
+Take precautions with the leprosy affliction to be extremely careful and to do—in accordance with everything that the <i>kohanim</i> the Levites shall instruct you; as I commanded them are you to make sure to do.
+</span>
+<span class=h>
+<div class=h>
+זָכ֕וֹר אֵ֧ת אֲשֶׁר־עָשָׂ֛ה יְהוָ֥ה אֱלֹהֶ֖יךָ לְמִרְיָ֑ם בַּדֶּ֖רֶךְ בְּצֵאתְכֶ֥ם מִמִּצְרָֽיִם׃ (ס)
+זָכ֕וֹר אֵ֧ת אֲשֶׁר־עָשָׂ֛ה יְהוָ֥ה אֱלֹהֶ֖יךָ לְמִרְיָ֑ם בַּדֶּ֖רֶךְ בְּצֵאתְכֶ֥ם מִמִּצְרָֽיִם׃ (ס)
+</div>
+Remember what Adonoy, your God, did to Miriam on the way when you were going out of Egypt.
+</span>
+<span class=h>
+<div class=h>
+כִּֽי־תַשֶּׁ֥ה בְרֵֽעֲךָ מַשַּׁ֣את מְא֑וּמָה לֹא־תָבֹ֥א אֶל־בֵּית֖וֹ לַעֲבֹ֥ט עֲבֹטֽוֹ׃
+כִּֽי־תַשֶּׁ֥ה בְרֵֽעֲךָ מַשַּׁ֣את מְא֑וּמָה לֹא־תָבֹ֥א אֶל־בֵּית֖וֹ לַעֲבֹ֥ט עֲבֹטֽוֹ׃
+</div>
+If you become your fellow’s creditor for any amount of debt, do not enter his house to take his pledge.
+</span>
+<span class=h>
+<div class=h>
+בַּח֖וּץ תַּעֲמֹ֑ד וְהָאִ֗ישׁ אֲשֶׁ֤ר אַתָּה֙ נֹשֶׁ֣ה ב֔וֹ יוֹצִ֥יא אֵלֶ֛יךָ אֶֽת־הַעֲב֖וֹט הַחֽוּצָה׃
+בַּח֖וּץ תַּעֲמֹ֑ד וְהָאִ֗ישׁ אֲשֶׁ֤ר אַתָּה֙ נֹשֶׁ֣ה ב֔וֹ יוֹצִ֥יא אֵלֶ֛יךָ אֶֽת־הַעֲב֖וֹט הַחֽוּצָה׃
+</div>
+Stand outside, and the man from whom you are claiming, will bring out the pledge to you outside.
+</span>
+<span class=h>
+<div class=h>
+וְאִם־אִ֥ישׁ עָנִ֖י ה֑וּא לֹ֥א תִשְׁכַּ֖ב בַּעֲבֹטֽוֹ׃
+וְאִם־אִ֥ישׁ עָנִ֖י ה֑וּא לֹ֥א תִשְׁכַּ֖ב בַּעֲבֹטֽוֹ׃
+</div>
+And if he is a poor man, do not repose with his collateral [in your possession].
+</span>
+<span class=h>
+<div class=h>
+הָשֵׁב֩ תָּשִׁ֨יב ל֤וֹ אֶֽת־הַעֲבוֹט֙ כְּבֹ֣א הַשֶּׁ֔מֶשׁ וְשָׁכַ֥ב בְּשַׂלְמָת֖וֹ וּבֵֽרֲכֶ֑ךָּ וּלְךָ֙ תִּהְיֶ֣ה צְדָקָ֔ה לִפְנֵ֖י יְהוָ֥ה אֱלֹהֶֽיךָ׃ (ס)
+הָשֵׁב֩ תָּשִׁ֨יב ל֤וֹ אֶֽת־הַעֲבוֹט֙ כְּבֹ֣א הַשֶּׁ֔מֶשׁ וְשָׁכַ֥ב בְּשַׂלְמָת֖וֹ וּבֵֽרֲכֶ֑ךָּ וּלְךָ֙ תִּהְיֶ֣ה צְדָקָ֔ה לִפְנֵ֖י יְהוָ֥ה אֱלֹהֶֽיךָ׃ (ס)
+</div>
+Return are you to return the pledge to him at sunset, and he will sleep with his garment and bless you; and it will be to your credit before Adonoy, your God.
+</span>
+<span class=h>
+<div class=h>
+לֹא־תַעֲשֹׁ֥ק שָׂכִ֖יר עָנִ֣י וְאֶבְי֑וֹן מֵאַחֶ֕יךָ א֧וֹ מִגֵּרְךָ֛ אֲשֶׁ֥ר בְּאַרְצְךָ֖ בִּשְׁעָרֶֽיךָ׃
+לֹא־תַעֲשֹׁ֥ק שָׂכִ֖יר עָנִ֣י וְאֶבְי֑וֹן מֵאַחֶ֕יךָ א֧וֹ מִגֵּרְךָ֛ אֲשֶׁ֥ר בְּאַרְצְךָ֖ בִּשְׁעָרֶֽיךָ׃
+</div>
+Do not steal from the wage earner who is poor or destitute; from your brothers or your converts who are in your land in your cities.
+</span>
+<span class=h>
+<div class=h>
+בְּיוֹמוֹ֩ תִתֵּ֨ן שְׂכָר֜וֹ וְֽלֹא־תָב֧וֹא עָלָ֣יו הַשֶּׁ֗מֶשׁ כִּ֤י עָנִי֙ ה֔וּא וְאֵלָ֕יו ה֥וּא נֹשֵׂ֖א אֶת־נַפְשׁ֑וֹ וְלֹֽא־יִקְרָ֤א עָלֶ֙יךָ֙ אֶל־יְהוָ֔ה וְהָיָ֥ה בְךָ֖ חֵֽטְא׃ (ס)
+בְּיוֹמוֹ֩ תִתֵּ֨ן שְׂכָר֜וֹ וְֽלֹא־תָב֧וֹא עָלָ֣יו הַשֶּׁ֗מֶשׁ כִּ֤י עָנִי֙ ה֔וּא וְאֵלָ֕יו ה֥וּא נֹשֵׂ֖א אֶת־נַפְשׁ֑וֹ וְלֹֽא־יִקְרָ֤א עָלֶ֙יךָ֙ אֶל־יְהוָ֔ה וְהָיָ֥ה בְךָ֖ חֵֽטְא׃ (ס)
+</div>
+On its day give his wage and let the sun not set upon it, for he is a poor man, and he places his life in jeopardy for it; [so that] he should not complain about you to Adonoy, and you will have a sin.
+</span>
+<span class=h>
+<div class=h>
+לֹֽא־יוּמְת֤וּ אָבוֹת֙ עַל־בָּנִ֔ים וּבָנִ֖ים לֹא־יוּמְת֣וּ עַל־אָב֑וֹת אִ֥יש בְּחֶטְא֖וֹ יוּמָֽתוּ׃ (ס)
+לֹֽא־יוּמְת֤וּ אָבוֹת֙ עַל־בָּנִ֔ים וּבָנִ֖ים לֹא־יוּמְת֣וּ עַל־אָב֑וֹת אִ֥יש בְּחֶטְא֖וֹ יוּמָֽתוּ׃ (ס)
+</div>
+Fathers shall not be executed through sons, and sons shall not be executed through fathers; each to be executed for his sin.
+</span>
+<span class=h>
+<div class=h>
+לֹ֣א תַטֶּ֔ה מִשְׁפַּ֖ט גֵּ֣ר יָת֑וֹם וְלֹ֣א תַחֲבֹ֔ל בֶּ֖גֶד אַלְמָנָֽה׃
+לֹ֣א תַטֶּ֔ה מִשְׁפַּ֖ט גֵּ֣ר יָת֑וֹם וְלֹ֣א תַחֲבֹ֔ל בֶּ֖גֶד אַלְמָנָֽה׃
+</div>
+Do not be devious in the judgment of the proselyte or orphan; and you may not secure as collateral, a widow’s garment.
+</span>
+<span class=h>
+<div class=h>
+וְזָכַרְתָּ֗ כִּ֣י עֶ֤בֶד הָיִ֙יתָ֙ בְּמִצְרַ֔יִם וַֽיִּפְדְּךָ֛ יְהוָ֥ה אֱלֹהֶ֖יךָ מִשָּׁ֑ם עַל־כֵּ֞ן אָנֹכִ֤י מְצַוְּךָ֙ לַעֲשׂ֔וֹת אֶת־הַדָּבָ֖ר הַזֶּֽה׃ (ס)
+וְזָכַרְתָּ֗ כִּ֣י עֶ֤בֶד הָיִ֙יתָ֙ בְּמִצְרַ֔יִם וַֽיִּפְדְּךָ֛ יְהוָ֥ה אֱלֹהֶ֖יךָ מִשָּׁ֑ם עַל־כֵּ֞ן אָנֹכִ֤י מְצַוְּךָ֙ לַעֲשׂ֔וֹת אֶת־הַדָּבָ֖ר הַזֶּֽה׃ (ס)
+</div>
+Remember that you were a slave in Egypt, and Adonoy, your God, redeemed you from there; that is why I am commanding you to do this thing.
+</span>
+<span class=h>
+<div class=h>
+כִּ֣י תִקְצֹר֩ קְצִֽירְךָ֨ בְשָׂדֶ֜ךָ וְשָֽׁכַחְתָּ֧ עֹ֣מֶר בַּשָּׂדֶ֗ה לֹ֤א תָשׁוּב֙ לְקַחְתּ֔וֹ לַגֵּ֛ר לַיָּת֥וֹם וְלָאַלְמָנָ֖ה יִהְיֶ֑ה לְמַ֤עַן יְבָרֶכְךָ֙ יְהוָ֣ה אֱלֹהֶ֔יךָ בְּכֹ֖ל מַעֲשֵׂ֥ה יָדֶֽיךָ׃
+כִּ֣י תִקְצֹר֩ קְצִֽירְךָ֨ בְשָׂדֶ֜ךָ וְשָֽׁכַחְתָּ֧ עֹ֣מֶר בַּשָּׂדֶ֗ה לֹ֤א תָשׁוּב֙ לְקַחְתּ֔וֹ לַגֵּ֛ר לַיָּת֥וֹם וְלָאַלְמָנָ֖ה יִהְיֶ֑ה לְמַ֤עַן יְבָרֶכְךָ֙ יְהוָ֣ה אֱלֹהֶ֔יךָ בְּכֹ֖ל מַעֲשֵׂ֥ה יָדֶֽיךָ׃
+</div>
+When you reap your reaping in your field, and you forget a sheaf in the field, you may not return to take it; for the proselyte, for the orphan, and for the widow let it be; in order that Adonoy, your God, will bless you in all your endeavors.
+</span>
+<span class=h>
+<div class=h>
+כִּ֤י תַחְבֹּט֙ זֵֽיתְךָ֔ לֹ֥א תְפָאֵ֖ר אַחֲרֶ֑יךָ לַגֵּ֛ר לַיָּת֥וֹם וְלָאַלְמָנָ֖ה יִהְיֶֽה׃ (ס)
+כִּ֤י תַחְבֹּט֙ זֵֽיתְךָ֔ לֹ֥א תְפָאֵ֖ר אַחֲרֶ֑יךָ לַגֵּ֛ר לַיָּת֥וֹם וְלָאַלְמָנָ֖ה יִהְיֶֽה׃ (ס)
+</div>
+When you harvest your olive tree, you may not strip it of its glory behind you. for the proselyte, for the orphan, and for the widow let it be.
+</span>
+<span class=h>
+<div class=h>
+כִּ֤י תִבְצֹר֙ כַּרְמְךָ֔ לֹ֥א תְעוֹלֵ֖ל אַחֲרֶ֑יךָ לַגֵּ֛ר לַיָּת֥וֹם וְלָאַלְמָנָ֖ה יִהְיֶֽה׃
+כִּ֤י תִבְצֹר֙ כַּרְמְךָ֔ לֹ֥א תְעוֹלֵ֖ל אַחֲרֶ֑יךָ לַגֵּ֛ר לַיָּת֥וֹם וְלָאַלְמָנָ֖ה יִהְיֶֽה׃
+</div>
+When you harvest your vineyard you may not harvest pygmy vines behind you; for the proselyte, for the orphan, and for the widow let it be.
+</span>
+<span class=h>
+<div class=h>
+וְזָ֣כַרְתָּ֔ כִּי־עֶ֥בֶד הָיִ֖יתָ בְּאֶ֣רֶץ מִצְרָ֑יִם עַל־כֵּ֞ן אָנֹכִ֤י מְצַוְּךָ֙ לַעֲשׂ֔וֹת אֶת־הַדָּבָ֖ר הַזֶּֽה׃ (ס)
+וְזָ֣כַרְתָּ֔ כִּי־עֶ֥בֶד הָיִ֖יתָ בְּאֶ֣רֶץ מִצְרָ֑יִם עַל־כֵּ֞ן אָנֹכִ֤י מְצַוְּךָ֙ לַעֲשׂ֔וֹת אֶת־הַדָּבָ֖ר הַזֶּֽה׃ (ס)
+</div>
+Remember that you were a slave in the land of Egypt; that is why I am commanding you to do this thing.
+</span>
+<span class=h>
+<div class=h>
+
+
+
+<h4>Chapter 25</h4>
+
+
+
+
+
+כִּֽי־יִהְיֶ֥ה רִיב֙ בֵּ֣ין אֲנָשִׁ֔ים וְנִגְּשׁ֥וּ אֶל־הַמִּשְׁפָּ֖ט וּשְׁפָט֑וּם וְהִצְדִּ֙יקוּ֙ אֶת־הַצַּדִּ֔יק וְהִרְשִׁ֖יעוּ אֶת־הָרָשָֽׁע׃
+כִּֽי־יִהְיֶ֥ה רִיב֙ בֵּ֣ין אֲנָשִׁ֔ים וְנִגְּשׁ֥וּ אֶל־הַמִּשְׁפָּ֖ט וּשְׁפָט֑וּם וְהִצְדִּ֙יקוּ֙ אֶת־הַצַּדִּ֔יק וְהִרְשִׁ֖יעוּ אֶת־הָרָשָֽׁע׃
+</div>
+If a quarrel should occur among men and they bring it to court and they judge them and they determine who is righteous and they convict the villain.
+</span>
+<span class=h>
+<div class=h>
+וְהָיָ֛ה אִם־בִּ֥ן הַכּ֖וֹת הָרָשָׁ֑ע וְהִפִּיל֤וֹ הַשֹּׁפֵט֙ וְהִכָּ֣הוּ לְפָנָ֔יו כְּדֵ֥י רִשְׁעָת֖וֹ בְּמִסְפָּֽר׃
+וְהָיָ֛ה אִם־בִּ֥ן הַכּ֖וֹת הָרָשָׁ֑ע וְהִפִּיל֤וֹ הַשֹּׁפֵט֙ וְהִכָּ֣הוּ לְפָנָ֔יו כְּדֵ֥י רִשְׁעָת֖וֹ בְּמִסְפָּֽר׃
+</div>
+Should the wicked one deserve flogging, the judge shall incline him and have him flogged before him in the amount befitting his crime, with the number near.
+</span>
+<span class=h>
+<div class=h>
+אַרְבָּעִ֥ים יַכֶּ֖נּוּ לֹ֣א יֹסִ֑יף פֶּן־יֹסִ֨יף לְהַכֹּת֤וֹ עַל־אֵ֙לֶּה֙ מַכָּ֣ה רַבָּ֔ה וְנִקְלָ֥ה אָחִ֖יךָ לְעֵינֶֽיךָ׃ (ס)
+אַרְבָּעִ֥ים יַכֶּ֖נּוּ לֹ֣א יֹסִ֑יף פֶּן־יֹסִ֨יף לְהַכֹּת֤וֹ עַל־אֵ֙לֶּה֙ מַכָּ֣ה רַבָּ֔ה וְנִקְלָ֥ה אָחִ֖יךָ לְעֵינֶֽיךָ׃ (ס)
+</div>
+Forty is he to have him flogged, he may not add; lest he additionally flog him over these, a great flogging, when your brother will be slighted before you.
+</span>
+<span class=h>
+<div class=h>
+לֹא־תַחְסֹ֥ם שׁ֖וֹר בְּדִישֽׁוֹ׃ (ס)
+לֹא־תַחְסֹ֥ם שׁ֖וֹר בְּדִישֽׁוֹ׃ (ס)
+</div>
+You may not muzzle an ox while it threshes.
+</span>
+<span class=h>
+<div class=h>
+כִּֽי־יֵשְׁב֨וּ אַחִ֜ים יַחְדָּ֗ו וּמֵ֨ת אַחַ֤ד מֵהֶם֙ וּבֵ֣ן אֵֽין־ל֔וֹ לֹֽא־תִהְיֶ֧ה אֵֽשֶׁת־הַמֵּ֛ת הַח֖וּצָה לְאִ֣ישׁ זָ֑ר יְבָמָהּ֙ יָבֹ֣א עָלֶ֔יהָ וּלְקָחָ֥הּ ל֛וֹ לְאִשָּׁ֖ה וְיִבְּמָֽהּ׃
+כִּֽי־יֵשְׁב֨וּ אַחִ֜ים יַחְדָּ֗ו וּמֵ֨ת אַחַ֤ד מֵהֶם֙ וּבֵ֣ן אֵֽין־ל֔וֹ לֹֽא־תִהְיֶ֧ה אֵֽשֶׁת־הַמֵּ֛ת הַח֖וּצָה לְאִ֣ישׁ זָ֑ר יְבָמָהּ֙ יָבֹ֣א עָלֶ֔יהָ וּלְקָחָ֥הּ ל֛וֹ לְאִשָּׁ֖ה וְיִבְּמָֽהּ׃
+</div>
+If brothers reside together, and one of them dies having no son, let the wife of the dead man not marry outside [the family] to a strange man; her brother-in-law will consummate with her thus marrying her to be his wife, and perform levirate marriage with her.
+</span>
+<span class=h>
+<div class=h>
+וְהָיָ֗ה הַבְּכוֹר֙ אֲשֶׁ֣ר תֵּלֵ֔ד יָק֕וּם עַל־שֵׁ֥ם אָחִ֖יו הַמֵּ֑ת וְלֹֽא־יִמָּחֶ֥ה שְׁמ֖וֹ מִיִּשְׂרָאֵֽל׃
+וְהָיָ֗ה הַבְּכוֹר֙ אֲשֶׁ֣ר תֵּלֵ֔ד יָק֕וּם עַל־שֵׁ֥ם אָחִ֖יו הַמֵּ֑ת וְלֹֽא־יִמָּחֶ֥ה שְׁמ֖וֹ מִיִּשְׂרָאֵֽל׃
+</div>
+It shall be that the firstborn, when she is capable of bearing children, shall be established in place of his deceased brother, so that his name may not be obliterated from Yisroel.
+</span>
+<span class=h>
+<div class=h>
+וְאִם־לֹ֤א יַחְפֹּץ֙ הָאִ֔ישׁ לָקַ֖חַת אֶת־יְבִמְתּ֑וֹ וְעָלְתָה֩ יְבִמְתּ֨וֹ הַשַּׁ֜עְרָה אֶל־הַזְּקֵנִ֗ים וְאָֽמְרָה֙ מֵאֵ֨ין יְבָמִ֜י לְהָקִ֨ים לְאָחִ֥יו שֵׁם֙ בְּיִשְׂרָאֵ֔ל לֹ֥א אָבָ֖ה יַבְּמִֽי׃
+וְאִם־לֹ֤א יַחְפֹּץ֙ הָאִ֔ישׁ לָקַ֖חַת אֶת־יְבִמְתּ֑וֹ וְעָלְתָה֩ יְבִמְתּ֨וֹ הַשַּׁ֜עְרָה אֶל־הַזְּקֵנִ֗ים וְאָֽמְרָה֙ מֵאֵ֨ין יְבָמִ֜י לְהָקִ֨ים לְאָחִ֥יו שֵׁם֙ בְּיִשְׂרָאֵ֔ל לֹ֥א אָבָ֖ה יַבְּמִֽי׃
+</div>
+But if the man will not want to marry his sister-in-law; his sister-in-law must go up to the portal, to the judges, and say, ‘‘My brother-in-law refuses to establish for his brother a name in Yisroel; he is unwilling to do perform levirate marriage with me.’’
+</span>
+<span class=h>
+<div class=h>
+וְקָֽרְאוּ־ל֥וֹ זִקְנֵי־עִיר֖וֹ וְדִבְּר֣וּ אֵלָ֑יו וְעָמַ֣ד וְאָמַ֔ר לֹ֥א חָפַ֖צְתִּי לְקַחְתָּֽהּ׃
+וְקָֽרְאוּ־ל֥וֹ זִקְנֵי־עִיר֖וֹ וְדִבְּר֣וּ אֵלָ֑יו וְעָמַ֣ד וְאָמַ֔ר לֹ֥א חָפַ֖צְתִּי לְקַחְתָּֽהּ׃
+</div>
+The judges of his city will call him and converse with him. He shall stand and say, ‘‘I do not want to marry her.’’
+</span>
+<span class=h>
+<div class=h>
+וְנִגְּשָׁ֨ה יְבִמְתּ֣וֹ אֵלָיו֮ לְעֵינֵ֣י הַזְּקֵנִים֒ וְחָלְצָ֤ה נַעֲלוֹ֙ מֵעַ֣ל רַגְל֔וֹ וְיָרְקָ֖ה בְּפָנָ֑יו וְעָֽנְתָה֙ וְאָ֣מְרָ֔ה כָּ֚כָה יֵעָשֶׂ֣ה לָאִ֔ישׁ אֲשֶׁ֥ר לֹא־יִבְנֶ֖ה אֶת־בֵּ֥ית אָחִֽיו
+וְנִגְּשָׁ֨ה יְבִמְתּ֣וֹ אֵלָיו֮ לְעֵינֵ֣י הַזְּקֵנִים֒ וְחָלְצָ֤ה נַעֲלוֹ֙ מֵעַ֣ל רַגְל֔וֹ וְיָרְקָ֖ה בְּפָנָ֑יו וְעָֽנְתָה֙ וְאָ֣מְרָ֔ה כָּ֚כָה יֵעָשֶׂ֣ה לָאִ֔ישׁ אֲשֶׁ֥ר לֹא־יִבְנֶ֖ה אֶת־בֵּ֥ית אָחִֽיו
+</div>
+And his sister-in-law will approach him in the sight of the judges, and she will remove his shoe from upon his foot, and spit before him; and she will say aloud, ‘‘This is done to the man who will not build his brother’s family.’’
+</span>
+<span class=h>
+<div class=h>
+וְנִקְרָ֥א שְׁמ֖וֹ בְּיִשְׂרָאֵ֑ל בֵּ֖ית חֲל֥וּץ הַנָּֽעַל׃ (ס)
+וְנִקְרָ֥א שְׁמ֖וֹ בְּיִשְׂרָאֵ֑ל בֵּ֖ית חֲל֥וּץ הַנָּֽעַל׃ (ס)
+</div>
+And it will be entitled in Yisroel, the house of the divestiture of the shoe.
+</span>
+<span class=h>
+<div class=h>
+כִּֽי־יִנָּצ֨וּ אֲנָשִׁ֤ים יַחְדָּו֙ אִ֣ישׁ וְאָחִ֔יו וְקָֽרְבָה֙ אֵ֣שֶׁת הָֽאֶחָ֔ד לְהַצִּ֥יל אֶת־אִישָׁ֖הּ מִיַּ֣ד מַכֵּ֑הוּ וְשָׁלְחָ֣ה יָדָ֔הּ וְהֶחֱזִ֖יקָה בִּמְבֻשָֽׁיו׃
+כִּֽי־יִנָּצ֨וּ אֲנָשִׁ֤ים יַחְדָּו֙ אִ֣ישׁ וְאָחִ֔יו וְקָֽרְבָה֙ אֵ֣שֶׁת הָֽאֶחָ֔ד לְהַצִּ֥יל אֶת־אִישָׁ֖הּ מִיַּ֣ד מַכֵּ֑הוּ וְשָׁלְחָ֣ה יָדָ֔הּ וְהֶחֱזִ֖יקָה בִּמְבֻשָֽׁיו׃
+</div>
+If men engage in an altercation—a man and his brother—and the wife of one approaches to save her husband from his assailant, and she puts out her hand and grasps his genitals,
+</span>
+<span class=h>
+<div class=h>
+וְקַצֹּתָ֖ה אֶת־כַּפָּ֑הּ לֹ֥א תָח֖וֹס עֵינֶֽךָ׃ (ס)
+וְקַצֹּתָ֖ה אֶת־כַּפָּ֑הּ לֹ֥א תָח֖וֹס עֵינֶֽךָ׃ (ס)
+</div>
+You shall sever her hand; you are not to have compassion.
+</span>
+<span class=h>
+<div class=h>
+לֹֽא־יִהְיֶ֥ה לְךָ֛ בְּכִֽיסְךָ֖ אֶ֣בֶן וָאָ֑בֶן גְּדוֹלָ֖ה וּקְטַנָּֽה׃ (ס)
+לֹֽא־יִהְיֶ֥ה לְךָ֛ בְּכִֽיסְךָ֖ אֶ֣בֶן וָאָ֑בֶן גְּדוֹלָ֖ה וּקְטַנָּֽה׃ (ס)
+</div>
+You are not to have for yourself in your pouch varying weight-stones, large and small.
+</span>
+<span class=h>
+<div class=h>
+לֹא־יִהְיֶ֥ה לְךָ֛ בְּבֵיתְךָ֖ אֵיפָ֣ה וְאֵיפָ֑ה גְּדוֹלָ֖ה וּקְטַנָּֽה׃
+לֹא־יִהְיֶ֥ה לְךָ֛ בְּבֵיתְךָ֖ אֵיפָ֣ה וְאֵיפָ֑ה גְּדוֹלָ֖ה וּקְטַנָּֽה׃
+</div>
+You shall not have in your house varying measures, large and small.
+</span>
+<span class=h>
+<div class=h>
+אֶ֣בֶן שְׁלֵמָ֤ה וָצֶ֙דֶק֙ יִֽהְיֶה־לָּ֔ךְ אֵיפָ֧ה שְׁלֵמָ֛ה וָצֶ֖דֶק יִֽהְיֶה־לָּ֑ךְ לְמַ֙עַן֙ יַאֲרִ֣יכוּ יָמֶ֔יךָ עַ֚ל הָֽאֲדָמָ֔ה אֲשֶׁר־יְהוָ֥ה אֱלֹהֶ֖יךָ נֹתֵ֥ן לָֽךְ׃
+אֶ֣בֶן שְׁלֵמָ֤ה וָצֶ֙דֶק֙ יִֽהְיֶה־לָּ֔ךְ אֵיפָ֧ה שְׁלֵמָ֛ה וָצֶ֖דֶק יִֽהְיֶה־לָּ֑ךְ לְמַ֙עַן֙ יַאֲרִ֣יכוּ יָמֶ֔יךָ עַ֚ל הָֽאֲדָמָ֔ה אֲשֶׁר־יְהוָ֥ה אֱלֹהֶ֖יךָ נֹתֵ֥ן לָֽךְ׃
+</div>
+A fully accurate, just weight, you shall have, you are to have whole and honest measures; in order that you live long on the land that Adonoy, your God, is giving you.
+</span>
+<span class=h>
+<div class=h>
+כִּ֧י תוֹעֲבַ֛ת יְהוָ֥ה אֱלֹהֶ֖יךָ כָּל־עֹ֣שֵׂה אֵ֑לֶּה כֹּ֖ל עֹ֥שֵׂה עָֽוֶל׃ (פ)
+כִּ֧י תוֹעֲבַ֛ת יְהוָ֥ה אֱלֹהֶ֖יךָ כָּל־עֹ֣שֵׂה אֵ֑לֶּה כֹּ֖ל עֹ֥שֵׂה עָֽוֶל׃ (פ)
+</div>
+Because Adonoy, your God’s abomination, are all who do these [things]; all who do falsehood.
+</span>
+<span class=h>
+<div class=h>
+זָכ֕וֹר אֵ֛ת אֲשֶׁר־עָשָׂ֥ה לְךָ֖ עֲמָלֵ֑ק בַּדֶּ֖רֶךְ בְּצֵאתְכֶ֥ם מִמִּצְרָֽיִם׃
+זָכ֕וֹר אֵ֛ת אֲשֶׁר־עָשָׂ֥ה לְךָ֖ עֲמָלֵ֑ק בַּדֶּ֖רֶךְ בְּצֵאתְכֶ֥ם מִמִּצְרָֽיִם׃
+</div>
+Remember what Amalek perpetrated against you on the way when you were going out of Egypt.
+</span>
+<span class=h>
+<div class=h>
+אֲשֶׁ֨ר קָֽרְךָ֜ בַּדֶּ֗רֶךְ וַיְזַנֵּ֤ב בְּךָ֙ כָּל־הַנֶּחֱשָׁלִ֣ים אַֽחַרֶ֔יךָ וְאַתָּ֖ה עָיֵ֣ף וְיָגֵ֑עַ וְלֹ֥א יָרֵ֖א אֱלֹהִֽים׃
+אֲשֶׁ֨ר קָֽרְךָ֜ בַּדֶּ֗רֶךְ וַיְזַנֵּ֤ב בְּךָ֙ כָּל־הַנֶּחֱשָׁלִ֣ים אַֽחַרֶ֔יךָ וְאַתָּ֖ה עָיֵ֣ף וְיָגֵ֑עַ וְלֹ֥א יָרֵ֖א אֱלֹהִֽים׃
+</div>
+When they chanced upon you en route struck down your appendage—all the feeble ones behind you—and you were exhausted and wearied, and they had no fear of God.
+</span>
+<span class=h>
+<div class=h>
+וְהָיָ֡ה בְּהָנִ֣יחַ יְהוָ֣ה אֱלֹהֶ֣יךָ ׀ לְ֠ךָ מִכָּל־אֹ֨יְבֶ֜יךָ מִסָּבִ֗יב בָּאָ֙רֶץ֙ אֲשֶׁ֣ר יְהוָֽה־אֱ֠לֹהֶיךָ נֹתֵ֨ן לְךָ֤ נַחֲלָה֙ לְרִשְׁתָּ֔הּ תִּמְחֶה֙ אֶת־זֵ֣כֶר עֲמָלֵ֔ק מִתַּ֖חַת הַשָּׁמָ֑יִם לֹ֖א תִּשְׁכָּֽח׃ (פ)
+וְהָיָ֡ה בְּהָנִ֣יחַ יְהוָ֣ה אֱלֹהֶ֣יךָ ׀ לְ֠ךָ מִכָּל־אֹ֨יְבֶ֜יךָ מִסָּבִ֗יב בָּאָ֙רֶץ֙ אֲשֶׁ֣ר יְהוָֽה־אֱ֠לֹהֶיךָ נֹתֵ֨ן לְךָ֤ נַחֲלָה֙ לְרִשְׁתָּ֔הּ תִּמְחֶה֙ אֶת־זֵ֣כֶר עֲמָלֵ֔ק מִתַּ֖חַת הַשָּׁמָ֑יִם לֹ֖א תִּשְׁכָּֽח׃ (פ)
+</div>
+When Adonoy, your God, has given you repose from all your enemies around, in the land that Adonoy, your God, is giving you as territory to inherit, you shall obliterate the memory of Amalek from beneath the sky; do not forget.
+</span>
+</body>

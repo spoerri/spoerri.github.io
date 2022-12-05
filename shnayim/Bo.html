@@ -1,0 +1,813 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/@hebcal/core@3.45.2/dist/bundle.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    if (localStorage.getItem("shmos-scroll") != null) {
+      $(window).scrollTop(localStorage.getItem("shmos-scroll"));
+    }
+
+    $(window).on("scroll", function() {
+      localStorage.setItem("shmos-scroll", $(window).scrollTop());
+    });
+
+  });
+
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('/offline.js')
+             .then(function() { console.log("Service Worker Registered"); });
+  }
+</script>
+<style>
+  div.h { font-size:24pt; margin-right:auto; margin-left:auto; width:95%; padding:10pt; text-align:right; border-style:none; direction:rtl; }
+  span.h { font-size:16pt; line-height:150%; }
+</style>
+</head>
+<body>
+<div style="position:fixed; top:0; width:100%">
+<button onclick="window.location.href=(new hebcal.Sedra(new hebcal.HDate().getFullYear(), false).get(new hebcal.HDate()))+'.html'">start this week!</button>
+</div>
+<span class=h>
+<div class=h>
+
+
+
+<h3>Bo</h3>
+
+<h4>Chapter 10</h4>
+
+
+
+
+
+וַיֹּ֤אמֶר יְהוָה֙ אֶל־מֹשֶׁ֔ה בֹּ֖א אֶל־פַּרְעֹ֑ה כִּֽי־אֲנִ֞י הִכְבַּ֤דְתִּי אֶת־לִבּוֹ֙ וְאֶת־לֵ֣ב עֲבָדָ֔יו לְמַ֗עַן שִׁתִ֛י אֹתֹתַ֥י אֵ֖לֶּה בְּקִרְבּֽוֹ׃
+וַיֹּ֤אמֶר יְהוָה֙ אֶל־מֹשֶׁ֔ה בֹּ֖א אֶל־פַּרְעֹ֑ה כִּֽי־אֲנִ֞י הִכְבַּ֤דְתִּי אֶת־לִבּוֹ֙ וְאֶת־לֵ֣ב עֲבָדָ֔יו לְמַ֗עַן שִׁתִ֛י אֹתֹתַ֥י אֵ֖לֶּה בְּקִרְבּֽוֹ׃
+</div>
+Adonoy said to Moshe, “Go in to Pharaoh for I have hardened his heart and [also] the hearts of his servants, so that I will be able to set [perform] these [miraculous] signs in their midst.
+</span>
+<span class=h>
+<div class=h>
+וּלְמַ֡עַן תְּסַפֵּר֩ בְּאָזְנֵ֨י בִנְךָ֜ וּבֶן־בִּנְךָ֗ אֵ֣ת אֲשֶׁ֤ר הִתְעַלַּ֙לְתִּי֙ בְּמִצְרַ֔יִם וְאֶת־אֹתֹתַ֖י אֲשֶׁר־שַׂ֣מְתִּי בָ֑ם וִֽידַעְתֶּ֖ם כִּי־אֲנִ֥י יְהוָֽה׃
+וּלְמַ֡עַן תְּסַפֵּר֩ בְּאָזְנֵ֨י בִנְךָ֜ וּבֶן־בִּנְךָ֗ אֵ֣ת אֲשֶׁ֤ר הִתְעַלַּ֙לְתִּי֙ בְּמִצְרַ֔יִם וְאֶת־אֹתֹתַ֖י אֲשֶׁר־שַׂ֣מְתִּי בָ֑ם וִֽידַעְתֶּ֖ם כִּי־אֲנִ֥י יְהוָֽה׃
+</div>
+And so that you may relate in the ears of your son and grandson how I made a mockery of the Egyptians, and the miraculous signs I performed among them. You will then know that I am Adonoy.”
+</span>
+<span class=h>
+<div class=h>
+וַיָּבֹ֨א מֹשֶׁ֣ה וְאַהֲרֹן֮ אֶל־פַּרְעֹה֒ וַיֹּאמְר֣וּ אֵלָ֗יו כֹּֽה־אָמַ֤ר יְהוָה֙ אֱלֹהֵ֣י הָֽעִבְרִ֔ים עַד־מָתַ֣י מֵאַ֔נְתָּ לֵעָנֹ֖ת מִפָּנָ֑י שַׁלַּ֥ח עַמִּ֖י וְיַֽעַבְדֻֽנִי׃
+וַיָּבֹ֨א מֹשֶׁ֣ה וְאַהֲרֹן֮ אֶל־פַּרְעֹה֒ וַיֹּאמְר֣וּ אֵלָ֗יו כֹּֽה־אָמַ֤ר יְהוָה֙ אֱלֹהֵ֣י הָֽעִבְרִ֔ים עַד־מָתַ֣י מֵאַ֔נְתָּ לֵעָנֹ֖ת מִפָּנָ֑י שַׁלַּ֥ח עַמִּ֖י וְיַֽעַבְדֻֽנִי׃
+</div>
+Moshe and Aharon went in to Pharaoh and they said to him, “This is what Adonoy, God of the Hebrews, has said, ‘How long will you refuse to be humbled before Me? Send My people out that they may worship Me.
+</span>
+<span class=h>
+<div class=h>
+כִּ֛י אִם־מָאֵ֥ן אַתָּ֖ה לְשַׁלֵּ֣חַ אֶת־עַמִּ֑י הִנְנִ֨י מֵבִ֥יא מָחָ֛ר אַרְבֶּ֖ה בִּגְבֻלֶֽךָ׃
+כִּ֛י אִם־מָאֵ֥ן אַתָּ֖ה לְשַׁלֵּ֣חַ אֶת־עַמִּ֑י הִנְנִ֨י מֵבִ֥יא מָחָ֛ר אַרְבֶּ֖ה בִּגְבֻלֶֽךָ׃
+</div>
+For if you refuse to send My people out, I will bring locusts within your borders tomorrow.
+</span>
+<span class=h>
+<div class=h>
+וְכִסָּה֙ אֶת־עֵ֣ין הָאָ֔רֶץ וְלֹ֥א יוּכַ֖ל לִרְאֹ֣ת אֶת־הָאָ֑רֶץ וְאָכַ֣ל ׀ אֶת־יֶ֣תֶר הַפְּלֵטָ֗ה הַנִּשְׁאֶ֤רֶת לָכֶם֙ מִן־הַבָּרָ֔ד וְאָכַל֙ אֶת־כָּל־הָעֵ֔ץ הַצֹּמֵ֥חַ לָכֶ֖ם מִן־הַשָּׂדֶֽה׃
+וְכִסָּה֙ אֶת־עֵ֣ין הָאָ֔רֶץ וְלֹ֥א יוּכַ֖ל לִרְאֹ֣ת אֶת־הָאָ֑רֶץ וְאָכַ֣ל ׀ אֶת־יֶ֣תֶר הַפְּלֵטָ֗ה הַנִּשְׁאֶ֤רֶת לָכֶם֙ מִן־הַבָּרָ֔ד וְאָכַל֙ אֶת־כָּל־הָעֵ֔ץ הַצֹּמֵ֥חַ לָכֶ֖ם מִן־הַשָּׂדֶֽה׃
+</div>
+They will cover the visible surface of the land so that one will be unable to see the land. They will eat all that was spared, that remained for you from the hail, and they will eat every tree that grows for you in the field.
+</span>
+<span class=h>
+<div class=h>
+וּמָלְא֨וּ בָתֶּ֜יךָ וּבָתֵּ֣י כָל־עֲבָדֶיךָ֮ וּבָתֵּ֣י כָל־מִצְרַיִם֒ אֲשֶׁ֨ר לֹֽא־רָא֤וּ אֲבֹתֶ֙יךָ֙ וַאֲב֣וֹת אֲבֹתֶ֔יךָ מִיּ֗וֹם הֱיוֹתָם֙ עַל־הָ֣אֲדָמָ֔ה עַ֖ד הַיּ֣וֹם הַזֶּ֑ה וַיִּ֥פֶן וַיֵּצֵ֖א מֵעִ֥ם פַּרְעֹֽה׃
+וּמָלְא֨וּ בָתֶּ֜יךָ וּבָתֵּ֣י כָל־עֲבָדֶיךָ֮ וּבָתֵּ֣י כָל־מִצְרַיִם֒ אֲשֶׁ֨ר לֹֽא־רָא֤וּ אֲבֹתֶ֙יךָ֙ וַאֲב֣וֹת אֲבֹתֶ֔יךָ מִיּ֗וֹם הֱיוֹתָם֙ עַל־הָ֣אֲדָמָ֔ה עַ֖ד הַיּ֣וֹם הַזֶּ֑ה וַיִּ֥פֶן וַיֵּצֵ֖א מֵעִ֥ם פַּרְעֹֽה׃
+</div>
+They will fill your houses, and the houses of all your servants, and the houses of all the Egyptians. [It will be something] that was never seen by your fathers or your fathers’ fathers since the day they were on the earth until this day.’” He [Moshe] then turned and went out from Pharaoh.
+</span>
+<span class=h>
+<div class=h>
+וַיֹּאמְרוּ֩ עַבְדֵ֨י פַרְעֹ֜ה אֵלָ֗יו עַד־מָתַי֙ יִהְיֶ֨ה זֶ֥ה לָ֙נוּ֙ לְמוֹקֵ֔שׁ שַׁלַּח֙ אֶת־הָ֣אֲנָשִׁ֔ים וְיַֽעַבְד֖וּ אֶת־יְהוָ֣ה אֱלֹהֵיהֶ֑ם הֲטֶ֣רֶם תֵּדַ֔ע כִּ֥י אָבְדָ֖ה מִצְרָֽיִם׃
+וַיֹּאמְרוּ֩ עַבְדֵ֨י פַרְעֹ֜ה אֵלָ֗יו עַד־מָתַי֙ יִהְיֶ֨ה זֶ֥ה לָ֙נוּ֙ לְמוֹקֵ֔שׁ שַׁלַּח֙ אֶת־הָ֣אֲנָשִׁ֔ים וְיַֽעַבְד֖וּ אֶת־יְהוָ֣ה אֱלֹהֵיהֶ֑ם הֲטֶ֣רֶם תֵּדַ֔ע כִּ֥י אָבְדָ֖ה מִצְרָֽיִם׃
+</div>
+Pharaoh’s servants said to him, “How long will this [man] be a menace to us? Send these men out and let them worship Adonoy, their God. Did you not yet realize that Egypt is [being] destroyed?”
+</span>
+<span class=h>
+<div class=h>
+וַיּוּשַׁ֞ב אֶת־מֹשֶׁ֤ה וְאֶֽת־אַהֲרֹן֙ אֶל־פַּרְעֹ֔ה וַיֹּ֣אמֶר אֲלֵהֶ֔ם לְכ֥וּ עִבְד֖וּ אֶת־יְהוָ֣ה אֱלֹהֵיכֶ֑ם מִ֥י וָמִ֖י הַהֹלְכִֽים׃
+וַיּוּשַׁ֞ב אֶת־מֹשֶׁ֤ה וְאֶֽת־אַהֲרֹן֙ אֶל־פַּרְעֹ֔ה וַיֹּ֣אמֶר אֲלֵהֶ֔ם לְכ֥וּ עִבְד֖וּ אֶת־יְהוָ֣ה אֱלֹהֵיכֶ֑ם מִ֥י וָמִ֖י הַהֹלְכִֽים׃
+</div>
+Moshe and Aharon were brought back to Pharaoh, and he said to them, “Go worship Adonoy, your God. Exactly who will be going?”
+</span>
+<span class=h>
+<div class=h>
+וַיֹּ֣אמֶר מֹשֶׁ֔ה בִּנְעָרֵ֥ינוּ וּבִזְקֵנֵ֖ינוּ נֵלֵ֑ךְ בְּבָנֵ֨ינוּ וּבִבְנוֹתֵ֜נוּ בְּצֹאנֵ֤נוּ וּבִבְקָרֵ֙נוּ֙ נֵלֵ֔ךְ כִּ֥י חַג־יְהוָ֖ה לָֽנוּ׃
+וַיֹּ֣אמֶר מֹשֶׁ֔ה בִּנְעָרֵ֥ינוּ וּבִזְקֵנֵ֖ינוּ נֵלֵ֑ךְ בְּבָנֵ֨ינוּ וּבִבְנוֹתֵ֜נוּ בְּצֹאנֵ֤נוּ וּבִבְקָרֵ֙נוּ֙ נֵלֵ֔ךְ כִּ֥י חַג־יְהוָ֖ה לָֽנוּ׃
+</div>
+Moshe said, “With our young and with our old we will go. With our sons, with our daughters, with our sheep and with our cattle we will go, for it is a festival to Adonoy for all of us.”
+</span>
+<span class=h>
+<div class=h>
+וַיֹּ֣אמֶר אֲלֵהֶ֗ם יְהִ֨י כֵ֤ן יְהוָה֙ עִמָּכֶ֔ם כַּאֲשֶׁ֛ר אֲשַׁלַּ֥ח אֶתְכֶ֖ם וְאֶֽת־טַפְּכֶ֑ם רְא֕וּ כִּ֥י רָעָ֖ה נֶ֥גֶד פְּנֵיכֶֽם׃
+וַיֹּ֣אמֶר אֲלֵהֶ֗ם יְהִ֨י כֵ֤ן יְהוָה֙ עִמָּכֶ֔ם כַּאֲשֶׁ֛ר אֲשַׁלַּ֥ח אֶתְכֶ֖ם וְאֶֽת־טַפְּכֶ֑ם רְא֕וּ כִּ֥י רָעָ֖ה נֶ֥גֶד פְּנֵיכֶֽם׃
+</div>
+He [Pharaoh] said to them, “So be it. May Adonoy be with you just as I will send you and your little ones. Beware for evil confronts you.
+</span>
+<span class=h>
+<div class=h>
+לֹ֣א כֵ֗ן לְכֽוּ־נָ֤א הַגְּבָרִים֙ וְעִבְד֣וּ אֶת־יְהוָ֔ה כִּ֥י אֹתָ֖הּ אַתֶּ֣ם מְבַקְשִׁ֑ים וַיְגָ֣רֶשׁ אֹתָ֔ם מֵאֵ֖ת פְּנֵ֥י פַרְעֹֽה׃ (פ)
+לֹ֣א כֵ֗ן לְכֽוּ־נָ֤א הַגְּבָרִים֙ וְעִבְד֣וּ אֶת־יְהוָ֔ה כִּ֥י אֹתָ֖הּ אַתֶּ֣ם מְבַקְשִׁ֑ים וַיְגָ֣רֶשׁ אֹתָ֔ם מֵאֵ֖ת פְּנֵ֥י פַרְעֹֽה׃ (פ)
+</div>
+This is not right. [Only] the [adult] men should go and worship Adonoy for this is what you desire.” He had them expelled from Pharaoh’s presence.
+</span>
+<span class=h>
+<div class=h>
+וַיֹּ֨אמֶר יְהוָ֜ה אֶל־מֹשֶׁ֗ה נְטֵ֨ה יָדְךָ֜ עַל־אֶ֤רֶץ מִצְרַ֙יִם֙ בָּֽאַרְבֶּ֔ה וְיַ֖עַל עַל־אֶ֣רֶץ מִצְרָ֑יִם וְיֹאכַל֙ אֶת־כָּל־עֵ֣שֶׂב הָאָ֔רֶץ אֵ֛ת כָּל־אֲשֶׁ֥ר הִשְׁאִ֖יר הַבָּרָֽד׃
+וַיֹּ֨אמֶר יְהוָ֜ה אֶל־מֹשֶׁ֗ה נְטֵ֨ה יָדְךָ֜ עַל־אֶ֤רֶץ מִצְרַ֙יִם֙ בָּֽאַרְבֶּ֔ה וְיַ֖עַל עַל־אֶ֣רֶץ מִצְרָ֑יִם וְיֹאכַל֙ אֶת־כָּל־עֵ֣שֶׂב הָאָ֔רֶץ אֵ֛ת כָּל־אֲשֶׁ֥ר הִשְׁאִ֖יר הַבָּרָֽד׃
+</div>
+Adonoy said to Moshe, “Stretch out your hand over the land of Egypt for the locusts [to bring the locusts] and they will emerge upon the land of Egypt. They will eat all the vegetation in the land, that remained from [the destruction of] the hail.”
+</span>
+<span class=h>
+<div class=h>
+וַיֵּ֨ט מֹשֶׁ֣ה אֶת־מַטֵּהוּ֮ עַל־אֶ֣רֶץ מִצְרַיִם֒ וַֽיהוָ֗ה נִהַ֤ג ר֥וּחַ קָדִים֙ בָּאָ֔רֶץ כָּל־הַיּ֥וֹם הַה֖וּא וְכָל־הַלָּ֑יְלָה הַבֹּ֣קֶר הָיָ֔ה וְר֙וּחַ֙ הַקָּדִ֔ים נָשָׂ֖א אֶת־הָאַרְבֶּֽה׃
+וַיֵּ֨ט מֹשֶׁ֣ה אֶת־מַטֵּהוּ֮ עַל־אֶ֣רֶץ מִצְרַיִם֒ וַֽיהוָ֗ה נִהַ֤ג ר֥וּחַ קָדִים֙ בָּאָ֔רֶץ כָּל־הַיּ֥וֹם הַה֖וּא וְכָל־הַלָּ֑יְלָה הַבֹּ֣קֶר הָיָ֔ה וְר֙וּחַ֙ הַקָּדִ֔ים נָשָׂ֖א אֶת־הָאַרְבֶּֽה׃
+</div>
+Moshe stretched out his rod over the land of Egypt and Adonoy directed an east wind over the land all that day and all the night. When morning came the east wind had carried [brought] the locusts.
+</span>
+<span class=h>
+<div class=h>
+וַיַּ֣עַל הָֽאַרְבֶּ֗ה עַ֚ל כָּל־אֶ֣רֶץ מִצְרַ֔יִם וַיָּ֕נַח בְּכֹ֖ל גְּב֣וּל מִצְרָ֑יִם כָּבֵ֣ד מְאֹ֔ד לְ֠פָנָיו לֹא־הָ֨יָה כֵ֤ן אַרְבֶּה֙ כָּמֹ֔הוּ וְאַחֲרָ֖יו לֹ֥א יִֽהְיֶה־כֵּֽן׃
+וַיַּ֣עַל הָֽאַרְבֶּ֗ה עַ֚ל כָּל־אֶ֣רֶץ מִצְרַ֔יִם וַיָּ֕נַח בְּכֹ֖ל גְּב֣וּל מִצְרָ֑יִם כָּבֵ֣ד מְאֹ֔ד לְ֠פָנָיו לֹא־הָ֨יָה כֵ֤ן אַרְבֶּה֙ כָּמֹ֔הוּ וְאַחֲרָ֖יו לֹ֥א יִֽהְיֶה־כֵּֽן׃
+</div>
+The locusts came up over the whole land of Egypt, and rested [settled] within all the borders of Egypt. It was very severe. Never before had there been such locusts and never again after them.
+</span>
+<span class=h>
+<div class=h>
+וַיְכַ֞ס אֶת־עֵ֣ין כָּל־הָאָרֶץ֮ וַתֶּחְשַׁ֣ךְ הָאָרֶץ֒ וַיֹּ֜אכַל אֶת־כָּל־עֵ֣שֶׂב הָאָ֗רֶץ וְאֵת֙ כָּל־פְּרִ֣י הָעֵ֔ץ אֲשֶׁ֥ר הוֹתִ֖יר הַבָּרָ֑ד וְלֹא־נוֹתַ֨ר כָּל־יֶ֧רֶק בָּעֵ֛ץ וּבְעֵ֥שֶׂב הַשָּׂדֶ֖ה בְּכָל־אֶ֥רֶץ מִצְרָֽיִם׃
+וַיְכַ֞ס אֶת־עֵ֣ין כָּל־הָאָרֶץ֮ וַתֶּחְשַׁ֣ךְ הָאָרֶץ֒ וַיֹּ֜אכַל אֶת־כָּל־עֵ֣שֶׂב הָאָ֗רֶץ וְאֵת֙ כָּל־פְּרִ֣י הָעֵ֔ץ אֲשֶׁ֥ר הוֹתִ֖יר הַבָּרָ֑ד וְלֹא־נוֹתַ֨ר כָּל־יֶ֧רֶק בָּעֵ֛ץ וּבְעֵ֥שֶׂב הַשָּׂדֶ֖ה בְּכָל־אֶ֥רֶץ מִצְרָֽיִם׃
+</div>
+They covered the visible surface of the entire land so that the land was darkened. They ate all the vegetation of the land, and all the fruit of the trees that was left [spared] by the hail. No greenery remained on the trees or on the vegetation of the field in the entire land of Egypt.
+</span>
+<span class=h>
+<div class=h>
+וַיְמַהֵ֣ר פַּרְעֹ֔ה לִקְרֹ֖א לְמֹשֶׁ֣ה וּֽלְאַהֲרֹ֑ן וַיֹּ֗אמֶר חָטָ֛אתִי לַיהוָ֥ה אֱלֹֽהֵיכֶ֖ם וְלָכֶֽם׃
+וַיְמַהֵ֣ר פַּרְעֹ֔ה לִקְרֹ֖א לְמֹשֶׁ֣ה וּֽלְאַהֲרֹ֑ן וַיֹּ֗אמֶר חָטָ֛אתִי לַיהוָ֥ה אֱלֹֽהֵיכֶ֖ם וְלָכֶֽם׃
+</div>
+Pharaoh hurriedly called for Moshe and Aharon, and he said, “I have sinned to Adonoy, your God, and to you.
+</span>
+<span class=h>
+<div class=h>
+וְעַתָּ֗ה שָׂ֣א נָ֤א חַטָּאתִי֙ אַ֣ךְ הַפַּ֔עַם וְהַעְתִּ֖ירוּ לַיהוָ֣ה אֱלֹהֵיכֶ֑ם וְיָסֵר֙ מֵֽעָלַ֔י רַ֖ק אֶת־הַמָּ֥וֶת הַזֶּֽה׃
+וְעַתָּ֗ה שָׂ֣א נָ֤א חַטָּאתִי֙ אַ֣ךְ הַפַּ֔עַם וְהַעְתִּ֖ירוּ לַיהוָ֣ה אֱלֹהֵיכֶ֑ם וְיָסֵר֙ מֵֽעָלַ֔י רַ֖ק אֶת־הַמָּ֥וֶת הַזֶּֽה׃
+</div>
+Now forgive my sin just this one time and plead with Adonoy, your God, just to remove this death from me.”
+</span>
+<span class=h>
+<div class=h>
+וַיֵּצֵ֖א מֵעִ֣ם פַּרְעֹ֑ה וַיֶּעְתַּ֖ר אֶל־יְהוָֽה׃
+וַיֵּצֵ֖א מֵעִ֣ם פַּרְעֹ֑ה וַיֶּעְתַּ֖ר אֶל־יְהוָֽה׃
+</div>
+He [Moshe] left Pharaoh’s presence and prayed to Adonoy.
+</span>
+<span class=h>
+<div class=h>
+וַיַּהֲפֹ֨ךְ יְהוָ֤ה רֽוּחַ־יָם֙ חָזָ֣ק מְאֹ֔ד וַיִּשָּׂא֙ אֶת־הָ֣אַרְבֶּ֔ה וַיִּתְקָעֵ֖הוּ יָ֣מָּה סּ֑וּף לֹ֤א נִשְׁאַר֙ אַרְבֶּ֣ה אֶחָ֔ד בְּכֹ֖ל גְּב֥וּל מִצְרָֽיִם׃
+וַיַּהֲפֹ֨ךְ יְהוָ֤ה רֽוּחַ־יָם֙ חָזָ֣ק מְאֹ֔ד וַיִּשָּׂא֙ אֶת־הָ֣אַרְבֶּ֔ה וַיִּתְקָעֵ֖הוּ יָ֣מָּה סּ֑וּף לֹ֤א נִשְׁאַר֙ אַרְבֶּ֣ה אֶחָ֔ד בְּכֹ֖ל גְּב֥וּל מִצְרָֽיִם׃
+</div>
+Adonoy turned a very strong westerly wind, that carried away the locusts, and plunged them into the Reed Sea. Not a single locust remained in all of Egypt’s borders.
+</span>
+<span class=h>
+<div class=h>
+וַיְחַזֵּ֥ק יְהוָ֖ה אֶת־לֵ֣ב פַּרְעֹ֑ה וְלֹ֥א שִׁלַּ֖ח אֶת־בְּנֵ֥י יִשְׂרָאֵֽל׃ (פ)
+וַיְחַזֵּ֥ק יְהוָ֖ה אֶת־לֵ֣ב פַּרְעֹ֑ה וְלֹ֥א שִׁלַּ֖ח אֶת־בְּנֵ֥י יִשְׂרָאֵֽל׃ (פ)
+</div>
+Adonoy hardened Pharaoh’s heart, and he did not send out the B’nei Yisrael.
+</span>
+<span class=h>
+<div class=h>
+וַיֹּ֨אמֶר יְהוָ֜ה אֶל־מֹשֶׁ֗ה נְטֵ֤ה יָֽדְךָ֙ עַל־הַשָּׁמַ֔יִם וִ֥יהִי חֹ֖שֶׁךְ עַל־אֶ֣רֶץ מִצְרָ֑יִם וְיָמֵ֖שׁ חֹֽשֶׁךְ׃
+וַיֹּ֨אמֶר יְהוָ֜ה אֶל־מֹשֶׁ֗ה נְטֵ֤ה יָֽדְךָ֙ עַל־הַשָּׁמַ֔יִם וִ֥יהִי חֹ֖שֶׁךְ עַל־אֶ֣רֶץ מִצְרָ֑יִם וְיָמֵ֖שׁ חֹֽשֶׁךְ׃
+</div>
+Adonoy said to Moshe, “Stretch out your hand toward the sky, and there will be darkness over the land of Egypt. The darkness will be tangible.”
+</span>
+<span class=h>
+<div class=h>
+וַיֵּ֥ט מֹשֶׁ֛ה אֶת־יָד֖וֹ עַל־הַשָּׁמָ֑יִם וַיְהִ֧י חֹֽשֶׁךְ־אֲפֵלָ֛ה בְּכָל־אֶ֥רֶץ מִצְרַ֖יִם שְׁלֹ֥שֶׁת יָמִֽים׃
+וַיֵּ֥ט מֹשֶׁ֛ה אֶת־יָד֖וֹ עַל־הַשָּׁמָ֑יִם וַיְהִ֧י חֹֽשֶׁךְ־אֲפֵלָ֛ה בְּכָל־אֶ֥רֶץ מִצְרַ֖יִם שְׁלֹ֥שֶׁת יָמִֽים׃
+</div>
+Moshe stretched out his hand toward the sky, and there was total darkness in the entire land of Egypt for three days.
+</span>
+<span class=h>
+<div class=h>
+לֹֽא־רָא֞וּ אִ֣ישׁ אֶת־אָחִ֗יו וְלֹא־קָ֛מוּ אִ֥ישׁ מִתַּחְתָּ֖יו שְׁלֹ֣שֶׁת יָמִ֑ים וּֽלְכָל־בְּנֵ֧י יִשְׂרָאֵ֛ל הָ֥יָה א֖וֹר בְּמוֹשְׁבֹתָֽם׃
+לֹֽא־רָא֞וּ אִ֣ישׁ אֶת־אָחִ֗יו וְלֹא־קָ֛מוּ אִ֥ישׁ מִתַּחְתָּ֖יו שְׁלֹ֣שֶׁת יָמִ֑ים וּֽלְכָל־בְּנֵ֧י יִשְׂרָאֵ֛ל הָ֥יָה א֖וֹר בְּמוֹשְׁבֹתָֽם׃
+</div>
+Man could not see his fellow man, nor could anyone rise from his place for three days. But all the B’nei Yisrael had light in their dwellings.
+</span>
+<span class=h>
+<div class=h>
+וַיִּקְרָ֨א פַרְעֹ֜ה אֶל־מֹשֶׁ֗ה וַיֹּ֙אמֶר֙ לְכוּ֙ עִבְד֣וּ אֶת־יְהוָ֔ה רַ֛ק צֹאנְכֶ֥ם וּבְקַרְכֶ֖ם יֻצָּ֑ג גַּֽם־טַפְּכֶ֖ם יֵלֵ֥ךְ עִמָּכֶֽם׃
+וַיִּקְרָ֨א פַרְעֹ֜ה אֶל־מֹשֶׁ֗ה וַיֹּ֙אמֶר֙ לְכוּ֙ עִבְד֣וּ אֶת־יְהוָ֔ה רַ֛ק צֹאנְכֶ֥ם וּבְקַרְכֶ֖ם יֻצָּ֑ג גַּֽם־טַפְּכֶ֖ם יֵלֵ֥ךְ עִמָּכֶֽם׃
+</div>
+Pharaoh called to Moshe, and he said, “Go! Worship Adonoy. Just let your sheep and cattle stay behind. Even your little ones can go with you.” 
+</span>
+<span class=h>
+<div class=h>
+וַיֹּ֣אמֶר מֹשֶׁ֔ה גַּם־אַתָּ֛ה תִּתֵּ֥ן בְּיָדֵ֖נוּ זְבָחִ֣ים וְעֹל֑וֹת וְעָשִׂ֖ינוּ לַיהוָ֥ה אֱלֹהֵֽינוּ׃
+וַיֹּ֣אמֶר מֹשֶׁ֔ה גַּם־אַתָּ֛ה תִּתֵּ֥ן בְּיָדֵ֖נוּ זְבָחִ֣ים וְעֹל֑וֹת וְעָשִׂ֖ינוּ לַיהוָ֥ה אֱלֹהֵֽינוּ׃
+</div>
+Moshe said, “You too will give us sacrifices and burnt-offerings that we will make [offer] to our God.
+</span>
+<span class=h>
+<div class=h>
+וְגַם־מִקְנֵ֜נוּ יֵלֵ֣ךְ עִמָּ֗נוּ לֹ֤א תִשָּׁאֵר֙ פַּרְסָ֔ה כִּ֚י מִמֶּ֣נּוּ נִקַּ֔ח לַעֲבֹ֖ד אֶת־יְהוָ֣ה אֱלֹהֵ֑ינוּ וַאֲנַ֣חְנוּ לֹֽא־נֵדַ֗ע מַֽה־נַּעֲבֹד֙ אֶת־יְהוָ֔ה עַד־בֹּאֵ֖נוּ שָֽׁמָּה׃
+וְגַם־מִקְנֵ֜נוּ יֵלֵ֣ךְ עִמָּ֗נוּ לֹ֤א תִשָּׁאֵר֙ פַּרְסָ֔ה כִּ֚י מִמֶּ֣נּוּ נִקַּ֔ח לַעֲבֹ֖ד אֶת־יְהוָ֣ה אֱלֹהֵ֑ינוּ וַאֲנַ֣חְנוּ לֹֽא־נֵדַ֗ע מַֽה־נַּעֲבֹד֙ אֶת־יְהוָ֔ה עַד־בֹּאֵ֖נוּ שָֽׁמָּה׃
+</div>
+Our own flocks will also go with us. Not a single hoof will remain. We must take from them to worship Adonoy our God; since we do not know with what [animals] we will worship Adonoy until we get there.”
+</span>
+<span class=h>
+<div class=h>
+וַיְחַזֵּ֥ק יְהוָ֖ה אֶת־לֵ֣ב פַּרְעֹ֑ה וְלֹ֥א אָבָ֖ה לְשַׁלְּחָֽם׃
+וַיְחַזֵּ֥ק יְהוָ֖ה אֶת־לֵ֣ב פַּרְעֹ֑ה וְלֹ֥א אָבָ֖ה לְשַׁלְּחָֽם׃
+</div>
+Adonoy hardened Pharaoh’s heart and he was [no longer] willing to send them away.
+</span>
+<span class=h>
+<div class=h>
+וַיֹּֽאמֶר־ל֥וֹ פַרְעֹ֖ה לֵ֣ךְ מֵעָלָ֑י הִשָּׁ֣מֶר לְךָ֗ אֶל־תֹּ֙סֶף֙ רְא֣וֹת פָּנַ֔י כִּ֗י בְּי֛וֹם רְאֹתְךָ֥ פָנַ֖י תָּמֽוּת׃
+וַיֹּֽאמֶר־ל֥וֹ פַרְעֹ֖ה לֵ֣ךְ מֵעָלָ֑י הִשָּׁ֣מֶר לְךָ֗ אֶל־תֹּ֙סֶף֙ רְא֣וֹת פָּנַ֔י כִּ֗י בְּי֛וֹם רְאֹתְךָ֥ פָנַ֖י תָּמֽוּת׃
+</div>
+Pharaoh said to him [Moshe] “Leave my presence. Beware! Do not see my face again; for on the day you see my face you will die.”
+</span>
+<span class=h>
+<div class=h>
+וַיֹּ֥אמֶר מֹשֶׁ֖ה כֵּ֣ן דִּבַּ֑רְתָּ לֹא־אֹסִ֥ף ע֖וֹד רְא֥וֹת פָּנֶֽיךָ׃ (פ)
+וַיֹּ֥אמֶר מֹשֶׁ֖ה כֵּ֣ן דִּבַּ֑רְתָּ לֹא־אֹסִ֥ף ע֖וֹד רְא֥וֹת פָּנֶֽיךָ׃ (פ)
+</div>
+Moshe said, “As you say. I will not see your face again.”
+</span>
+<span class=h>
+<div class=h>
+
+
+
+<h4>Chapter 11</h4>
+
+
+
+
+
+וַיֹּ֨אמֶר יְהוָ֜ה אֶל־מֹשֶׁ֗ה ע֣וֹד נֶ֤גַע אֶחָד֙ אָבִ֤יא עַל־פַּרְעֹה֙ וְעַל־מִצְרַ֔יִם אַֽחֲרֵי־כֵ֕ן יְשַׁלַּ֥ח אֶתְכֶ֖ם מִזֶּ֑ה כְּשַׁ֨לְּח֔וֹ כָּלָ֕ה גָּרֵ֛שׁ יְגָרֵ֥שׁ אֶתְכֶ֖ם מִזֶּֽה׃
+וַיֹּ֨אמֶר יְהוָ֜ה אֶל־מֹשֶׁ֗ה ע֣וֹד נֶ֤גַע אֶחָד֙ אָבִ֤יא עַל־פַּרְעֹה֙ וְעַל־מִצְרַ֔יִם אַֽחֲרֵי־כֵ֕ן יְשַׁלַּ֥ח אֶתְכֶ֖ם מִזֶּ֑ה כְּשַׁ֨לְּח֔וֹ כָּלָ֕ה גָּרֵ֛שׁ יְגָרֵ֥שׁ אֶתְכֶ֖ם מִזֶּֽה׃
+</div>
+Adonoy said to Moshe, “There is one more plague that I will bring upon Pharaoh and upon Egypt. After that he will send you away from here. When he sends you away, he will actually drive you out from here completely.
+</span>
+<span class=h>
+<div class=h>
+דַּבֶּר־נָ֖א בְּאָזְנֵ֣י הָעָ֑ם וְיִשְׁאֲל֞וּ אִ֣ישׁ ׀ מֵאֵ֣ת רֵעֵ֗הוּ וְאִשָּׁה֙ מֵאֵ֣ת רְעוּתָ֔הּ כְּלֵי־כֶ֖סֶף וּכְלֵ֥י זָהָֽב׃
+דַּבֶּר־נָ֖א בְּאָזְנֵ֣י הָעָ֑ם וְיִשְׁאֲל֞וּ אִ֣ישׁ ׀ מֵאֵ֣ת רֵעֵ֗הוּ וְאִשָּׁה֙ מֵאֵ֣ת רְעוּתָ֔הּ כְּלֵי־כֶ֖סֶף וּכְלֵ֥י זָהָֽב׃
+</div>
+Speak, please, in the ears of the people, and let each man request [borrow] from his friend, and each woman from her friend, articles of silver and articles of gold.”
+</span>
+<span class=h>
+<div class=h>
+וַיִּתֵּ֧ן יְהוָ֛ה אֶת־חֵ֥ן הָעָ֖ם בְּעֵינֵ֣י מִצְרָ֑יִם גַּ֣ם ׀ הָאִ֣ישׁ מֹשֶׁ֗ה גָּד֤וֹל מְאֹד֙ בְּאֶ֣רֶץ מִצְרַ֔יִם בְּעֵינֵ֥י עַבְדֵֽי־פַרְעֹ֖ה וּבְעֵינֵ֥י הָעָֽם׃ (ס)
+וַיִּתֵּ֧ן יְהוָ֛ה אֶת־חֵ֥ן הָעָ֖ם בְּעֵינֵ֣י מִצְרָ֑יִם גַּ֣ם ׀ הָאִ֣ישׁ מֹשֶׁ֗ה גָּד֤וֹל מְאֹד֙ בְּאֶ֣רֶץ מִצְרַ֔יִם בְּעֵינֵ֥י עַבְדֵֽי־פַרְעֹ֖ה וּבְעֵינֵ֥י הָעָֽם׃ (ס)
+</div>
+Adonoy gave the people favor in the eyes of the Egyptians. Moshe too was very great in the land of Egypt, [both] in the eyes of Pharaoh’s servants and in the eyes of the people.
+</span>
+<span class=h>
+<div class=h>
+וַיֹּ֣אמֶר מֹשֶׁ֔ה כֹּ֖ה אָמַ֣ר יְהוָ֑ה כַּחֲצֹ֣ת הַלַּ֔יְלָה אֲנִ֥י יוֹצֵ֖א בְּת֥וֹךְ מִצְרָֽיִם׃
+וַיֹּ֣אמֶר מֹשֶׁ֔ה כֹּ֖ה אָמַ֣ר יְהוָ֑ה כַּחֲצֹ֣ת הַלַּ֔יְלָה אֲנִ֥י יוֹצֵ֖א בְּת֥וֹךְ מִצְרָֽיִם׃
+</div>
+Moshe said, “This is what Adonoy has said, About the time of midnight, I will go out in the midst of Egypt.
+</span>
+<span class=h>
+<div class=h>
+וּמֵ֣ת כָּל־בְּכוֹר֮ בְּאֶ֣רֶץ מִצְרַיִם֒ מִבְּכ֤וֹר פַּרְעֹה֙ הַיֹּשֵׁ֣ב עַל־כִּסְא֔וֹ עַ֚ד בְּכ֣וֹר הַשִּׁפְחָ֔ה אֲשֶׁ֖ר אַחַ֣ר הָרֵחָ֑יִם וְכֹ֖ל בְּכ֥וֹר בְּהֵמָֽה׃
+וּמֵ֣ת כָּל־בְּכוֹר֮ בְּאֶ֣רֶץ מִצְרַיִם֒ מִבְּכ֤וֹר פַּרְעֹה֙ הַיֹּשֵׁ֣ב עַל־כִּסְא֔וֹ עַ֚ד בְּכ֣וֹר הַשִּׁפְחָ֔ה אֲשֶׁ֖ר אַחַ֣ר הָרֵחָ֑יִם וְכֹ֖ל בְּכ֥וֹר בְּהֵמָֽה׃
+</div>
+Every first-born in the land of Egypt will die, from the first-born of Pharaoh sitting on his throne, to the first-born of the [Egyptian] slave girl, behind the mill-stones, and every first-born animal.
+</span>
+<span class=h>
+<div class=h>
+וְהָֽיְתָ֛ה צְעָקָ֥ה גְדֹלָ֖ה בְּכָל־אֶ֣רֶץ מִצְרָ֑יִם אֲשֶׁ֤ר כָּמֹ֙הוּ֙ לֹ֣א נִהְיָ֔תָה וְכָמֹ֖הוּ לֹ֥א תֹסִֽף׃
+וְהָֽיְתָ֛ה צְעָקָ֥ה גְדֹלָ֖ה בְּכָל־אֶ֣רֶץ מִצְרָ֑יִם אֲשֶׁ֤ר כָּמֹ֙הוּ֙ לֹ֣א נִהְיָ֔תָה וְכָמֹ֖הוּ לֹ֥א תֹסִֽף׃
+</div>
+There will be a great cry [of anguish] throughout the entire land of Egypt, the likes of which there never was and like there never will be.
+</span>
+<span class=h>
+<div class=h>
+וּלְכֹ֣ל ׀ בְּנֵ֣י יִשְׂרָאֵ֗ל לֹ֤א יֶֽחֱרַץ־כֶּ֙לֶב֙ לְשֹׁנ֔וֹ לְמֵאִ֖ישׁ וְעַד־בְּהֵמָ֑ה לְמַ֙עַן֙ תֵּֽדְע֔וּן אֲשֶׁר֙ יַפְלֶ֣ה יְהוָ֔ה בֵּ֥ין מִצְרַ֖יִם וּבֵ֥ין יִשְׂרָאֵֽל׃
+וּלְכֹ֣ל ׀ בְּנֵ֣י יִשְׂרָאֵ֗ל לֹ֤א יֶֽחֱרַץ־כֶּ֙לֶב֙ לְשֹׁנ֔וֹ לְמֵאִ֖ישׁ וְעַד־בְּהֵמָ֑ה לְמַ֙עַן֙ תֵּֽדְע֔וּן אֲשֶׁר֙ יַפְלֶ֣ה יְהוָ֔ה בֵּ֥ין מִצְרַ֖יִם וּבֵ֥ין יִשְׂרָאֵֽל׃
+</div>
+But among all the B’nei Yisrael, a dog will not sharpen its tongue [growl] at man or animal. You will then know that Adonoy distinguishes between Egypt and Yisrael.
+</span>
+<span class=h>
+<div class=h>
+וְיָרְד֣וּ כָל־עֲבָדֶיךָ֩ אֵ֨לֶּה אֵלַ֜י וְהִשְׁתַּֽחֲוּוּ־לִ֣י לֵאמֹ֗ר צֵ֤א אַתָּה֙ וְכָל־הָעָ֣ם אֲשֶׁר־בְּרַגְלֶ֔יךָ וְאַחֲרֵי־כֵ֖ן אֵצֵ֑א וַיֵּצֵ֥א מֵֽעִם־פַּרְעֹ֖ה בָּחֳרִי־אָֽף׃ (ס)
+וְיָרְד֣וּ כָל־עֲבָדֶיךָ֩ אֵ֨לֶּה אֵלַ֜י וְהִשְׁתַּֽחֲוּוּ־לִ֣י לֵאמֹ֗ר צֵ֤א אַתָּה֙ וְכָל־הָעָ֣ם אֲשֶׁר־בְּרַגְלֶ֔יךָ וְאַחֲרֵי־כֵ֖ן אֵצֵ֑א וַיֵּצֵ֥א מֵֽעִם־פַּרְעֹ֖ה בָּחֳרִי־אָֽף׃ (ס)
+</div>
+Then all these, your servants, will come down to me, and prostrate themselves saying, ‘Go! You and all the people that follow you. Then I will go out.” He [Moshe] then left Pharaoh in great anger.
+</span>
+<span class=h>
+<div class=h>
+וַיֹּ֤אמֶר יְהוָה֙ אֶל־מֹשֶׁ֔ה לֹא־יִשְׁמַ֥ע אֲלֵיכֶ֖ם פַּרְעֹ֑ה לְמַ֛עַן רְב֥וֹת מוֹפְתַ֖י בְּאֶ֥רֶץ מִצְרָֽיִם׃
+וַיֹּ֤אמֶר יְהוָה֙ אֶל־מֹשֶׁ֔ה לֹא־יִשְׁמַ֥ע אֲלֵיכֶ֖ם פַּרְעֹ֑ה לְמַ֛עַן רְב֥וֹת מוֹפְתַ֖י בְּאֶ֥רֶץ מִצְרָֽיִם׃
+</div>
+Adonoy said to Moshe, “Pharaoh will not listen to you. Thus I will multiply My wonders in the land of Egypt.”
+</span>
+<span class=h>
+<div class=h>
+וּמֹשֶׁ֣ה וְאַהֲרֹ֗ן עָשׂ֛וּ אֶת־כָּל־הַמֹּפְתִ֥ים הָאֵ֖לֶּה לִפְנֵ֣י פַרְעֹ֑ה וַיְחַזֵּ֤ק יְהוָה֙ אֶת־לֵ֣ב פַּרְעֹ֔ה וְלֹֽא־שִׁלַּ֥ח אֶת־בְּנֵֽי־יִשְׂרָאֵ֖ל מֵאַרְצֽוֹ׃ (פ)
+וּמֹשֶׁ֣ה וְאַהֲרֹ֗ן עָשׂ֛וּ אֶת־כָּל־הַמֹּפְתִ֥ים הָאֵ֖לֶּה לִפְנֵ֣י פַרְעֹ֑ה וַיְחַזֵּ֤ק יְהוָה֙ אֶת־לֵ֣ב פַּרְעֹ֔ה וְלֹֽא־שִׁלַּ֥ח אֶת־בְּנֵֽי־יִשְׂרָאֵ֖ל מֵאַרְצֽוֹ׃ (פ)
+</div>
+Moshe and Aharon had done all these wonders before Pharaoh. [However] Adonoy hardened Pharaoh’s heart and he did not send the B’nei Yisrael out of his land.
+</span>
+<span class=h>
+<div class=h>
+
+
+
+<h4>Chapter 12</h4>
+
+
+
+
+
+וַיֹּ֤אמֶר יְהוָה֙ אֶל־מֹשֶׁ֣ה וְאֶֽל־אַהֲרֹ֔ן בְּאֶ֥רֶץ מִצְרַ֖יִם לֵאמֹֽר׃
+וַיֹּ֤אמֶר יְהוָה֙ אֶל־מֹשֶׁ֣ה וְאֶֽל־אַהֲרֹ֔ן בְּאֶ֥רֶץ מִצְרַ֖יִם לֵאמֹֽר׃
+</div>
+Adonoy said to Moshe and Aharon in the land of Egypt saying:
+</span>
+<span class=h>
+<div class=h>
+הַחֹ֧דֶשׁ הַזֶּ֛ה לָכֶ֖ם רֹ֣אשׁ חֳדָשִׁ֑ים רִאשׁ֥וֹן הוּא֙ לָכֶ֔ם לְחָדְשֵׁ֖י הַשָּׁנָֽה׃
+הַחֹ֧דֶשׁ הַזֶּ֛ה לָכֶ֖ם רֹ֣אשׁ חֳדָשִׁ֑ים רִאשׁ֥וֹן הוּא֙ לָכֶ֔ם לְחָדְשֵׁ֖י הַשָּׁנָֽה׃
+</div>
+“This month shall be [reckoned] to you [as] the head [beginning] of months. It shall be to you the first of the months of the year.
+</span>
+<span class=h>
+<div class=h>
+דַּבְּר֗וּ אֶֽל־כָּל־עֲדַ֤ת יִשְׂרָאֵל֙ לֵאמֹ֔ר בֶּעָשֹׂ֖ר לַחֹ֣דֶשׁ הַזֶּ֑ה וְיִקְח֣וּ לָהֶ֗ם אִ֛ישׁ שֶׂ֥ה לְבֵית־אָבֹ֖ת שֶׂ֥ה לַבָּֽיִת׃
+דַּבְּר֗וּ אֶֽל־כָּל־עֲדַ֤ת יִשְׂרָאֵל֙ לֵאמֹ֔ר בֶּעָשֹׂ֖ר לַחֹ֣דֶשׁ הַזֶּ֑ה וְיִקְח֣וּ לָהֶ֗ם אִ֛ישׁ שֶׂ֥ה לְבֵית־אָבֹ֖ת שֶׂ֥ה לַבָּֽיִת׃
+</div>
+Speak to the entire community of Israel saying, ‘On the tenth [day] of this month they shall take—each man [shall take] a lamb for [his] family, a lamb for each household.
+</span>
+<span class=h>
+<div class=h>
+וְאִם־יִמְעַ֣ט הַבַּיִת֮ מִהְיֹ֣ת מִשֶּׂה֒ וְלָקַ֣ח ה֗וּא וּשְׁכֵנ֛וֹ הַקָּרֹ֥ב אֶל־בֵּית֖וֹ בְּמִכְסַ֣ת נְפָשֹׁ֑ת אִ֚ישׁ לְפִ֣י אָכְל֔וֹ תָּכֹ֖סּוּ עַל־הַשֶּֽׂה׃
+וְאִם־יִמְעַ֣ט הַבַּיִת֮ מִהְיֹ֣ת מִשֶּׂה֒ וְלָקַ֣ח ה֗וּא וּשְׁכֵנ֛וֹ הַקָּרֹ֥ב אֶל־בֵּית֖וֹ בְּמִכְסַ֣ת נְפָשֹׁ֑ת אִ֚ישׁ לְפִ֣י אָכְל֔וֹ תָּכֹ֖סּוּ עַל־הַשֶּֽׂה׃
+</div>
+If the [members of the] household are too few for the [eating of a] lamb then he shall take [a lamb] [together] with his neighbor, close by his house, according to the number of individuals. According to what the person eats shall you make your count regarding the lamb.
+</span>
+<span class=h>
+<div class=h>
+שֶׂ֥ה תָמִ֛ים זָכָ֥ר בֶּן־שָׁנָ֖ה יִהְיֶ֣ה לָכֶ֑ם מִן־הַכְּבָשִׂ֥ים וּמִן־הָעִזִּ֖ים תִּקָּֽחוּ׃
+שֶׂ֥ה תָמִ֛ים זָכָ֥ר בֶּן־שָׁנָ֖ה יִהְיֶ֣ה לָכֶ֑ם מִן־הַכְּבָשִׂ֥ים וּמִן־הָעִזִּ֖ים תִּקָּֽחוּ׃
+</div>
+A flawless lamb, a yearling male must be in your possession. You may take it from sheep or goats.
+</span>
+<span class=h>
+<div class=h>
+וְהָיָ֤ה לָכֶם֙ לְמִשְׁמֶ֔רֶת עַ֣ד אַרְבָּעָ֥ה עָשָׂ֛ר י֖וֹם לַחֹ֣דֶשׁ הַזֶּ֑ה וְשָׁחֲט֣וּ אֹת֗וֹ כֹּ֛ל קְהַ֥ל עֲדַֽת־יִשְׂרָאֵ֖ל בֵּ֥ין הָעַרְבָּֽיִם׃
+וְהָיָ֤ה לָכֶם֙ לְמִשְׁמֶ֔רֶת עַ֣ד אַרְבָּעָ֥ה עָשָׂ֛ר י֖וֹם לַחֹ֣דֶשׁ הַזֶּ֑ה וְשָׁחֲט֣וּ אֹת֗וֹ כֹּ֛ל קְהַ֥ל עֲדַֽת־יִשְׂרָאֵ֖ל בֵּ֥ין הָעַרְבָּֽיִם׃
+</div>
+You shall hold it in safekeeping until the fourteenth day of this month, they shall slaughter it—the entire community of Yisrael—between evenings [in the afternoon].
+</span>
+<span class=h>
+<div class=h>
+וְלָֽקְחוּ֙ מִן־הַדָּ֔ם וְנָֽתְנ֛וּ עַל־שְׁתֵּ֥י הַמְּזוּזֹ֖ת וְעַל־הַמַּשְׁק֑וֹף עַ֚ל הַבָּ֣תִּ֔ים אֲשֶׁר־יֹאכְל֥וּ אֹת֖וֹ בָּהֶֽם׃
+וְלָֽקְחוּ֙ מִן־הַדָּ֔ם וְנָֽתְנ֛וּ עַל־שְׁתֵּ֥י הַמְּזוּזֹ֖ת וְעַל־הַמַּשְׁק֑וֹף עַ֚ל הַבָּ֣תִּ֔ים אֲשֶׁר־יֹאכְל֥וּ אֹת֖וֹ בָּהֶֽם׃
+</div>
+They shall take of its blood and place it on the side of the doorposts and on the lintel of the houses in which they will eat [the lamb].
+</span>
+<span class=h>
+<div class=h>
+וְאָכְל֥וּ אֶת־הַבָּשָׂ֖ר בַּלַּ֣יְלָה הַזֶּ֑ה צְלִי־אֵ֣שׁ וּמַצּ֔וֹת עַל־מְרֹרִ֖ים יֹאכְלֻֽהוּ׃
+וְאָכְל֥וּ אֶת־הַבָּשָׂ֖ר בַּלַּ֣יְלָה הַזֶּ֑ה צְלִי־אֵ֣שׁ וּמַצּ֔וֹת עַל־מְרֹרִ֖ים יֹאכְלֻֽהוּ׃
+</div>
+They shall eat the meat during this night. It shall be roasted over fire. They shall eat it with matzos and bitter herbs. 
+</span>
+<span class=h>
+<div class=h>
+אַל־תֹּאכְל֤וּ מִמֶּ֙נּוּ֙ נָ֔א וּבָשֵׁ֥ל מְבֻשָּׁ֖ל בַּמָּ֑יִם כִּ֣י אִם־צְלִי־אֵ֔שׁ רֹאשׁ֥וֹ עַל־כְּרָעָ֖יו וְעַל־קִרְבּֽוֹ׃
+אַל־תֹּאכְל֤וּ מִמֶּ֙נּוּ֙ נָ֔א וּבָשֵׁ֥ל מְבֻשָּׁ֖ל בַּמָּ֑יִם כִּ֣י אִם־צְלִי־אֵ֔שׁ רֹאשׁ֥וֹ עַל־כְּרָעָ֖יו וְעַל־קִרְבּֽוֹ׃
+</div>
+You must not eat it half-cooked or boiled in water, but only roasted over fire, its head with its knees and its inner organs.
+</span>
+<span class=h>
+<div class=h>
+וְלֹא־תוֹתִ֥ירוּ מִמֶּ֖נּוּ עַד־בֹּ֑קֶר וְהַנֹּתָ֥ר מִמֶּ֛נּוּ עַד־בֹּ֖קֶר בָּאֵ֥שׁ תִּשְׂרֹֽפוּ׃
+וְלֹא־תוֹתִ֥ירוּ מִמֶּ֖נּוּ עַד־בֹּ֑קֶר וְהַנֹּתָ֥ר מִמֶּ֛נּוּ עַד־בֹּ֖קֶר בָּאֵ֥שׁ תִּשְׂרֹֽפוּ׃
+</div>
+You must not leave any of it over until morning. Any of it left over until morning must be burned in fire.
+</span>
+<span class=h>
+<div class=h>
+וְכָכָה֮ תֹּאכְל֣וּ אֹתוֹ֒ מָתְנֵיכֶ֣ם חֲגֻרִ֔ים נַֽעֲלֵיכֶם֙ בְּרַגְלֵיכֶ֔ם וּמַקֶּלְכֶ֖ם בְּיֶדְכֶ֑ם וַאֲכַלְתֶּ֤ם אֹתוֹ֙ בְּחִפָּז֔וֹן פֶּ֥סַח ה֖וּא לַיהוָֽה׃
+וְכָכָה֮ תֹּאכְל֣וּ אֹתוֹ֒ מָתְנֵיכֶ֣ם חֲגֻרִ֔ים נַֽעֲלֵיכֶם֙ בְּרַגְלֵיכֶ֔ם וּמַקֶּלְכֶ֖ם בְּיֶדְכֶ֑ם וַאֲכַלְתֶּ֤ם אֹתוֹ֙ בְּחִפָּז֔וֹן פֶּ֥סַח ה֖וּא לַיהוָֽה׃
+</div>
+This is how you must eat it: with your waist belted, your shoes on your feet, and your staff in your hand. You must eat it in haste, it is a Pesach-offering to Adonoy.
+</span>
+<span class=h>
+<div class=h>
+וְעָבַרְתִּ֣י בְאֶֽרֶץ־מִצְרַיִם֮ בַּלַּ֣יְלָה הַזֶּה֒ וְהִכֵּיתִ֤י כָל־בְּכוֹר֙ בְּאֶ֣רֶץ מִצְרַ֔יִם מֵאָדָ֖ם וְעַד־בְּהֵמָ֑ה וּבְכָל־אֱלֹהֵ֥י מִצְרַ֛יִם אֶֽעֱשֶׂ֥ה שְׁפָטִ֖ים אֲנִ֥י יְהוָֽה׃
+וְעָבַרְתִּ֣י בְאֶֽרֶץ־מִצְרַיִם֮ בַּלַּ֣יְלָה הַזֶּה֒ וְהִכֵּיתִ֤י כָל־בְּכוֹר֙ בְּאֶ֣רֶץ מִצְרַ֔יִם מֵאָדָ֖ם וְעַד־בְּהֵמָ֑ה וּבְכָל־אֱלֹהֵ֥י מִצְרַ֛יִם אֶֽעֱשֶׂ֥ה שְׁפָטִ֖ים אֲנִ֥י יְהוָֽה׃
+</div>
+I will pass through the land of Egypt on that night, and I will strike [kill] every first-born in the land of Egypt, from man to beast; and against all the gods of Egypt, I will execute judgments, I am Adonoy.
+</span>
+<span class=h>
+<div class=h>
+וְהָיָה֩ הַדָּ֨ם לָכֶ֜ם לְאֹ֗ת עַ֤ל הַבָּתִּים֙ אֲשֶׁ֣ר אַתֶּ֣ם שָׁ֔ם וְרָאִ֙יתִי֙ אֶת־הַדָּ֔ם וּפָסַחְתִּ֖י עֲלֵכֶ֑ם וְלֹֽא־יִֽהְיֶ֨ה בָכֶ֥ם נֶ֙גֶף֙ לְמַשְׁחִ֔ית בְּהַכֹּתִ֖י בְּאֶ֥רֶץ מִצְרָֽיִם׃
+וְהָיָה֩ הַדָּ֨ם לָכֶ֜ם לְאֹ֗ת עַ֤ל הַבָּתִּים֙ אֲשֶׁ֣ר אַתֶּ֣ם שָׁ֔ם וְרָאִ֙יתִי֙ אֶת־הַדָּ֔ם וּפָסַחְתִּ֖י עֲלֵכֶ֑ם וְלֹֽא־יִֽהְיֶ֨ה בָכֶ֥ם נֶ֙גֶף֙ לְמַשְׁחִ֔ית בְּהַכֹּתִ֖י בְּאֶ֥רֶץ מִצְרָֽיִם׃
+</div>
+The blood will be for you as a sign on the houses where you are [staying]. I will see the blood and I will pass over you. There will be no plague against you when I strike the land of Egypt.
+</span>
+<span class=h>
+<div class=h>
+וְהָיָה֩ הַיּ֨וֹם הַזֶּ֤ה לָכֶם֙ לְזִכָּר֔וֹן וְחַגֹּתֶ֥ם אֹת֖וֹ חַ֣ג לַֽיהוָ֑ה לְדֹרֹ֣תֵיכֶ֔ם חֻקַּ֥ת עוֹלָ֖ם תְּחָגֻּֽהוּ׃
+וְהָיָה֩ הַיּ֨וֹם הַזֶּ֤ה לָכֶם֙ לְזִכָּר֔וֹן וְחַגֹּתֶ֥ם אֹת֖וֹ חַ֣ג לַֽיהוָ֑ה לְדֹרֹ֣תֵיכֶ֔ם חֻקַּ֥ת עוֹלָ֖ם תְּחָגֻּֽהוּ׃
+</div>
+This day shall be for you a [day of] remembrance. You shall celebrate it as a festival to Adonoy, throughout your generations. It is an eternal statute that you must celebrate it.
+</span>
+<span class=h>
+<div class=h>
+שִׁבְעַ֤ת יָמִים֙ מַצּ֣וֹת תֹּאכֵ֔לוּ אַ֚ךְ בַּיּ֣וֹם הָרִאשׁ֔וֹן תַּשְׁבִּ֥יתוּ שְּׂאֹ֖ר מִבָּתֵּיכֶ֑ם כִּ֣י ׀ כָּל־אֹכֵ֣ל חָמֵ֗ץ וְנִכְרְתָ֞ה הַנֶּ֤פֶשׁ הַהִוא֙ מִיִּשְׂרָאֵ֔ל מִיּ֥וֹם הָרִאשֹׁ֖ן עַד־י֥וֹם הַשְּׁבִעִֽי׃
+שִׁבְעַ֤ת יָמִים֙ מַצּ֣וֹת תֹּאכֵ֔לוּ אַ֚ךְ בַּיּ֣וֹם הָרִאשׁ֔וֹן תַּשְׁבִּ֥יתוּ שְּׂאֹ֖ר מִבָּתֵּיכֶ֑ם כִּ֣י ׀ כָּל־אֹכֵ֣ל חָמֵ֗ץ וְנִכְרְתָ֞ה הַנֶּ֤פֶשׁ הַהִוא֙ מִיִּשְׂרָאֵ֔ל מִיּ֥וֹם הָרִאשֹׁ֖ן עַד־י֥וֹם הַשְּׁבִעִֽי׃
+</div>
+You must eat matzos for seven days, but before the first day you must remove [all] leaven from your homes; for anyone who eats chametz, that soul will be cut off from Yisrael. [Chametz is forbidden] from the first day [of Pesach] until [after] the seventh day.
+</span>
+<span class=h>
+<div class=h>
+וּבַיּ֤וֹם הָרִאשׁוֹן֙ מִקְרָא־קֹ֔דֶשׁ וּבַיּוֹם֙ הַשְּׁבִיעִ֔י מִקְרָא־קֹ֖דֶשׁ יִהְיֶ֣ה לָכֶ֑ם כָּל־מְלָאכָה֙ לֹא־יֵעָשֶׂ֣ה בָהֶ֔ם אַ֚ךְ אֲשֶׁ֣ר יֵאָכֵ֣ל לְכָל־נֶ֔פֶשׁ ה֥וּא לְבַדּ֖וֹ יֵעָשֶׂ֥ה לָכֶֽם׃
+וּבַיּ֤וֹם הָרִאשׁוֹן֙ מִקְרָא־קֹ֔דֶשׁ וּבַיּוֹם֙ הַשְּׁבִיעִ֔י מִקְרָא־קֹ֖דֶשׁ יִהְיֶ֣ה לָכֶ֑ם כָּל־מְלָאכָה֙ לֹא־יֵעָשֶׂ֣ה בָהֶ֔ם אַ֚ךְ אֲשֶׁ֣ר יֵאָכֵ֣ל לְכָל־נֶ֔פֶשׁ ה֥וּא לְבַדּ֖וֹ יֵעָשֶׂ֥ה לָכֶֽם׃
+</div>
+The first day shall be a holy assembly and the seventh day shall be a holy assembly to you. No work shall be done on them, only for [the preparation of food] which will be eaten by every person, that alone may be done for you.
+</span>
+<span class=h>
+<div class=h>
+וּשְׁמַרְתֶּם֮ אֶת־הַמַּצּוֹת֒ כִּ֗י בְּעֶ֙צֶם֙ הַיּ֣וֹם הַזֶּ֔ה הוֹצֵ֥אתִי אֶת־צִבְאוֹתֵיכֶ֖ם מֵאֶ֣רֶץ מִצְרָ֑יִם וּשְׁמַרְתֶּ֞ם אֶת־הַיּ֥וֹם הַזֶּ֛ה לְדֹרֹתֵיכֶ֖ם חֻקַּ֥ת עוֹלָֽם׃
+וּשְׁמַרְתֶּם֮ אֶת־הַמַּצּוֹת֒ כִּ֗י בְּעֶ֙צֶם֙ הַיּ֣וֹם הַזֶּ֔ה הוֹצֵ֥אתִי אֶת־צִבְאוֹתֵיכֶ֖ם מֵאֶ֣רֶץ מִצְרָ֑יִם וּשְׁמַרְתֶּ֞ם אֶת־הַיּ֥וֹם הַזֶּ֛ה לְדֹרֹתֵיכֶ֖ם חֻקַּ֥ת עוֹלָֽם׃
+</div>
+You must be vigilant regarding the matzos, for on this very day I brought out your hosts from the land of Egypt. You must preserve this day for your generations, it is an eternal statute.
+</span>
+<span class=h>
+<div class=h>
+בָּרִאשֹׁ֡ן בְּאַרְבָּעָה֩ עָשָׂ֨ר י֤וֹם לַחֹ֙דֶשׁ֙ בָּעֶ֔רֶב תֹּאכְל֖וּ מַצֹּ֑ת עַ֠ד י֣וֹם הָאֶחָ֧ד וְעֶשְׂרִ֛ים לַחֹ֖דֶשׁ בָּעָֽרֶב׃
+בָּרִאשֹׁ֡ן בְּאַרְבָּעָה֩ עָשָׂ֨ר י֤וֹם לַחֹ֙דֶשׁ֙ בָּעֶ֔רֶב תֹּאכְל֖וּ מַצֹּ֑ת עַ֠ד י֣וֹם הָאֶחָ֧ד וְעֶשְׂרִ֛ים לַחֹ֖דֶשׁ בָּעָֽרֶב׃
+</div>
+In the first [month] on the fourteenth day of the month, in the evening you shall eat matzos; until the twenty-first day of the month in the evening.
+</span>
+<span class=h>
+<div class=h>
+שִׁבְעַ֣ת יָמִ֔ים שְׂאֹ֕ר לֹ֥א יִמָּצֵ֖א בְּבָתֵּיכֶ֑ם כִּ֣י ׀ כָּל־אֹכֵ֣ל מַחְמֶ֗צֶת וְנִכְרְתָ֞ה הַנֶּ֤פֶשׁ הַהִוא֙ מֵעֲדַ֣ת יִשְׂרָאֵ֔ל בַּגֵּ֖ר וּבְאֶזְרַ֥ח הָאָֽרֶץ׃
+שִׁבְעַ֣ת יָמִ֔ים שְׂאֹ֕ר לֹ֥א יִמָּצֵ֖א בְּבָתֵּיכֶ֑ם כִּ֣י ׀ כָּל־אֹכֵ֣ל מַחְמֶ֗צֶת וְנִכְרְתָ֞ה הַנֶּ֤פֶשׁ הַהִוא֙ מֵעֲדַ֣ת יִשְׂרָאֵ֔ל בַּגֵּ֖ר וּבְאֶזְרַ֥ח הָאָֽרֶץ׃
+</div>
+For seven days leaven may not be found in your homes, for whoever eats chametz that soul shall be cut off from the community of Israel, whether a proselyte or a native born in the land.
+</span>
+<span class=h>
+<div class=h>
+כָּל־מַחְמֶ֖צֶת לֹ֣א תֹאכֵ֑לוּ בְּכֹל֙ מוֹשְׁבֹ֣תֵיכֶ֔ם תֹּאכְל֖וּ מַצּֽוֹת׃ (פ)
+כָּל־מַחְמֶ֖צֶת לֹ֣א תֹאכֵ֑לוּ בְּכֹל֙ מוֹשְׁבֹ֣תֵיכֶ֔ם תֹּאכְל֖וּ מַצּֽוֹת׃ (פ)
+</div>
+You must not eat anything that is chametz. In all your dwellings you shall eat matzos.
+</span>
+<span class=h>
+<div class=h>
+וַיִּקְרָ֥א מֹשֶׁ֛ה לְכָל־זִקְנֵ֥י יִשְׂרָאֵ֖ל וַיֹּ֣אמֶר אֲלֵהֶ֑ם מִֽשְׁכ֗וּ וּקְח֨וּ לָכֶ֥ם צֹ֛אן לְמִשְׁפְּחֹתֵיכֶ֖ם וְשַׁחֲט֥וּ הַפָּֽסַח׃
+וַיִּקְרָ֥א מֹשֶׁ֛ה לְכָל־זִקְנֵ֥י יִשְׂרָאֵ֖ל וַיֹּ֣אמֶר אֲלֵהֶ֑ם מִֽשְׁכ֗וּ וּקְח֨וּ לָכֶ֥ם צֹ֛אן לְמִשְׁפְּחֹתֵיכֶ֖ם וְשַׁחֲט֥וּ הַפָּֽסַח׃
+</div>
+Moshe called to all the elders of Yisrael, and he said to them, “Draw [from your flocks] or purchase for yourselves a lamb for your families and slaughter it as a Pesach offering.
+</span>
+<span class=h>
+<div class=h>
+וּלְקַחְתֶּ֞ם אֲגֻדַּ֣ת אֵז֗וֹב וּטְבַלְתֶּם֮ בַּדָּ֣ם אֲשֶׁר־בַּסַּף֒ וְהִגַּעְתֶּ֤ם אֶל־הַמַּשְׁקוֹף֙ וְאֶל־שְׁתֵּ֣י הַמְּזוּזֹ֔ת מִן־הַדָּ֖ם אֲשֶׁ֣ר בַּסָּ֑ף וְאַתֶּ֗ם לֹ֥א תֵצְא֛וּ אִ֥ישׁ מִפֶּֽתַח־בֵּית֖וֹ עַד־בֹּֽקֶר׃
+וּלְקַחְתֶּ֞ם אֲגֻדַּ֣ת אֵז֗וֹב וּטְבַלְתֶּם֮ בַּדָּ֣ם אֲשֶׁר־בַּסַּף֒ וְהִגַּעְתֶּ֤ם אֶל־הַמַּשְׁקוֹף֙ וְאֶל־שְׁתֵּ֣י הַמְּזוּזֹ֔ת מִן־הַדָּ֖ם אֲשֶׁ֣ר בַּסָּ֑ף וְאַתֶּ֗ם לֹ֥א תֵצְא֛וּ אִ֥ישׁ מִפֶּֽתַח־בֵּית֖וֹ עַד־בֹּֽקֶר׃
+</div>
+Take a bunch of hyssop, and dip it in the blood that is in the basin. Touch the lintel and the two side [door] posts with some of the blood in the basin. And all of you, let no man go out the door of his house until morning.
+</span>
+<span class=h>
+<div class=h>
+וְעָבַ֣ר יְהוָה֮ לִנְגֹּ֣ף אֶת־מִצְרַיִם֒ וְרָאָ֤ה אֶת־הַדָּם֙ עַל־הַמַּשְׁק֔וֹף וְעַ֖ל שְׁתֵּ֣י הַמְּזוּזֹ֑ת וּפָסַ֤ח יְהוָה֙ עַל־הַפֶּ֔תַח וְלֹ֤א יִתֵּן֙ הַמַּשְׁחִ֔ית לָבֹ֥א אֶל־בָּתֵּיכֶ֖ם לִנְגֹּֽף׃
+וְעָבַ֣ר יְהוָה֮ לִנְגֹּ֣ף אֶת־מִצְרַיִם֒ וְרָאָ֤ה אֶת־הַדָּם֙ עַל־הַמַּשְׁק֔וֹף וְעַ֖ל שְׁתֵּ֣י הַמְּזוּזֹ֑ת וּפָסַ֤ח יְהוָה֙ עַל־הַפֶּ֔תַח וְלֹ֤א יִתֵּן֙ הַמַּשְׁחִ֔ית לָבֹ֥א אֶל־בָּתֵּיכֶ֖ם לִנְגֹּֽף׃
+</div>
+Adonoy will pass through to plague the Egyptians and He will see the blood on the lintel and on the two side [door] posts. Adonoy will then pass over that door and will not allow the destroyer to enter your houses to plague you.
+</span>
+<span class=h>
+<div class=h>
+וּשְׁמַרְתֶּ֖ם אֶת־הַדָּבָ֣ר הַזֶּ֑ה לְחָק־לְךָ֥ וּלְבָנֶ֖יךָ עַד־עוֹלָֽם׃
+וּשְׁמַרְתֶּ֖ם אֶת־הַדָּבָ֣ר הַזֶּ֑ה לְחָק־לְךָ֥ וּלְבָנֶ֖יךָ עַד־עוֹלָֽם׃
+</div>
+You must preserve this [ritual] as a statute for you and your children forever.
+</span>
+<span class=h>
+<div class=h>
+וְהָיָ֞ה כִּֽי־תָבֹ֣אוּ אֶל־הָאָ֗רֶץ אֲשֶׁ֨ר יִתֵּ֧ן יְהוָ֛ה לָכֶ֖ם כַּאֲשֶׁ֣ר דִּבֵּ֑ר וּשְׁמַרְתֶּ֖ם אֶת־הָעֲבֹדָ֥ה הַזֹּֽאת׃
+וְהָיָ֞ה כִּֽי־תָבֹ֣אוּ אֶל־הָאָ֗רֶץ אֲשֶׁ֨ר יִתֵּ֧ן יְהוָ֛ה לָכֶ֖ם כַּאֲשֶׁ֣ר דִּבֵּ֑ר וּשְׁמַרְתֶּ֖ם אֶת־הָעֲבֹדָ֥ה הַזֹּֽאת׃
+</div>
+When you come to the land that Adonoy will give to you, as He spoke, you must preserve this service.
+</span>
+<span class=h>
+<div class=h>
+וְהָיָ֕ה כִּֽי־יֹאמְר֥וּ אֲלֵיכֶ֖ם בְּנֵיכֶ֑ם מָ֛ה הָעֲבֹדָ֥ה הַזֹּ֖את לָכֶֽם׃
+וְהָיָ֕ה כִּֽי־יֹאמְר֥וּ אֲלֵיכֶ֖ם בְּנֵיכֶ֑ם מָ֛ה הָעֲבֹדָ֥ה הַזֹּ֖את לָכֶֽם׃
+</div>
+When your children will ask you, “What is this service of yours?”
+</span>
+<span class=h>
+<div class=h>
+וַאֲמַרְתֶּ֡ם זֶֽבַח־פֶּ֨סַח ה֜וּא לַֽיהוָ֗ה אֲשֶׁ֣ר פָּ֠סַח עַל־בָּתֵּ֤י בְנֵֽי־יִשְׂרָאֵל֙ בְּמִצְרַ֔יִם בְּנָגְפּ֥וֹ אֶת־מִצְרַ֖יִם וְאֶת־בָּתֵּ֣ינוּ הִצִּ֑יל וַיִּקֹּ֥ד הָעָ֖ם וַיִּֽשְׁתַּחֲוּֽוּ׃
+וַאֲמַרְתֶּ֡ם זֶֽבַח־פֶּ֨סַח ה֜וּא לַֽיהוָ֗ה אֲשֶׁ֣ר פָּ֠סַח עַל־בָּתֵּ֤י בְנֵֽי־יִשְׂרָאֵל֙ בְּמִצְרַ֔יִם בְּנָגְפּ֥וֹ אֶת־מִצְרַ֖יִם וְאֶת־בָּתֵּ֣ינוּ הִצִּ֑יל וַיִּקֹּ֥ד הָעָ֖ם וַיִּֽשְׁתַּחֲוּֽוּ׃
+</div>
+You shall say, “It is the Pesach-offering to Adonoy Who passed over the houses of the B’nei Yisrael in Egypt when He struck the Egyptians and saved our homes. The people then bowed and prostrated themselves.
+</span>
+<span class=h>
+<div class=h>
+וַיֵּלְכ֥וּ וַיַּֽעֲשׂ֖וּ בְּנֵ֣י יִשְׂרָאֵ֑ל כַּאֲשֶׁ֨ר צִוָּ֧ה יְהוָ֛ה אֶת־מֹשֶׁ֥ה וְאַהֲרֹ֖ן כֵּ֥ן עָשֽׂוּ׃ (ס)
+וַיֵּלְכ֥וּ וַיַּֽעֲשׂ֖וּ בְּנֵ֣י יִשְׂרָאֵ֑ל כַּאֲשֶׁ֨ר צִוָּ֧ה יְהוָ֛ה אֶת־מֹשֶׁ֥ה וְאַהֲרֹ֖ן כֵּ֥ן עָשֽׂוּ׃ (ס)
+</div>
+The B’nei Yisrael went and did as Adonoy commanded Moshe and Aharon. They [also] did so.
+</span>
+<span class=h>
+<div class=h>
+וַיְהִ֣י ׀ בַּחֲצִ֣י הַלַּ֗יְלָה וַֽיהוָה֮ הִכָּ֣ה כָל־בְּכוֹר֮ בְּאֶ֣רֶץ מִצְרַיִם֒ מִבְּכֹ֤ר פַּרְעֹה֙ הַיֹּשֵׁ֣ב עַל־כִּסְא֔וֹ עַ֚ד בְּכ֣וֹר הַשְּׁבִ֔י אֲשֶׁ֖ר בְּבֵ֣ית הַבּ֑וֹר וְכֹ֖ל בְּכ֥וֹר בְּהֵמָֽה׃
+וַיְהִ֣י ׀ בַּחֲצִ֣י הַלַּ֗יְלָה וַֽיהוָה֮ הִכָּ֣ה כָל־בְּכוֹר֮ בְּאֶ֣רֶץ מִצְרַיִם֒ מִבְּכֹ֤ר פַּרְעֹה֙ הַיֹּשֵׁ֣ב עַל־כִּסְא֔וֹ עַ֚ד בְּכ֣וֹר הַשְּׁבִ֔י אֲשֶׁ֖ר בְּבֵ֣ית הַבּ֑וֹר וְכֹ֖ל בְּכ֥וֹר בְּהֵמָֽה׃
+</div>
+It was [exactly] midnight and Adonoy struck down [killed] every first-born son in the land of Egypt, from the first-born son of Pharaoh sitting on his throne, to the first-born son of the captive [prisoner] who was in the dungeon, as well as every first-born animal.
+</span>
+<span class=h>
+<div class=h>
+וַיָּ֨קָם פַּרְעֹ֜ה לַ֗יְלָה ה֤וּא וְכָל־עֲבָדָיו֙ וְכָל־מִצְרַ֔יִם וַתְּהִ֛י צְעָקָ֥ה גְדֹלָ֖ה בְּמִצְרָ֑יִם כִּֽי־אֵ֣ין בַּ֔יִת אֲשֶׁ֥ר אֵֽין־שָׁ֖ם מֵֽת׃
+וַיָּ֨קָם פַּרְעֹ֜ה לַ֗יְלָה ה֤וּא וְכָל־עֲבָדָיו֙ וְכָל־מִצְרַ֔יִם וַתְּהִ֛י צְעָקָ֥ה גְדֹלָ֖ה בְּמִצְרָ֑יִם כִּֽי־אֵ֣ין בַּ֔יִת אֲשֶׁ֥ר אֵֽין־שָׁ֖ם מֵֽת׃
+</div>
+Pharaoh arose at night, he and all his servants and all the Egyptians, and there was a great cry in Egypt, for there was no house where there were no dead.
+</span>
+<span class=h>
+<div class=h>
+וַיִּקְרָא֩ לְמֹשֶׁ֨ה וּֽלְאַהֲרֹ֜ן לַ֗יְלָה וַיֹּ֙אמֶר֙ ק֤וּמוּ צְּאוּ֙ מִתּ֣וֹךְ עַמִּ֔י גַּם־אַתֶּ֖ם גַּם־בְּנֵ֣י יִשְׂרָאֵ֑ל וּלְכ֛וּ עִבְד֥וּ אֶת־יְהוָ֖ה כְּדַבֶּרְכֶֽם׃
+וַיִּקְרָא֩ לְמֹשֶׁ֨ה וּֽלְאַהֲרֹ֜ן לַ֗יְלָה וַיֹּ֙אמֶר֙ ק֤וּמוּ צְּאוּ֙ מִתּ֣וֹךְ עַמִּ֔י גַּם־אַתֶּ֖ם גַּם־בְּנֵ֣י יִשְׂרָאֵ֑ל וּלְכ֛וּ עִבְד֥וּ אֶת־יְהוָ֖ה כְּדַבֶּרְכֶֽם׃
+</div>
+[Pharaoh] called for Moshe and Aharon that night and said, “Set out! Get out from among my people, both you and the B’nei Yisrael. Go worship Adonoy as you have said [requested].
+</span>
+<span class=h>
+<div class=h>
+גַּם־צֹאנְכֶ֨ם גַּם־בְּקַרְכֶ֥ם קְח֛וּ כַּאֲשֶׁ֥ר דִּבַּרְתֶּ֖ם וָלֵ֑כוּ וּבֵֽרַכְתֶּ֖ם גַּם־אֹתִֽי׃
+גַּם־צֹאנְכֶ֨ם גַּם־בְּקַרְכֶ֥ם קְח֛וּ כַּאֲשֶׁ֥ר דִּבַּרְתֶּ֖ם וָלֵ֑כוּ וּבֵֽרַכְתֶּ֖ם גַּם־אֹתִֽי׃
+</div>
+Take your sheep and cattle too, as you have said and go; bless me too.
+</span>
+<span class=h>
+<div class=h>
+וַתֶּחֱזַ֤ק מִצְרַ֙יִם֙ עַל־הָעָ֔ם לְמַהֵ֖ר לְשַׁלְּחָ֣ם מִן־הָאָ֑רֶץ כִּ֥י אָמְר֖וּ כֻּלָּ֥נוּ מֵתִֽים׃
+וַתֶּחֱזַ֤ק מִצְרַ֙יִם֙ עַל־הָעָ֔ם לְמַהֵ֖ר לְשַׁלְּחָ֣ם מִן־הָאָ֑רֶץ כִּ֥י אָמְר֖וּ כֻּלָּ֥נוּ מֵתִֽים׃
+</div>
+The Egyptians pressed the people to hurry them—to send them out of the land, for they said, “We are all dead men.”
+</span>
+<span class=h>
+<div class=h>
+וַיִּשָּׂ֥א הָעָ֛ם אֶת־בְּצֵק֖וֹ טֶ֣רֶם יֶחְמָ֑ץ מִשְׁאֲרֹתָ֛ם צְרֻרֹ֥ת בְּשִׂמְלֹתָ֖ם עַל־שִׁכְמָֽם׃
+וַיִּשָּׂ֥א הָעָ֛ם אֶת־בְּצֵק֖וֹ טֶ֣רֶם יֶחְמָ֑ץ מִשְׁאֲרֹתָ֛ם צְרֻרֹ֥ת בְּשִׂמְלֹתָ֖ם עַל־שִׁכְמָֽם׃
+</div>
+The people took their dough before it was leavened. Their leftovers were wrapped in their clothing, [and carried] on their shoulders.
+</span>
+<span class=h>
+<div class=h>
+וּבְנֵי־יִשְׂרָאֵ֥ל עָשׂ֖וּ כִּדְבַ֣ר מֹשֶׁ֑ה וַֽיִּשְׁאֲלוּ֙ מִמִּצְרַ֔יִם כְּלֵי־כֶ֛סֶף וּכְלֵ֥י זָהָ֖ב וּשְׂמָלֹֽת׃
+וּבְנֵי־יִשְׂרָאֵ֥ל עָשׂ֖וּ כִּדְבַ֣ר מֹשֶׁ֑ה וַֽיִּשְׁאֲלוּ֙ מִמִּצְרַ֔יִם כְּלֵי־כֶ֛סֶף וּכְלֵ֥י זָהָ֖ב וּשְׂמָלֹֽת׃
+</div>
+The B’nei Yisrael did as Moshe said, and they requested of the Egyptians silver articles and gold articles and clothing.
+</span>
+<span class=h>
+<div class=h>
+וַֽיהוָ֞ה נָתַ֨ן אֶת־חֵ֥ן הָעָ֛ם בְּעֵינֵ֥י מִצְרַ֖יִם וַיַּשְׁאִל֑וּם וַֽיְנַצְּל֖וּ אֶת־מִצְרָֽיִם׃ (פ)
+וַֽיהוָ֞ה נָתַ֨ן אֶת־חֵ֥ן הָעָ֛ם בְּעֵינֵ֥י מִצְרַ֖יִם וַיַּשְׁאִל֑וּם וַֽיְנַצְּל֖וּ אֶת־מִצְרָֽיִם׃ (פ)
+</div>
+Adonoy granted the people favor in the eyes of the Egyptians, and they granted their request. They [B’nei Yisrael thus] drained Egypt of its wealth.
+</span>
+<span class=h>
+<div class=h>
+וַיִּסְע֧וּ בְנֵֽי־יִשְׂרָאֵ֛ל מֵרַעְמְסֵ֖ס סֻכֹּ֑תָה כְּשֵׁשׁ־מֵא֨וֹת אֶ֧לֶף רַגְלִ֛י הַגְּבָרִ֖ים לְבַ֥ד מִטָּֽף׃
+וַיִּסְע֧וּ בְנֵֽי־יִשְׂרָאֵ֛ל מֵרַעְמְסֵ֖ס סֻכֹּ֑תָה כְּשֵׁשׁ־מֵא֨וֹת אֶ֧לֶף רַגְלִ֛י הַגְּבָרִ֖ים לְבַ֥ד מִטָּֽף׃
+</div>
+The B’nei Yisrael traveled from Ramseis to Sukkos. There were about six hundred thousand males on foot besides the children.
+</span>
+<span class=h>
+<div class=h>
+וְגַם־עֵ֥רֶב רַ֖ב עָלָ֣ה אִתָּ֑ם וְצֹ֣אן וּבָקָ֔ר מִקְנֶ֖ה כָּבֵ֥ד מְאֹֽד׃
+וְגַם־עֵ֥רֶב רַ֖ב עָלָ֣ה אִתָּ֑ם וְצֹ֣אן וּבָקָ֔ר מִקְנֶ֖ה כָּבֵ֥ד מְאֹֽד׃
+</div>
+A great mixture [of nationalities] also went up with them. There were [also] sheep and cattle, a huge amount of livestock.
+</span>
+<span class=h>
+<div class=h>
+וַיֹּאפ֨וּ אֶת־הַבָּצֵ֜ק אֲשֶׁ֨ר הוֹצִ֧יאוּ מִמִּצְרַ֛יִם עֻגֹ֥ת מַצּ֖וֹת כִּ֣י לֹ֣א חָמֵ֑ץ כִּֽי־גֹרְשׁ֣וּ מִמִּצְרַ֗יִם וְלֹ֤א יָֽכְלוּ֙ לְהִתְמַהְמֵ֔הַּ וְגַם־צֵדָ֖ה לֹא־עָשׂ֥וּ לָהֶֽם׃
+וַיֹּאפ֨וּ אֶת־הַבָּצֵ֜ק אֲשֶׁ֨ר הוֹצִ֧יאוּ מִמִּצְרַ֛יִם עֻגֹ֥ת מַצּ֖וֹת כִּ֣י לֹ֣א חָמֵ֑ץ כִּֽי־גֹרְשׁ֣וּ מִמִּצְרַ֗יִם וְלֹ֤א יָֽכְלוּ֙ לְהִתְמַהְמֵ֔הַּ וְגַם־צֵדָ֖ה לֹא־עָשׂ֥וּ לָהֶֽם׃
+</div>
+They baked the dough that they had brought out of Egypt into matzoh cakes, for it was not leavened. Since they were driven out of Egypt and could not delay, they had also not prepared provisions for themselves.
+</span>
+<span class=h>
+<div class=h>
+וּמוֹשַׁב֙ בְּנֵ֣י יִשְׂרָאֵ֔ל אֲשֶׁ֥ר יָשְׁב֖וּ בְּמִצְרָ֑יִם שְׁלֹשִׁ֣ים שָׁנָ֔ה וְאַרְבַּ֥ע מֵא֖וֹת שָׁנָֽה׃
+וּמוֹשַׁב֙ בְּנֵ֣י יִשְׂרָאֵ֔ל אֲשֶׁ֥ר יָשְׁב֖וּ בְּמִצְרָ֑יִם שְׁלֹשִׁ֣ים שָׁנָ֔ה וְאַרְבַּ֥ע מֵא֖וֹת שָׁנָֽה׃
+</div>
+The habitation of the B’nei Yisrael living in Egypt lasted four hundred and thirty years.
+</span>
+<span class=h>
+<div class=h>
+וַיְהִ֗י מִקֵּץ֙ שְׁלֹשִׁ֣ים שָׁנָ֔ה וְאַרְבַּ֥ע מֵא֖וֹת שָׁנָ֑ה וַיְהִ֗י בְּעֶ֙צֶם֙ הַיּ֣וֹם הַזֶּ֔ה יָֽצְא֛וּ כָּל־צִבְא֥וֹת יְהוָ֖ה מֵאֶ֥רֶץ מִצְרָֽיִם׃
+וַיְהִ֗י מִקֵּץ֙ שְׁלֹשִׁ֣ים שָׁנָ֔ה וְאַרְבַּ֥ע מֵא֖וֹת שָׁנָ֑ה וַיְהִ֗י בְּעֶ֙צֶם֙ הַיּ֣וֹם הַזֶּ֔ה יָֽצְא֛וּ כָּל־צִבְא֥וֹת יְהוָ֖ה מֵאֶ֥רֶץ מִצְרָֽיִם׃
+</div>
+It was at the end of the four hundred and thirty years, and on that very day all of Adonoy’s multitudes went out of the land of Egypt.
+</span>
+<span class=h>
+<div class=h>
+לֵ֣יל שִׁמֻּרִ֥ים הוּא֙ לַֽיהוָ֔ה לְהוֹצִיאָ֖ם מֵאֶ֣רֶץ מִצְרָ֑יִם הֽוּא־הַלַּ֤יְלָה הַזֶּה֙ לַֽיהוָ֔ה שִׁמֻּרִ֛ים לְכָל־בְּנֵ֥י יִשְׂרָאֵ֖ל לְדֹרֹתָֽם׃ (פ)
+לֵ֣יל שִׁמֻּרִ֥ים הוּא֙ לַֽיהוָ֔ה לְהוֹצִיאָ֖ם מֵאֶ֣רֶץ מִצְרָ֑יִם הֽוּא־הַלַּ֤יְלָה הַזֶּה֙ לַֽיהוָ֔ה שִׁמֻּרִ֛ים לְכָל־בְּנֵ֥י יִשְׂרָאֵ֖ל לְדֹרֹתָֽם׃ (פ)
+</div>
+This was a night of vigil for Adonoy, to bring them out of the land of Egypt. This night remains a night of vigil to Adonoy for all the B’nei Yisrael for [all] their generations.
+</span>
+<span class=h>
+<div class=h>
+וַיֹּ֤אמֶר יְהוָה֙ אֶל־מֹשֶׁ֣ה וְאַהֲרֹ֔ן זֹ֖את חֻקַּ֣ת הַפָּ֑סַח כָּל־בֶּן־נֵכָ֖ר לֹא־יֹ֥אכַל בּֽוֹ׃
+וַיֹּ֤אמֶר יְהוָה֙ אֶל־מֹשֶׁ֣ה וְאַהֲרֹ֔ן זֹ֖את חֻקַּ֣ת הַפָּ֑סַח כָּל־בֶּן־נֵכָ֖ר לֹא־יֹ֥אכַל בּֽוֹ׃
+</div>
+Adonoy said to Moshe and Aharon, “This is the statute of the Pesach offering: No alien may eat it.
+</span>
+<span class=h>
+<div class=h>
+וְכָל־עֶ֥בֶד אִ֖ישׁ מִקְנַת־כָּ֑סֶף וּמַלְתָּ֣ה אֹת֔וֹ אָ֖ז יֹ֥אכַל בּֽוֹ׃
+וְכָל־עֶ֥בֶד אִ֖ישׁ מִקְנַת־כָּ֑סֶף וּמַלְתָּ֣ה אֹת֔וֹ אָ֖ז יֹ֥אכַל בּֽוֹ׃
+</div>
+However each man’s slave [if he was]purchased with money, you must circumcise him and then he may eat it.
+</span>
+<span class=h>
+<div class=h>
+תּוֹשָׁ֥ב וְשָׂכִ֖יר לֹא־יֹ֥אכַל־בּֽוֹ׃
+תּוֹשָׁ֥ב וְשָׂכִ֖יר לֹא־יֹ֥אכַל־בּֽוֹ׃
+</div>
+An [alien] sojourner or hired worker may not eat it.
+</span>
+<span class=h>
+<div class=h>
+בְּבַ֤יִת אֶחָד֙ יֵאָכֵ֔ל לֹא־תוֹצִ֧יא מִן־הַבַּ֛יִת מִן־הַבָּשָׂ֖ר ח֑וּצָה וְעֶ֖צֶם לֹ֥א תִשְׁבְּרוּ־בֽוֹ׃
+בְּבַ֤יִת אֶחָד֙ יֵאָכֵ֔ל לֹא־תוֹצִ֧יא מִן־הַבַּ֛יִת מִן־הַבָּשָׂ֖ר ח֑וּצָה וְעֶ֖צֶם לֹ֥א תִשְׁבְּרוּ־בֽוֹ׃
+</div>
+It must be eaten in one house. You must not remove from the house any of its flesh, to the outdoors, and you must not break any of its bones.
+</span>
+<span class=h>
+<div class=h>
+כָּל־עֲדַ֥ת יִשְׂרָאֵ֖ל יַעֲשׂ֥וּ אֹתֽוֹ׃
+כָּל־עֲדַ֥ת יִשְׂרָאֵ֖ל יַעֲשׂ֥וּ אֹתֽוֹ׃
+</div>
+The entire community of Yisrael must make this [offering].
+</span>
+<span class=h>
+<div class=h>
+וְכִֽי־יָג֨וּר אִתְּךָ֜ גֵּ֗ר וְעָ֣שָׂה פֶסַח֮ לַיהוָה֒ הִמּ֧וֹל ל֣וֹ כָל־זָכָ֗ר וְאָז֙ יִקְרַ֣ב לַעֲשֹׂת֔וֹ וְהָיָ֖ה כְּאֶזְרַ֣ח הָאָ֑רֶץ וְכָל־עָרֵ֖ל לֹֽא־יֹ֥אכַל בּֽוֹ׃
+וְכִֽי־יָג֨וּר אִתְּךָ֜ גֵּ֗ר וְעָ֣שָׂה פֶסַח֮ לַיהוָה֒ הִמּ֧וֹל ל֣וֹ כָל־זָכָ֗ר וְאָז֙ יִקְרַ֣ב לַעֲשֹׂת֔וֹ וְהָיָ֖ה כְּאֶזְרַ֣ח הָאָ֑רֶץ וְכָל־עָרֵ֖ל לֹֽא־יֹ֥אכַל בּֽוֹ׃
+</div>
+When a proselyte dwells with you and wants to make the Pesach-offering to Adonoy, every male must be circumcised. He may then come near [join] to make it, and be like the native born. But no uncircumcised male may eat of it.
+</span>
+<span class=h>
+<div class=h>
+תּוֹרָ֣ה אַחַ֔ת יִהְיֶ֖ה לָֽאֶזְרָ֑ח וְלַגֵּ֖ר הַגָּ֥ר בְּתוֹכְכֶֽם׃
+תּוֹרָ֣ה אַחַ֔ת יִהְיֶ֖ה לָֽאֶזְרָ֑ח וְלַגֵּ֖ר הַגָּ֥ר בְּתוֹכְכֶֽם׃
+</div>
+There shall be one law for the native born and for the proselyte who dwells among you.
+</span>
+<span class=h>
+<div class=h>
+וַיַּֽעֲשׂ֖וּ כָּל־בְּנֵ֣י יִשְׂרָאֵ֑ל כַּאֲשֶׁ֨ר צִוָּ֧ה יְהוָ֛ה אֶת־מֹשֶׁ֥ה וְאֶֽת־אַהֲרֹ֖ן כֵּ֥ן עָשֽׂוּ׃ (ס)
+וַיַּֽעֲשׂ֖וּ כָּל־בְּנֵ֣י יִשְׂרָאֵ֑ל כַּאֲשֶׁ֨ר צִוָּ֧ה יְהוָ֛ה אֶת־מֹשֶׁ֥ה וְאֶֽת־אַהֲרֹ֖ן כֵּ֥ן עָשֽׂוּ׃ (ס)
+</div>
+All the B’nei Yisrael did as Adonoy commanded Moshe and Aharon. They [Moshe and Aharon] also did so.
+</span>
+<span class=h>
+<div class=h>
+וַיְהִ֕י בְּעֶ֖צֶם הַיּ֣וֹם הַזֶּ֑ה הוֹצִ֨יא יְהוָ֜ה אֶת־בְּנֵ֧י יִשְׂרָאֵ֛ל מֵאֶ֥רֶץ מִצְרַ֖יִם עַל־צִבְאֹתָֽם׃ (פ)
+וַיְהִ֕י בְּעֶ֖צֶם הַיּ֣וֹם הַזֶּ֑ה הוֹצִ֨יא יְהוָ֜ה אֶת־בְּנֵ֧י יִשְׂרָאֵ֛ל מֵאֶ֥רֶץ מִצְרַ֖יִם עַל־צִבְאֹתָֽם׃ (פ)
+</div>
+On that very day, Adonoy took the B’nei Yisrael out of Egypt in their multitudes.
+</span>
+<span class=h>
+<div class=h>
+
+
+
+<h4>Chapter 13</h4>
+
+
+
+
+
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+</div>
+Adonoy spoke to Moshe, saying,
+</span>
+<span class=h>
+<div class=h>
+קַדֶּשׁ־לִ֨י כָל־בְּכ֜וֹר פֶּ֤טֶר כָּל־רֶ֙חֶם֙ בִּבְנֵ֣י יִשְׂרָאֵ֔ל בָּאָדָ֖ם וּבַבְּהֵמָ֑ה לִ֖י הֽוּא׃
+קַדֶּשׁ־לִ֨י כָל־בְּכ֜וֹר פֶּ֤טֶר כָּל־רֶ֙חֶם֙ בִּבְנֵ֣י יִשְׂרָאֵ֔ל בָּאָדָ֖ם וּבַבְּהֵמָ֑ה לִ֖י הֽוּא׃
+</div>
+“Sanctify to Me all the first-born, that [is the first to] open the womb among the B’nei Yisrael, both of man and beast, it is Mine.”
+</span>
+<span class=h>
+<div class=h>
+וַיֹּ֨אמֶר מֹשֶׁ֜ה אֶל־הָעָ֗ם זָכ֞וֹר אֶת־הַיּ֤וֹם הַזֶּה֙ אֲשֶׁ֨ר יְצָאתֶ֤ם מִמִּצְרַ֙יִם֙ מִבֵּ֣ית עֲבָדִ֔ים כִּ֚י בְּחֹ֣זֶק יָ֔ד הוֹצִ֧יא יְהֹוָ֛ה אֶתְכֶ֖ם מִזֶּ֑ה וְלֹ֥א יֵאָכֵ֖ל חָמֵֽץ׃
+וַיֹּ֨אמֶר מֹשֶׁ֜ה אֶל־הָעָ֗ם זָכ֞וֹר אֶת־הַיּ֤וֹם הַזֶּה֙ אֲשֶׁ֨ר יְצָאתֶ֤ם מִמִּצְרַ֙יִם֙ מִבֵּ֣ית עֲבָדִ֔ים כִּ֚י בְּחֹ֣זֶק יָ֔ד הוֹצִ֧יא יְהֹוָ֛ה אֶתְכֶ֖ם מִזֶּ֑ה וְלֹ֥א יֵאָכֵ֖ל חָמֵֽץ׃
+</div>
+Moshe said to the people, “Remember this day [as the day] on which you came out of Egypt, from the house of slavery, for with a strong hand Adonoy brought you out from this. You must not eat chametz.
+</span>
+<span class=h>
+<div class=h>
+הַיּ֖וֹם אַתֶּ֣ם יֹצְאִ֑ים בְּחֹ֖דֶשׁ הָאָבִֽיב׃
+הַיּ֖וֹם אַתֶּ֣ם יֹצְאִ֑ים בְּחֹ֖דֶשׁ הָאָבִֽיב׃
+</div>
+On this day you went out, in the month of Aviv [Nissan].
+</span>
+<span class=h>
+<div class=h>
+וְהָיָ֣ה כִֽי־יְבִֽיאֲךָ֣ יְהוָ֡ה אֶל־אֶ֣רֶץ הַֽ֠כְּנַעֲנִי וְהַחִתִּ֨י וְהָאֱמֹרִ֜י וְהַחִוִּ֣י וְהַיְבוּסִ֗י אֲשֶׁ֨ר נִשְׁבַּ֤ע לַאֲבֹתֶ֙יךָ֙ לָ֣תֶת לָ֔ךְ אֶ֛רֶץ זָבַ֥ת חָלָ֖ב וּדְבָ֑שׁ וְעָבַדְתָּ֛ אֶת־הָעֲבֹדָ֥ה הַזֹּ֖את בַּחֹ֥דֶשׁ הַזֶּֽה׃
+וְהָיָ֣ה כִֽי־יְבִֽיאֲךָ֣ יְהוָ֡ה אֶל־אֶ֣רֶץ הַֽ֠כְּנַעֲנִי וְהַחִתִּ֨י וְהָאֱמֹרִ֜י וְהַחִוִּ֣י וְהַיְבוּסִ֗י אֲשֶׁ֨ר נִשְׁבַּ֤ע לַאֲבֹתֶ֙יךָ֙ לָ֣תֶת לָ֔ךְ אֶ֛רֶץ זָבַ֥ת חָלָ֖ב וּדְבָ֑שׁ וְעָבַדְתָּ֛ אֶת־הָעֲבֹדָ֥ה הַזֹּ֖את בַּחֹ֥דֶשׁ הַזֶּֽה׃
+</div>
+When Adonoy brings you to the land of the Canaanite, the Chittites, the Emorites, the Chivites and the Yevusites, which He swore to your fathers [that He would] give to you—a land flowing with milk and honey—you must conduct this service in this month.
+</span>
+<span class=h>
+<div class=h>
+שִׁבְעַ֥ת יָמִ֖ים תֹּאכַ֣ל מַצֹּ֑ת וּבַיּוֹם֙ הַשְּׁבִיעִ֔י חַ֖ג לַיהוָֽה׃
+שִׁבְעַ֥ת יָמִ֖ים תֹּאכַ֣ל מַצֹּ֑ת וּבַיּוֹם֙ הַשְּׁבִיעִ֔י חַ֖ג לַיהוָֽה׃
+</div>
+For seven days you must eat matzos, and the seventh day is a festival to Adonoy.
+</span>
+<span class=h>
+<div class=h>
+מַצּוֹת֙ יֵֽאָכֵ֔ל אֵ֖ת שִׁבְעַ֣ת הַיָּמִ֑ים וְלֹֽא־יֵרָאֶ֨ה לְךָ֜ חָמֵ֗ץ וְלֹֽא־יֵרָאֶ֥ה לְךָ֛ שְׂאֹ֖ר בְּכָל־גְּבֻלֶֽךָ׃
+מַצּוֹת֙ יֵֽאָכֵ֔ל אֵ֖ת שִׁבְעַ֣ת הַיָּמִ֑ים וְלֹֽא־יֵרָאֶ֨ה לְךָ֜ חָמֵ֗ץ וְלֹֽא־יֵרָאֶ֥ה לְךָ֛ שְׂאֹ֖ר בְּכָל־גְּבֻלֶֽךָ׃
+</div>
+Matzos must be eaten these seven days. No chametz may be seen in your possession, and no leaven may be seen in all your boundaries.
+</span>
+<span class=h>
+<div class=h>
+וְהִגַּדְתָּ֣ לְבִנְךָ֔ בַּיּ֥וֹם הַה֖וּא לֵאמֹ֑ר בַּעֲב֣וּר זֶ֗ה עָשָׂ֤ה יְהוָה֙ לִ֔י בְּצֵאתִ֖י מִמִּצְרָֽיִם׃
+וְהִגַּדְתָּ֣ לְבִנְךָ֔ בַּיּ֥וֹם הַה֖וּא לֵאמֹ֑ר בַּעֲב֣וּר זֶ֗ה עָשָׂ֤ה יְהוָה֙ לִ֔י בְּצֵאתִ֖י מִמִּצְרָֽיִם׃
+</div>
+You must tell your son [child] on that day saying, ‘Because of this, Adonoy did [this] for me when I came out of Egypt.’
+</span>
+<span class=h>
+<div class=h>
+וְהָיָה֩ לְךָ֨ לְא֜וֹת עַל־יָדְךָ֗ וּלְזִכָּרוֹן֙ בֵּ֣ין עֵינֶ֔יךָ לְמַ֗עַן תִּהְיֶ֛ה תּוֹרַ֥ת יְהוָ֖ה בְּפִ֑יךָ כִּ֚י בְּיָ֣ד חֲזָקָ֔ה הוֹצִֽאֲךָ֥ יְהֹוָ֖ה מִמִּצְרָֽיִם׃
+וְהָיָה֩ לְךָ֨ לְא֜וֹת עַל־יָדְךָ֗ וּלְזִכָּרוֹן֙ בֵּ֣ין עֵינֶ֔יךָ לְמַ֗עַן תִּהְיֶ֛ה תּוֹרַ֥ת יְהוָ֖ה בְּפִ֑יךָ כִּ֚י בְּיָ֣ד חֲזָקָ֔ה הוֹצִֽאֲךָ֥ יְהֹוָ֖ה מִמִּצְרָֽיִם׃
+</div>
+It shall be to you as a sign on your hand, and for a reminder between your eyes, so that Adonoy’s teachings will be in your mouth, for with a strong hand Adonoy brought you out of Egypt.
+</span>
+<span class=h>
+<div class=h>
+וְשָׁמַרְתָּ֛ אֶת־הַחֻקָּ֥ה הַזֹּ֖את לְמוֹעֲדָ֑הּ מִיָּמִ֖ים יָמִֽימָה׃ (ס)
+וְשָׁמַרְתָּ֛ אֶת־הַחֻקָּ֥ה הַזֹּ֖את לְמוֹעֲדָ֑הּ מִיָּמִ֖ים יָמִֽימָה׃ (ס)
+</div>
+You must preserve this statute in its appointed time, from year to year.
+</span>
+<span class=h>
+<div class=h>
+וְהָיָ֞ה כִּֽי־יְבִֽאֲךָ֤ יְהוָה֙ אֶל־אֶ֣רֶץ הַֽכְּנַעֲנִ֔י כַּאֲשֶׁ֛ר נִשְׁבַּ֥ע לְךָ֖ וְלַֽאֲבֹתֶ֑יךָ וּנְתָנָ֖הּ לָֽךְ׃
+וְהָיָ֞ה כִּֽי־יְבִֽאֲךָ֤ יְהוָה֙ אֶל־אֶ֣רֶץ הַֽכְּנַעֲנִ֔י כַּאֲשֶׁ֛ר נִשְׁבַּ֥ע לְךָ֖ וְלַֽאֲבֹתֶ֑יךָ וּנְתָנָ֖הּ לָֽךְ׃
+</div>
+When Adonoy brings you to the land of the Canaanites as He swore to you and to your fathers; and He will have given it to you.
+</span>
+<span class=h>
+<div class=h>
+וְהַעֲבַרְתָּ֥ כָל־פֶּֽטֶר־רֶ֖חֶם לַֽיהֹוָ֑ה וְכָל־פֶּ֣טֶר ׀ שֶׁ֣גֶר בְּהֵמָ֗ה אֲשֶׁ֨ר יִהְיֶ֥ה לְךָ֛ הַזְּכָרִ֖ים לַיהוָֽה׃
+וְהַעֲבַרְתָּ֥ כָל־פֶּֽטֶר־רֶ֖חֶם לַֽיהֹוָ֑ה וְכָל־פֶּ֣טֶר ׀ שֶׁ֣גֶר בְּהֵמָ֗ה אֲשֶׁ֨ר יִהְיֶ֥ה לְךָ֛ הַזְּכָרִ֖ים לַיהוָֽה׃
+</div>
+[At that time] you must pass on, [set aside] every one that [is first to] open the womb, to Adonoy. Every firstling that is dropped [born] by animals that belong to you, the males shall belong to Adonoy.
+</span>
+<span class=h>
+<div class=h>
+וְכָל־פֶּ֤טֶר חֲמֹר֙ תִּפְדֶּ֣ה בְשֶׂ֔ה וְאִם־לֹ֥א תִפְדֶּ֖ה וַעֲרַפְתּ֑וֹ וְכֹ֨ל בְּכ֥וֹר אָדָ֛ם בְּבָנֶ֖יךָ תִּפְדֶּֽה׃
+וְכָל־פֶּ֤טֶר חֲמֹר֙ תִּפְדֶּ֣ה בְשֶׂ֔ה וְאִם־לֹ֥א תִפְדֶּ֖ה וַעֲרַפְתּ֑וֹ וְכֹ֨ל בְּכ֥וֹר אָדָ֛ם בְּבָנֶ֖יךָ תִּפְדֶּֽה׃
+</div>
+Redeem each firstling donkey with a sheep. If it is not redeemed, you must break its neck. Redeem every first-born male among your sons.
+</span>
+<span class=h>
+<div class=h>
+וְהָיָ֞ה כִּֽי־יִשְׁאָלְךָ֥ בִנְךָ֛ מָחָ֖ר לֵאמֹ֣ר מַה־זֹּ֑את וְאָמַרְתָּ֣ אֵלָ֔יו בְּחֹ֣זֶק יָ֗ד הוֹצִיאָ֧נוּ יְהוָ֛ה מִמִּצְרַ֖יִם מִבֵּ֥ית עֲבָדִֽים׃
+וְהָיָ֞ה כִּֽי־יִשְׁאָלְךָ֥ בִנְךָ֛ מָחָ֖ר לֵאמֹ֣ר מַה־זֹּ֑את וְאָמַרְתָּ֣ אֵלָ֔יו בְּחֹ֣זֶק יָ֗ד הוֹצִיאָ֧נוּ יְהוָ֛ה מִמִּצְרַ֖יִם מִבֵּ֥ית עֲבָדִֽים׃
+</div>
+When your son asks you at a later time saying ‘What is this?’ You should say to him, “With a strong hand Adonoy brought us out of Egypt from the house of slavery.
+</span>
+<span class=h>
+<div class=h>
+וַיְהִ֗י כִּֽי־הִקְשָׁ֣ה פַרְעֹה֮ לְשַׁלְּחֵנוּ֒ וַיַּהֲרֹ֨ג יְהֹוָ֤ה כָּל־בְּכוֹר֙ בְּאֶ֣רֶץ מִצְרַ֔יִם מִבְּכֹ֥ר אָדָ֖ם וְעַד־בְּכ֣וֹר בְּהֵמָ֑ה עַל־כֵּן֩ אֲנִ֨י זֹבֵ֜חַ לַֽיהוָ֗ה כָּל־פֶּ֤טֶר רֶ֙חֶם֙ הַזְּכָרִ֔ים וְכָל־בְּכ֥וֹר בָּנַ֖י אֶפְדֶּֽה׃
+וַיְהִ֗י כִּֽי־הִקְשָׁ֣ה פַרְעֹה֮ לְשַׁלְּחֵנוּ֒ וַיַּהֲרֹ֨ג יְהֹוָ֤ה כָּל־בְּכוֹר֙ בְּאֶ֣רֶץ מִצְרַ֔יִם מִבְּכֹ֥ר אָדָ֖ם וְעַד־בְּכ֣וֹר בְּהֵמָ֑ה עַל־כֵּן֩ אֲנִ֨י זֹבֵ֜חַ לַֽיהוָ֗ה כָּל־פֶּ֤טֶר רֶ֙חֶם֙ הַזְּכָרִ֔ים וְכָל־בְּכ֥וֹר בָּנַ֖י אֶפְדֶּֽה׃
+</div>
+When Pharaoh stubbornly refused to send us out, Adonoy killed every first-born in the land of Egypt, from the first-born of man to the first-born of beast. I am therefore sacrificing to Adonoy all that [is first to] open the womb which are male, and the first-born of my sons I redeem.’
+</span>
+<span class=h>
+<div class=h>
+וְהָיָ֤ה לְאוֹת֙ עַל־יָ֣דְכָ֔ה וּלְטוֹטָפֹ֖ת בֵּ֣ין עֵינֶ֑יךָ כִּ֚י בְּחֹ֣זֶק יָ֔ד הוֹצִיאָ֥נוּ יְהוָ֖ה מִמִּצְרָֽיִם׃ (ס)
+וְהָיָ֤ה לְאוֹת֙ עַל־יָ֣דְכָ֔ה וּלְטוֹטָפֹ֖ת בֵּ֣ין עֵינֶ֑יךָ כִּ֚י בְּחֹ֣זֶק יָ֔ד הוֹצִיאָ֥נוּ יְהוָ֖ה מִמִּצְרָֽיִם׃ (ס)
+</div>
+[These words] shall be a sign on your hand and for totafos between your eyes, for with a strong hand Adonoy brought us out of Egypt.”
+</span>
+
+</body>

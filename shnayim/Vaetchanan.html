@@ -1,0 +1,926 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/@hebcal/core@3.45.2/dist/bundle.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    if (localStorage.getItem("shmos-scroll") != null) {
+      $(window).scrollTop(localStorage.getItem("shmos-scroll"));
+    }
+
+    $(window).on("scroll", function() {
+      localStorage.setItem("shmos-scroll", $(window).scrollTop());
+    });
+
+  });
+
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('/offline.js')
+             .then(function() { console.log("Service Worker Registered"); });
+  }
+</script>
+<style>
+  div.h { font-size:24pt; margin-right:auto; margin-left:auto; width:95%; padding:10pt; text-align:right; border-style:none; direction:rtl; }
+  span.h { font-size:16pt; line-height:150%; }
+</style>
+</head>
+<body>
+<div style="position:fixed; top:0; width:100%">
+<button onclick="window.location.href=(new hebcal.Sedra(new hebcal.HDate().getFullYear(), false).get(new hebcal.HDate()))+'.html'">start this week!</button>
+</div>
+<span class=h>
+<div class=h>
+
+<h3>Vaeschanan</h3>
+
+וָאֶתְחַנַּ֖ן אֶל־יְהוָ֑ה בָּעֵ֥ת הַהִ֖וא לֵאמֹֽר׃
+וָאֶתְחַנַּ֖ן אֶל־יְהוָ֑ה בָּעֵ֥ת הַהִ֖וא לֵאמֹֽר׃
+</div>
+I pleaded to Adonoy at that time, saying:
+</span>
+<span class=h>
+<div class=h>
+אֲדֹנָ֣י יְהוִ֗ה אַתָּ֤ה הַֽחִלּ֙וֹתָ֙ לְהַרְא֣וֹת אֶֽת־עַבְדְּךָ֔ אֶ֨ת־גָּדְלְךָ֔ וְאֶת־יָדְךָ֖ הַחֲזָקָ֑ה אֲשֶׁ֤ר מִי־אֵל֙ בַּשָּׁמַ֣יִם וּבָאָ֔רֶץ אֲשֶׁר־יַעֲשֶׂ֥ה כְמַעֲשֶׂ֖יךָ וְכִגְבוּרֹתֶֽךָ׃
+אֲדֹנָ֣י יְהוִ֗ה אַתָּ֤ה הַֽחִלּ֙וֹתָ֙ לְהַרְא֣וֹת אֶֽת־עַבְדְּךָ֔ אֶ֨ת־גָּדְלְךָ֔ וְאֶת־יָדְךָ֖ הַחֲזָקָ֑ה אֲשֶׁ֤ר מִי־אֵל֙ בַּשָּׁמַ֣יִם וּבָאָ֔רֶץ אֲשֶׁר־יַעֲשֶׂ֥ה כְמַעֲשֶׂ֖יךָ וְכִגְבוּרֹתֶֽךָ׃
+</div>
+‘‘Adonoy, El him, You have begun to show Your servant Your greatness and Your powerful hand, that there is no power in heaven or on earth that can perform Your deeds and Your acts of power.
+</span>
+<span class=h>
+<div class=h>
+אֶעְבְּרָה־נָּ֗א וְאֶרְאֶה֙ אֶת־הָאָ֣רֶץ הַטּוֹבָ֔ה אֲשֶׁ֖ר בְּעֵ֣בֶר הַיַּרְדֵּ֑ן הָהָ֥ר הַטּ֛וֹב הַזֶּ֖ה וְהַלְּבָנֽוֹן׃
+אֶעְבְּרָה־נָּ֗א וְאֶרְאֶה֙ אֶת־הָאָ֣רֶץ הַטּוֹבָ֔ה אֲשֶׁ֖ר בְּעֵ֣בֶר הַיַּרְדֵּ֑ן הָהָ֥ר הַטּ֛וֹב הַזֶּ֖ה וְהַלְּבָנֽוֹן׃
+</div>
+Please, allow me to cross over and see the good land that is across the Yardein, this good mountain and the Lebanon.’’
+</span>
+<span class=h>
+<div class=h>
+וַיִּתְעַבֵּ֨ר יְהוָ֥ה בִּי֙ לְמַ֣עַנְכֶ֔ם וְלֹ֥א שָׁמַ֖ע אֵלָ֑י וַיֹּ֨אמֶר יְהוָ֤ה אֵלַי֙ רַב־לָ֔ךְ אַל־תּ֗וֹסֶף דַּבֵּ֥ר אֵלַ֛י ע֖וֹד בַּדָּבָ֥ר הַזֶּֽה׃
+וַיִּתְעַבֵּ֨ר יְהוָ֥ה בִּי֙ לְמַ֣עַנְכֶ֔ם וְלֹ֥א שָׁמַ֖ע אֵלָ֑י וַיֹּ֨אמֶר יְהוָ֤ה אֵלַי֙ רַב־לָ֔ךְ אַל־תּ֗וֹסֶף דַּבֵּ֥ר אֵלַ֛י ע֖וֹד בַּדָּבָ֥ר הַזֶּֽה׃
+</div>
+Adonoy grew angry at me through your fault and did not heed me; Adonoy said to me, ‘‘Enough for you! Do not go on speaking to Me any more about this matter.
+</span>
+<span class=h>
+<div class=h>
+עֲלֵ֣ה ׀ רֹ֣אשׁ הַפִּסְגָּ֗ה וְשָׂ֥א עֵינֶ֛יךָ יָ֧מָּה וְצָפֹ֛נָה וְתֵימָ֥נָה וּמִזְרָ֖חָה וּרְאֵ֣ה בְעֵינֶ֑יךָ כִּי־לֹ֥א תַעֲבֹ֖ר אֶת־הַיַּרְדֵּ֥ן הַזֶּֽה׃
+עֲלֵ֣ה ׀ רֹ֣אשׁ הַפִּסְגָּ֗ה וְשָׂ֥א עֵינֶ֛יךָ יָ֧מָּה וְצָפֹ֛נָה וְתֵימָ֥נָה וּמִזְרָ֖חָה וּרְאֵ֣ה בְעֵינֶ֑יךָ כִּי־לֹ֥א תַעֲבֹ֖ר אֶת־הַיַּרְדֵּ֥ן הַזֶּֽה׃
+</div>
+Go up to the peak of the Pisgah and look around—west, north, south, and east—see with your own eyes; for you will not cross this Yardein.
+</span>
+<span class=h>
+<div class=h>
+וְצַ֥ו אֶת־יְהוֹשֻׁ֖עַ וְחַזְּקֵ֣הוּ וְאַמְּצֵ֑הוּ כִּי־ה֣וּא יַעֲבֹ֗ר לִפְנֵי֙ הָעָ֣ם הַזֶּ֔ה וְהוּא֙ יַנְחִ֣יל אוֹתָ֔ם אֶת־הָאָ֖רֶץ אֲשֶׁ֥ר תִּרְאֶֽה׃
+וְצַ֥ו אֶת־יְהוֹשֻׁ֖עַ וְחַזְּקֵ֣הוּ וְאַמְּצֵ֑הוּ כִּי־ה֣וּא יַעֲבֹ֗ר לִפְנֵי֙ הָעָ֣ם הַזֶּ֔ה וְהוּא֙ יַנְחִ֣יל אוֹתָ֔ם אֶת־הָאָ֖רֶץ אֲשֶׁ֥ר תִּרְאֶֽה׃
+</div>
+And command Yehoshua, and encourage him and embolden him, because he will cross at the head of this people and he will apportion to them the land that you will see.’’
+</span>
+<span class=h>
+<div class=h>
+וַנֵּ֣שֶׁב בַּגָּ֔יְא מ֖וּל בֵּ֥ית פְּעֽוֹר׃ (פ)
+וַנֵּ֣שֶׁב בַּגָּ֔יְא מ֖וּל בֵּ֥ית פְּעֽוֹר׃ (פ)
+</div>
+We lived in the valley facing Beis Peor.
+</span>
+<span class=h>
+<div class=h>
+
+
+
+<h4>Chapter 4</h4>
+
+
+
+
+
+וְעַתָּ֣ה יִשְׂרָאֵ֗ל שְׁמַ֤ע אֶל־הַֽחֻקִּים֙ וְאֶל־הַמִּשְׁפָּטִ֔ים אֲשֶׁ֧ר אָֽנֹכִ֛י מְלַמֵּ֥ד אֶתְכֶ֖ם לַעֲשׂ֑וֹת לְמַ֣עַן תִּֽחְי֗וּ וּבָאתֶם֙ וִֽירִשְׁתֶּ֣ם אֶת־הָאָ֔רֶץ אֲשֶׁ֧ר יְהוָ֛ה אֱלֹהֵ֥י אֲבֹתֵיכֶ֖ם נֹתֵ֥ן לָכֶֽם׃
+וְעַתָּ֣ה יִשְׂרָאֵ֗ל שְׁמַ֤ע אֶל־הַֽחֻקִּים֙ וְאֶל־הַמִּשְׁפָּטִ֔ים אֲשֶׁ֧ר אָֽנֹכִ֛י מְלַמֵּ֥ד אֶתְכֶ֖ם לַעֲשׂ֑וֹת לְמַ֣עַן תִּֽחְי֗וּ וּבָאתֶם֙ וִֽירִשְׁתֶּ֣ם אֶת־הָאָ֔רֶץ אֲשֶׁ֧ר יְהוָ֛ה אֱלֹהֵ֥י אֲבֹתֵיכֶ֖ם נֹתֵ֥ן לָכֶֽם׃
+</div>
+And now Yisroel, listen to the statutes and to the laws that I am teaching you to fulfill, in order that you will live, and will arrive in, and will inherit the land that Adonoy, the God of your fathers, is giving you.
+</span>
+<span class=h>
+<div class=h>
+לֹ֣א תֹסִ֗פוּ עַל־הַדָּבָר֙ אֲשֶׁ֤ר אָנֹכִי֙ מְצַוֶּ֣ה אֶתְכֶ֔ם וְלֹ֥א תִגְרְע֖וּ מִמֶּ֑נּוּ לִשְׁמֹ֗ר אֶת־מִצְוֺת֙ יְהוָ֣ה אֱלֹֽהֵיכֶ֔ם אֲשֶׁ֥ר אָנֹכִ֖י מְצַוֶּ֥ה אֶתְכֶֽם׃
+לֹ֣א תֹסִ֗פוּ עַל־הַדָּבָר֙ אֲשֶׁ֤ר אָנֹכִי֙ מְצַוֶּ֣ה אֶתְכֶ֔ם וְלֹ֥א תִגְרְע֖וּ מִמֶּ֑נּוּ לִשְׁמֹ֗ר אֶת־מִצְוֺת֙ יְהוָ֣ה אֱלֹֽהֵיכֶ֔ם אֲשֶׁ֥ר אָנֹכִ֖י מְצַוֶּ֥ה אֶתְכֶֽם׃
+</div>
+Do not add to the matters that I am commanding you, and do not subtract from them; to guard the commandments of Adonoy, your God, that I am commanding you.
+</span>
+<span class=h>
+<div class=h>
+עֵֽינֵיכֶם֙ הָֽרֹאֹ֔ת אֵ֛ת אֲשֶׁר־עָשָׂ֥ה יְהוָ֖ה בְּבַ֣עַל פְּע֑וֹר כִּ֣י כָל־הָאִ֗ישׁ אֲשֶׁ֤ר הָלַךְ֙ אַחֲרֵ֣י בַֽעַל־פְּע֔וֹר הִשְׁמִיד֛וֹ יְהוָ֥ה אֱלֹהֶ֖יךָ מִקִּרְבֶּֽךָ׃
+עֵֽינֵיכֶם֙ הָֽרֹאֹ֔ת אֵ֛ת אֲשֶׁר־עָשָׂ֥ה יְהוָ֖ה בְּבַ֣עַל פְּע֑וֹר כִּ֣י כָל־הָאִ֗ישׁ אֲשֶׁ֤ר הָלַךְ֙ אַחֲרֵ֣י בַֽעַל־פְּע֔וֹר הִשְׁמִיד֛וֹ יְהוָ֥ה אֱלֹהֶ֖יךָ מִקִּרְבֶּֽךָ׃
+</div>
+Your eyes have witnessed what Adonoy did regarding Ba’al Peor, that every man who followed Ba’al Peor—Adonoy, your God, destroyed him from within you.
+</span>
+<span class=h>
+<div class=h>
+וְאַתֶּם֙ הַדְּבֵקִ֔ים בַּיהוָ֖ה אֱלֹהֵיכֶ֑ם חַיִּ֥ים כֻּלְּכֶ֖ם הַיּֽוֹם׃
+וְאַתֶּם֙ הַדְּבֵקִ֔ים בַּיהוָ֖ה אֱלֹהֵיכֶ֑ם חַיִּ֥ים כֻּלְּכֶ֖ם הַיּֽוֹם׃
+</div>
+But you who cling to Adonoy, your God—all of you are alive today.
+</span>
+<span class=h>
+<div class=h>
+רְאֵ֣ה ׀ לִמַּ֣דְתִּי אֶתְכֶ֗ם חֻקִּים֙ וּמִשְׁפָּטִ֔ים כַּאֲשֶׁ֥ר צִוַּ֖נִי יְהוָ֣ה אֱלֹהָ֑י לַעֲשׂ֣וֹת כֵּ֔ן בְּקֶ֣רֶב הָאָ֔רֶץ אֲשֶׁ֥ר אַתֶּ֛ם בָּאִ֥ים שָׁ֖מָּה לְרִשְׁתָּֽהּ׃
+רְאֵ֣ה ׀ לִמַּ֣דְתִּי אֶתְכֶ֗ם חֻקִּים֙ וּמִשְׁפָּטִ֔ים כַּאֲשֶׁ֥ר צִוַּ֖נִי יְהוָ֣ה אֱלֹהָ֑י לַעֲשׂ֣וֹת כֵּ֔ן בְּקֶ֣רֶב הָאָ֔רֶץ אֲשֶׁ֥ר אַתֶּ֛ם בָּאִ֥ים שָׁ֖מָּה לְרִשְׁתָּֽהּ׃
+</div>
+See, I have taught you statutes and laws as I was commanded by Adonoy, my God, to fulfill within the land that you are arriving there to inherit.
+</span>
+<span class=h>
+<div class=h>
+וּשְׁמַרְתֶּם֮ וַעֲשִׂיתֶם֒ כִּ֣י הִ֤וא חָכְמַתְכֶם֙ וּבִ֣ינַתְכֶ֔ם לְעֵינֵ֖י הָעַמִּ֑ים אֲשֶׁ֣ר יִשְׁמְע֗וּן אֵ֚ת כָּל־הַחֻקִּ֣ים הָאֵ֔לֶּה וְאָמְר֗וּ רַ֚ק עַם־חָכָ֣ם וְנָב֔וֹן הַגּ֥וֹי הַגָּד֖וֹל הַזֶּֽה׃
+וּשְׁמַרְתֶּם֮ וַעֲשִׂיתֶם֒ כִּ֣י הִ֤וא חָכְמַתְכֶם֙ וּבִ֣ינַתְכֶ֔ם לְעֵינֵ֖י הָעַמִּ֑ים אֲשֶׁ֣ר יִשְׁמְע֗וּן אֵ֚ת כָּל־הַחֻקִּ֣ים הָאֵ֔לֶּה וְאָמְר֗וּ רַ֚ק עַם־חָכָ֣ם וְנָב֔וֹן הַגּ֥וֹי הַגָּד֖וֹל הַזֶּֽה׃
+</div>
+You will preserve and you will fulfill [them], for that [displays] your wisdom and your understanding before the nations, who will hear all these statutes and will say, ‘‘The only wise and understanding people is this great nation.’’
+</span>
+<span class=h>
+<div class=h>
+כִּ֚י מִי־ג֣וֹי גָּד֔וֹל אֲשֶׁר־ל֥וֹ אֱלֹהִ֖ים קְרֹבִ֣ים אֵלָ֑יו כַּיהוָ֣ה אֱלֹהֵ֔ינוּ בְּכָּל־קָרְאֵ֖נוּ אֵלָֽיו׃
+כִּ֚י מִי־ג֣וֹי גָּד֔וֹל אֲשֶׁר־ל֥וֹ אֱלֹהִ֖ים קְרֹבִ֣ים אֵלָ֑יו כַּיהוָ֣ה אֱלֹהֵ֔ינוּ בְּכָּל־קָרְאֵ֖נוּ אֵלָֽיו׃
+</div>
+For who is a great nation that has God close to it as [is] Adonoy, our God, whenever we call to Him?
+</span>
+<span class=h>
+<div class=h>
+וּמִי֙ גּ֣וֹי גָּד֔וֹל אֲשֶׁר־ל֛וֹ חֻקִּ֥ים וּמִשְׁפָּטִ֖ים צַדִּיקִ֑ם כְּכֹל֙ הַתּוֹרָ֣ה הַזֹּ֔את אֲשֶׁ֧ר אָנֹכִ֛י נֹתֵ֥ן לִפְנֵיכֶ֖ם הַיּֽוֹם׃
+וּמִי֙ גּ֣וֹי גָּד֔וֹל אֲשֶׁר־ל֛וֹ חֻקִּ֥ים וּמִשְׁפָּטִ֖ים צַדִּיקִ֑ם כְּכֹל֙ הַתּוֹרָ֣ה הַזֹּ֔את אֲשֶׁ֧ר אָנֹכִ֛י נֹתֵ֥ן לִפְנֵיכֶ֖ם הַיּֽוֹם׃
+</div>
+And who is a great nation that has upright statutes and laws, like this entire Torah that I am putting before you today?
+</span>
+<span class=h>
+<div class=h>
+רַ֡ק הִשָּׁ֣מֶר לְךָ֩ וּשְׁמֹ֨ר נַפְשְׁךָ֜ מְאֹ֗ד פֶּן־תִּשְׁכַּ֨ח אֶת־הַדְּבָרִ֜ים אֲשֶׁר־רָא֣וּ עֵינֶ֗יךָ וּפֶן־יָס֙וּרוּ֙ מִלְּבָ֣בְךָ֔ כֹּ֖ל יְמֵ֣י חַיֶּ֑יךָ וְהוֹדַעְתָּ֥ם לְבָנֶ֖יךָ וְלִבְנֵ֥י בָנֶֽיךָ׃
+רַ֡ק הִשָּׁ֣מֶר לְךָ֩ וּשְׁמֹ֨ר נַפְשְׁךָ֜ מְאֹ֗ד פֶּן־תִּשְׁכַּ֨ח אֶת־הַדְּבָרִ֜ים אֲשֶׁר־רָא֣וּ עֵינֶ֗יךָ וּפֶן־יָס֙וּרוּ֙ מִלְּבָ֣בְךָ֔ כֹּ֖ל יְמֵ֣י חַיֶּ֑יךָ וְהוֹדַעְתָּ֥ם לְבָנֶ֖יךָ וְלִבְנֵ֥י בָנֶֽיךָ׃
+</div>
+Look out for yourself and guard your life exceedingly, lest you forget the words your eyes witnessed, and lest they are removed from your mind, all the days of your life; you will make them known to your children and to your grandchildren.
+</span>
+<span class=h>
+<div class=h>
+י֗וֹם אֲשֶׁ֨ר עָמַ֜דְתָּ לִפְנֵ֨י יְהוָ֣ה אֱלֹהֶיךָ֮ בְּחֹרֵב֒ בֶּאֱמֹ֨ר יְהוָ֜ה אֵלַ֗י הַקְהֶל־לִי֙ אֶת־הָעָ֔ם וְאַשְׁמִעֵ֖ם אֶת־דְּבָרָ֑י אֲשֶׁ֨ר יִלְמְד֜וּן לְיִרְאָ֣ה אֹתִ֗י כָּל־הַיָּמִים֙ אֲשֶׁ֨ר הֵ֤ם חַיִּים֙ עַל־הָ֣אֲדָמָ֔ה וְאֶת־בְּנֵיהֶ֖ם יְלַמֵּדֽוּן׃
+י֗וֹם אֲשֶׁ֨ר עָמַ֜דְתָּ לִפְנֵ֨י יְהוָ֣ה אֱלֹהֶיךָ֮ בְּחֹרֵב֒ בֶּאֱמֹ֨ר יְהוָ֜ה אֵלַ֗י הַקְהֶל־לִי֙ אֶת־הָעָ֔ם וְאַשְׁמִעֵ֖ם אֶת־דְּבָרָ֑י אֲשֶׁ֨ר יִלְמְד֜וּן לְיִרְאָ֣ה אֹתִ֗י כָּל־הַיָּמִים֙ אֲשֶׁ֨ר הֵ֤ם חַיִּים֙ עַל־הָ֣אֲדָמָ֔ה וְאֶת־בְּנֵיהֶ֖ם יְלַמֵּדֽוּן׃
+</div>
+The day you stood before Adonoy, your God, at Choreiv, when Adonoy said to me, ‘‘Assemble for Me the people, and I will let them hear My statements, so that they will learn to fear Me all the years that they are living on the land, and will teach their sons.’’
+</span>
+<span class=h>
+<div class=h>
+וַתִּקְרְב֥וּן וַתַּֽעַמְד֖וּן תַּ֣חַת הָהָ֑ר וְהָהָ֞ר בֹּעֵ֤ר בָּאֵשׁ֙ עַד־לֵ֣ב הַשָּׁמַ֔יִם חֹ֖שֶׁךְ עָנָ֥ן וַעֲרָפֶֽל׃
+וַתִּקְרְב֥וּן וַתַּֽעַמְד֖וּן תַּ֣חַת הָהָ֑ר וְהָהָ֞ר בֹּעֵ֤ר בָּאֵשׁ֙ עַד־לֵ֣ב הַשָּׁמַ֔יִם חֹ֖שֶׁךְ עָנָ֥ן וַעֲרָפֶֽל׃
+</div>
+You approached and stood beneath the mountain, while the mountain was burning with fire up to the heart of the heavens—darkness, cloud, and thick cloud.
+</span>
+<span class=h>
+<div class=h>
+וַיְדַבֵּ֧ר יְהוָ֛ה אֲלֵיכֶ֖ם מִתּ֣וֹךְ הָאֵ֑שׁ ק֤וֹל דְּבָרִים֙ אַתֶּ֣ם שֹׁמְעִ֔ים וּתְמוּנָ֛ה אֵינְכֶ֥ם רֹאִ֖ים זוּלָתִ֥י קֽוֹל׃
+וַיְדַבֵּ֧ר יְהוָ֛ה אֲלֵיכֶ֖ם מִתּ֣וֹךְ הָאֵ֑שׁ ק֤וֹל דְּבָרִים֙ אַתֶּ֣ם שֹׁמְעִ֔ים וּתְמוּנָ֛ה אֵינְכֶ֥ם רֹאִ֖ים זוּלָתִ֥י קֽוֹל׃
+</div>
+Adonoy addressed you from within the fire; you heard the sound of speech, seeing no image, solely sound.
+</span>
+<span class=h>
+<div class=h>
+וַיַּגֵּ֨ד לָכֶ֜ם אֶת־בְּרִית֗וֹ אֲשֶׁ֨ר צִוָּ֤ה אֶתְכֶם֙ לַעֲשׂ֔וֹת עֲשֶׂ֖רֶת הַדְּבָרִ֑ים וַֽיִּכְתְּבֵ֔ם עַל־שְׁנֵ֖י לֻח֥וֹת אֲבָנִֽים׃
+וַיַּגֵּ֨ד לָכֶ֜ם אֶת־בְּרִית֗וֹ אֲשֶׁ֨ר צִוָּ֤ה אֶתְכֶם֙ לַעֲשׂ֔וֹת עֲשֶׂ֖רֶת הַדְּבָרִ֑ים וַֽיִּכְתְּבֵ֔ם עַל־שְׁנֵ֖י לֻח֥וֹת אֲבָנִֽים׃
+</div>
+He told you His covenant, which He commanded you to fulfill—the ten statements—and He wrote them on two tablets of stone.
+</span>
+<span class=h>
+<div class=h>
+וְאֹתִ֞י צִוָּ֤ה יְהוָה֙ בָּעֵ֣ת הַהִ֔וא לְלַמֵּ֣ד אֶתְכֶ֔ם חֻקִּ֖ים וּמִשְׁפָּטִ֑ים לַעֲשֹׂתְכֶ֣ם אֹתָ֔ם בָּאָ֕רֶץ אֲשֶׁ֥ר אַתֶּ֛ם עֹבְרִ֥ים שָׁ֖מָּה לְרִשְׁתָּֽהּ׃
+וְאֹתִ֞י צִוָּ֤ה יְהוָה֙ בָּעֵ֣ת הַהִ֔וא לְלַמֵּ֣ד אֶתְכֶ֔ם חֻקִּ֖ים וּמִשְׁפָּטִ֑ים לַעֲשֹׂתְכֶ֣ם אֹתָ֔ם בָּאָ֕רֶץ אֲשֶׁ֥ר אַתֶּ֛ם עֹבְרִ֥ים שָׁ֖מָּה לְרִשְׁתָּֽהּ׃
+</div>
+Adonoy commanded me at that time to teach you statutes and laws, for you to fulfill them in the land that you are crossing over there to inherit.
+</span>
+<span class=h>
+<div class=h>
+וְנִשְׁמַרְתֶּ֥ם מְאֹ֖ד לְנַפְשֹׁתֵיכֶ֑ם כִּ֣י לֹ֤א רְאִיתֶם֙ כָּל־תְּמוּנָ֔ה בְּי֗וֹם דִּבֶּ֨ר יְהוָ֧ה אֲלֵיכֶ֛ם בְּחֹרֵ֖ב מִתּ֥וֹךְ הָאֵֽשׁ׃
+וְנִשְׁמַרְתֶּ֥ם מְאֹ֖ד לְנַפְשֹׁתֵיכֶ֑ם כִּ֣י לֹ֤א רְאִיתֶם֙ כָּל־תְּמוּנָ֔ה בְּי֗וֹם דִּבֶּ֨ר יְהוָ֧ה אֲלֵיכֶ֛ם בְּחֹרֵ֖ב מִתּ֥וֹךְ הָאֵֽשׁ׃
+</div>
+Be extremely cautious for your lives, for you did not see any image on the day Adonoy addressed you at Choreiv from within the fire.
+</span>
+<span class=h>
+<div class=h>
+פֶּ֨ן־תַּשְׁחִת֔וּן וַעֲשִׂיתֶ֥ם לָכֶ֛ם פֶּ֖סֶל תְּמוּנַ֣ת כָּל־סָ֑מֶל תַּבְנִ֥ית זָכָ֖ר א֥וֹ נְקֵבָֽה׃
+פֶּ֨ן־תַּשְׁחִת֔וּן וַעֲשִׂיתֶ֥ם לָכֶ֛ם פֶּ֖סֶל תְּמוּנַ֣ת כָּל־סָ֑מֶל תַּבְנִ֥ית זָכָ֖ר א֥וֹ נְקֵבָֽה׃
+</div>
+Lest you destructively make for yourselves a statue in the image of any form, the representation of a male or a female;
+</span>
+<span class=h>
+<div class=h>
+תַּבְנִ֕ית כָּל־בְּהֵמָ֖ה אֲשֶׁ֣ר בָּאָ֑רֶץ תַּבְנִית֙ כָּל־צִפּ֣וֹר כָּנָ֔ף אֲשֶׁ֥ר תָּע֖וּף בַּשָּׁמָֽיִם׃
+תַּבְנִ֕ית כָּל־בְּהֵמָ֖ה אֲשֶׁ֣ר בָּאָ֑רֶץ תַּבְנִית֙ כָּל־צִפּ֣וֹר כָּנָ֔ף אֲשֶׁ֥ר תָּע֖וּף בַּשָּׁמָֽיִם׃
+</div>
+[or] the representation of any animal that is on earth; [or] the representation of any winged bird that flies in the sky;
+</span>
+<span class=h>
+<div class=h>
+תַּבְנִ֕ית כָּל־רֹמֵ֖שׂ בָּאֲדָמָ֑ה תַּבְנִ֛ית כָּל־דָּגָ֥ה אֲשֶׁר־בַּמַּ֖יִם מִתַּ֥חַת לָאָֽרֶץ׃
+תַּבְנִ֕ית כָּל־רֹמֵ֖שׂ בָּאֲדָמָ֑ה תַּבְנִ֛ית כָּל־דָּגָ֥ה אֲשֶׁר־בַּמַּ֖יִם מִתַּ֥חַת לָאָֽרֶץ׃
+</div>
+[or] the representation of anything that crawls on the ground; [or] the representation of any fish that is in the water beneath the earth.
+</span>
+<span class=h>
+<div class=h>
+וּפֶן־תִּשָּׂ֨א עֵינֶ֜יךָ הַשָּׁמַ֗יְמָה וְֽ֠רָאִיתָ אֶת־הַשֶּׁ֨מֶשׁ וְאֶת־הַיָּרֵ֜חַ וְאֶת־הַכּֽוֹכָבִ֗ים כֹּ֚ל צְבָ֣א הַשָּׁמַ֔יִם וְנִדַּחְתָּ֛ וְהִשְׁתַּחֲוִ֥יתָ לָהֶ֖ם וַעֲבַדְתָּ֑ם אֲשֶׁ֨ר חָלַ֜ק יְהוָ֤ה אֱלֹהֶ֙יךָ֙ אֹתָ֔ם לְכֹל֙ הָֽעַמִּ֔ים תַּ֖חַת כָּל־הַשָּׁמָֽיִם׃
+וּפֶן־תִּשָּׂ֨א עֵינֶ֜יךָ הַשָּׁמַ֗יְמָה וְֽ֠רָאִיתָ אֶת־הַשֶּׁ֨מֶשׁ וְאֶת־הַיָּרֵ֜חַ וְאֶת־הַכּֽוֹכָבִ֗ים כֹּ֚ל צְבָ֣א הַשָּׁמַ֔יִם וְנִדַּחְתָּ֛ וְהִשְׁתַּחֲוִ֥יתָ לָהֶ֖ם וַעֲבַדְתָּ֑ם אֲשֶׁ֨ר חָלַ֜ק יְהוָ֤ה אֱלֹהֶ֙יךָ֙ אֹתָ֔ם לְכֹל֙ הָֽעַמִּ֔ים תַּ֖חַת כָּל־הַשָּׁמָֽיִם׃
+</div>
+Or lest you raise your eyes heavenward and see the sun or the moon or the stars—the entire host of the heavens—and you will err and bow to them and worship them, when Adonoy, your God, has made them available to all the peoples who are under the whole sky.
+</span>
+<span class=h>
+<div class=h>
+וְאֶתְכֶם֙ לָקַ֣ח יְהוָ֔ה וַיּוֹצִ֥א אֶתְכֶ֛ם מִכּ֥וּר הַבַּרְזֶ֖ל מִמִּצְרָ֑יִם לִהְי֥וֹת ל֛וֹ לְעַ֥ם נַחֲלָ֖ה כַּיּ֥וֹם הַזֶּֽה׃
+וְאֶתְכֶם֙ לָקַ֣ח יְהוָ֔ה וַיּוֹצִ֥א אֶתְכֶ֛ם מִכּ֥וּר הַבַּרְזֶ֖ל מִמִּצְרָ֑יִם לִהְי֥וֹת ל֛וֹ לְעַ֥ם נַחֲלָ֖ה כַּיּ֥וֹם הַזֶּֽה׃
+</div>
+But Adonoy took you [for Himself] when He took you out of the iron crucible, from Egypt, to be for Him a people-territory like this day.
+</span>
+<span class=h>
+<div class=h>
+וַֽיהוָ֥ה הִתְאַנֶּף־בִּ֖י עַל־דִּבְרֵיכֶ֑ם וַיִּשָּׁבַ֗ע לְבִלְתִּ֤י עָבְרִי֙ אֶת־הַיַּרְדֵּ֔ן וּלְבִלְתִּי־בֹא֙ אֶל־הָאָ֣רֶץ הַטּוֹבָ֔ה אֲשֶׁר֙ יְהוָ֣ה אֱלֹהֶ֔יךָ נֹתֵ֥ן לְךָ֖ נַחֲלָֽה׃
+וַֽיהוָ֥ה הִתְאַנֶּף־בִּ֖י עַל־דִּבְרֵיכֶ֑ם וַיִּשָּׁבַ֗ע לְבִלְתִּ֤י עָבְרִי֙ אֶת־הַיַּרְדֵּ֔ן וּלְבִלְתִּי־בֹא֙ אֶל־הָאָ֣רֶץ הַטּוֹבָ֔ה אֲשֶׁר֙ יְהוָ֣ה אֱלֹהֶ֔יךָ נֹתֵ֥ן לְךָ֖ נַחֲלָֽה׃
+</div>
+Yet Adonoy grew angry at me on account of your statements, and He swore that I would not cross the Yardein and would not enter the good land that Adonoy, your God, is giving you as territory.
+</span>
+<span class=h>
+<div class=h>
+כִּ֣י אָנֹכִ֥י מֵת֙ בָּאָ֣רֶץ הַזֹּ֔את אֵינֶ֥נִּי עֹבֵ֖ר אֶת־הַיַּרְדֵּ֑ן וְאַתֶּם֙ עֹֽבְרִ֔ים וִֽירִשְׁתֶּ֕ם אֶת־הָאָ֥רֶץ הַטּוֹבָ֖ה הַזֹּֽאת׃
+כִּ֣י אָנֹכִ֥י מֵת֙ בָּאָ֣רֶץ הַזֹּ֔את אֵינֶ֥נִּי עֹבֵ֖ר אֶת־הַיַּרְדֵּ֑ן וְאַתֶּם֙ עֹֽבְרִ֔ים וִֽירִשְׁתֶּ֕ם אֶת־הָאָ֥רֶץ הַטּוֹבָ֖ה הַזֹּֽאת׃
+</div>
+For I am to die in this land, I am not crossing the Yardein; but you are crossing, and will inherit this good land.
+</span>
+<span class=h>
+<div class=h>
+הִשָּׁמְר֣וּ לָכֶ֗ם פֶּֽן־תִּשְׁכְּחוּ֙ אֶת־בְּרִ֤ית יְהוָה֙ אֱלֹ֣הֵיכֶ֔ם אֲשֶׁ֥ר כָּרַ֖ת עִמָּכֶ֑ם וַעֲשִׂיתֶ֨ם לָכֶ֥ם פֶּ֙סֶל֙ תְּמ֣וּנַת כֹּ֔ל אֲשֶׁ֥ר צִוְּךָ֖ יְהוָ֥ה אֱלֹהֶֽיךָ׃
+הִשָּׁמְר֣וּ לָכֶ֗ם פֶּֽן־תִּשְׁכְּחוּ֙ אֶת־בְּרִ֤ית יְהוָה֙ אֱלֹ֣הֵיכֶ֔ם אֲשֶׁ֥ר כָּרַ֖ת עִמָּכֶ֑ם וַעֲשִׂיתֶ֨ם לָכֶ֥ם פֶּ֙סֶל֙ תְּמ֣וּנַת כֹּ֔ל אֲשֶׁ֥ר צִוְּךָ֖ יְהוָ֥ה אֱלֹהֶֽיךָ׃
+</div>
+Look out for yourselves lest you forget the covenant of Adonoy, your God, that He made with you, and you make for yourselves a statue—an image of anything—that Adonoy, your God, commanded you.
+</span>
+<span class=h>
+<div class=h>
+כִּ֚י יְהוָ֣ה אֱלֹהֶ֔יךָ אֵ֥שׁ אֹכְלָ֖ה ה֑וּא אֵ֖ל קַנָּֽא׃ (פ)
+כִּ֚י יְהוָ֣ה אֱלֹהֶ֔יךָ אֵ֥שׁ אֹכְלָ֖ה ה֑וּא אֵ֖ל קַנָּֽא׃ (פ)
+</div>
+For Adonoy, your God, is a consuming fire, a jealous Almighty.
+</span>
+<span class=h>
+<div class=h>
+כִּֽי־תוֹלִ֤יד בָּנִים֙ וּבְנֵ֣י בָנִ֔ים וְנוֹשַׁנְתֶּ֖ם בָּאָ֑רֶץ וְהִשְׁחַתֶּ֗ם וַעֲשִׂ֤יתֶם פֶּ֙סֶל֙ תְּמ֣וּנַת כֹּ֔ל וַעֲשִׂיתֶ֥ם הָרַ֛ע בְּעֵינֵ֥י יְהוָֽה־אֱלֹהֶ֖יךָ לְהַכְעִיסֽוֹ׃
+כִּֽי־תוֹלִ֤יד בָּנִים֙ וּבְנֵ֣י בָנִ֔ים וְנוֹשַׁנְתֶּ֖ם בָּאָ֑רֶץ וְהִשְׁחַתֶּ֗ם וַעֲשִׂ֤יתֶם פֶּ֙סֶל֙ תְּמ֣וּנַת כֹּ֔ל וַעֲשִׂיתֶ֥ם הָרַ֛ע בְּעֵינֵ֥י יְהוָֽה־אֱלֹהֶ֖יךָ לְהַכְעִיסֽוֹ׃
+</div>
+When you have children and grandchildren, and have grown old in the land; and you will be corrupt and make a statue—an image of anything—and do what is evil in the eyes of Adonoy, your God, to anger Him.
+</span>
+<span class=h>
+<div class=h>
+הַעִידֹתִי֩ בָכֶ֨ם הַיּ֜וֹם אֶת־הַשָּׁמַ֣יִם וְאֶת־הָאָ֗רֶץ כִּֽי־אָבֹ֣ד תֹּאבֵדוּן֮ מַהֵר֒ מֵעַ֣ל הָאָ֔רֶץ אֲשֶׁ֨ר אַתֶּ֜ם עֹבְרִ֧ים אֶת־הַיַּרְדֵּ֛ן שָׁ֖מָּה לְרִשְׁתָּ֑הּ לֹֽא־תַאֲרִיכֻ֤ן יָמִים֙ עָלֶ֔יהָ כִּ֥י הִשָּׁמֵ֖ד תִּשָּׁמֵדֽוּן׃
+הַעִידֹתִי֩ בָכֶ֨ם הַיּ֜וֹם אֶת־הַשָּׁמַ֣יִם וְאֶת־הָאָ֗רֶץ כִּֽי־אָבֹ֣ד תֹּאבֵדוּן֮ מַהֵר֒ מֵעַ֣ל הָאָ֔רֶץ אֲשֶׁ֨ר אַתֶּ֜ם עֹבְרִ֧ים אֶת־הַיַּרְדֵּ֛ן שָׁ֖מָּה לְרִשְׁתָּ֑הּ לֹֽא־תַאֲרִיכֻ֤ן יָמִים֙ עָלֶ֔יהָ כִּ֥י הִשָּׁמֵ֖ד תִּשָּׁמֵדֽוּן׃
+</div>
+I bring as witness against you today heaven and earth, that you will be completely and swiftly removed from upon the land, that you are crossing the Yardein there to inherit; you will not live long upon it, but will be completely destroyed.
+</span>
+<span class=h>
+<div class=h>
+וְהֵפִ֧יץ יְהוָ֛ה אֶתְכֶ֖ם בָּעַמִּ֑ים וְנִשְׁאַרְתֶּם֙ מְתֵ֣י מִסְפָּ֔ר בַּגּוֹיִ֕ם אֲשֶׁ֨ר יְנַהֵ֧ג יְהוָ֛ה אֶתְכֶ֖ם שָֽׁמָּה׃
+וְהֵפִ֧יץ יְהוָ֛ה אֶתְכֶ֖ם בָּעַמִּ֑ים וְנִשְׁאַרְתֶּם֙ מְתֵ֣י מִסְפָּ֔ר בַּגּוֹיִ֕ם אֲשֶׁ֨ר יְנַהֵ֧ג יְהוָ֛ה אֶתְכֶ֖ם שָֽׁמָּה׃
+</div>
+Adonoy will disperse you among the peoples, and you will remain few in number among the nations that Adonoy leads you to.
+</span>
+<span class=h>
+<div class=h>
+וַעֲבַדְתֶּם־שָׁ֣ם אֱלֹהִ֔ים מַעֲשֵׂ֖ה יְדֵ֣י אָדָ֑ם עֵ֣ץ וָאֶ֔בֶן אֲשֶׁ֤ר לֹֽא־יִרְאוּן֙ וְלֹ֣א יִשְׁמְע֔וּן וְלֹ֥א יֹֽאכְל֖וּן וְלֹ֥א יְרִיחֻֽן׃
+וַעֲבַדְתֶּם־שָׁ֣ם אֱלֹהִ֔ים מַעֲשֵׂ֖ה יְדֵ֣י אָדָ֑ם עֵ֣ץ וָאֶ֔בֶן אֲשֶׁ֤ר לֹֽא־יִרְאוּן֙ וְלֹ֣א יִשְׁמְע֔וּן וְלֹ֥א יֹֽאכְל֖וּן וְלֹ֥א יְרִיחֻֽן׃
+</div>
+There you will serve man-made gods of wood and stone that do not see, do not hear, do not eat, and do not smell.
+</span>
+<span class=h>
+<div class=h>
+וּבִקַּשְׁתֶּ֥ם מִשָּׁ֛ם אֶת־יְהוָ֥ה אֱלֹהֶ֖יךָ וּמָצָ֑אתָ כִּ֣י תִדְרְשֶׁ֔נּוּ בְּכָל־לְבָבְךָ֖ וּבְכָל־נַפְשֶֽׁךָ׃
+וּבִקַּשְׁתֶּ֥ם מִשָּׁ֛ם אֶת־יְהוָ֥ה אֱלֹהֶ֖יךָ וּמָצָ֑אתָ כִּ֣י תִדְרְשֶׁ֔נּוּ בְּכָל־לְבָבְךָ֖ וּבְכָל־נַפְשֶֽׁךָ׃
+</div>
+You will seek from there Adonoy, your God, and you will find [Him], when you seek Him wholeheartedly and with your whole being.
+</span>
+<span class=h>
+<div class=h>
+בַּצַּ֣ר לְךָ֔ וּמְצָא֕וּךָ כֹּ֖ל הַדְּבָרִ֣ים הָאֵ֑לֶּה בְּאַחֲרִית֙ הַיָּמִ֔ים וְשַׁבְתָּ֙ עַד־יְהוָ֣ה אֱלֹהֶ֔יךָ וְשָׁמַעְתָּ֖ בְּקֹלֽוֹ׃
+בַּצַּ֣ר לְךָ֔ וּמְצָא֕וּךָ כֹּ֖ל הַדְּבָרִ֣ים הָאֵ֑לֶּה בְּאַחֲרִית֙ הַיָּמִ֔ים וְשַׁבְתָּ֙ עַד־יְהוָ֣ה אֱלֹהֶ֔יךָ וְשָׁמַעְתָּ֖ בְּקֹלֽוֹ׃
+</div>
+When you are in distress and all these things happen to you, at the end of time, you will return to Adonoy, your God, and will obey Him.
+</span>
+<span class=h>
+<div class=h>
+כִּ֣י אֵ֤ל רַחוּם֙ יְהוָ֣ה אֱלֹהֶ֔יךָ לֹ֥א יַרְפְּךָ֖ וְלֹ֣א יַשְׁחִיתֶ֑ךָ וְלֹ֤א יִשְׁכַּח֙ אֶת־בְּרִ֣ית אֲבֹתֶ֔יךָ אֲשֶׁ֥ר נִשְׁבַּ֖ע לָהֶֽם׃
+כִּ֣י אֵ֤ל רַחוּם֙ יְהוָ֣ה אֱלֹהֶ֔יךָ לֹ֥א יַרְפְּךָ֖ וְלֹ֣א יַשְׁחִיתֶ֑ךָ וְלֹ֤א יִשְׁכַּח֙ אֶת־בְּרִ֣ית אֲבֹתֶ֔יךָ אֲשֶׁ֥ר נִשְׁבַּ֖ע לָהֶֽם׃
+</div>
+For a merciful Almighty is Adonoy, your God; He will not forsake you nor destroy you; nor will He forget the covenant of your fathers that He swore to them.
+</span>
+<span class=h>
+<div class=h>
+כִּ֣י שְׁאַל־נָא֩ לְיָמִ֨ים רִֽאשֹׁנִ֜ים אֲשֶׁר־הָי֣וּ לְפָנֶ֗יךָ לְמִן־הַיּוֹם֙ אֲשֶׁר֩ בָּרָ֨א אֱלֹהִ֤ים ׀ אָדָם֙ עַל־הָאָ֔רֶץ וּלְמִקְצֵ֥ה הַשָּׁמַ֖יִם וְעַד־קְצֵ֣ה הַשָּׁמָ֑יִם הֲנִֽהְיָ֗ה כַּדָּבָ֤ר הַגָּדוֹל֙ הַזֶּ֔ה א֖וֹ הֲנִשְׁמַ֥ע כָּמֹֽהוּ׃
+כִּ֣י שְׁאַל־נָא֩ לְיָמִ֨ים רִֽאשֹׁנִ֜ים אֲשֶׁר־הָי֣וּ לְפָנֶ֗יךָ לְמִן־הַיּוֹם֙ אֲשֶׁר֩ בָּרָ֨א אֱלֹהִ֤ים ׀ אָדָם֙ עַל־הָאָ֔רֶץ וּלְמִקְצֵ֥ה הַשָּׁמַ֖יִם וְעַד־קְצֵ֣ה הַשָּׁמָ֑יִם הֲנִֽהְיָ֗ה כַּדָּבָ֤ר הַגָּדוֹל֙ הַזֶּ֔ה א֖וֹ הֲנִשְׁמַ֥ע כָּמֹֽהוּ׃
+</div>
+Inquire now about the early years that preceded you, from the day that God created Adam on earth and from one end of the heavens to the other end of the heavens: Did anything ever happen comparable to this great event, or did anyone ever hear of such a thing?
+</span>
+<span class=h>
+<div class=h>
+הֲשָׁ֣מַֽע עָם֩ ק֨וֹל אֱלֹהִ֜ים מְדַבֵּ֧ר מִתּוֹךְ־הָאֵ֛שׁ כַּאֲשֶׁר־שָׁמַ֥עְתָּ אַתָּ֖ה וַיֶּֽחִי׃
+הֲשָׁ֣מַֽע עָם֩ ק֨וֹל אֱלֹהִ֜ים מְדַבֵּ֧ר מִתּוֹךְ־הָאֵ֛שׁ כַּאֲשֶׁר־שָׁמַ֥עְתָּ אַתָּ֖ה וַיֶּֽחִי׃
+</div>
+Did any people [ever] hear God’s voice speaking from within the fire as you heard and survive?
+</span>
+<span class=h>
+<div class=h>
+א֣וֹ ׀ הֲנִסָּ֣ה אֱלֹהִ֗ים לָ֠בוֹא לָקַ֨חַת ל֣וֹ גוֹי֮ מִקֶּ֣רֶב גּוֹי֒ בְּמַסֹּת֩ בְּאֹתֹ֨ת וּבְמוֹפְתִ֜ים וּבְמִלְחָמָ֗ה וּבְיָ֤ד חֲזָקָה֙ וּבִזְר֣וֹעַ נְטוּיָ֔ה וּבְמוֹרָאִ֖ים גְּדֹלִ֑ים כְּ֠כֹל אֲשֶׁר־עָשָׂ֨ה לָכֶ֜ם יְהוָ֧ה אֱלֹהֵיכֶ֛ם בְּמִצְרַ֖יִם לְעֵינֶֽיךָ׃
+א֣וֹ ׀ הֲנִסָּ֣ה אֱלֹהִ֗ים לָ֠בוֹא לָקַ֨חַת ל֣וֹ גוֹי֮ מִקֶּ֣רֶב גּוֹי֒ בְּמַסֹּת֩ בְּאֹתֹ֨ת וּבְמוֹפְתִ֜ים וּבְמִלְחָמָ֗ה וּבְיָ֤ד חֲזָקָה֙ וּבִזְר֣וֹעַ נְטוּיָ֔ה וּבְמוֹרָאִ֖ים גְּדֹלִ֑ים כְּ֠כֹל אֲשֶׁר־עָשָׂ֨ה לָכֶ֜ם יְהוָ֧ה אֱלֹהֵיכֶ֛ם בְּמִצְרַ֖יִם לְעֵינֶֽיךָ׃
+</div>
+Or did any god ever miraculously come and take for himself a nation from within a nation through tests, with signs and with wonders, and through warfare, and with a strong hand and with an extended arm, and with great displays; entirely as Adonoy, your God, did for you in Egypt as you watched?
+</span>
+<span class=h>
+<div class=h>
+אַתָּה֙ הָרְאֵ֣תָ לָדַ֔עַת כִּ֥י יְהוָ֖ה ה֣וּא הָאֱלֹהִ֑ים אֵ֥ין ע֖וֹד מִלְבַדּֽוֹ׃
+אַתָּה֙ הָרְאֵ֣תָ לָדַ֔עַת כִּ֥י יְהוָ֖ה ה֣וּא הָאֱלֹהִ֑ים אֵ֥ין ע֖וֹד מִלְבַדּֽוֹ׃
+</div>
+You have been shown that you might know that Adonoy, He is <i>the</i> God; there is no [power] other than He.
+</span>
+<span class=h>
+<div class=h>
+מִן־הַשָּׁמַ֛יִם הִשְׁמִֽיעֲךָ֥ אֶת־קֹל֖וֹ לְיַסְּרֶ֑ךָּ וְעַל־הָאָ֗רֶץ הֶרְאֲךָ֙ אֶת־אִשּׁ֣וֹ הַגְּדוֹלָ֔ה וּדְבָרָ֥יו שָׁמַ֖עְתָּ מִתּ֥וֹךְ הָאֵֽשׁ׃
+מִן־הַשָּׁמַ֛יִם הִשְׁמִֽיעֲךָ֥ אֶת־קֹל֖וֹ לְיַסְּרֶ֑ךָּ וְעַל־הָאָ֗רֶץ הֶרְאֲךָ֙ אֶת־אִשּׁ֣וֹ הַגְּדוֹלָ֔ה וּדְבָרָ֥יו שָׁמַ֖עְתָּ מִתּ֥וֹךְ הָאֵֽשׁ׃
+</div>
+From the sky He made audible to you His voice to teach you, and on the earth He showed you His great fire, and you heard His words form within the fire.
+</span>
+<span class=h>
+<div class=h>
+וְתַ֗חַת כִּ֤י אָהַב֙ אֶת־אֲבֹתֶ֔יךָ וַיִּבְחַ֥ר בְּזַרְע֖וֹ אַחֲרָ֑יו וַיּוֹצִֽאֲךָ֧ בְּפָנָ֛יו בְּכֹח֥וֹ הַגָּדֹ֖ל מִמִּצְרָֽיִם׃
+וְתַ֗חַת כִּ֤י אָהַב֙ אֶת־אֲבֹתֶ֔יךָ וַיִּבְחַ֥ר בְּזַרְע֖וֹ אַחֲרָ֑יו וַיּוֹצִֽאֲךָ֧ בְּפָנָ֛יו בְּכֹח֥וֹ הַגָּדֹ֖ל מִמִּצְרָֽיִם׃
+</div>
+Because He loved your forefathers, He chose his descendants after him; and He took you out before Him with His great strength from Egypt.
+</span>
+<span class=h>
+<div class=h>
+לְהוֹרִ֗ישׁ גּוֹיִ֛ם גְּדֹלִ֧ים וַעֲצֻמִ֛ים מִמְּךָ֖ מִפָּנֶ֑יךָ לַהֲבִֽיאֲךָ֗ לָֽתֶת־לְךָ֧ אֶת־אַרְצָ֛ם נַחֲלָ֖ה כַּיּ֥וֹם הַזֶּֽה׃
+לְהוֹרִ֗ישׁ גּוֹיִ֛ם גְּדֹלִ֧ים וַעֲצֻמִ֛ים מִמְּךָ֖ מִפָּנֶ֑יךָ לַהֲבִֽיאֲךָ֗ לָֽתֶת־לְךָ֧ אֶת־אַרְצָ֛ם נַחֲלָ֖ה כַּיּ֥וֹם הַזֶּֽה׃
+</div>
+To expel nations greater and stronger than you from before you; to bring you in [and] to give you their land as terrritory, like this day.
+</span>
+<span class=h>
+<div class=h>
+וְיָדַעְתָּ֣ הַיּ֗וֹם וַהֲשֵׁבֹתָ֮ אֶל־לְבָבֶךָ֒ כִּ֤י יְהוָה֙ ה֣וּא הָֽאֱלֹהִ֔ים בַּשָּׁמַ֣יִם מִמַּ֔עַל וְעַל־הָאָ֖רֶץ מִתָּ֑חַת אֵ֖ין עֽוֹד׃
+וְיָדַעְתָּ֣ הַיּ֗וֹם וַהֲשֵׁבֹתָ֮ אֶל־לְבָבֶךָ֒ כִּ֤י יְהוָה֙ ה֣וּא הָֽאֱלֹהִ֔ים בַּשָּׁמַ֣יִם מִמַּ֔עַל וְעַל־הָאָ֖רֶץ מִתָּ֑חַת אֵ֖ין עֽוֹד׃
+</div>
+You will know today, and will restore to your perception that Adonoy is <i>the</i> God in heaven above and on earth below; there is no other.
+</span>
+<span class=h>
+<div class=h>
+וְשָׁמַרְתָּ֞ אֶת־חֻקָּ֣יו וְאֶת־מִצְוֺתָ֗יו אֲשֶׁ֨ר אָנֹכִ֤י מְצַוְּךָ֙ הַיּ֔וֹם אֲשֶׁר֙ יִיטַ֣ב לְךָ֔ וּלְבָנֶ֖יךָ אַחֲרֶ֑יךָ וּלְמַ֨עַן תַּאֲרִ֤יךְ יָמִים֙ עַל־הַ֣אֲדָמָ֔ה אֲשֶׁ֨ר יְהוָ֧ה אֱלֹהֶ֛יךָ נֹתֵ֥ן לְךָ֖ כָּל־הַיָּמִֽים׃ (פ)
+וְשָׁמַרְתָּ֞ אֶת־חֻקָּ֣יו וְאֶת־מִצְוֺתָ֗יו אֲשֶׁ֨ר אָנֹכִ֤י מְצַוְּךָ֙ הַיּ֔וֹם אֲשֶׁר֙ יִיטַ֣ב לְךָ֔ וּלְבָנֶ֖יךָ אַחֲרֶ֑יךָ וּלְמַ֨עַן תַּאֲרִ֤יךְ יָמִים֙ עַל־הַ֣אֲדָמָ֔ה אֲשֶׁ֨ר יְהוָ֧ה אֱלֹהֶ֛יךָ נֹתֵ֥ן לְךָ֖ כָּל־הַיָּמִֽים׃ (פ)
+</div>
+You will guard His statutes and His commandments, which I am commanding you today, so that you have it good and your children after you, and in order that you live long on the land that Adonoy, your God, is giving you for all time.
+</span>
+<span class=h>
+<div class=h>
+אָ֣ז יַבְדִּ֤יל מֹשֶׁה֙ שָׁלֹ֣שׁ עָרִ֔ים בְּעֵ֖בֶר הַיַּרְדֵּ֑ן מִזְרְחָ֖ה שָֽׁמֶשׁ׃
+אָ֣ז יַבְדִּ֤יל מֹשֶׁה֙ שָׁלֹ֣שׁ עָרִ֔ים בְּעֵ֖בֶר הַיַּרְדֵּ֑ן מִזְרְחָ֖ה שָֽׁמֶשׁ׃
+</div>
+Then Moshe set aside three cities across the Yardein, where the sun rises,
+</span>
+<span class=h>
+<div class=h>
+לָנֻ֨ס שָׁ֜מָּה רוֹצֵ֗חַ אֲשֶׁ֨ר יִרְצַ֤ח אֶת־רֵעֵ֙הוּ֙ בִּבְלִי־דַ֔עַת וְה֛וּא לֹא־שֹׂנֵ֥א ל֖וֹ מִתְּמ֣וֹל שִׁלְשׁ֑וֹם וְנָ֗ס אֶל־אַחַ֛ת מִן־הֶעָרִ֥ים הָאֵ֖ל וָחָֽי׃
+לָנֻ֨ס שָׁ֜מָּה רוֹצֵ֗חַ אֲשֶׁ֨ר יִרְצַ֤ח אֶת־רֵעֵ֙הוּ֙ בִּבְלִי־דַ֔עַת וְה֛וּא לֹא־שֹׂנֵ֥א ל֖וֹ מִתְּמ֣וֹל שִׁלְשׁ֑וֹם וְנָ֗ס אֶל־אַחַ֛ת מִן־הֶעָרִ֥ים הָאֵ֖ל וָחָֽי׃
+</div>
+for a murderer to escape there, who has murdered his neighbor without intent, and he had not been his enemy yesterday [or] the day before. He is to flee to one of these cities to survive:
+</span>
+<span class=h>
+<div class=h>
+אֶת־בֶּ֧צֶר בַּמִּדְבָּ֛ר בְּאֶ֥רֶץ הַמִּישֹׁ֖ר לָרֻֽאוּבֵנִ֑י וְאֶת־רָאמֹ֤ת בַּגִּלְעָד֙ לַגָּדִ֔י וְאֶת־גּוֹלָ֥ן בַּבָּשָׁ֖ן לַֽמְנַשִּֽׁי׃
+אֶת־בֶּ֧צֶר בַּמִּדְבָּ֛ר בְּאֶ֥רֶץ הַמִּישֹׁ֖ר לָרֻֽאוּבֵנִ֑י וְאֶת־רָאמֹ֤ת בַּגִּלְעָד֙ לַגָּדִ֔י וְאֶת־גּוֹלָ֥ן בַּבָּשָׁ֖ן לַֽמְנַשִּֽׁי׃
+</div>
+Betzer in the wilderness in the plains of the Reuvenites, Romos in the Gil’od of the Gaddites, and Golon in the Boshon of the Menashians.
+</span>
+<span class=h>
+<div class=h>
+וְזֹ֖את הַתּוֹרָ֑ה אֲשֶׁר־שָׂ֣ם מֹשֶׁ֔ה לִפְנֵ֖י בְּנֵ֥י יִשְׂרָאֵֽל׃
+וְזֹ֖את הַתּוֹרָ֑ה אֲשֶׁר־שָׂ֣ם מֹשֶׁ֔ה לִפְנֵ֖י בְּנֵ֥י יִשְׂרָאֵֽל׃
+</div>
+And this is the Torah that Moshe set before Bnei Yisroel.
+</span>
+<span class=h>
+<div class=h>
+אֵ֚לֶּה הָֽעֵדֹ֔ת וְהַֽחֻקִּ֖ים וְהַמִּשְׁפָּטִ֑ים אֲשֶׁ֨ר דִּבֶּ֤ר מֹשֶׁה֙ אֶל־בְּנֵ֣י יִשְׂרָאֵ֔ל בְּצֵאתָ֖ם מִמִּצְרָֽיִם׃
+אֵ֚לֶּה הָֽעֵדֹ֔ת וְהַֽחֻקִּ֖ים וְהַמִּשְׁפָּטִ֑ים אֲשֶׁ֨ר דִּבֶּ֤ר מֹשֶׁה֙ אֶל־בְּנֵ֣י יִשְׂרָאֵ֔ל בְּצֵאתָ֖ם מִמִּצְרָֽיִם׃
+</div>
+These are the testimonies and the statutes and the laws that Moshe addressed to Bnei Yisroel when they came out of Egypt.
+</span>
+<span class=h>
+<div class=h>
+בְּעֵ֨בֶר הַיַּרְדֵּ֜ן בַּגַּ֗יְא מ֚וּל בֵּ֣ית פְּע֔וֹר בְּאֶ֗רֶץ סִיחֹן֙ מֶ֣לֶךְ הָֽאֱמֹרִ֔י אֲשֶׁ֥ר יוֹשֵׁ֖ב בְּחֶשְׁבּ֑וֹן אֲשֶׁ֨ר הִכָּ֤ה מֹשֶׁה֙ וּבְנֵֽי יִשְׂרָאֵ֔ל בְּצֵאתָ֖ם מִמִּצְרָֽיִם׃
+בְּעֵ֨בֶר הַיַּרְדֵּ֜ן בַּגַּ֗יְא מ֚וּל בֵּ֣ית פְּע֔וֹר בְּאֶ֗רֶץ סִיחֹן֙ מֶ֣לֶךְ הָֽאֱמֹרִ֔י אֲשֶׁ֥ר יוֹשֵׁ֖ב בְּחֶשְׁבּ֑וֹן אֲשֶׁ֨ר הִכָּ֤ה מֹשֶׁה֙ וּבְנֵֽי יִשְׂרָאֵ֔ל בְּצֵאתָ֖ם מִמִּצְרָֽיִם׃
+</div>
+Across the Yardein, in the valley facing Beis Peor, in the land of Sichon, King of the Emorites, who lived in Cheshbon, whom Moshe and Bnei Yisrael smote when they came out of Egypt.
+</span>
+<span class=h>
+<div class=h>
+וַיִּֽירְשׁ֨וּ אֶת־אַרְצ֜וֹ וְאֶת־אֶ֣רֶץ ׀ ע֣וֹג מֶֽלֶךְ־הַבָּשָׁ֗ן שְׁנֵי֙ מַלְכֵ֣י הָֽאֱמֹרִ֔י אֲשֶׁ֖ר בְּעֵ֣בֶר הַיַּרְדֵּ֑ן מִזְרַ֖ח שָֽׁמֶשׁ׃
+וַיִּֽירְשׁ֨וּ אֶת־אַרְצ֜וֹ וְאֶת־אֶ֣רֶץ ׀ ע֣וֹג מֶֽלֶךְ־הַבָּשָׁ֗ן שְׁנֵי֙ מַלְכֵ֣י הָֽאֱמֹרִ֔י אֲשֶׁ֖ר בְּעֵ֣בֶר הַיַּרְדֵּ֑ן מִזְרַ֖ח שָֽׁמֶשׁ׃
+</div>
+They inherited his land and the land of Og, King of the Boshon—the two Emorite kings who were across the Yardein, where the sun rises.
+</span>
+<span class=h>
+<div class=h>
+מֵעֲרֹעֵ֞ר אֲשֶׁ֨ר עַל־שְׂפַת־נַ֧חַל אַרְנֹ֛ן וְעַד־הַ֥ר שִׂיאֹ֖ן ה֥וּא חֶרְמֽוֹן׃
+מֵעֲרֹעֵ֞ר אֲשֶׁ֨ר עַל־שְׂפַת־נַ֧חַל אַרְנֹ֛ן וְעַד־הַ֥ר שִׂיאֹ֖ן ה֥וּא חֶרְמֽוֹן׃
+</div>
+From Aroer, which is on the bank of Wadi Arnon, up to Mount Sion which is Chermon.
+</span>
+<span class=h>
+<div class=h>
+וְכָל־הָ֨עֲרָבָ֜ה עֵ֤בֶר הַיַּרְדֵּן֙ מִזְרָ֔חָה וְעַ֖ד יָ֣ם הָעֲרָבָ֑ה תַּ֖חַת אַשְׁדֹּ֥ת הַפִּסְגָּֽה׃ (פ)
+וְכָל־הָ֨עֲרָבָ֜ה עֵ֤בֶר הַיַּרְדֵּן֙ מִזְרָ֔חָה וְעַ֖ד יָ֣ם הָעֲרָבָ֑ה תַּ֖חַת אַשְׁדֹּ֥ת הַפִּסְגָּֽה׃ (פ)
+</div>
+And the entire Arava across the Yardein to the east, to Arava Lake, beneath the slopes of the Pisgah.
+</span>
+<span class=h>
+<div class=h>
+
+
+
+<h4>Chapter 5</h4>
+
+
+
+
+
+וַיִּקְרָ֣א מֹשֶׁה֮ אֶל־כָּל־יִשְׂרָאֵל֒ וַיֹּ֣אמֶר אֲלֵהֶ֗ם שְׁמַ֤ע יִשְׂרָאֵל֙ אֶת־הַחֻקִּ֣ים וְאֶת־הַמִּשְׁפָּטִ֔ים אֲשֶׁ֧ר אָנֹכִ֛י דֹּבֵ֥ר בְּאָזְנֵיכֶ֖ם הַיּ֑וֹם וּלְמַדְתֶּ֣ם אֹתָ֔ם וּשְׁמַרְתֶּ֖ם לַעֲשֹׂתָֽם׃
+וַיִּקְרָ֣א מֹשֶׁה֮ אֶל־כָּל־יִשְׂרָאֵל֒ וַיֹּ֣אמֶר אֲלֵהֶ֗ם שְׁמַ֤ע יִשְׂרָאֵל֙ אֶת־הַחֻקִּ֣ים וְאֶת־הַמִּשְׁפָּטִ֔ים אֲשֶׁ֧ר אָנֹכִ֛י דֹּבֵ֥ר בְּאָזְנֵיכֶ֖ם הַיּ֑וֹם וּלְמַדְתֶּ֣ם אֹתָ֔ם וּשְׁמַרְתֶּ֖ם לַעֲשֹׂתָֽם׃
+</div>
+Moshe called all of Yisroel and said to them, ‘‘Hear, Yisroel, the statutes and the laws that I am relating in your presence today, for you are to study them and to be careful to fulfill them.
+</span>
+<span class=h>
+<div class=h>
+יְהוָ֣ה אֱלֹהֵ֗ינוּ כָּרַ֥ת עִמָּ֛נוּ בְּרִ֖ית בְּחֹרֵֽב׃
+יְהוָ֣ה אֱלֹהֵ֗ינוּ כָּרַ֥ת עִמָּ֛נוּ בְּרִ֖ית בְּחֹרֵֽב׃
+</div>
+Adonoy, our God, made a covenant with us at Choreiv.
+</span>
+<span class=h>
+<div class=h>
+לֹ֣א אֶת־אֲבֹתֵ֔ינוּ כָּרַ֥ת יְהוָ֖ה אֶת־הַבְּרִ֣ית הַזֹּ֑את כִּ֣י אִתָּ֗נוּ אֲנַ֨חְנוּ אֵ֥לֶּה פֹ֛ה הַיּ֖וֹם כֻּלָּ֥נוּ חַיִּֽים׃
+לֹ֣א אֶת־אֲבֹתֵ֔ינוּ כָּרַ֥ת יְהוָ֖ה אֶת־הַבְּרִ֣ית הַזֹּ֑את כִּ֣י אִתָּ֗נוּ אֲנַ֨חְנוּ אֵ֥לֶּה פֹ֛ה הַיּ֖וֹם כֻּלָּ֥נוּ חַיִּֽים׃
+</div>
+Not [only] with our fathers did Adonoy make this covenant, but with us, we who are here today, all of us alive.
+</span>
+<span class=h>
+<div class=h>
+פָּנִ֣ים ׀ בְּפָנִ֗ים דִּבֶּ֨ר יְהוָ֧ה עִמָּכֶ֛ם בָּהָ֖ר מִתּ֥וֹךְ הָאֵֽשׁ׃
+פָּנִ֣ים ׀ בְּפָנִ֗ים דִּבֶּ֨ר יְהוָ֧ה עִמָּכֶ֛ם בָּהָ֖ר מִתּ֥וֹךְ הָאֵֽשׁ׃
+</div>
+Face to face Adonoy spoke with you at the mountain from within the fire.
+</span>
+<span class=h>
+<div class=h>
+אָ֠נֹכִי עֹמֵ֨ד בֵּין־יְהוָ֤ה וּבֵֽינֵיכֶם֙ בָּעֵ֣ת הַהִ֔וא לְהַגִּ֥יד לָכֶ֖ם אֶת־דְּבַ֣ר יְהוָ֑ה כִּ֤י יְרֵאתֶם֙ מִפְּנֵ֣י הָאֵ֔שׁ וְלֹֽא־עֲלִיתֶ֥ם בָּהָ֖ר לֵאמֹֽר׃ (ס)
+אָ֠נֹכִי עֹמֵ֨ד בֵּין־יְהוָ֤ה וּבֵֽינֵיכֶם֙ בָּעֵ֣ת הַהִ֔וא לְהַגִּ֥יד לָכֶ֖ם אֶת־דְּבַ֣ר יְהוָ֑ה כִּ֤י יְרֵאתֶם֙ מִפְּנֵ֣י הָאֵ֔שׁ וְלֹֽא־עֲלִיתֶ֥ם בָּהָ֖ר לֵאמֹֽר׃ (ס)
+</div>
+I was standing between Adonoy and you at that time, to tell you Adonoy’s word, because you were afraid of the fire and did not go up on the mountain, saying:
+</span>
+<span class=h>
+<div class=h>
+אָֽנֹכִי֙ יְהוָ֣ה אֱלֹהֶ֔יךָ אֲשֶׁ֧ר הוֹצֵאתִ֛יךָ מֵאֶ֥רֶץ מִצְרַ֖יִם מִבֵּ֣֥ית עֲבָדִֽ֑ים׃
+אָֽנֹכִי֙ יְהוָ֣ה אֱלֹהֶ֔יךָ אֲשֶׁ֧ר הוֹצֵאתִ֛יךָ מֵאֶ֥רֶץ מִצְרַ֖יִם מִבֵּ֣֥ית עֲבָדִֽ֑ים׃
+</div>
+‘‘I am Adonoy, your God, Who took you out of the land of Egypt, the house of slavery.
+</span>
+<span class=h>
+<div class=h>
+לֹ֣א יִהְיֶ֥ה־לְךָ֛֩ אֱלֹהִ֥֨ים אֲחֵרִ֖֜ים עַל־פָּנָֽ֗יַ׃
+לֹ֣א יִהְיֶ֥ה־לְךָ֛֩ אֱלֹהִ֥֨ים אֲחֵרִ֖֜ים עַל־פָּנָֽ֗יַ׃
+</div>
+You will not have any other gods in My Presence.
+</span>
+<span class=h>
+<div class=h>
+לֹֽ֣א־תַעֲשֶׂ֥ה־לְךָ֥֣ פֶ֣֙סֶל֙ ׀ כָּל־תְּמוּנָ֔֡ה אֲשֶׁ֤֣ר בַּשָּׁמַ֣֙יִם֙ ׀ מִמַּ֔֡עַל וַאֲשֶׁ֥ר֩ בָּאָ֖֨רֶץ מִתָּ֑֜חַת וַאֲשֶׁ֥ר בַּמַּ֖֣יִם ׀ מִתַּ֥֣חַת לָאָֽ֗רֶץ׃
+לֹֽ֣א־תַעֲשֶׂ֥ה־לְךָ֥֣ פֶ֣֙סֶל֙ ׀ כָּל־תְּמוּנָ֔֡ה אֲשֶׁ֤֣ר בַּשָּׁמַ֣֙יִם֙ ׀ מִמַּ֔֡עַל וַאֲשֶׁ֥ר֩ בָּאָ֖֨רֶץ מִתָּ֑֜חַת וַאֲשֶׁ֥ר בַּמַּ֖֣יִם ׀ מִתַּ֥֣חַת לָאָֽ֗רֶץ׃
+</div>
+Do not make for yourself a statue of any representation that is in the skies above or that is on the earth below, or that is in the water beneath the earth.
+</span>
+<span class=h>
+<div class=h>
+לֹא־תִשְׁתַּחֲוֶ֥֣ה לָהֶ֖ם֮ וְלֹ֣א תָעָבְדֵ֑ם֒ כִּ֣י אָנֹכִ֞י יְהוָ֤ה אֱלֹהֶ֙יךָ֙ אֵ֣ל קַנָּ֔א פֹּ֠קֵד עֲוֺ֨ן אָב֧וֹת עַל־בָּנִ֛ים וְעַל־שִׁלֵּשִׁ֥ים וְעַל־רִבֵּעִ֖ים לְשֹׂנְאָֽ֑י׃
+לֹא־תִשְׁתַּחֲוֶ֥֣ה לָהֶ֖ם֮ וְלֹ֣א תָעָבְדֵ֑ם֒ כִּ֣י אָנֹכִ֞י יְהוָ֤ה אֱלֹהֶ֙יךָ֙ אֵ֣ל קַנָּ֔א פֹּ֠קֵד עֲוֺ֨ן אָב֧וֹת עַל־בָּנִ֛ים וְעַל־שִׁלֵּשִׁ֥ים וְעַל־רִבֵּעִ֖ים לְשֹׂנְאָֽ֑י׃
+</div>
+Do not bow to them, and do not serve them, for I am Adonoy, your God, jealous Almighty, Who reckons the sin of parents for children and for the third generation and for the fourth generation of My enemies, 
+</span>
+<span class=h>
+<div class=h>
+וְעֹ֤֥שֶׂה חֶ֖֙סֶד֙ לַֽאֲלָפִ֑֔ים לְאֹהֲבַ֖י וּלְשֹׁמְרֵ֥י מצותו [מִצְוֺתָֽי׃] (ס)
+וְעֹ֤֥שֶׂה חֶ֖֙סֶד֙ לַֽאֲלָפִ֑֔ים לְאֹהֲבַ֖י וּלְשֹׁמְרֵ֥י מצותו [מִצְוֺתָֽי׃] (ס)
+</div>
+and performs kindliness for thousands [of generations] for those who love Me and for those who guard My commandments.
+</span>
+<span class=h>
+<div class=h>
+לֹ֥א תִשָּׂ֛א אֶת־שֵֽׁם־יְהוָ֥ה אֱלֹהֶ֖יךָ לַשָּׁ֑וְא כִּ֣י לֹ֤א יְנַקֶּה֙ יְהוָ֔ה אֵ֛ת אֲשֶׁר־יִשָּׂ֥א אֶת־שְׁמ֖וֹ לַשָּֽׁוְא׃ (ס)
+לֹ֥א תִשָּׂ֛א אֶת־שֵֽׁם־יְהוָ֥ה אֱלֹהֶ֖יךָ לַשָּׁ֑וְא כִּ֣י לֹ֤א יְנַקֶּה֙ יְהוָ֔ה אֵ֛ת אֲשֶׁר־יִשָּׂ֥א אֶת־שְׁמ֖וֹ לַשָּֽׁוְא׃ (ס)
+</div>
+Do not swear using the Name of Adonoy, your God, in vain; for Adonoy will not hold innocent whoever swears by His Name in vain.
+</span>
+<span class=h>
+<div class=h>
+שָׁמ֣֛וֹר אֶת־י֥וֹם֩ הַשַׁבָּ֖֨ת לְקַדְּשׁ֑֜וֹ כַּאֲשֶׁ֥ר צִוְּךָ֖֣ ׀ יְהוָ֥֣ה אֱלֹהֶֽ֗יךָ
+שָׁמ֣֛וֹר אֶת־י֥וֹם֩ הַשַׁבָּ֖֨ת לְקַדְּשׁ֑֜וֹ כַּאֲשֶׁ֥ר צִוְּךָ֖֣ ׀ יְהוָ֥֣ה אֱלֹהֶֽ֗יךָ
+</div>
+Preserve the day of Shabbos to sanctify it, as Adonoy, your God, commanded you.
+</span>
+<span class=h>
+<div class=h>
+שֵׁ֤֣שֶׁת יָמִ֣ים֙ תַּֽעֲבֹ֔ד֮ וְעָשִׂ֖֣יתָ כָּֿל־מְלַאכְתֶּֽךָ֒׃
+שֵׁ֤֣שֶׁת יָמִ֣ים֙ תַּֽעֲבֹ֔ד֮ וְעָשִׂ֖֣יתָ כָּֿל־מְלַאכְתֶּֽךָ֒׃
+</div>
+Six days will you work and perform all your labor,
+</span>
+<span class=h>
+<div class=h>
+וְי֙וֹם֙ הַשְּׁבִיעִ֜֔י שַׁבָּ֖֣ת ׀ לַיהוָ֖֣ה אֱלֹהֶ֑֗יךָ לֹ֣א תַעֲשֶׂ֣ה כָל־מְלָאכָ֡ה אַתָּ֣ה וּבִנְךָֽ־וּבִתֶּ֣ךָ וְעַבְדְּךָֽ־וַ֠אֲמָתֶךָ וְשׁוֹרְךָ֨ וַחֲמֹֽרְךָ֜ וְכָל־בְּהֶמְתֶּ֗ךָ וְגֵֽרְךָ֙ אֲשֶׁ֣ר בִּשְׁעָרֶ֔יךָ לְמַ֗עַן יָנ֛וּחַ עַבְדְּךָ֥ וַאֲמָתְךָ֖ כָּמֽ֑וֹךָ׃
+וְי֙וֹם֙ הַשְּׁבִיעִ֜֔י שַׁבָּ֖֣ת ׀ לַיהוָ֖֣ה אֱלֹהֶ֑֗יךָ לֹ֣א תַעֲשֶׂ֣ה כָל־מְלָאכָ֡ה אַתָּ֣ה וּבִנְךָֽ־וּבִתֶּ֣ךָ וְעַבְדְּךָֽ־וַ֠אֲמָתֶךָ וְשׁוֹרְךָ֨ וַחֲמֹֽרְךָ֜ וְכָל־בְּהֶמְתֶּ֗ךָ וְגֵֽרְךָ֙ אֲשֶׁ֣ר בִּשְׁעָרֶ֔יךָ לְמַ֗עַן יָנ֛וּחַ עַבְדְּךָ֥ וַאֲמָתְךָ֖ כָּמֽ֑וֹךָ׃
+</div>
+but the seventh day, Shabbos for Adonoy, your God, do not perform any labor—you, your son and your daughter, your male slave and your female slave, your ox and your donkey and all your animals, and the non-Jew who dwells in your cities—in order that your male slave will rest—and your female slave—like you.
+</span>
+<span class=h>
+<div class=h>
+וְזָכַרְתָּ֞֗ כִּ֣י־עֶ֤֥בֶד הָיִ֣֙יתָ֙ ׀ בְּאֶ֣רֶץ מִצְרַ֔֗יִם וַיֹּצִ֨אֲךָ֜֩ יְהוָ֤֨ה אֱלֹהֶ֤֙יךָ֙ מִשָּׁ֔ם֙ בְּיָ֤֥ד חֲזָקָ֖ה֙ וּבִזְרֹ֣עַ נְטוּיָ֑֔ה עַל־כֵּ֗ן צִוְּךָ֙ יְהוָ֣ה אֱלֹהֶ֔יךָ לַעֲשׂ֖וֹת אֶת־י֥וֹם הַשַׁבָּֽת׃ (ס)
+וְזָכַרְתָּ֞֗ כִּ֣י־עֶ֤֥בֶד הָיִ֣֙יתָ֙ ׀ בְּאֶ֣רֶץ מִצְרַ֔֗יִם וַיֹּצִ֨אֲךָ֜֩ יְהוָ֤֨ה אֱלֹהֶ֤֙יךָ֙ מִשָּׁ֔ם֙ בְּיָ֤֥ד חֲזָקָ֖ה֙ וּבִזְרֹ֣עַ נְטוּיָ֑֔ה עַל־כֵּ֗ן צִוְּךָ֙ יְהוָ֣ה אֱלֹהֶ֔יךָ לַעֲשׂ֖וֹת אֶת־י֥וֹם הַשַׁבָּֽת׃ (ס)
+</div>
+Remember that you were a slave in the land of Egypt, and Adonoy, your God, took you out of there with a strong hand and an extended arm. That is why Adonoy, your God, commanded you to celebrate the Shabbos day.
+</span>
+<span class=h>
+<div class=h>
+כַּבֵּ֤ד אֶת־אָבִ֙יךָ֙ וְאֶת־אִמֶּ֔ךָ כַּאֲשֶׁ֥ר צִוְּךָ֖ יְהוָ֣ה אֱלֹהֶ֑יךָ לְמַ֣עַן ׀ יַאֲרִיכֻ֣ן יָמֶ֗יךָ וּלְמַ֙עַן֙ יִ֣יטַב לָ֔ךְ עַ֚ל הָֽאֲדָמָ֔ה אֲשֶׁר־יְהוָ֥ה אֱלֹהֶ֖יךָ נֹתֵ֥ן לָֽךְ׃ (ס)
+כַּבֵּ֤ד אֶת־אָבִ֙יךָ֙ וְאֶת־אִמֶּ֔ךָ כַּאֲשֶׁ֥ר צִוְּךָ֖ יְהוָ֣ה אֱלֹהֶ֑יךָ לְמַ֣עַן ׀ יַאֲרִיכֻ֣ן יָמֶ֗יךָ וּלְמַ֙עַן֙ יִ֣יטַב לָ֔ךְ עַ֚ל הָֽאֲדָמָ֔ה אֲשֶׁר־יְהוָ֥ה אֱלֹהֶ֖יךָ נֹתֵ֥ן לָֽךְ׃ (ס)
+</div>
+Honor your father and your mother in the way Adonoy, your God, commanded you; in order that you live long and in order that you have it good on the land that Adonoy, your God, is giving you.
+</span>
+<span class=h>
+<div class=h>
+לֹ֥֖א תִּֿרְצָֽח׃ (ס) וְלֹ֖֣א תִּֿנְאָֽ֑ף׃ (ס) וְלֹ֖֣א תִּֿגְנֹֽ֔ב׃ (ס) וְלֹֽא־תַעֲנֶ֥ה בְרֵֽעֲךָ֖ עֵ֥ד שָֽׁוְא׃ (ס)
+לֹ֥֖א תִּֿרְצָֽח׃ (ס) וְלֹ֖֣א תִּֿנְאָֽ֑ף׃ (ס) וְלֹ֖֣א תִּֿגְנֹֽ֔ב׃ (ס) וְלֹֽא־תַעֲנֶ֥ה בְרֵֽעֲךָ֖ עֵ֥ד שָֽׁוְא׃ (ס)
+</div>
+Do not murder. Do not commit adultery. And do not kidnap. And do not testify against your neighbor in vain.
+</span>
+<span class=h>
+<div class=h>
+וְלֹ֥א תַחְמֹ֖ד אֵ֣שֶׁת רֵעֶ֑ךָ (ס) וְלֹ֨א תִתְאַוֶּ֜ה בֵּ֣ית רֵעֶ֗ךָ שָׂדֵ֜הוּ וְעַבְדּ֤וֹ וַאֲמָתוֹ֙ שׁוֹר֣וֹ וַחֲמֹר֔וֹ וְכֹ֖ל אֲשֶׁ֥ר לְרֵעֶֽךָ׃ (ס)
+וְלֹ֥א תַחְמֹ֖ד אֵ֣שֶׁת רֵעֶ֑ךָ (ס) וְלֹ֨א תִתְאַוֶּ֜ה בֵּ֣ית רֵעֶ֗ךָ שָׂדֵ֜הוּ וְעַבְדּ֤וֹ וַאֲמָתוֹ֙ שׁוֹר֣וֹ וַחֲמֹר֔וֹ וְכֹ֖ל אֲשֶׁ֥ר לְרֵעֶֽךָ׃ (ס)
+</div>
+And do not covet your neighbor’s wife. And do not desire your neighbor’s house, his field, or his male slave or his female slave, his ox or his donkey, or anything else that belongs to your neighbor.’’
+</span>
+<span class=h>
+<div class=h>
+אֶֽת־הַדְּבָרִ֣ים הָאֵ֡לֶּה דִּבֶּר֩ יְהוָ֨ה אֶל־כָּל־קְהַלְכֶ֜ם בָּהָ֗ר מִתּ֤וֹךְ הָאֵשׁ֙ הֶֽעָנָ֣ן וְהָֽעֲרָפֶ֔ל ק֥וֹל גָּד֖וֹל וְלֹ֣א יָסָ֑ף וַֽיִּכְתְּבֵ֗ם עַל־שְׁנֵי֙ לֻחֹ֣ת אֲבָנִ֔ים וַֽיִּתְּנֵ֖ם אֵלָֽי׃
+אֶֽת־הַדְּבָרִ֣ים הָאֵ֡לֶּה דִּבֶּר֩ יְהוָ֨ה אֶל־כָּל־קְהַלְכֶ֜ם בָּהָ֗ר מִתּ֤וֹךְ הָאֵשׁ֙ הֶֽעָנָ֣ן וְהָֽעֲרָפֶ֔ל ק֥וֹל גָּד֖וֹל וְלֹ֣א יָסָ֑ף וַֽיִּכְתְּבֵ֗ם עַל־שְׁנֵי֙ לֻחֹ֣ת אֲבָנִ֔ים וַֽיִּתְּנֵ֖ם אֵלָֽי׃
+</div>
+These words did Adonoy address to your entire assemblage at the mountain from within the fire, the cloud, and the thick cloud—a voice great and without cessation. He wrote them on two tablets of stone, and He gave them to me.
+</span>
+<span class=h>
+<div class=h>
+וַיְהִ֗י כְּשָׁמְעֲכֶ֤ם אֶת־הַקּוֹל֙ מִתּ֣וֹךְ הַחֹ֔שֶׁךְ וְהָהָ֖ר בֹּעֵ֣ר בָּאֵ֑שׁ וַתִּקְרְב֣וּן אֵלַ֔י כָּל־רָאשֵׁ֥י שִׁבְטֵיכֶ֖ם וְזִקְנֵיכֶֽם׃
+וַיְהִ֗י כְּשָׁמְעֲכֶ֤ם אֶת־הַקּוֹל֙ מִתּ֣וֹךְ הַחֹ֔שֶׁךְ וְהָהָ֖ר בֹּעֵ֣ר בָּאֵ֑שׁ וַתִּקְרְב֣וּן אֵלַ֔י כָּל־רָאשֵׁ֥י שִׁבְטֵיכֶ֖ם וְזִקְנֵיכֶֽם׃
+</div>
+When you heard the voice from within the darkness, as the mountain burned with fire, you approached me—all the leaders of your tribes and your elders.
+</span>
+<span class=h>
+<div class=h>
+וַתֹּאמְר֗וּ הֵ֣ן הֶרְאָ֜נוּ יְהוָ֤ה אֱלֹהֵ֙ינוּ֙ אֶת־כְּבֹד֣וֹ וְאֶת־גָּדְל֔וֹ וְאֶת־קֹל֥וֹ שָׁמַ֖עְנוּ מִתּ֣וֹךְ הָאֵ֑שׁ הַיּ֤וֹם הַזֶּה֙ רָאִ֔ינוּ כִּֽי־יְדַבֵּ֧ר אֱלֹהִ֛ים אֶת־הָֽאָדָ֖ם וָחָֽי׃
+וַתֹּאמְר֗וּ הֵ֣ן הֶרְאָ֜נוּ יְהוָ֤ה אֱלֹהֵ֙ינוּ֙ אֶת־כְּבֹד֣וֹ וְאֶת־גָּדְל֔וֹ וְאֶת־קֹל֥וֹ שָׁמַ֖עְנוּ מִתּ֣וֹךְ הָאֵ֑שׁ הַיּ֤וֹם הַזֶּה֙ רָאִ֔ינוּ כִּֽי־יְדַבֵּ֧ר אֱלֹהִ֛ים אֶת־הָֽאָדָ֖ם וָחָֽי׃
+</div>
+You said, ‘‘Look! Adonoy, our God, showed us His glory and His greatness, and His voice we heard from within the fire; today we saw that God can address man and he will survive.
+</span>
+<span class=h>
+<div class=h>
+וְעַתָּה֙ לָ֣מָּה נָמ֔וּת כִּ֣י תֹֽאכְלֵ֔נוּ הָאֵ֥שׁ הַגְּדֹלָ֖ה הַזֹּ֑את אִם־יֹסְפִ֣ים ׀ אֲנַ֗חְנוּ לִ֠שְׁמֹעַ אֶת־ק֨וֹל יְהוָ֧ה אֱלֹהֵ֛ינוּ ע֖וֹד וָמָֽתְנוּ׃
+וְעַתָּה֙ לָ֣מָּה נָמ֔וּת כִּ֣י תֹֽאכְלֵ֔נוּ הָאֵ֥שׁ הַגְּדֹלָ֖ה הַזֹּ֑את אִם־יֹסְפִ֣ים ׀ אֲנַ֗חְנוּ לִ֠שְׁמֹעַ אֶת־ק֨וֹל יְהוָ֧ה אֱלֹהֵ֛ינוּ ע֖וֹד וָמָֽתְנוּ׃
+</div>
+Now, why should we die when this great fire will consume us? If we continue to hear the voice of Adonoy, our God, any longer we will die.
+</span>
+<span class=h>
+<div class=h>
+כִּ֣י מִ֣י כָל־בָּשָׂ֡ר אֲשֶׁ֣ר שָׁמַ֣ע קוֹל֩ אֱלֹהִ֨ים חַיִּ֜ים מְדַבֵּ֧ר מִתּוֹךְ־הָאֵ֛שׁ כָּמֹ֖נוּ וַיֶּֽחִי׃
+כִּ֣י מִ֣י כָל־בָּשָׂ֡ר אֲשֶׁ֣ר שָׁמַ֣ע קוֹל֩ אֱלֹהִ֨ים חַיִּ֜ים מְדַבֵּ֧ר מִתּוֹךְ־הָאֵ֛שׁ כָּמֹ֖נוּ וַיֶּֽחִי׃
+</div>
+For who of all flesh has heard the voice of the living God speaking from within the fire like us, and survived?
+</span>
+<span class=h>
+<div class=h>
+קְרַ֤ב אַתָּה֙ וּֽשֲׁמָ֔ע אֵ֛ת כָּל־אֲשֶׁ֥ר יֹאמַ֖ר יְהוָ֣ה אֱלֹהֵ֑ינוּ וְאַ֣תְּ ׀ תְּדַבֵּ֣ר אֵלֵ֗ינוּ אֵת֩ כָּל־אֲשֶׁ֨ר יְדַבֵּ֜ר יְהוָ֧ה אֱלֹהֵ֛ינוּ אֵלֶ֖יךָ וְשָׁמַ֥עְנוּ וְעָשִֽׂינוּ׃
+קְרַ֤ב אַתָּה֙ וּֽשֲׁמָ֔ע אֵ֛ת כָּל־אֲשֶׁ֥ר יֹאמַ֖ר יְהוָ֣ה אֱלֹהֵ֑ינוּ וְאַ֣תְּ ׀ תְּדַבֵּ֣ר אֵלֵ֗ינוּ אֵת֩ כָּל־אֲשֶׁ֨ר יְדַבֵּ֜ר יְהוָ֧ה אֱלֹהֵ֛ינוּ אֵלֶ֖יךָ וְשָׁמַ֥עְנוּ וְעָשִֽׂינוּ׃
+</div>
+Approach—yourself—and listen to everything that Adonoy, our God, says; and you will tell us everything that Adonoy, our God, tells you and we will accept and fulfill.
+</span>
+<span class=h>
+<div class=h>
+וַיִּשְׁמַ֤ע יְהוָה֙ אֶת־ק֣וֹל דִּבְרֵיכֶ֔ם בְּדַבֶּרְכֶ֖ם אֵלָ֑י וַיֹּ֨אמֶר יְהוָ֜ה אֵלַ֗י שָׁ֠מַעְתִּי אֶת־ק֨וֹל דִּבְרֵ֜י הָעָ֤ם הַזֶּה֙ אֲשֶׁ֣ר דִּבְּר֣וּ אֵלֶ֔יךָ הֵיטִ֖יבוּ כָּל־אֲשֶׁ֥ר דִּבֵּֽרוּ׃
+וַיִּשְׁמַ֤ע יְהוָה֙ אֶת־ק֣וֹל דִּבְרֵיכֶ֔ם בְּדַבֶּרְכֶ֖ם אֵלָ֑י וַיֹּ֨אמֶר יְהוָ֜ה אֵלַ֗י שָׁ֠מַעְתִּי אֶת־ק֨וֹל דִּבְרֵ֜י הָעָ֤ם הַזֶּה֙ אֲשֶׁ֣ר דִּבְּר֣וּ אֵלֶ֔יךָ הֵיטִ֖יבוּ כָּל־אֲשֶׁ֥ר דִּבֵּֽרוּ׃
+</div>
+Adonoy heard the intent of your words when you spoke to me; and Adonoy said to me, ‘‘ I have heard the intent of this people’s words that they spoke to you—everything they said is excellent.
+</span>
+<span class=h>
+<div class=h>
+מִֽי־יִתֵּ֡ן וְהָיָה֩ לְבָבָ֨ם זֶ֜ה לָהֶ֗ם לְיִרְאָ֥ה אֹתִ֛י וְלִשְׁמֹ֥ר אֶת־כָּל־מִצְוֺתַ֖י כָּל־הַיָּמִ֑ים לְמַ֨עַן יִיטַ֥ב לָהֶ֛ם וְלִבְנֵיהֶ֖ם לְעֹלָֽם׃
+מִֽי־יִתֵּ֡ן וְהָיָה֩ לְבָבָ֨ם זֶ֜ה לָהֶ֗ם לְיִרְאָ֥ה אֹתִ֛י וְלִשְׁמֹ֥ר אֶת־כָּל־מִצְוֺתַ֖י כָּל־הַיָּמִ֑ים לְמַ֨עַן יִיטַ֥ב לָהֶ֛ם וְלִבְנֵיהֶ֖ם לְעֹלָֽם׃
+</div>
+I wish they would retain their present attitude to fear Me and to preserve all My commandments always; so that they and their children benefit forever.
+</span>
+<span class=h>
+<div class=h>
+לֵ֖ךְ אֱמֹ֣ר לָהֶ֑ם שׁ֥וּבוּ לָכֶ֖ם לְאָהֳלֵיכֶֽם׃
+לֵ֖ךְ אֱמֹ֣ר לָהֶ֑ם שׁ֥וּבוּ לָכֶ֖ם לְאָהֳלֵיכֶֽם׃
+</div>
+Go say to them, ‘Return for yourselves to your tents.’
+</span>
+<span class=h>
+<div class=h>
+וְאַתָּ֗ה פֹּה֮ עֲמֹ֣ד עִמָּדִי֒ וַאֲדַבְּרָ֣ה אֵלֶ֗יךָ אֵ֧ת כָּל־הַמִּצְוָ֛ה וְהַחֻקִּ֥ים וְהַמִּשְׁפָּטִ֖ים אֲשֶׁ֣ר תְּלַמְּדֵ֑ם וְעָשׂ֣וּ בָאָ֔רֶץ אֲשֶׁ֧ר אָנֹכִ֛י נֹתֵ֥ן לָהֶ֖ם לְרִשְׁתָּֽהּ׃
+וְאַתָּ֗ה פֹּה֮ עֲמֹ֣ד עִמָּדִי֒ וַאֲדַבְּרָ֣ה אֵלֶ֗יךָ אֵ֧ת כָּל־הַמִּצְוָ֛ה וְהַחֻקִּ֥ים וְהַמִּשְׁפָּטִ֖ים אֲשֶׁ֣ר תְּלַמְּדֵ֑ם וְעָשׂ֣וּ בָאָ֔רֶץ אֲשֶׁ֧ר אָנֹכִ֛י נֹתֵ֥ן לָהֶ֖ם לְרִשְׁתָּֽהּ׃
+</div>
+You, however, remain here with Me, and I will tell you all the <i>mitzvohs</i> and the statutes and the laws that you will teach them; and they will fulfill [them] in the land that I am giving them to inherit.’’
+</span>
+<span class=h>
+<div class=h>
+וּשְׁמַרְתֶּ֣ם לַעֲשׂ֔וֹת כַּאֲשֶׁ֥ר צִוָּ֛ה יְהוָ֥ה אֱלֹהֵיכֶ֖ם אֶתְכֶ֑ם לֹ֥א תָסֻ֖רוּ יָמִ֥ין וּשְׂמֹֽאל׃
+וּשְׁמַרְתֶּ֣ם לַעֲשׂ֔וֹת כַּאֲשֶׁ֥ר צִוָּ֛ה יְהוָ֥ה אֱלֹהֵיכֶ֖ם אֶתְכֶ֑ם לֹ֥א תָסֻ֖רוּ יָמִ֥ין וּשְׂמֹֽאל׃
+</div>
+You will be careful to fulfill as Adonoy, your God, has commanded you; do not deviate right or left.
+</span>
+<span class=h>
+<div class=h>
+בְּכָל־הַדֶּ֗רֶךְ אֲשֶׁ֨ר צִוָּ֜ה יְהוָ֧ה אֱלֹהֵיכֶ֛ם אֶתְכֶ֖ם תֵּלֵ֑כוּ לְמַ֤עַן תִּֽחְיוּן֙ וְט֣וֹב לָכֶ֔ם וְהַאֲרַכְתֶּ֣ם יָמִ֔ים בָּאָ֖רֶץ אֲשֶׁ֥ר תִּֽירָשֽׁוּן׃
+בְּכָל־הַדֶּ֗רֶךְ אֲשֶׁ֨ר צִוָּ֜ה יְהוָ֧ה אֱלֹהֵיכֶ֛ם אֶתְכֶ֖ם תֵּלֵ֑כוּ לְמַ֤עַן תִּֽחְיוּן֙ וְט֣וֹב לָכֶ֔ם וְהַאֲרַכְתֶּ֣ם יָמִ֔ים בָּאָ֖רֶץ אֲשֶׁ֥ר תִּֽירָשֽׁוּן׃
+</div>
+Along the entire way that Adonoy, your God, commanded you, shall you go; in order that you live and enjoy good, and you live long in the land that you are inheriting.
+</span>
+<span class=h>
+<div class=h>
+
+
+
+<h4>Chapter 6</h4>
+
+
+
+
+
+וְזֹ֣את הַמִּצְוָ֗ה הַֽחֻקִּים֙ וְהַמִּשְׁפָּטִ֔ים אֲשֶׁ֥ר צִוָּ֛ה יְהוָ֥ה אֱלֹהֵיכֶ֖ם לְלַמֵּ֣ד אֶתְכֶ֑ם לַעֲשׂ֣וֹת בָּאָ֔רֶץ אֲשֶׁ֥ר אַתֶּ֛ם עֹבְרִ֥ים שָׁ֖מָּה לְרִשְׁתָּֽהּ׃
+וְזֹ֣את הַמִּצְוָ֗ה הַֽחֻקִּים֙ וְהַמִּשְׁפָּטִ֔ים אֲשֶׁ֥ר צִוָּ֛ה יְהוָ֥ה אֱלֹהֵיכֶ֖ם לְלַמֵּ֣ד אֶתְכֶ֑ם לַעֲשׂ֣וֹת בָּאָ֔רֶץ אֲשֶׁ֥ר אַתֶּ֛ם עֹבְרִ֥ים שָׁ֖מָּה לְרִשְׁתָּֽהּ׃
+</div>
+This is the <i>mitzvah,</i> the statutes and the laws that Adonoy, your God, commanded to teach you to fulfill in the land that you are crossing over there to inherit.
+</span>
+<span class=h>
+<div class=h>
+לְמַ֨עַן תִּירָ֜א אֶת־יְהוָ֣ה אֱלֹהֶ֗יךָ לִ֠שְׁמֹר אֶת־כָּל־חֻקֹּתָ֣יו וּמִצְוֺתָיו֮ אֲשֶׁ֣ר אָנֹכִ֣י מְצַוֶּךָ֒ אַתָּה֙ וּבִנְךָ֣ וּבֶן־בִּנְךָ֔ כֹּ֖ל יְמֵ֣י חַיֶּ֑יךָ וּלְמַ֖עַן יַאֲרִכֻ֥ן יָמֶֽיךָ׃
+לְמַ֨עַן תִּירָ֜א אֶת־יְהוָ֣ה אֱלֹהֶ֗יךָ לִ֠שְׁמֹר אֶת־כָּל־חֻקֹּתָ֣יו וּמִצְוֺתָיו֮ אֲשֶׁ֣ר אָנֹכִ֣י מְצַוֶּךָ֒ אַתָּה֙ וּבִנְךָ֣ וּבֶן־בִּנְךָ֔ כֹּ֖ל יְמֵ֣י חַיֶּ֑יךָ וּלְמַ֖עַן יַאֲרִכֻ֥ן יָמֶֽיךָ׃
+</div>
+In order that you will fear Adonoy, your God, to preserve all His statutes and commandments that I am commanding you—you and your son and your grandson—all the days of your life, and in order that you live long.
+</span>
+<span class=h>
+<div class=h>
+וְשָׁמַעְתָּ֤ יִשְׂרָאֵל֙ וְשָׁמַרְתָּ֣ לַעֲשׂ֔וֹת אֲשֶׁר֙ יִיטַ֣ב לְךָ֔ וַאֲשֶׁ֥ר תִּרְבּ֖וּן מְאֹ֑ד כַּאֲשֶׁר֩ דִּבֶּ֨ר יְהוָ֜ה אֱלֹהֵ֤י אֲבֹתֶ֙יךָ֙ לָ֔ךְ אֶ֛רֶץ זָבַ֥ת חָלָ֖ב וּדְבָֽשׁ׃ (פ)
+וְשָׁמַעְתָּ֤ יִשְׂרָאֵל֙ וְשָׁמַרְתָּ֣ לַעֲשׂ֔וֹת אֲשֶׁר֙ יִיטַ֣ב לְךָ֔ וַאֲשֶׁ֥ר תִּרְבּ֖וּן מְאֹ֑ד כַּאֲשֶׁר֩ דִּבֶּ֨ר יְהוָ֜ה אֱלֹהֵ֤י אֲבֹתֶ֙יךָ֙ לָ֔ךְ אֶ֛רֶץ זָבַ֥ת חָלָ֖ב וּדְבָֽשׁ׃ (פ)
+</div>
+You will heed, Yisroel, and you will be careful to fulfill, so that you will benefit and so that you will multiply exceedingly, as Adonoy, God of your forefathers, spoke about you—a land flowing milk and honey.
+</span>
+<span class=h>
+<div class=h>
+שְׁמַ֖ע יִשְׂרָאֵ֑ל יְהוָ֥ה אֱלֹהֵ֖ינוּ יְהוָ֥ה ׀ אֶחָֽד׃
+שְׁמַ֖ע יִשְׂרָאֵ֑ל יְהוָ֥ה אֱלֹהֵ֖ינוּ יְהוָ֥ה ׀ אֶחָֽד׃
+</div>
+Listen, Yisroel! Adonoy is our God, Adonoy is one.
+</span>
+<span class=h>
+<div class=h>
+וְאָ֣הַבְתָּ֔ אֵ֖ת יְהוָ֣ה אֱלֹהֶ֑יךָ בְּכָל־לְבָבְךָ֥ וּבְכָל־נַפְשְׁךָ֖ וּבְכָל־מְאֹדֶֽךָ׃
+וְאָ֣הַבְתָּ֔ אֵ֖ת יְהוָ֣ה אֱלֹהֶ֑יךָ בְּכָל־לְבָבְךָ֥ וּבְכָל־נַפְשְׁךָ֖ וּבְכָל־מְאֹדֶֽךָ׃
+</div>
+You are to love Adonoy, your God, with all your heart, with all your soul, and with all your possessions.
+</span>
+<span class=h>
+<div class=h>
+וְהָי֞וּ הַדְּבָרִ֣ים הָאֵ֗לֶּה אֲשֶׁ֨ר אָנֹכִ֧י מְצַוְּךָ֛ הַיּ֖וֹם עַל־לְבָבֶֽךָ׃
+וְהָי֞וּ הַדְּבָרִ֣ים הָאֵ֗לֶּה אֲשֶׁ֨ר אָנֹכִ֧י מְצַוְּךָ֛ הַיּ֖וֹם עַל־לְבָבֶֽךָ׃
+</div>
+And these words that I command you today shall be upon your heart.
+</span>
+<span class=h>
+<div class=h>
+וְשִׁנַּנְתָּ֣ם לְבָנֶ֔יךָ וְדִבַּרְתָּ֖ בָּ֑ם בְּשִׁבְתְּךָ֤ בְּבֵיתֶ֙ךָ֙ וּבְלֶכְתְּךָ֣ בַדֶּ֔רֶךְ וּֽבְשָׁכְבְּךָ֖ וּבְקוּמֶֽךָ׃
+וְשִׁנַּנְתָּ֣ם לְבָנֶ֔יךָ וְדִבַּרְתָּ֖ בָּ֑ם בְּשִׁבְתְּךָ֤ בְּבֵיתֶ֙ךָ֙ וּבְלֶכְתְּךָ֣ בַדֶּ֔רֶךְ וּֽבְשָׁכְבְּךָ֖ וּבְקוּמֶֽךָ׃
+</div>
+You are to teach them to your children and you are to discuss them, when you sit at home, and when you journey on the road, and when you go to sleep, and when you rise.
+</span>
+<span class=h>
+<div class=h>
+וּקְשַׁרְתָּ֥ם לְא֖וֹת עַל־יָדֶ֑ךָ וְהָי֥וּ לְטֹטָפֹ֖ת בֵּ֥ין עֵינֶֽיךָ׃
+וּקְשַׁרְתָּ֥ם לְא֖וֹת עַל־יָדֶ֑ךָ וְהָי֥וּ לְטֹטָפֹ֖ת בֵּ֥ין עֵינֶֽיךָ׃
+</div>
+You are to tie them as a sign on your arm and they are to be <i>totafos</i> between your eyes.
+</span>
+<span class=h>
+<div class=h>
+וּכְתַבְתָּ֛ם עַל־מְזוּזֹ֥ת בֵּיתֶ֖ךָ וּבִשְׁעָרֶֽיךָ׃ (ס)
+וּכְתַבְתָּ֛ם עַל־מְזוּזֹ֥ת בֵּיתֶ֖ךָ וּבִשְׁעָרֶֽיךָ׃ (ס)
+</div>
+You are to write them on the doorposts of your house, and on your gateposts.
+</span>
+<span class=h>
+<div class=h>
+וְהָיָ֞ה כִּ֥י יְבִיאֲךָ֣ ׀ יְהוָ֣ה אֱלֹהֶ֗יךָ אֶל־הָאָ֜רֶץ אֲשֶׁ֨ר נִשְׁבַּ֧ע לַאֲבֹתֶ֛יךָ לְאַבְרָהָ֛ם לְיִצְחָ֥ק וּֽלְיַעֲקֹ֖ב לָ֣תֶת לָ֑ךְ עָרִ֛ים גְּדֹלֹ֥ת וְטֹבֹ֖ת אֲשֶׁ֥ר לֹא־בָנִֽיתָ׃
+וְהָיָ֞ה כִּ֥י יְבִיאֲךָ֣ ׀ יְהוָ֣ה אֱלֹהֶ֗יךָ אֶל־הָאָ֜רֶץ אֲשֶׁ֨ר נִשְׁבַּ֧ע לַאֲבֹתֶ֛יךָ לְאַבְרָהָ֛ם לְיִצְחָ֥ק וּֽלְיַעֲקֹ֖ב לָ֣תֶת לָ֑ךְ עָרִ֛ים גְּדֹלֹ֥ת וְטֹבֹ֖ת אֲשֶׁ֥ר לֹא־בָנִֽיתָ׃
+</div>
+When Adonoy your God will have brought you to the land that He swore to your forefathers—to Avrohom, to Yitzchok, and to Yaakov—to give you: great and good cities that you did not build.
+</span>
+<span class=h>
+<div class=h>
+וּבָ֨תִּ֜ים מְלֵאִ֣ים כָּל־טוּב֮ אֲשֶׁ֣ר לֹא־מִלֵּאתָ֒ וּבֹרֹ֤ת חֲצוּבִים֙ אֲשֶׁ֣ר לֹא־חָצַ֔בְתָּ כְּרָמִ֥ים וְזֵיתִ֖ים אֲשֶׁ֣ר לֹא־נָטָ֑עְתָּ וְאָכַלְתָּ֖ וְשָׂבָֽעְתָּ׃
+וּבָ֨תִּ֜ים מְלֵאִ֣ים כָּל־טוּב֮ אֲשֶׁ֣ר לֹא־מִלֵּאתָ֒ וּבֹרֹ֤ת חֲצוּבִים֙ אֲשֶׁ֣ר לֹא־חָצַ֔בְתָּ כְּרָמִ֥ים וְזֵיתִ֖ים אֲשֶׁ֣ר לֹא־נָטָ֑עְתָּ וְאָכַלְתָּ֖ וְשָׂבָֽעְתָּ׃
+</div>
+And houses full of all bounty that you did not fill, and hewn cisterns that you did not hew, vineyards and olive stands that you did not plant; and you will eat and be full.
+</span>
+<span class=h>
+<div class=h>
+הִשָּׁ֣מֶר לְךָ֔ פֶּן־תִּשְׁכַּ֖ח אֶת־יְהוָ֑ה אֲשֶׁ֧ר הוֹצִֽיאֲךָ֛ מֵאֶ֥רֶץ מִצְרַ֖יִם מִבֵּ֥ית עֲבָדִֽים׃
+הִשָּׁ֣מֶר לְךָ֔ פֶּן־תִּשְׁכַּ֖ח אֶת־יְהוָ֑ה אֲשֶׁ֧ר הוֹצִֽיאֲךָ֛ מֵאֶ֥רֶץ מִצְרַ֖יִם מִבֵּ֥ית עֲבָדִֽים׃
+</div>
+Look out for yourself, lest you forget Adonoy, Who took you out of the land of Egypt, from the house of slavery.
+</span>
+<span class=h>
+<div class=h>
+אֶת־יְהוָ֧ה אֱלֹהֶ֛יךָ תִּירָ֖א וְאֹת֣וֹ תַעֲבֹ֑ד וּבִשְׁמ֖וֹ תִּשָּׁבֵֽעַ׃
+אֶת־יְהוָ֧ה אֱלֹהֶ֛יךָ תִּירָ֖א וְאֹת֣וֹ תַעֲבֹ֑ד וּבִשְׁמ֖וֹ תִּשָּׁבֵֽעַ׃
+</div>
+Fear Adonoy, your God, and serve Him, and swear by His name.
+</span>
+<span class=h>
+<div class=h>
+לֹ֣א תֵֽלְכ֔וּן אַחֲרֵ֖י אֱלֹהִ֣ים אֲחֵרִ֑ים מֵאֱלֹהֵי֙ הָֽעַמִּ֔ים אֲשֶׁ֖ר סְבִיבוֹתֵיכֶֽם׃
+לֹ֣א תֵֽלְכ֔וּן אַחֲרֵ֖י אֱלֹהִ֣ים אֲחֵרִ֑ים מֵאֱלֹהֵי֙ הָֽעַמִּ֔ים אֲשֶׁ֖ר סְבִיבוֹתֵיכֶֽם׃
+</div>
+Do not follow other gods, from the gods of the peoples around you.
+</span>
+<span class=h>
+<div class=h>
+כִּ֣י אֵ֥ל קַנָּ֛א יְהוָ֥ה אֱלֹהֶ֖יךָ בְּקִרְבֶּ֑ךָ פֶּן־יֶ֠חֱרֶה אַף־יְהוָ֤ה אֱלֹהֶ֙יךָ֙ בָּ֔ךְ וְהִשְׁמִ֣ידְךָ֔ מֵעַ֖ל פְּנֵ֥י הָאֲדָמָֽה׃ (ס)
+כִּ֣י אֵ֥ל קַנָּ֛א יְהוָ֥ה אֱלֹהֶ֖יךָ בְּקִרְבֶּ֑ךָ פֶּן־יֶ֠חֱרֶה אַף־יְהוָ֤ה אֱלֹהֶ֙יךָ֙ בָּ֔ךְ וְהִשְׁמִ֣ידְךָ֔ מֵעַ֖ל פְּנֵ֥י הָאֲדָמָֽה׃ (ס)
+</div>
+For a jealous Almighty is Adonoy, your God, within you; lest there be aroused the anger of Adonoy, your God, against you and He destroy you from upon the surface of the land.
+</span>
+<span class=h>
+<div class=h>
+לֹ֣א תְנַסּ֔וּ אֶת־יְהוָ֖ה אֱלֹהֵיכֶ֑ם כַּאֲשֶׁ֥ר נִסִּיתֶ֖ם בַּמַּסָּֽה׃
+לֹ֣א תְנַסּ֔וּ אֶת־יְהוָ֖ה אֱלֹהֵיכֶ֑ם כַּאֲשֶׁ֥ר נִסִּיתֶ֖ם בַּמַּסָּֽה׃
+</div>
+Do not test Adonoy, your God, as you tested at Massoh.
+</span>
+<span class=h>
+<div class=h>
+שָׁמ֣וֹר תִּשְׁמְר֔וּן אֶת־מִצְוֺ֖ת יְהוָ֣ה אֱלֹהֵיכֶ֑ם וְעֵדֹתָ֥יו וְחֻקָּ֖יו אֲשֶׁ֥ר צִוָּֽךְ׃
+שָׁמ֣וֹר תִּשְׁמְר֔וּן אֶת־מִצְוֺ֖ת יְהוָ֣ה אֱלֹהֵיכֶ֑ם וְעֵדֹתָ֥יו וְחֻקָּ֖יו אֲשֶׁ֥ר צִוָּֽךְ׃
+</div>
+Carefully guard the commandments of Adonoy, your God, and His testimonies and His statutes that He commanded you.
+</span>
+<span class=h>
+<div class=h>
+וְעָשִׂ֛יתָ הַיָּשָׁ֥ר וְהַטּ֖וֹב בְּעֵינֵ֣י יְהוָ֑ה לְמַ֙עַן֙ יִ֣יטַב לָ֔ךְ וּבָ֗אתָ וְיָֽרַשְׁתָּ֙ אֶת־הָאָ֣רֶץ הַטֹּבָ֔ה אֲשֶׁר־נִשְׁבַּ֥ע יְהוָ֖ה לַאֲבֹתֶֽיךָ׃
+וְעָשִׂ֛יתָ הַיָּשָׁ֥ר וְהַטּ֖וֹב בְּעֵינֵ֣י יְהוָ֑ה לְמַ֙עַן֙ יִ֣יטַב לָ֔ךְ וּבָ֗אתָ וְיָֽרַשְׁתָּ֙ אֶת־הָאָ֣רֶץ הַטֹּבָ֔ה אֲשֶׁר־נִשְׁבַּ֥ע יְהוָ֖ה לַאֲבֹתֶֽיךָ׃
+</div>
+Perform the upright and the good in Adonoy’s eyes, in order that you benefit and arrive in, and inherit the good land that Adonoy swore to your forefathers.
+</span>
+<span class=h>
+<div class=h>
+לַהֲדֹ֥ף אֶת־כָּל־אֹיְבֶ֖יךָ מִפָּנֶ֑יךָ כַּאֲשֶׁ֖ר דִּבֶּ֥ר יְהוָֽה׃ (ס)
+לַהֲדֹ֥ף אֶת־כָּל־אֹיְבֶ֖יךָ מִפָּנֶ֑יךָ כַּאֲשֶׁ֖ר דִּבֶּ֥ר יְהוָֽה׃ (ס)
+</div>
+To smash all your enemies before you, as Adonoy declared.
+</span>
+<span class=h>
+<div class=h>
+כִּֽי־יִשְׁאָלְךָ֥ בִנְךָ֛ מָחָ֖ר לֵאמֹ֑ר מָ֣ה הָעֵדֹ֗ת וְהַֽחֻקִּים֙ וְהַמִּשְׁפָּטִ֔ים אֲשֶׁ֥ר צִוָּ֛ה יְהוָ֥ה אֱלֹהֵ֖ינוּ אֶתְכֶֽם׃
+כִּֽי־יִשְׁאָלְךָ֥ בִנְךָ֛ מָחָ֖ר לֵאמֹ֑ר מָ֣ה הָעֵדֹ֗ת וְהַֽחֻקִּים֙ וְהַמִּשְׁפָּטִ֔ים אֲשֶׁ֥ר צִוָּ֛ה יְהוָ֥ה אֱלֹהֵ֖ינוּ אֶתְכֶֽם׃
+</div>
+When your son asks you tomorrow, saying, ‘‘What are the testimonies and the statues and the laws that Adonoy, our God, commanded you?’’
+</span>
+<span class=h>
+<div class=h>
+וְאָמַרְתָּ֣ לְבִנְךָ֔ עֲבָדִ֛ים הָיִ֥ינוּ לְפַרְעֹ֖ה בְּמִצְרָ֑יִם וַיּוֹצִיאֵ֧נוּ יְהוָ֛ה מִמִּצְרַ֖יִם בְּיָ֥ד חֲזָקָֽה׃
+וְאָמַרְתָּ֣ לְבִנְךָ֔ עֲבָדִ֛ים הָיִ֥ינוּ לְפַרְעֹ֖ה בְּמִצְרָ֑יִם וַיּוֹצִיאֵ֧נוּ יְהוָ֛ה מִמִּצְרַ֖יִם בְּיָ֥ד חֲזָקָֽה׃
+</div>
+You will tell your son, ‘‘We were slaves to Pharaoh in Egypt, and Adonoy took us out of Egypt with a strong hand.
+</span>
+<span class=h>
+<div class=h>
+וַיִּתֵּ֣ן יְהוָ֡ה אוֹתֹ֣ת וּ֠מֹפְתִים גְּדֹלִ֨ים וְרָעִ֧ים ׀ בְּמִצְרַ֛יִם בְּפַרְעֹ֥ה וּבְכָל־בֵּית֖וֹ לְעֵינֵֽינוּ׃
+וַיִּתֵּ֣ן יְהוָ֡ה אוֹתֹ֣ת וּ֠מֹפְתִים גְּדֹלִ֨ים וְרָעִ֧ים ׀ בְּמִצְרַ֛יִם בְּפַרְעֹ֥ה וּבְכָל־בֵּית֖וֹ לְעֵינֵֽינוּ׃
+</div>
+And Adonoy set signs and wonders [that were] great and harmful, upon Egypt, upon Pharaoh, and upon his entire household as we watched.
+</span>
+<span class=h>
+<div class=h>
+וְאוֹתָ֖נוּ הוֹצִ֣יא מִשָּׁ֑ם לְמַ֙עַן֙ הָבִ֣יא אֹתָ֔נוּ לָ֤תֶת לָ֙נוּ֙ אֶת־הָאָ֔רֶץ אֲשֶׁ֥ר נִשְׁבַּ֖ע לַאֲבֹתֵֽינוּ׃
+וְאוֹתָ֖נוּ הוֹצִ֣יא מִשָּׁ֑ם לְמַ֙עַן֙ הָבִ֣יא אֹתָ֔נוּ לָ֤תֶת לָ֙נוּ֙ אֶת־הָאָ֔רֶץ אֲשֶׁ֥ר נִשְׁבַּ֖ע לַאֲבֹתֵֽינוּ׃
+</div>
+And us He took out of there, in order to bring us into, and to give us the land He swore to our forefathers.
+</span>
+<span class=h>
+<div class=h>
+וַיְצַוֵּ֣נוּ יְהוָ֗ה לַעֲשׂוֹת֙ אֶת־כָּל־הַחֻקִּ֣ים הָאֵ֔לֶּה לְיִרְאָ֖ה אֶת־יְהוָ֣ה אֱלֹהֵ֑ינוּ לְט֥וֹב לָ֙נוּ֙ כָּל־הַיָּמִ֔ים לְחַיֹּתֵ֖נוּ כְּהַיּ֥וֹם הַזֶּֽה׃
+וַיְצַוֵּ֣נוּ יְהוָ֗ה לַעֲשׂוֹת֙ אֶת־כָּל־הַחֻקִּ֣ים הָאֵ֔לֶּה לְיִרְאָ֖ה אֶת־יְהוָ֣ה אֱלֹהֵ֑ינוּ לְט֥וֹב לָ֙נוּ֙ כָּל־הַיָּמִ֔ים לְחַיֹּתֵ֖נוּ כְּהַיּ֥וֹם הַזֶּֽה׃
+</div>
+Adonoy commanded us to perform all these statutes to [show that we] fear Adonoy, our God; to benefit us for all time, to keep us alive like this day.
+</span>
+<span class=h>
+<div class=h>
+וּצְדָקָ֖ה תִּֽהְיֶה־לָּ֑נוּ כִּֽי־נִשְׁמֹ֨ר לַעֲשׂ֜וֹת אֶת־כָּל־הַמִּצְוָ֣ה הַזֹּ֗את לִפְנֵ֛י יְהוָ֥ה אֱלֹהֵ֖ינוּ כַּאֲשֶׁ֥ר צִוָּֽנוּ׃ (ס)
+וּצְדָקָ֖ה תִּֽהְיֶה־לָּ֑נוּ כִּֽי־נִשְׁמֹ֨ר לַעֲשׂ֜וֹת אֶת־כָּל־הַמִּצְוָ֣ה הַזֹּ֗את לִפְנֵ֛י יְהוָ֥ה אֱלֹהֵ֖ינוּ כַּאֲשֶׁ֥ר צִוָּֽנוּ׃ (ס)
+</div>
+And it will be to our credit if we are careful to fulfill this entire <i>mitzvah</i> before Adonoy, our God, as He commanded us.
+</span>
+<span class=h>
+<div class=h>
+
+
+
+<h4>Chapter 7</h4>
+
+
+
+
+
+כִּ֤י יְבִֽיאֲךָ֙ יְהוָ֣ה אֱלֹהֶ֔יךָ אֶל־הָאָ֕רֶץ אֲשֶׁר־אַתָּ֥ה בָא־שָׁ֖מָּה לְרִשְׁתָּ֑הּ וְנָשַׁ֣ל גּֽוֹיִם־רַבִּ֣ים ׀ מִפָּנֶ֡יךָ הַֽחִתִּי֩ וְהַגִּרְגָּשִׁ֨י וְהָאֱמֹרִ֜י וְהַכְּנַעֲנִ֣י וְהַפְּרִזִּ֗י וְהַֽחִוִּי֙ וְהַיְבוּסִ֔י שִׁבְעָ֣ה גוֹיִ֔ם רַבִּ֥ים וַעֲצוּמִ֖ים מִמֶּֽךָּ׃
+כִּ֤י יְבִֽיאֲךָ֙ יְהוָ֣ה אֱלֹהֶ֔יךָ אֶל־הָאָ֕רֶץ אֲשֶׁר־אַתָּ֥ה בָא־שָׁ֖מָּה לְרִשְׁתָּ֑הּ וְנָשַׁ֣ל גּֽוֹיִם־רַבִּ֣ים ׀ מִפָּנֶ֡יךָ הַֽחִתִּי֩ וְהַגִּרְגָּשִׁ֨י וְהָאֱמֹרִ֜י וְהַכְּנַעֲנִ֣י וְהַפְּרִזִּ֗י וְהַֽחִוִּי֙ וְהַיְבוּסִ֔י שִׁבְעָ֣ה גוֹיִ֔ם רַבִּ֥ים וַעֲצוּמִ֖ים מִמֶּֽךָּ׃
+</div>
+When Adonoy, your God, brings you into the land that you are coming there to inherit, He will cast out many nations from before you—the Chittites, the Girgashites and the Emorites, the Canaanites and the Perizites, the Chivites and the Yevusites—seven nations more numerous and more powerful than you.
+</span>
+<span class=h>
+<div class=h>
+וּנְתָנָ֞ם יְהוָ֧ה אֱלֹהֶ֛יךָ לְפָנֶ֖יךָ וְהִכִּיתָ֑ם הַחֲרֵ֤ם תַּחֲרִים֙ אֹתָ֔ם לֹא־תִכְרֹ֥ת לָהֶ֛ם בְּרִ֖ית וְלֹ֥א תְחָנֵּֽם׃
+וּנְתָנָ֞ם יְהוָ֧ה אֱלֹהֶ֛יךָ לְפָנֶ֖יךָ וְהִכִּיתָ֑ם הַחֲרֵ֤ם תַּחֲרִים֙ אֹתָ֔ם לֹא־תִכְרֹ֥ת לָהֶ֛ם בְּרִ֖ית וְלֹ֥א תְחָנֵּֽם׃
+</div>
+Adonoy, your God, will defeat them before you, and you will smite them. You must surely annihilate them. Do not make a treaty with them, and do not favor them.
+</span>
+<span class=h>
+<div class=h>
+וְלֹ֥א תִתְחַתֵּ֖ן בָּ֑ם בִּתְּךָ֙ לֹא־תִתֵּ֣ן לִבְנ֔וֹ וּבִתּ֖וֹ לֹא־תִקַּ֥ח לִבְנֶֽךָ׃
+וְלֹ֥א תִתְחַתֵּ֖ן בָּ֑ם בִּתְּךָ֙ לֹא־תִתֵּ֣ן לִבְנ֔וֹ וּבִתּ֖וֹ לֹא־תִקַּ֥ח לִבְנֶֽךָ׃
+</div>
+Do not marry them; do not give your daughter to his son, nor take his daughter for your son.
+</span>
+<span class=h>
+<div class=h>
+כִּֽי־יָסִ֤יר אֶת־בִּנְךָ֙ מֵֽאַחֲרַ֔י וְעָבְד֖וּ אֱלֹהִ֣ים אֲחֵרִ֑ים וְחָרָ֤ה אַף־יְהוָה֙ בָּכֶ֔ם וְהִשְׁמִידְךָ֖ מַהֵֽר׃
+כִּֽי־יָסִ֤יר אֶת־בִּנְךָ֙ מֵֽאַחֲרַ֔י וְעָבְד֖וּ אֱלֹהִ֣ים אֲחֵרִ֑ים וְחָרָ֤ה אַף־יְהוָה֙ בָּכֶ֔ם וְהִשְׁמִידְךָ֖ מַהֵֽר׃
+</div>
+For he will turn your son away from Me and they will serve other gods; and Adonoy’s anger will be aroused against you and He will destroy you swiftly.
+</span>
+<span class=h>
+<div class=h>
+כִּֽי־אִם־כֹּ֤ה תַעֲשׂוּ֙ לָהֶ֔ם מִזְבְּחֹתֵיהֶ֣ם תִּתֹּ֔צוּ וּמַצֵּבֹתָ֖ם תְּשַׁבֵּ֑רוּ וַאֲשֵֽׁירֵהֶם֙ תְּגַדֵּע֔וּן וּפְסִילֵיהֶ֖ם תִּשְׂרְפ֥וּן בָּאֵֽשׁ׃
+כִּֽי־אִם־כֹּ֤ה תַעֲשׂוּ֙ לָהֶ֔ם מִזְבְּחֹתֵיהֶ֣ם תִּתֹּ֔צוּ וּמַצֵּבֹתָ֖ם תְּשַׁבֵּ֑רוּ וַאֲשֵֽׁירֵהֶם֙ תְּגַדֵּע֔וּן וּפְסִילֵיהֶ֖ם תִּשְׂרְפ֥וּן בָּאֵֽשׁ׃
+</div>
+Rather, thus shall you do to them: raze their altars and smash their monuments, cut down their worship-trees and burn their statues in fire.
+</span>
+<span class=h>
+<div class=h>
+כִּ֣י עַ֤ם קָדוֹשׁ֙ אַתָּ֔ה לַיהוָ֖ה אֱלֹהֶ֑יךָ בְּךָ֞ בָּחַ֣ר ׀ יְהוָ֣ה אֱלֹהֶ֗יךָ לִהְי֥וֹת לוֹ֙ לְעַ֣ם סְגֻלָּ֔ה מִכֹּל֙ הָֽעַמִּ֔ים אֲשֶׁ֖ר עַל־פְּנֵ֥י הָאֲדָמָֽה׃ (ס)
+כִּ֣י עַ֤ם קָדוֹשׁ֙ אַתָּ֔ה לַיהוָ֖ה אֱלֹהֶ֑יךָ בְּךָ֞ בָּחַ֣ר ׀ יְהוָ֣ה אֱלֹהֶ֗יךָ לִהְי֥וֹת לוֹ֙ לְעַ֣ם סְגֻלָּ֔ה מִכֹּל֙ הָֽעַמִּ֔ים אֲשֶׁ֖ר עַל־פְּנֵ֥י הָאֲדָמָֽה׃ (ס)
+</div>
+For you are a holy people to Adonoy, your God; Adonoy, your God, chose you to be for Him a treasured people from all the peoples that are on the face of the earth.
+</span>
+<span class=h>
+<div class=h>
+לֹ֣א מֵֽרֻבְּכֶ֞ם מִכָּל־הָֽעַמִּ֗ים חָשַׁ֧ק יְהוָ֛ה בָּכֶ֖ם וַיִּבְחַ֣ר בָּכֶ֑ם כִּֽי־אַתֶּ֥ם הַמְעַ֖ט מִכָּל־הָעַמִּֽים׃
+לֹ֣א מֵֽרֻבְּכֶ֞ם מִכָּל־הָֽעַמִּ֗ים חָשַׁ֧ק יְהוָ֛ה בָּכֶ֖ם וַיִּבְחַ֣ר בָּכֶ֑ם כִּֽי־אַתֶּ֥ם הַמְעַ֖ט מִכָּל־הָעַמִּֽים׃
+</div>
+Not because of the multitude your population beyond all peoples did Adonoy desire you and choose you; for you are the least of all the peoples.
+</span>
+<span class=h>
+<div class=h>
+כִּי֩ מֵֽאַהֲבַ֨ת יְהוָ֜ה אֶתְכֶ֗ם וּמִשָּׁמְר֤וּ אֶת־הַשְּׁבֻעָה֙ אֲשֶׁ֤ר נִשְׁבַּע֙ לַאֲבֹ֣תֵיכֶ֔ם הוֹצִ֧יא יְהוָ֛ה אֶתְכֶ֖ם בְּיָ֣ד חֲזָקָ֑ה וַֽיִּפְדְּךָ֙ מִבֵּ֣ית עֲבָדִ֔ים מִיַּ֖ד פַּרְעֹ֥ה מֶֽלֶךְ־מִצְרָֽיִם׃
+כִּי֩ מֵֽאַהֲבַ֨ת יְהוָ֜ה אֶתְכֶ֗ם וּמִשָּׁמְר֤וּ אֶת־הַשְּׁבֻעָה֙ אֲשֶׁ֤ר נִשְׁבַּע֙ לַאֲבֹ֣תֵיכֶ֔ם הוֹצִ֧יא יְהוָ֛ה אֶתְכֶ֖ם בְּיָ֣ד חֲזָקָ֑ה וַֽיִּפְדְּךָ֙ מִבֵּ֣ית עֲבָדִ֔ים מִיַּ֖ד פַּרְעֹ֥ה מֶֽלֶךְ־מִצְרָֽיִם׃
+</div>
+Rather, out of Adonoy’s love for you and out of His keeping the oath that He swore to your forefathers did Adonoy take you out with a strong hand, and did He redeem you from the house of slavery, from the hand of Pharaoh, king of Egypt.
+</span>
+<span class=h>
+<div class=h>
+וְיָ֣דַעְתָּ֔ כִּֽי־יְהוָ֥ה אֱלֹהֶ֖יךָ ה֣וּא הָֽאֱלֹהִ֑ים הָאֵל֙ הַֽנֶּאֱמָ֔ן שֹׁמֵ֧ר הַבְּרִ֣ית וְהַחֶ֗סֶד לְאֹהֲבָ֛יו וּלְשֹׁמְרֵ֥י מצותו [מִצְוֺתָ֖יו] לְאֶ֥לֶף דּֽוֹר׃
+וְיָ֣דַעְתָּ֔ כִּֽי־יְהוָ֥ה אֱלֹהֶ֖יךָ ה֣וּא הָֽאֱלֹהִ֑ים הָאֵל֙ הַֽנֶּאֱמָ֔ן שֹׁמֵ֧ר הַבְּרִ֣ית וְהַחֶ֗סֶד לְאֹהֲבָ֛יו וּלְשֹׁמְרֵ֥י מצותו [מִצְוֺתָ֖יו] לְאֶ֥לֶף דּֽוֹר׃
+</div>
+You will know that Adonoy, your God, is <i>the</i> God, the trusted Almighty, who keeps the covenant and the kindliness for those who love Him and for those who keep His commandments, for a thousand generations.
+</span>
+<span class=h>
+<div class=h>
+וּמְשַׁלֵּ֧ם לְשֹׂנְאָ֛יו אֶל־פָּנָ֖יו לְהַאֲבִיד֑וֹ לֹ֤א יְאַחֵר֙ לְשֹׂ֣נְא֔וֹ אֶל־פָּנָ֖יו יְשַׁלֶּם־לֽוֹ׃
+וּמְשַׁלֵּ֧ם לְשֹׂנְאָ֛יו אֶל־פָּנָ֖יו לְהַאֲבִיד֑וֹ לֹ֤א יְאַחֵר֙ לְשֹׂ֣נְא֔וֹ אֶל־פָּנָ֖יו יְשַׁלֶּם־לֽוֹ׃
+</div>
+And He pays His enemy to his face to destroy him. He does not delay for His enemy—to his face does He pay him.
+</span>
+<span class=h>
+<div class=h>
+וְשָׁמַרְתָּ֨ אֶת־הַמִּצְוָ֜ה וְאֶת־הַֽחֻקִּ֣ים וְאֶת־הַמִּשְׁפָּטִ֗ים אֲשֶׁ֨ר אָנֹכִ֧י מְצַוְּךָ֛ הַיּ֖וֹם לַעֲשׂוֹתָֽם׃ (פ)
+וְשָׁמַרְתָּ֨ אֶת־הַמִּצְוָ֜ה וְאֶת־הַֽחֻקִּ֣ים וְאֶת־הַמִּשְׁפָּטִ֗ים אֲשֶׁ֨ר אָנֹכִ֧י מְצַוְּךָ֛ הַיּ֖וֹם לַעֲשׂוֹתָֽם׃ (פ)
+</div>
+You are to guard the commandments and the statutes and the laws that I am commanding you today, to fulfill.
+</span>
+</span>
+</body>

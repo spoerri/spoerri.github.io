@@ -1,0 +1,1294 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/@hebcal/core@3.45.2/dist/bundle.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    if (localStorage.getItem("shmos-scroll") != null) {
+      $(window).scrollTop(localStorage.getItem("shmos-scroll"));
+    }
+
+    $(window).on("scroll", function() {
+      localStorage.setItem("shmos-scroll", $(window).scrollTop());
+    });
+
+  });
+
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('/offline.js')
+             .then(function() { console.log("Service Worker Registered"); });
+  }
+</script>
+<style>
+  div.h { font-size:24pt; margin-right:auto; margin-left:auto; width:95%; padding:10pt; text-align:right; border-style:none; direction:rtl; }
+  span.h { font-size:16pt; line-height:150%; }
+</style>
+</head>
+<body>
+<div style="position:fixed; top:0; width:100%">
+<button onclick="window.location.href=(new hebcal.Sedra(new hebcal.HDate().getFullYear(), false).get(new hebcal.HDate()))+'.html'">start this week!</button>
+</div>
+<span class=h>
+<div class=h>
+
+<h3>Naso</h3>
+
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+</div>
+And Adonoy spoke to Moshe, saying;
+</span>
+<span class=h>
+<div class=h>
+נָשֹׂ֗א אֶת־רֹ֛אשׁ בְּנֵ֥י גֵרְשׁ֖וֹן גַּם־הֵ֑ם לְבֵ֥ית אֲבֹתָ֖ם לְמִשְׁפְּחֹתָֽם׃
+נָשֹׂ֗א אֶת־רֹ֛אשׁ בְּנֵ֥י גֵרְשׁ֖וֹן גַּם־הֵ֑ם לְבֵ֥ית אֲבֹתָ֖ם לְמִשְׁפְּחֹתָֽם׃
+</div>
+Take the count of the sons of Gershon as well, according to the house of their fathers according to their families.
+</span>
+<span class=h>
+<div class=h>
+מִבֶּן֩ שְׁלֹשִׁ֨ים שָׁנָ֜ה וָמַ֗עְלָה עַ֛ד בֶּן־חֲמִשִּׁ֥ים שָׁנָ֖ה תִּפְקֹ֣ד אוֹתָ֑ם כָּל־הַבָּא֙ לִצְבֹ֣א צָבָ֔א לַעֲבֹ֥ד עֲבֹדָ֖ה בְּאֹ֥הֶל מוֹעֵֽד׃
+מִבֶּן֩ שְׁלֹשִׁ֨ים שָׁנָ֜ה וָמַ֗עְלָה עַ֛ד בֶּן־חֲמִשִּׁ֥ים שָׁנָ֖ה תִּפְקֹ֣ד אוֹתָ֑ם כָּל־הַבָּא֙ לִצְבֹ֣א צָבָ֔א לַעֲבֹ֥ד עֲבֹדָ֖ה בְּאֹ֥הֶל מוֹעֵֽד׃
+</div>
+From thirty years and above, until fifty years, you shall count them; all those who enter the division to serve in the Tent of Meeting.
+</span>
+<span class=h>
+<div class=h>
+זֹ֣את עֲבֹדַ֔ת מִשְׁפְּחֹ֖ת הַגֵּרְשֻׁנִּ֑י לַעֲבֹ֖ד וּלְמַשָּֽׂא׃
+זֹ֣את עֲבֹדַ֔ת מִשְׁפְּחֹ֖ת הַגֵּרְשֻׁנִּ֑י לַעֲבֹ֖ד וּלְמַשָּֽׂא׃
+</div>
+This is the service of the families of the Gershonites to serve, and to carry.
+</span>
+<span class=h>
+<div class=h>
+וְנָ֨שְׂא֜וּ אֶת־יְרִיעֹ֤ת הַמִּשְׁכָּן֙ וְאֶת־אֹ֣הֶל מוֹעֵ֔ד מִכְסֵ֕הוּ וּמִכְסֵ֛ה הַתַּ֥חַשׁ אֲשֶׁר־עָלָ֖יו מִלְמָ֑עְלָה וְאֶ֨ת־מָסַ֔ךְ פֶּ֖תַח אֹ֥הֶל מוֹעֵֽד׃
+וְנָ֨שְׂא֜וּ אֶת־יְרִיעֹ֤ת הַמִּשְׁכָּן֙ וְאֶת־אֹ֣הֶל מוֹעֵ֔ד מִכְסֵ֕הוּ וּמִכְסֵ֛ה הַתַּ֥חַשׁ אֲשֶׁר־עָלָ֖יו מִלְמָ֑עְלָה וְאֶ֨ת־מָסַ֔ךְ פֶּ֖תַח אֹ֥הֶל מוֹעֵֽד׃
+</div>
+They shall carry the tapestries of the <i>Mishkon</i> and [of] the Tent of Meeting, its covering and the covering of <i>tachash</i> which is on top of it, and the screen for the entrance to the Tent of Meeting,
+</span>
+<span class=h>
+<div class=h>
+וְאֵת֩ קַלְעֵ֨י הֶֽחָצֵ֜ר וְאֶת־מָסַ֣ךְ ׀ פֶּ֣תַח ׀ שַׁ֣עַר הֶחָצֵ֗ר אֲשֶׁ֨ר עַל־הַמִּשְׁכָּ֤ן וְעַל־הַמִּזְבֵּ֙חַ֙ סָבִ֔יב וְאֵת֙ מֵֽיתְרֵיהֶ֔ם וְאֶֽת־כָּל־כְּלֵ֖י עֲבֹדָתָ֑ם וְאֵ֨ת כָּל־אֲשֶׁ֧ר יֵעָשֶׂ֛ה לָהֶ֖ם וְעָבָֽדוּ׃
+וְאֵת֩ קַלְעֵ֨י הֶֽחָצֵ֜ר וְאֶת־מָסַ֣ךְ ׀ פֶּ֣תַח ׀ שַׁ֣עַר הֶחָצֵ֗ר אֲשֶׁ֨ר עַל־הַמִּשְׁכָּ֤ן וְעַל־הַמִּזְבֵּ֙חַ֙ סָבִ֔יב וְאֵת֙ מֵֽיתְרֵיהֶ֔ם וְאֶֽת־כָּל־כְּלֵ֖י עֲבֹדָתָ֑ם וְאֵ֨ת כָּל־אֲשֶׁ֧ר יֵעָשֶׂ֛ה לָהֶ֖ם וְעָבָֽדוּ׃
+</div>
+the hanging [tapestries] of the courtyard, the screen for the entrance to the gate of the courtyard which are over the <i>Mishkon</i> and altar on all sides, their ropes and all of their service utensils and all that will be given to them, and thus shall they serve.
+</span>
+<span class=h>
+<div class=h>
+עַל־פִּי֩ אַהֲרֹ֨ן וּבָנָ֜יו תִּהְיֶ֗ה כָּל־עֲבֹדַת֙ בְּנֵ֣י הַגֵּרְשֻׁנִּ֔י לְכָל־מַשָּׂאָ֔ם וּלְכֹ֖ל עֲבֹדָתָ֑ם וּפְקַדְתֶּ֤ם עֲלֵהֶם֙ בְּמִשְׁמֶ֔רֶת אֵ֖ת כָּל־מַשָּׂאָֽם׃
+עַל־פִּי֩ אַהֲרֹ֨ן וּבָנָ֜יו תִּהְיֶ֗ה כָּל־עֲבֹדַת֙ בְּנֵ֣י הַגֵּרְשֻׁנִּ֔י לְכָל־מַשָּׂאָ֔ם וּלְכֹ֖ל עֲבֹדָתָ֑ם וּפְקַדְתֶּ֤ם עֲלֵהֶם֙ בְּמִשְׁמֶ֔רֶת אֵ֖ת כָּל־מַשָּׂאָֽם׃
+</div>
+By instruction of Aharon and [one of] his sons shall be all the services of the sons of the Gershonites for all that they carry and for all their service. You shall fix specified appointments for them for everything they carry.
+</span>
+<span class=h>
+<div class=h>
+זֹ֣את עֲבֹדַ֗ת מִשְׁפְּחֹ֛ת בְּנֵ֥י הַגֵּרְשֻׁנִּ֖י בְּאֹ֣הֶל מוֹעֵ֑ד וּמִ֨שְׁמַרְתָּ֔ם בְּיַד֙ אִֽיתָמָ֔ר בֶּֽן־אַהֲרֹ֖ן הַכֹּהֵֽן׃ (פ)
+זֹ֣את עֲבֹדַ֗ת מִשְׁפְּחֹ֛ת בְּנֵ֥י הַגֵּרְשֻׁנִּ֖י בְּאֹ֣הֶל מוֹעֵ֑ד וּמִ֨שְׁמַרְתָּ֔ם בְּיַד֙ אִֽיתָמָ֔ר בֶּֽן־אַהֲרֹ֖ן הַכֹּהֵֽן׃ (פ)
+</div>
+This is the service of the families of the sons of the Gershonites in the Tent of Meeting. Their guardianship is in the hands of Isamar, the son of Aharon the <i>kohein.</i>
+</span>
+<span class=h>
+<div class=h>
+בְּנֵ֖י מְרָרִ֑י לְמִשְׁפְּחֹתָ֥ם לְבֵית־אֲבֹתָ֖ם תִּפְקֹ֥ד אֹתָֽם׃
+בְּנֵ֖י מְרָרִ֑י לְמִשְׁפְּחֹתָ֥ם לְבֵית־אֲבֹתָ֖ם תִּפְקֹ֥ד אֹתָֽם׃
+</div>
+The sons of Merori, according to their families and according to the house of their fathers you shall count them.
+</span>
+<span class=h>
+<div class=h>
+מִבֶּן֩ שְׁלֹשִׁ֨ים שָׁנָ֜ה וָמַ֗עְלָה וְעַ֛ד בֶּן־חֲמִשִּׁ֥ים שָׁנָ֖ה תִּפְקְדֵ֑ם כָּל־הַבָּא֙ לַצָּבָ֔א לַעֲבֹ֕ד אֶת־עֲבֹדַ֖ת אֹ֥הֶל מוֹעֵֽד׃
+מִבֶּן֩ שְׁלֹשִׁ֨ים שָׁנָ֜ה וָמַ֗עְלָה וְעַ֛ד בֶּן־חֲמִשִּׁ֥ים שָׁנָ֖ה תִּפְקְדֵ֑ם כָּל־הַבָּא֙ לַצָּבָ֔א לַעֲבֹ֕ד אֶת־עֲבֹדַ֖ת אֹ֥הֶל מוֹעֵֽד׃
+</div>
+From thirty years and above until fifty years, you shall count them; all who enter the division to serve in the Tent of Meeting.
+</span>
+<span class=h>
+<div class=h>
+וְזֹאת֙ מִשְׁמֶ֣רֶת מַשָּׂאָ֔ם לְכָל־עֲבֹדָתָ֖ם בְּאֹ֣הֶל מוֹעֵ֑ד קַרְשֵׁי֙ הַמִּשְׁכָּ֔ן וּבְרִיחָ֖יו וְעַמּוּדָ֥יו וַאֲדָנָֽיו׃
+וְזֹאת֙ מִשְׁמֶ֣רֶת מַשָּׂאָ֔ם לְכָל־עֲבֹדָתָ֖ם בְּאֹ֣הֶל מוֹעֵ֑ד קַרְשֵׁי֙ הַמִּשְׁכָּ֔ן וּבְרִיחָ֖יו וְעַמּוּדָ֥יו וַאֲדָנָֽיו׃
+</div>
+This is what they are entrusted to carry according to all their duties in the Tent of Meeting; the beams of the <i>Mishkon,</i> its bars, pillars and sockets.
+</span>
+<span class=h>
+<div class=h>
+וְעַמּוּדֵי֩ הֶחָצֵ֨ר סָבִ֜יב וְאַדְנֵיהֶ֗ם וִֽיתֵדֹתָם֙ וּמֵ֣יתְרֵיהֶ֔ם לְכָל־כְּלֵיהֶ֔ם וּלְכֹ֖ל עֲבֹדָתָ֑ם וּבְשֵׁמֹ֣ת תִּפְקְד֔וּ אֶת־כְּלֵ֖י מִשְׁמֶ֥רֶת מַשָּׂאָֽם׃
+וְעַמּוּדֵי֩ הֶחָצֵ֨ר סָבִ֜יב וְאַדְנֵיהֶ֗ם וִֽיתֵדֹתָם֙ וּמֵ֣יתְרֵיהֶ֔ם לְכָל־כְּלֵיהֶ֔ם וּלְכֹ֖ל עֲבֹדָתָ֑ם וּבְשֵׁמֹ֣ת תִּפְקְד֔וּ אֶת־כְּלֵ֖י מִשְׁמֶ֥רֶת מַשָּׂאָֽם׃
+</div>
+The pillars around the courtyard, their sockets, stakes and ropes; with all their utensils and for all their service; and by name shall you appoint the utensils to the charge of those who will carry them.
+</span>
+<span class=h>
+<div class=h>
+זֹ֣את עֲבֹדַ֗ת מִשְׁפְּחֹת֙ בְּנֵ֣י מְרָרִ֔י לְכָל־עֲבֹדָתָ֖ם בְּאֹ֣הֶל מוֹעֵ֑ד בְּיַד֙ אִֽיתָמָ֔ר בֶּֽן־אַהֲרֹ֖ן הַכֹּהֵֽן׃
+זֹ֣את עֲבֹדַ֗ת מִשְׁפְּחֹת֙ בְּנֵ֣י מְרָרִ֔י לְכָל־עֲבֹדָתָ֖ם בְּאֹ֣הֶל מוֹעֵ֑ד בְּיַד֙ אִֽיתָמָ֔ר בֶּֽן־אַהֲרֹ֖ן הַכֹּהֵֽן׃
+</div>
+This is the service of the families of the sons of Merori for all their service in the Tent of Meeting, under the direction of Isamar, the son of Aharon, the <i>kohein.</i>
+</span>
+<span class=h>
+<div class=h>
+וַיִּפְקֹ֨ד מֹשֶׁ֧ה וְאַהֲרֹ֛ן וּנְשִׂיאֵ֥י הָעֵדָ֖ה אֶת־בְּנֵ֣י הַקְּהָתִ֑י לְמִשְׁפְּחֹתָ֖ם וּלְבֵ֥ית אֲבֹתָֽם׃
+וַיִּפְקֹ֨ד מֹשֶׁ֧ה וְאַהֲרֹ֛ן וּנְשִׂיאֵ֥י הָעֵדָ֖ה אֶת־בְּנֵ֣י הַקְּהָתִ֑י לְמִשְׁפְּחֹתָ֖ם וּלְבֵ֥ית אֲבֹתָֽם׃
+</div>
+They counted—Moshe, Aharon and the leaders of the congregation—the sons of the Kehosites according to their families and according to the house of their fathers.
+</span>
+<span class=h>
+<div class=h>
+מִבֶּ֨ן שְׁלֹשִׁ֤ים שָׁנָה֙ וָמַ֔עְלָה וְעַ֖ד בֶּן־חֲמִשִּׁ֣ים שָׁנָ֑ה כָּל־הַבָּא֙ לַצָּבָ֔א לַעֲבֹדָ֖ה בְּאֹ֥הֶל מוֹעֵֽד׃
+מִבֶּ֨ן שְׁלֹשִׁ֤ים שָׁנָה֙ וָמַ֔עְלָה וְעַ֖ד בֶּן־חֲמִשִּׁ֣ים שָׁנָ֑ה כָּל־הַבָּא֙ לַצָּבָ֔א לַעֲבֹדָ֖ה בְּאֹ֥הֶל מוֹעֵֽד׃
+</div>
+Those, from thirty years and above, until fifty years; all those who enter the division to serve in the Tent of Meeting.
+</span>
+<span class=h>
+<div class=h>
+וַיִּהְי֥וּ פְקֻדֵיהֶ֖ם לְמִשְׁפְּחֹתָ֑ם אַלְפַּ֕יִם שְׁבַ֥ע מֵא֖וֹת וַחֲמִשִּֽׁים׃
+וַיִּהְי֥וּ פְקֻדֵיהֶ֖ם לְמִשְׁפְּחֹתָ֑ם אַלְפַּ֕יִם שְׁבַ֥ע מֵא֖וֹת וַחֲמִשִּֽׁים׃
+</div>
+Their numbers, according to their families were two thousand seven hundred and fifty.
+</span>
+<span class=h>
+<div class=h>
+אֵ֤לֶּה פְקוּדֵי֙ מִשְׁפְּחֹ֣ת הַקְּהָתִ֔י כָּל־הָעֹבֵ֖ד בְּאֹ֣הֶל מוֹעֵ֑ד אֲשֶׁ֨ר פָּקַ֤ד מֹשֶׁה֙ וְאַהֲרֹ֔ן עַל־פִּ֥י יְהוָ֖ה בְּיַד־מֹשֶֽׁה׃ (ס)
+אֵ֤לֶּה פְקוּדֵי֙ מִשְׁפְּחֹ֣ת הַקְּהָתִ֔י כָּל־הָעֹבֵ֖ד בְּאֹ֣הֶל מוֹעֵ֑ד אֲשֶׁ֨ר פָּקַ֤ד מֹשֶׁה֙ וְאַהֲרֹ֔ן עַל־פִּ֥י יְהוָ֖ה בְּיַד־מֹשֶֽׁה׃ (ס)
+</div>
+These are the numbers of the families of the Kehosites of all who serve in the Tent of Meeting whom Moshe and Aharon counted according to the word of Adonoy, through Moshe.
+</span>
+<span class=h>
+<div class=h>
+וּפְקוּדֵ֖י בְּנֵ֣י גֵרְשׁ֑וֹן לְמִשְׁפְּחוֹתָ֖ם וּלְבֵ֥ית אֲבֹתָֽם׃
+וּפְקוּדֵ֖י בְּנֵ֣י גֵרְשׁ֑וֹן לְמִשְׁפְּחוֹתָ֖ם וּלְבֵ֥ית אֲבֹתָֽם׃
+</div>
+The numbers of the sons of Gershon, according to their families and according to the house of their fathers.
+</span>
+<span class=h>
+<div class=h>
+מִבֶּ֨ן שְׁלֹשִׁ֤ים שָׁנָה֙ וָמַ֔עְלָה וְעַ֖ד בֶּן־חֲמִשִּׁ֣ים שָׁנָ֑ה כָּל־הַבָּא֙ לַצָּבָ֔א לַעֲבֹדָ֖ה בְּאֹ֥הֶל מוֹעֵֽד׃
+מִבֶּ֨ן שְׁלֹשִׁ֤ים שָׁנָה֙ וָמַ֔עְלָה וְעַ֖ד בֶּן־חֲמִשִּׁ֣ים שָׁנָ֑ה כָּל־הַבָּא֙ לַצָּבָ֔א לַעֲבֹדָ֖ה בְּאֹ֥הֶל מוֹעֵֽד׃
+</div>
+Those, from thirty years and above, until fifty years; all who enter the division to serve in the Tent of Meeting.
+</span>
+<span class=h>
+<div class=h>
+וַיִּֽהְיוּ֙ פְּקֻ֣דֵיהֶ֔ם לְמִשְׁפְּחֹתָ֖ם לְבֵ֣ית אֲבֹתָ֑ם אַלְפַּ֕יִם וְשֵׁ֥שׁ מֵא֖וֹת וּשְׁלֹשִֽׁים׃
+וַיִּֽהְיוּ֙ פְּקֻ֣דֵיהֶ֔ם לְמִשְׁפְּחֹתָ֖ם לְבֵ֣ית אֲבֹתָ֑ם אַלְפַּ֕יִם וְשֵׁ֥שׁ מֵא֖וֹת וּשְׁלֹשִֽׁים׃
+</div>
+Their numbers, according to their families, according to the house of their fathers were two thousand six hundred and thirty.
+</span>
+<span class=h>
+<div class=h>
+אֵ֣לֶּה פְקוּדֵ֗י מִשְׁפְּחֹת֙ בְּנֵ֣י גֵרְשׁ֔וֹן כָּל־הָעֹבֵ֖ד בְּאֹ֣הֶל מוֹעֵ֑ד אֲשֶׁ֨ר פָּקַ֥ד מֹשֶׁ֛ה וְאַהֲרֹ֖ן עַל־פִּ֥י יְהוָֽה׃
+אֵ֣לֶּה פְקוּדֵ֗י מִשְׁפְּחֹת֙ בְּנֵ֣י גֵרְשׁ֔וֹן כָּל־הָעֹבֵ֖ד בְּאֹ֣הֶל מוֹעֵ֑ד אֲשֶׁ֨ר פָּקַ֥ד מֹשֶׁ֛ה וְאַהֲרֹ֖ן עַל־פִּ֥י יְהוָֽה׃
+</div>
+These are the numbers of the families of the sons of the Gershonites, of all those who serve in the Tent of Meeting, whom Moshe and Aharon counted, according to the word of Adonoy.
+</span>
+<span class=h>
+<div class=h>
+וּפְקוּדֵ֕י מִשְׁפְּחֹ֖ת בְּנֵ֣י מְרָרִ֑י לְמִשְׁפְּחֹתָ֖ם לְבֵ֥ית אֲבֹתָֽם׃
+וּפְקוּדֵ֕י מִשְׁפְּחֹ֖ת בְּנֵ֣י מְרָרִ֑י לְמִשְׁפְּחֹתָ֖ם לְבֵ֥ית אֲבֹתָֽם׃
+</div>
+The numbers of the families of the sons of the Merorites according to their families, according to the house of their fathers.
+</span>
+<span class=h>
+<div class=h>
+מִבֶּ֨ן שְׁלֹשִׁ֤ים שָׁנָה֙ וָמַ֔עְלָה וְעַ֖ד בֶּן־חֲמִשִּׁ֣ים שָׁנָ֑ה כָּל־הַבָּא֙ לַצָּבָ֔א לַעֲבֹדָ֖ה בְּאֹ֥הֶל מוֹעֵֽד׃
+מִבֶּ֨ן שְׁלֹשִׁ֤ים שָׁנָה֙ וָמַ֔עְלָה וְעַ֖ד בֶּן־חֲמִשִּׁ֣ים שָׁנָ֑ה כָּל־הַבָּא֙ לַצָּבָ֔א לַעֲבֹדָ֖ה בְּאֹ֥הֶל מוֹעֵֽד׃
+</div>
+Those, from thirty years and above, until fifty years; all who enter the division to serve in the Tent of Meeting.
+</span>
+<span class=h>
+<div class=h>
+וַיִּהְי֥וּ פְקֻדֵיהֶ֖ם לְמִשְׁפְּחֹתָ֑ם שְׁלֹ֥שֶׁת אֲלָפִ֖ים וּמָאתָֽיִם׃
+וַיִּהְי֥וּ פְקֻדֵיהֶ֖ם לְמִשְׁפְּחֹתָ֑ם שְׁלֹ֥שֶׁת אֲלָפִ֖ים וּמָאתָֽיִם׃
+</div>
+Their numbers were, according to their families, three thousand two hundred.
+</span>
+<span class=h>
+<div class=h>
+אֵ֣לֶּה פְקוּדֵ֔י מִשְׁפְּחֹ֖ת בְּנֵ֣י מְרָרִ֑י אֲשֶׁ֨ר פָּקַ֤ד מֹשֶׁה֙ וְאַהֲרֹ֔ן עַל־פִּ֥י יְהוָ֖ה בְּיַד־מֹשֶֽׁה׃
+אֵ֣לֶּה פְקוּדֵ֔י מִשְׁפְּחֹ֖ת בְּנֵ֣י מְרָרִ֑י אֲשֶׁ֨ר פָּקַ֤ד מֹשֶׁה֙ וְאַהֲרֹ֔ן עַל־פִּ֥י יְהוָ֖ה בְּיַד־מֹשֶֽׁה׃
+</div>
+These are the numbers of the families of the sons of the Merorites whom Moshe and Aharon counted according to the word of Adonoy, through Moshe.
+</span>
+<span class=h>
+<div class=h>
+כָּֽל־הַפְּקֻדִ֡ים אֲשֶׁר֩ פָּקַ֨ד מֹשֶׁ֧ה וְאַהֲרֹ֛ן וּנְשִׂיאֵ֥י יִשְׂרָאֵ֖ל אֶת־הַלְוִיִּ֑ם לְמִשְׁפְּחֹתָ֖ם וּלְבֵ֥ית אֲבֹתָֽם׃
+כָּֽל־הַפְּקֻדִ֡ים אֲשֶׁר֩ פָּקַ֨ד מֹשֶׁ֧ה וְאַהֲרֹ֛ן וּנְשִׂיאֵ֥י יִשְׂרָאֵ֖ל אֶת־הַלְוִיִּ֑ם לְמִשְׁפְּחֹתָ֖ם וּלְבֵ֥ית אֲבֹתָֽם׃
+</div>
+The total of the numbers counted by Moshe, Aharon and the leaders of the congregation [of] the Levites according to their families, according to the house of their fathers.
+</span>
+<span class=h>
+<div class=h>
+מִבֶּ֨ן שְׁלֹשִׁ֤ים שָׁנָה֙ וָמַ֔עְלָה וְעַ֖ד בֶּן־חֲמִשִּׁ֣ים שָׁנָ֑ה כָּל־הַבָּ֗א לַעֲבֹ֨ד עֲבֹדַ֧ת עֲבֹדָ֛ה וַעֲבֹדַ֥ת מַשָּׂ֖א בְּאֹ֥הֶל מוֹעֵֽד׃
+מִבֶּ֨ן שְׁלֹשִׁ֤ים שָׁנָה֙ וָמַ֔עְלָה וְעַ֖ד בֶּן־חֲמִשִּׁ֣ים שָׁנָ֑ה כָּל־הַבָּ֗א לַעֲבֹ֨ד עֲבֹדַ֧ת עֲבֹדָ֛ה וַעֲבֹדַ֥ת מַשָּׂ֖א בְּאֹ֥הֶל מוֹעֵֽד׃
+</div>
+Those from thirty years and above, until fifty years; all who enter to serve the service of service and the service of carrying in the Tent of Meeting.
+</span>
+<span class=h>
+<div class=h>
+וַיִּהְי֖וּ פְּקֻדֵיהֶ֑ם שְׁמֹנַ֣ת אֲלָפִ֔ים וַחֲמֵ֥שׁ מֵא֖וֹת וּשְׁמֹנִֽים׃
+וַיִּהְי֖וּ פְּקֻדֵיהֶ֑ם שְׁמֹנַ֣ת אֲלָפִ֔ים וַחֲמֵ֥שׁ מֵא֖וֹת וּשְׁמֹנִֽים׃
+</div>
+Their numbers were eight thousand five hundred and eighty.
+</span>
+<span class=h>
+<div class=h>
+עַל־פִּ֨י יְהוָ֜ה פָּקַ֤ד אוֹתָם֙ בְּיַד־מֹשֶׁ֔ה אִ֥ישׁ אִ֛ישׁ עַל־עֲבֹדָת֖וֹ וְעַל־מַשָּׂא֑וֹ וּפְקֻדָ֕יו אֲשֶׁר־צִוָּ֥ה יְהוָ֖ה אֶת־מֹשֶֽׁה׃ (פ)
+עַל־פִּ֨י יְהוָ֜ה פָּקַ֤ד אוֹתָם֙ בְּיַד־מֹשֶׁ֔ה אִ֥ישׁ אִ֛ישׁ עַל־עֲבֹדָת֖וֹ וְעַל־מַשָּׂא֑וֹ וּפְקֻדָ֕יו אֲשֶׁר־צִוָּ֥ה יְהוָ֖ה אֶת־מֹשֶֽׁה׃ (פ)
+</div>
+According to the word of Adonoy he counted them, by the hand of Moshe, each man according to his service and according to what he carries; and they were counted, as Adonoy commanded Moshe.
+</span>
+<span class=h>
+<div class=h>
+
+
+
+<h4>Chapter 5</h4>
+
+
+
+
+
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+</div>
+Adonoy spoke to Moshe, saying;
+</span>
+<span class=h>
+<div class=h>
+צַ֚ו אֶת־בְּנֵ֣י יִשְׂרָאֵ֔ל וִֽישַׁלְּחוּ֙ מִן־הַֽמַּחֲנֶ֔ה כָּל־צָר֖וּעַ וְכָל־זָ֑ב וְכֹ֖ל טָמֵ֥א לָנָֽפֶשׁ׃
+צַ֚ו אֶת־בְּנֵ֣י יִשְׂרָאֵ֔ל וִֽישַׁלְּחוּ֙ מִן־הַֽמַּחֲנֶ֔ה כָּל־צָר֖וּעַ וְכָל־זָ֑ב וְכֹ֖ל טָמֵ֥א לָנָֽפֶשׁ׃
+</div>
+Command Bnei Yisroel that they must expel from the camp. anyone with <i>tzora’as,</i> and anyone from whom flows a [seminal] discharge and anyone who became defiled by a (departed) soul.
+</span>
+<span class=h>
+<div class=h>
+מִזָּכָ֤ר עַד־נְקֵבָה֙ תְּשַׁלֵּ֔חוּ אֶל־מִח֥וּץ לַֽמַּחֲנֶ֖ה תְּשַׁלְּח֑וּם וְלֹ֤א יְטַמְּאוּ֙ אֶת־מַ֣חֲנֵיהֶ֔ם אֲשֶׁ֥ר אֲנִ֖י שֹׁכֵ֥ן בְּתוֹכָֽם׃
+מִזָּכָ֤ר עַד־נְקֵבָה֙ תְּשַׁלֵּ֔חוּ אֶל־מִח֥וּץ לַֽמַּחֲנֶ֖ה תְּשַׁלְּח֑וּם וְלֹ֤א יְטַמְּאוּ֙ אֶת־מַ֣חֲנֵיהֶ֔ם אֲשֶׁ֥ר אֲנִ֖י שֹׁכֵ֥ן בְּתוֹכָֽם׃
+</div>
+Whether male or female you shall send them out. Beyond the camp you shall send them, and they shall not defile their camps in which I dwell among them.
+</span>
+<span class=h>
+<div class=h>
+וַיַּֽעֲשׂוּ־כֵן֙ בְּנֵ֣י יִשְׂרָאֵ֔ל וַיְשַׁלְּח֣וּ אוֹתָ֔ם אֶל־מִח֖וּץ לַֽמַּחֲנֶ֑ה כַּאֲשֶׁ֨ר דִּבֶּ֤ר יְהוָה֙ אֶל־מֹשֶׁ֔ה כֵּ֥ן עָשׂ֖וּ בְּנֵ֥י יִשְׂרָאֵֽל׃ (פ)
+וַיַּֽעֲשׂוּ־כֵן֙ בְּנֵ֣י יִשְׂרָאֵ֔ל וַיְשַׁלְּח֣וּ אוֹתָ֔ם אֶל־מִח֖וּץ לַֽמַּחֲנֶ֑ה כַּאֲשֶׁ֨ר דִּבֶּ֤ר יְהוָה֙ אֶל־מֹשֶׁ֔ה כֵּ֥ן עָשׂ֖וּ בְּנֵ֥י יִשְׂרָאֵֽל׃ (פ)
+</div>
+Bnei Yisroel did so, and they sent them beyond the camp; just as Adonoy spoke to Moshe, so did Bnei Yisroel do.
+</span>
+<span class=h>
+<div class=h>
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+</div>
+Adonoy spoke to Moshe, saying;
+</span>
+<span class=h>
+<div class=h>
+דַּבֵּר֮ אֶל־בְּנֵ֣י יִשְׂרָאֵל֒ אִ֣ישׁ אֽוֹ־אִשָּׁ֗ה כִּ֤י יַעֲשׂוּ֙ מִכָּל־חַטֹּ֣את הָֽאָדָ֔ם לִמְעֹ֥ל מַ֖עַל בַּיהוָ֑ה וְאָֽשְׁמָ֖ה הַנֶּ֥פֶשׁ הַהִֽוא׃
+דַּבֵּר֮ אֶל־בְּנֵ֣י יִשְׂרָאֵל֒ אִ֣ישׁ אֽוֹ־אִשָּׁ֗ה כִּ֤י יַעֲשׂוּ֙ מִכָּל־חַטֹּ֣את הָֽאָדָ֔ם לִמְעֹ֥ל מַ֖עַל בַּיהוָ֑ה וְאָֽשְׁמָ֖ה הַנֶּ֥פֶשׁ הַהִֽוא׃
+</div>
+Speak to Bnei Yisroel: When a man or a woman commits any of the sins against man, acting treacherously against Adonoy, and that person is guilty.
+</span>
+<span class=h>
+<div class=h>
+וְהִתְוַדּ֗וּ אֶֽת־חַטָּאתָם֮ אֲשֶׁ֣ר עָשׂוּ֒ וְהֵשִׁ֤יב אֶת־אֲשָׁמוֹ֙ בְּרֹאשׁ֔וֹ וַחֲמִישִׁת֖וֹ יֹסֵ֣ף עָלָ֑יו וְנָתַ֕ן לַאֲשֶׁ֖ר אָשַׁ֥ם לֽוֹ׃
+וְהִתְוַדּ֗וּ אֶֽת־חַטָּאתָם֮ אֲשֶׁ֣ר עָשׂוּ֒ וְהֵשִׁ֤יב אֶת־אֲשָׁמוֹ֙ בְּרֹאשׁ֔וֹ וַחֲמִישִׁת֖וֹ יֹסֵ֣ף עָלָ֑יו וְנָתַ֕ן לַאֲשֶׁ֖ר אָשַׁ֥ם לֽוֹ׃
+</div>
+They shall confess the sins which they committed and return the principal amount [of the object] of his guilt, and add one fifth to that amount. He shall then give it to whom he is indebted.
+</span>
+<span class=h>
+<div class=h>
+וְאִם־אֵ֨ין לָאִ֜ישׁ גֹּאֵ֗ל לְהָשִׁ֤יב הָאָשָׁם֙ אֵלָ֔יו הָאָשָׁ֛ם הַמּוּשָׁ֥ב לַיהוָ֖ה לַכֹּהֵ֑ן מִלְּבַ֗ד אֵ֚יל הַכִּפֻּרִ֔ים אֲשֶׁ֥ר יְכַפֶּר־בּ֖וֹ עָלָֽיו׃
+וְאִם־אֵ֨ין לָאִ֜ישׁ גֹּאֵ֗ל לְהָשִׁ֤יב הָאָשָׁם֙ אֵלָ֔יו הָאָשָׁ֛ם הַמּוּשָׁ֥ב לַיהוָ֖ה לַכֹּהֵ֑ן מִלְּבַ֗ד אֵ֚יל הַכִּפֻּרִ֔ים אֲשֶׁ֥ר יְכַפֶּר־בּ֖וֹ עָלָֽיו׃
+</div>
+But if the man has no redeemer (relative) to whom the debt may be returned, the debt being returned then belongs to Adonoy, [then] to the <i>kohein.</i> This is besides the ram of forgiveness with which he [his sin] will be atoned.
+</span>
+<span class=h>
+<div class=h>
+וְכָל־תְּרוּמָ֞ה לְכָל־קָדְשֵׁ֧י בְנֵי־יִשְׂרָאֵ֛ל אֲשֶׁר־יַקְרִ֥יבוּ לַכֹּהֵ֖ן ל֥וֹ יִהְיֶֽה׃
+וְכָל־תְּרוּמָ֞ה לְכָל־קָדְשֵׁ֧י בְנֵי־יִשְׂרָאֵ֛ל אֲשֶׁר־יַקְרִ֥יבוּ לַכֹּהֵ֖ן ל֥וֹ יִהְיֶֽה׃
+</div>
+Every <i>terumah</i>-gift of all the sacred things of Bnei Yisroel that they will bring to the <i>kohein,</i> shall be his.
+</span>
+<span class=h>
+<div class=h>
+וְאִ֥ישׁ אֶת־קֳדָשָׁ֖יו ל֣וֹ יִהְי֑וּ אִ֛ישׁ אֲשֶׁר־יִתֵּ֥ן לַכֹּהֵ֖ן ל֥וֹ יִהְיֶֽה׃ (פ)
+וְאִ֥ישׁ אֶת־קֳדָשָׁ֖יו ל֣וֹ יִהְי֑וּ אִ֛ישׁ אֲשֶׁר־יִתֵּ֥ן לַכֹּהֵ֖ן ל֥וֹ יִהְיֶֽה׃ (פ)
+</div>
+A man’s sacred objects shall be his; whatever a man gives to the <i>kohein,</i> shall be his.
+</span>
+<span class=h>
+<div class=h>
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+</div>
+Adonoy spoke to Moshe, saying;
+</span>
+<span class=h>
+<div class=h>
+דַּבֵּר֙ אֶל־בְּנֵ֣י יִשְׂרָאֵ֔ל וְאָמַרְתָּ֖ אֲלֵהֶ֑ם אִ֥ישׁ אִישׁ֙ כִּֽי־תִשְׂטֶ֣ה אִשְׁתּ֔וֹ וּמָעֲלָ֥ה ב֖וֹ מָֽעַל׃
+דַּבֵּר֙ אֶל־בְּנֵ֣י יִשְׂרָאֵ֔ל וְאָמַרְתָּ֖ אֲלֵהֶ֑ם אִ֥ישׁ אִישׁ֙ כִּֽי־תִשְׂטֶ֣ה אִשְׁתּ֔וֹ וּמָעֲלָ֥ה ב֖וֹ מָֽעַל׃
+</div>
+Speak to Bnei Yisroel and say to them: If any man’s wife goes astray and acts treacherously toward him.
+</span>
+<span class=h>
+<div class=h>
+וְשָׁכַ֨ב אִ֣ישׁ אֹתָהּ֮ שִׁכְבַת־זֶרַע֒ וְנֶעְלַם֙ מֵעֵינֵ֣י אִישָׁ֔הּ וְנִסְתְּרָ֖ה וְהִ֣יא נִטְמָ֑אָה וְעֵד֙ אֵ֣ין בָּ֔הּ וְהִ֖וא לֹ֥א נִתְפָּֽשָׂה׃
+וְשָׁכַ֨ב אִ֣ישׁ אֹתָהּ֮ שִׁכְבַת־זֶרַע֒ וְנֶעְלַם֙ מֵעֵינֵ֣י אִישָׁ֔הּ וְנִסְתְּרָ֖ה וְהִ֣יא נִטְמָ֑אָה וְעֵד֙ אֵ֣ין בָּ֔הּ וְהִ֖וא לֹ֥א נִתְפָּֽשָׂה׃
+</div>
+And a man has lain with her conjugally but it was hidden from her husband’s eyes and she was concealed and has become defiled and there is no witness against her, and she was not seized forcibly.
+</span>
+<span class=h>
+<div class=h>
+וְעָבַ֨ר עָלָ֧יו רֽוּחַ־קִנְאָ֛ה וְקִנֵּ֥א אֶת־אִשְׁתּ֖וֹ וְהִ֣וא נִטְמָ֑אָה אוֹ־עָבַ֨ר עָלָ֤יו רֽוּחַ־קִנְאָה֙ וְקִנֵּ֣א אֶת־אִשְׁתּ֔וֹ וְהִ֖יא לֹ֥א נִטְמָֽאָה׃
+וְעָבַ֨ר עָלָ֧יו רֽוּחַ־קִנְאָ֛ה וְקִנֵּ֥א אֶת־אִשְׁתּ֖וֹ וְהִ֣וא נִטְמָ֑אָה אוֹ־עָבַ֨ר עָלָ֤יו רֽוּחַ־קִנְאָה֙ וְקִנֵּ֣א אֶת־אִשְׁתּ֔וֹ וְהִ֖יא לֹ֥א נִטְמָֽאָה׃
+</div>
+[When] a spirit of jealousy comes upon him and he is jealous of his wife and she was defiled or, a spirit of jealousy comes upon him and he is jealous of his wife and she was not defiled,
+</span>
+<span class=h>
+<div class=h>
+וְהֵבִ֨יא הָאִ֣ישׁ אֶת־אִשְׁתּוֹ֮ אֶל־הַכֹּהֵן֒ וְהֵבִ֤יא אֶת־קָרְבָּנָהּ֙ עָלֶ֔יהָ עֲשִׂירִ֥ת הָאֵיפָ֖ה קֶ֣מַח שְׂעֹרִ֑ים לֹֽא־יִצֹ֨ק עָלָ֜יו שֶׁ֗מֶן וְלֹֽא־יִתֵּ֤ן עָלָיו֙ לְבֹנָ֔ה כִּֽי־מִנְחַ֤ת קְנָאֹת֙ ה֔וּא מִנְחַ֥ת זִכָּר֖וֹן מַזְכֶּ֥רֶת עָוֺֽן׃
+וְהֵבִ֨יא הָאִ֣ישׁ אֶת־אִשְׁתּוֹ֮ אֶל־הַכֹּהֵן֒ וְהֵבִ֤יא אֶת־קָרְבָּנָהּ֙ עָלֶ֔יהָ עֲשִׂירִ֥ת הָאֵיפָ֖ה קֶ֣מַח שְׂעֹרִ֑ים לֹֽא־יִצֹ֨ק עָלָ֜יו שֶׁ֗מֶן וְלֹֽא־יִתֵּ֤ן עָלָיו֙ לְבֹנָ֔ה כִּֽי־מִנְחַ֤ת קְנָאֹת֙ ה֔וּא מִנְחַ֥ת זִכָּר֖וֹן מַזְכֶּ֥רֶת עָוֺֽן׃
+</div>
+that man shall bring his wife to the <i>kohein</i> and he shall bring her offering for her; [which is] one tenth of an <i>epha</i> of barley flour; he shall not pour oil over it and he shall not put frankincense on it, for it is a meal-offering of jealousy, a meal-offering of remembrance, recalling an iniquity.
+</span>
+<span class=h>
+<div class=h>
+וְהִקְרִ֥יב אֹתָ֖הּ הַכֹּהֵ֑ן וְהֶֽעֱמִדָ֖הּ לִפְנֵ֥י יְהוָֽה׃
+וְהִקְרִ֥יב אֹתָ֖הּ הַכֹּהֵ֑ן וְהֶֽעֱמִדָ֖הּ לִפְנֵ֥י יְהוָֽה׃
+</div>
+The <i>kohein</i> shall bring her near and station her before Adonoy.
+</span>
+<span class=h>
+<div class=h>
+וְלָקַ֧ח הַכֹּהֵ֛ן מַ֥יִם קְדֹשִׁ֖ים בִּכְלִי־חָ֑רֶשׂ וּמִן־הֶֽעָפָ֗ר אֲשֶׁ֤ר יִהְיֶה֙ בְּקַרְקַ֣ע הַמִּשְׁכָּ֔ן יִקַּ֥ח הַכֹּהֵ֖ן וְנָתַ֥ן אֶל־הַמָּֽיִם׃
+וְלָקַ֧ח הַכֹּהֵ֛ן מַ֥יִם קְדֹשִׁ֖ים בִּכְלִי־חָ֑רֶשׂ וּמִן־הֶֽעָפָ֗ר אֲשֶׁ֤ר יִהְיֶה֙ בְּקַרְקַ֣ע הַמִּשְׁכָּ֔ן יִקַּ֥ח הַכֹּהֵ֖ן וְנָתַ֥ן אֶל־הַמָּֽיִם׃
+</div>
+The <i>kohein</i> shall take sanctified waters in a clay utensil, and of the earth that will be on the floor of the <i>Mishkon</i>, the <i>kohein</i> shall take and put into the water.
+</span>
+<span class=h>
+<div class=h>
+וְהֶעֱמִ֨יד הַכֹּהֵ֥ן אֶֽת־הָאִשָּׁה֮ לִפְנֵ֣י יְהוָה֒ וּפָרַע֙ אֶת־רֹ֣אשׁ הָֽאִשָּׁ֔ה וְנָתַ֣ן עַל־כַּפֶּ֗יהָ אֵ֚ת מִנְחַ֣ת הַזִּכָּר֔וֹן מִנְחַ֥ת קְנָאֹ֖ת הִ֑וא וּבְיַ֤ד הַכֹּהֵן֙ יִהְי֔וּ מֵ֥י הַמָּרִ֖ים הַמְאָֽרֲרִֽים׃
+וְהֶעֱמִ֨יד הַכֹּהֵ֥ן אֶֽת־הָאִשָּׁה֮ לִפְנֵ֣י יְהוָה֒ וּפָרַע֙ אֶת־רֹ֣אשׁ הָֽאִשָּׁ֔ה וְנָתַ֣ן עַל־כַּפֶּ֗יהָ אֵ֚ת מִנְחַ֣ת הַזִּכָּר֔וֹן מִנְחַ֥ת קְנָאֹ֖ת הִ֑וא וּבְיַ֤ד הַכֹּהֵן֙ יִהְי֔וּ מֵ֥י הַמָּרִ֖ים הַמְאָֽרֲרִֽים׃
+</div>
+The <i>kohein</i> shall station the woman before Adonoy, and expose the woman’s hair, and place on her palms the meal-offering of remembrance; it is a meal-offering of jealousy and there will be in the <i>kohein’s</i> hand, the bitter, lethal waters.
+</span>
+<span class=h>
+<div class=h>
+וְהִשְׁבִּ֨יעַ אֹתָ֜הּ הַכֹּהֵ֗ן וְאָמַ֤ר אֶל־הָֽאִשָּׁה֙ אִם־לֹ֨א שָׁכַ֥ב אִישׁ֙ אֹתָ֔ךְ וְאִם־לֹ֥א שָׂטִ֛ית טֻמְאָ֖ה תַּ֣חַת אִישֵׁ֑ךְ הִנָּקִ֕י מִמֵּ֛י הַמָּרִ֥ים הַֽמְאָרֲרִ֖ים הָאֵֽלֶּה׃
+וְהִשְׁבִּ֨יעַ אֹתָ֜הּ הַכֹּהֵ֗ן וְאָמַ֤ר אֶל־הָֽאִשָּׁה֙ אִם־לֹ֨א שָׁכַ֥ב אִישׁ֙ אֹתָ֔ךְ וְאִם־לֹ֥א שָׂטִ֛ית טֻמְאָ֖ה תַּ֣חַת אִישֵׁ֑ךְ הִנָּקִ֕י מִמֵּ֛י הַמָּרִ֥ים הַֽמְאָרֲרִ֖ים הָאֵֽלֶּה׃
+</div>
+The <i>kohein</i> shall place her under oath and say to the woman: If a man has not lain with you [conjugally] and if you have not gone astray to be defiled while you were married to your husband, you shall be absolved of these bitter, lethal waters.
+</span>
+<span class=h>
+<div class=h>
+וְאַ֗תְּ כִּ֥י שָׂטִ֛ית תַּ֥חַת אִישֵׁ֖ךְ וְכִ֣י נִטְמֵ֑את וַיִּתֵּ֨ן אִ֥ישׁ בָּךְ֙ אֶת־שְׁכָבְתּ֔וֹ מִֽבַּלְעֲדֵ֖י אִישֵֽׁךְ׃
+וְאַ֗תְּ כִּ֥י שָׂטִ֛ית תַּ֥חַת אִישֵׁ֖ךְ וְכִ֣י נִטְמֵ֑את וַיִּתֵּ֨ן אִ֥ישׁ בָּךְ֙ אֶת־שְׁכָבְתּ֔וֹ מִֽבַּלְעֲדֵ֖י אִישֵֽׁךְ׃
+</div>
+[But] you, if you have gone astray while you were married to your husband, and if you have been defiled, and if a man has lain conjugally with you, [a man] other than your husband.
+</span>
+<span class=h>
+<div class=h>
+וְהִשְׁבִּ֨יעַ הַכֹּהֵ֥ן אֶֽת־הָֽאִשָּׁה֮ בִּשְׁבֻעַ֣ת הָאָלָה֒ וְאָמַ֤ר הַכֹּהֵן֙ לָֽאִשָּׁ֔ה יִתֵּ֨ן יְהוָ֥ה אוֹתָ֛ךְ לְאָלָ֥ה וְלִשְׁבֻעָ֖ה בְּת֣וֹךְ עַמֵּ֑ךְ בְּתֵ֨ת יְהוָ֤ה אֶת־יְרֵכֵךְ֙ נֹפֶ֔לֶת וְאֶת־בִּטְנֵ֖ךְ צָבָֽה׃
+וְהִשְׁבִּ֨יעַ הַכֹּהֵ֥ן אֶֽת־הָֽאִשָּׁה֮ בִּשְׁבֻעַ֣ת הָאָלָה֒ וְאָמַ֤ר הַכֹּהֵן֙ לָֽאִשָּׁ֔ה יִתֵּ֨ן יְהוָ֥ה אוֹתָ֛ךְ לְאָלָ֥ה וְלִשְׁבֻעָ֖ה בְּת֣וֹךְ עַמֵּ֑ךְ בְּתֵ֨ת יְהוָ֤ה אֶת־יְרֵכֵךְ֙ נֹפֶ֔לֶת וְאֶת־בִּטְנֵ֖ךְ צָבָֽה׃
+</div>
+The <i>kohein</i> shall place the woman under oath with the oath of accursedness, and the <i>kohein</i> shall say to the woman: “Adonoy shall make you a curse and an oath among your people, when Adonoy causes your thigh to collapse and your abdomen to swell.
+</span>
+<span class=h>
+<div class=h>
+וּ֠בָאוּ הַמַּ֨יִם הַמְאָרְרִ֤ים הָאֵ֙לֶּה֙ בְּֽמֵעַ֔יִךְ לַצְבּ֥וֹת בֶּ֖טֶן וְלַנְפִּ֣ל יָרֵ֑ךְ וְאָמְרָ֥ה הָאִשָּׁ֖ה אָמֵ֥ן ׀ אָמֵֽן׃
+וּ֠בָאוּ הַמַּ֨יִם הַמְאָרְרִ֤ים הָאֵ֙לֶּה֙ בְּֽמֵעַ֔יִךְ לַצְבּ֥וֹת בֶּ֖טֶן וְלַנְפִּ֣ל יָרֵ֑ךְ וְאָמְרָ֥ה הָאִשָּׁ֖ה אָמֵ֥ן ׀ אָמֵֽן׃
+</div>
+This bitter, lethal water will enter your abdomen to swell the abdomen, and collapse the thigh and the woman shall say “Amein, Amein”.
+</span>
+<span class=h>
+<div class=h>
+וְ֠כָתַב אֶת־הָאָלֹ֥ת הָאֵ֛לֶּה הַכֹּהֵ֖ן בַּסֵּ֑פֶר וּמָחָ֖ה אֶל־מֵ֥י הַמָּרִֽים׃
+וְ֠כָתַב אֶת־הָאָלֹ֥ת הָאֵ֛לֶּה הַכֹּהֵ֖ן בַּסֵּ֑פֶר וּמָחָ֖ה אֶל־מֵ֥י הַמָּרִֽים׃
+</div>
+The <i>kohein</i> shall write all these curses, on the scroll and dissolve them (the writing) in the bitter waters.
+</span>
+<span class=h>
+<div class=h>
+וְהִשְׁקָה֙ אֶת־הָ֣אִשָּׁ֔ה אֶת־מֵ֥י הַמָּרִ֖ים הַמְאָֽרֲרִ֑ים וּבָ֥אוּ בָ֛הּ הַמַּ֥יִם הַֽמְאָרֲרִ֖ים לְמָרִֽים׃
+וְהִשְׁקָה֙ אֶת־הָ֣אִשָּׁ֔ה אֶת־מֵ֥י הַמָּרִ֖ים הַמְאָֽרֲרִ֑ים וּבָ֥אוּ בָ֛הּ הַמַּ֥יִם הַֽמְאָרֲרִ֖ים לְמָרִֽים׃
+</div>
+He shall have the woman drink the bitter, lethal waters and the lethal waters, shall enter her to become bitter.
+</span>
+<span class=h>
+<div class=h>
+וְלָקַ֤ח הַכֹּהֵן֙ מִיַּ֣ד הָֽאִשָּׁ֔ה אֵ֖ת מִנְחַ֣ת הַקְּנָאֹ֑ת וְהֵנִ֤יף אֶת־הַמִּנְחָה֙ לִפְנֵ֣י יְהוָ֔ה וְהִקְרִ֥יב אֹתָ֖הּ אֶל־הַמִּזְבֵּֽחַ׃
+וְלָקַ֤ח הַכֹּהֵן֙ מִיַּ֣ד הָֽאִשָּׁ֔ה אֵ֖ת מִנְחַ֣ת הַקְּנָאֹ֑ת וְהֵנִ֤יף אֶת־הַמִּנְחָה֙ לִפְנֵ֣י יְהוָ֔ה וְהִקְרִ֥יב אֹתָ֖הּ אֶל־הַמִּזְבֵּֽחַ׃
+</div>
+The <i>kohein</i> shall take from the woman’s hand the meal-offering of jealousy and he shall wave the meal-offering before Adonoy, and bring it close to the Altar.
+</span>
+<span class=h>
+<div class=h>
+וְקָמַ֨ץ הַכֹּהֵ֤ן מִן־הַמִּנְחָה֙ אֶת־אַזְכָּ֣רָתָ֔הּ וְהִקְטִ֖יר הַמִּזְבֵּ֑חָה וְאַחַ֛ר יַשְׁקֶ֥ה אֶת־הָאִשָּׁ֖ה אֶת־הַמָּֽיִם׃
+וְקָמַ֨ץ הַכֹּהֵ֤ן מִן־הַמִּנְחָה֙ אֶת־אַזְכָּ֣רָתָ֔הּ וְהִקְטִ֖יר הַמִּזְבֵּ֑חָה וְאַחַ֛ר יַשְׁקֶ֥ה אֶת־הָאִשָּׁ֖ה אֶת־הַמָּֽיִם׃
+</div>
+The <i>kohein</i> shall scoop out from the meal-offering its commemoration and burn it on the Altar, and after that he shall cause the woman to drink the water.
+</span>
+<span class=h>
+<div class=h>
+וְהִשְׁקָ֣הּ אֶת־הַמַּ֗יִם וְהָיְתָ֣ה אִֽם־נִטְמְאָה֮ וַתִּמְעֹ֣ל מַ֣עַל בְּאִישָׁהּ֒ וּבָ֨אוּ בָ֜הּ הַמַּ֤יִם הַמְאָֽרֲרִים֙ לְמָרִ֔ים וְצָבְתָ֣ה בִטְנָ֔הּ וְנָפְלָ֖ה יְרֵכָ֑הּ וְהָיְתָ֧ה הָאִשָּׁ֛ה לְאָלָ֖ה בְּקֶ֥רֶב עַמָּֽהּ׃
+וְהִשְׁקָ֣הּ אֶת־הַמַּ֗יִם וְהָיְתָ֣ה אִֽם־נִטְמְאָה֮ וַתִּמְעֹ֣ל מַ֣עַל בְּאִישָׁהּ֒ וּבָ֨אוּ בָ֜הּ הַמַּ֤יִם הַמְאָֽרֲרִים֙ לְמָרִ֔ים וְצָבְתָ֣ה בִטְנָ֔הּ וְנָפְלָ֖ה יְרֵכָ֑הּ וְהָיְתָ֧ה הָאִשָּׁ֛ה לְאָלָ֖ה בְּקֶ֥רֶב עַמָּֽהּ׃
+</div>
+He shall make her drink the water, and it shall be that if she had been defiled and had deceived her husband, the lethal waters shall enter her to become bitter, and her abdomen will swell and her thigh will collapse, and the woman will be a curse among her people.
+</span>
+<span class=h>
+<div class=h>
+וְאִם־לֹ֤א נִטְמְאָה֙ הָֽאִשָּׁ֔ה וּטְהֹרָ֖ה הִ֑וא וְנִקְּתָ֖ה וְנִזְרְעָ֥ה זָֽרַע׃
+וְאִם־לֹ֤א נִטְמְאָה֙ הָֽאִשָּׁ֔ה וּטְהֹרָ֖ה הִ֑וא וְנִקְּתָ֖ה וְנִזְרְעָ֥ה זָֽרַע׃
+</div>
+But if the woman was not defiled and [she] is pure, she will be cleansed and shall bear seed.
+</span>
+<span class=h>
+<div class=h>
+זֹ֥את תּוֹרַ֖ת הַקְּנָאֹ֑ת אֲשֶׁ֨ר תִּשְׂטֶ֥ה אִשָּׁ֛ה תַּ֥חַת אִישָׁ֖הּ וְנִטְמָֽאָה׃
+זֹ֥את תּוֹרַ֖ת הַקְּנָאֹ֑ת אֲשֶׁ֨ר תִּשְׂטֶ֥ה אִשָּׁ֛ה תַּ֥חַת אִישָׁ֖הּ וְנִטְמָֽאָה׃
+</div>
+This is the law of jealousies, when a woman goes astray during her marriage to her husband and is defiled.
+</span>
+<span class=h>
+<div class=h>
+א֣וֹ אִ֗ישׁ אֲשֶׁ֨ר תַּעֲבֹ֥ר עָלָ֛יו ר֥וּחַ קִנְאָ֖ה וְקִנֵּ֣א אֶת־אִשְׁתּ֑וֹ וְהֶעֱמִ֤יד אֶת־הָֽאִשָּׁה֙ לִפְנֵ֣י יְהוָ֔ה וְעָ֤שָׂה לָהּ֙ הַכֹּהֵ֔ן אֵ֥ת כָּל־הַתּוֹרָ֖ה הַזֹּֽאת׃
+א֣וֹ אִ֗ישׁ אֲשֶׁ֨ר תַּעֲבֹ֥ר עָלָ֛יו ר֥וּחַ קִנְאָ֖ה וְקִנֵּ֣א אֶת־אִשְׁתּ֑וֹ וְהֶעֱמִ֤יד אֶת־הָֽאִשָּׁה֙ לִפְנֵ֣י יְהוָ֔ה וְעָ֤שָׂה לָהּ֙ הַכֹּהֵ֔ן אֵ֥ת כָּל־הַתּוֹרָ֖ה הַזֹּֽאת׃
+</div>
+If a man is overcome with a spirit of jealousy and he is jealous of his wife, then he shall have the woman stand before Adonoy, and the <i>kohein</i> shall do unto her all of these laws.
+</span>
+<span class=h>
+<div class=h>
+וְנִקָּ֥ה הָאִ֖ישׁ מֵעָוֺ֑ן וְהָאִשָּׁ֣ה הַהִ֔וא תִּשָּׂ֖א אֶת־עֲוֺנָֽהּ׃ (פ)
+וְנִקָּ֥ה הָאִ֖ישׁ מֵעָוֺ֑ן וְהָאִשָּׁ֣ה הַהִ֔וא תִּשָּׂ֖א אֶת־עֲוֺנָֽהּ׃ (פ)
+</div>
+The man is cleansed of sin and that woman shall bear [the burden of] her iniquity.
+</span>
+<span class=h>
+<div class=h>
+
+
+
+<h4>Chapter 6</h4>
+
+
+
+
+
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+</div>
+Adonoy spoke to Moshe, saying;
+</span>
+<span class=h>
+<div class=h>
+דַּבֵּר֙ אֶל־בְּנֵ֣י יִשְׂרָאֵ֔ל וְאָמַרְתָּ֖ אֲלֵהֶ֑ם אִ֣ישׁ אֽוֹ־אִשָּׁ֗ה כִּ֤י יַפְלִא֙ לִנְדֹּר֙ נֶ֣דֶר נָזִ֔יר לְהַזִּ֖יר לַֽיהוָֽה׃
+דַּבֵּר֙ אֶל־בְּנֵ֣י יִשְׂרָאֵ֔ל וְאָמַרְתָּ֖ אֲלֵהֶ֑ם אִ֣ישׁ אֽוֹ־אִשָּׁ֗ה כִּ֤י יַפְלִא֙ לִנְדֹּר֙ נֶ֣דֶר נָזִ֔יר לְהַזִּ֖יר לַֽיהוָֽה׃
+</div>
+Speak to Bnei Yisroel and say to them: If a man or a woman sets apart a vow, a nazirite vow, to set [himself] apart for Adonoy.
+</span>
+<span class=h>
+<div class=h>
+מִיַּ֤יִן וְשֵׁכָר֙ יַזִּ֔יר חֹ֥מֶץ יַ֛יִן וְחֹ֥מֶץ שֵׁכָ֖ר לֹ֣א יִשְׁתֶּ֑ה וְכָל־מִשְׁרַ֤ת עֲנָבִים֙ לֹ֣א יִשְׁתֶּ֔ה וַעֲנָבִ֛ים לַחִ֥ים וִיבֵשִׁ֖ים לֹ֥א יֹאכֵֽל׃
+מִיַּ֤יִן וְשֵׁכָר֙ יַזִּ֔יר חֹ֥מֶץ יַ֛יִן וְחֹ֥מֶץ שֵׁכָ֖ר לֹ֣א יִשְׁתֶּ֑ה וְכָל־מִשְׁרַ֤ת עֲנָבִים֙ לֹ֣א יִשְׁתֶּ֔ה וַעֲנָבִ֛ים לַחִ֥ים וִיבֵשִׁ֖ים לֹ֥א יֹאכֵֽל׃
+</div>
+From new or old [intoxicating] wine, he must abstain. Vinegar made from new wine and vinegar made from old wine he shall not drink; anything steeped in grapes he shall not drink; moist grapes or dried grapes (raisins) he shall not eat.
+</span>
+<span class=h>
+<div class=h>
+כֹּ֖ל יְמֵ֣י נִזְר֑וֹ מִכֹּל֩ אֲשֶׁ֨ר יֵעָשֶׂ֜ה מִגֶּ֣פֶן הַיַּ֗יִן מֵחַרְצַנִּ֛ים וְעַד־זָ֖ג לֹ֥א יֹאכֵֽל׃
+כֹּ֖ל יְמֵ֣י נִזְר֑וֹ מִכֹּל֩ אֲשֶׁ֨ר יֵעָשֶׂ֜ה מִגֶּ֣פֶן הַיַּ֗יִן מֵחַרְצַנִּ֛ים וְעַד־זָ֖ג לֹ֥א יֹאכֵֽל׃
+</div>
+As long as he is a <i>Nazir</i> from anything made of the grape-vine, from seeds to skin, he shall not eat.
+</span>
+<span class=h>
+<div class=h>
+כָּל־יְמֵי֙ נֶ֣דֶר נִזְר֔וֹ תַּ֖עַר לֹא־יַעֲבֹ֣ר עַל־רֹאשׁ֑וֹ עַד־מְלֹ֨את הַיָּמִ֜ם אֲשֶׁר־יַזִּ֤יר לַיהוָה֙ קָדֹ֣שׁ יִהְיֶ֔ה גַּדֵּ֥ל פֶּ֖רַע שְׂעַ֥ר רֹאשֽׁוֹ׃
+כָּל־יְמֵי֙ נֶ֣דֶר נִזְר֔וֹ תַּ֖עַר לֹא־יַעֲבֹ֣ר עַל־רֹאשׁ֑וֹ עַד־מְלֹ֨את הַיָּמִ֜ם אֲשֶׁר־יַזִּ֤יר לַיהוָה֙ קָדֹ֣שׁ יִהְיֶ֔ה גַּדֵּ֥ל פֶּ֖רַע שְׂעַ֥ר רֹאשֽׁוֹ׃
+</div>
+As long as he is under his nazirite oath a razor shall not pass over [to touch] his head. Until he completes his days as a <i>Nazir</i> to Adonoy he shall be sacred, he shall let the hair of his head grow long.
+</span>
+<span class=h>
+<div class=h>
+כָּל־יְמֵ֥י הַזִּיר֖וֹ לַיהוָ֑ה עַל־נֶ֥פֶשׁ מֵ֖ת לֹ֥א יָבֹֽא׃
+כָּל־יְמֵ֥י הַזִּיר֖וֹ לַיהוָ֑ה עַל־נֶ֥פֶשׁ מֵ֖ת לֹ֥א יָבֹֽא׃
+</div>
+All the days that he is a <i>Nazir</i> to Adonoy, he shall have no contact with the dead.
+</span>
+<span class=h>
+<div class=h>
+לְאָבִ֣יו וּלְאִמּ֗וֹ לְאָחִיו֙ וּלְאַ֣חֹת֔וֹ לֹא־יִטַּמָּ֥א לָהֶ֖ם בְּמֹתָ֑ם כִּ֛י נֵ֥זֶר אֱלֹהָ֖יו עַל־רֹאשֽׁוֹ׃
+לְאָבִ֣יו וּלְאִמּ֗וֹ לְאָחִיו֙ וּלְאַ֣חֹת֔וֹ לֹא־יִטַּמָּ֥א לָהֶ֖ם בְּמֹתָ֑ם כִּ֛י נֵ֥זֶר אֱלֹהָ֖יו עַל־רֹאשֽׁוֹ׃
+</div>
+For his father, mother, brother and sister he shall not [ritually] defile himself for them when they die. For, the nazirite crown of his God is upon his head.
+</span>
+<span class=h>
+<div class=h>
+כֹּ֖ל יְמֵ֣י נִזְר֑וֹ קָדֹ֥שׁ ה֖וּא לַֽיהוָֽה׃
+כֹּ֖ל יְמֵ֣י נִזְר֑וֹ קָדֹ֥שׁ ה֖וּא לַֽיהוָֽה׃
+</div>
+All the days of his separation, he is sacred to Adonoy.
+</span>
+<span class=h>
+<div class=h>
+וְכִֽי־יָמ֨וּת מֵ֤ת עָלָיו֙ בְּפֶ֣תַע פִּתְאֹ֔ם וְטִמֵּ֖א רֹ֣אשׁ נִזְר֑וֹ וְגִלַּ֤ח רֹאשׁוֹ֙ בְּי֣וֹם טָהֳרָת֔וֹ בַּיּ֥וֹם הַשְּׁבִיעִ֖י יְגַלְּחֶֽנּוּ׃
+וְכִֽי־יָמ֨וּת מֵ֤ת עָלָיו֙ בְּפֶ֣תַע פִּתְאֹ֔ם וְטִמֵּ֖א רֹ֣אשׁ נִזְר֑וֹ וְגִלַּ֤ח רֹאשׁוֹ֙ בְּי֣וֹם טָהֳרָת֔וֹ בַּיּ֥וֹם הַשְּׁבִיעִ֖י יְגַלְּחֶֽנּוּ׃
+</div>
+If someone died near him suddenly, or unexpectedly, and caused his nazirite crowned head to be defiled, he shall shave his head on the day of his purification, he shall shave it on the seventh day.
+</span>
+<span class=h>
+<div class=h>
+וּבַיּ֣וֹם הַשְּׁמִינִ֗י יָבִא֙ שְׁתֵּ֣י תֹרִ֔ים א֥וֹ שְׁנֵ֖י בְּנֵ֣י יוֹנָ֑ה אֶל־הַכֹּהֵ֔ן אֶל־פֶּ֖תַח אֹ֥הֶל מוֹעֵֽד׃
+וּבַיּ֣וֹם הַשְּׁמִינִ֗י יָבִא֙ שְׁתֵּ֣י תֹרִ֔ים א֥וֹ שְׁנֵ֖י בְּנֵ֣י יוֹנָ֑ה אֶל־הַכֹּהֵ֔ן אֶל־פֶּ֖תַח אֹ֥הֶל מוֹעֵֽד׃
+</div>
+On the eighth day he shall take two turtledoves or two young pigeons to the <i>kohein,</i> to the entrance of the Tent of Meeting.
+</span>
+<span class=h>
+<div class=h>
+וְעָשָׂ֣ה הַכֹּהֵ֗ן אֶחָ֤ד לְחַטָּאת֙ וְאֶחָ֣ד לְעֹלָ֔ה וְכִפֶּ֣ר עָלָ֔יו מֵאֲשֶׁ֥ר חָטָ֖א עַל־הַנָּ֑פֶשׁ וְקִדַּ֥שׁ אֶת־רֹאשׁ֖וֹ בַּיּ֥וֹם הַהֽוּא׃
+וְעָשָׂ֣ה הַכֹּהֵ֗ן אֶחָ֤ד לְחַטָּאת֙ וְאֶחָ֣ד לְעֹלָ֔ה וְכִפֶּ֣ר עָלָ֔יו מֵאֲשֶׁ֥ר חָטָ֖א עַל־הַנָּ֑פֶשׁ וְקִדַּ֥שׁ אֶת־רֹאשׁ֖וֹ בַּיּ֥וֹם הַהֽוּא׃
+</div>
+The <i>kohein</i> shall prepare one for a sin-offering and one for a burnt-offering and atone on his behalf from his sin [of contact] with a [departed] soul, and he shall sanctify his head on that day.
+</span>
+<span class=h>
+<div class=h>
+וְהִזִּ֤יר לַֽיהוָה֙ אֶת־יְמֵ֣י נִזְר֔וֹ וְהֵבִ֛יא כֶּ֥בֶשׂ בֶּן־שְׁנָת֖וֹ לְאָשָׁ֑ם וְהַיָּמִ֤ים הָרִאשֹׁנִים֙ יִפְּל֔וּ כִּ֥י טָמֵ֖א נִזְרֽוֹ׃
+וְהִזִּ֤יר לַֽיהוָה֙ אֶת־יְמֵ֣י נִזְר֔וֹ וְהֵבִ֛יא כֶּ֥בֶשׂ בֶּן־שְׁנָת֖וֹ לְאָשָׁ֑ם וְהַיָּמִ֤ים הָרִאשֹׁנִים֙ יִפְּל֔וּ כִּ֥י טָמֵ֖א נִזְרֽוֹ׃
+</div>
+He shall set apart, for Adonoy, his nazirite days, and bring a sheep in its first year as a guilt-offering. The first days shall elapse because his nazirite crown was defiled.
+</span>
+<span class=h>
+<div class=h>
+וְזֹ֥את תּוֹרַ֖ת הַנָּזִ֑יר בְּי֗וֹם מְלֹאת֙ יְמֵ֣י נִזְר֔וֹ יָבִ֣יא אֹת֔וֹ אֶל־פֶּ֖תַח אֹ֥הֶל מוֹעֵֽד׃
+וְזֹ֥את תּוֹרַ֖ת הַנָּזִ֑יר בְּי֗וֹם מְלֹאת֙ יְמֵ֣י נִזְר֔וֹ יָבִ֣יא אֹת֔וֹ אֶל־פֶּ֖תַח אֹ֥הֶל מוֹעֵֽד׃
+</div>
+This is the law of the <i>Nazir</i>: when the days of his nazirite status are fulfilled, he shall bring himself to the entrance of the Tent of Meeting.
+</span>
+<span class=h>
+<div class=h>
+וְהִקְרִ֣יב אֶת־קָרְבָּנ֣וֹ לַיהוָ֡ה כֶּבֶשׂ֩ בֶּן־שְׁנָת֨וֹ תָמִ֤ים אֶחָד֙ לְעֹלָ֔ה וְכַבְשָׂ֨ה אַחַ֧ת בַּת־שְׁנָתָ֛הּ תְּמִימָ֖ה לְחַטָּ֑את וְאַֽיִל־אֶחָ֥ד תָּמִ֖ים לִשְׁלָמִֽים׃
+וְהִקְרִ֣יב אֶת־קָרְבָּנ֣וֹ לַיהוָ֡ה כֶּבֶשׂ֩ בֶּן־שְׁנָת֨וֹ תָמִ֤ים אֶחָד֙ לְעֹלָ֔ה וְכַבְשָׂ֨ה אַחַ֧ת בַּת־שְׁנָתָ֛הּ תְּמִימָ֖ה לְחַטָּ֑את וְאַֽיִל־אֶחָ֥ד תָּמִ֖ים לִשְׁלָמִֽים׃
+</div>
+He shall bring his offering to Adonoy; one unblemished sheep, in its first year, as a burnt-offering, and one unblemished ewe, in its first year as a sin-offering, and one unblemished ram as a peace-offering.
+</span>
+<span class=h>
+<div class=h>
+וְסַ֣ל מַצּ֗וֹת סֹ֤לֶת חַלֹּת֙ בְּלוּלֹ֣ת בַּשֶּׁ֔מֶן וּרְקִיקֵ֥י מַצּ֖וֹת מְשֻׁחִ֣ים בַּשָּׁ֑מֶן וּמִנְחָתָ֖ם וְנִסְכֵּיהֶֽם׃
+וְסַ֣ל מַצּ֗וֹת סֹ֤לֶת חַלֹּת֙ בְּלוּלֹ֣ת בַּשֶּׁ֔מֶן וּרְקִיקֵ֥י מַצּ֖וֹת מְשֻׁחִ֣ים בַּשָּׁ֑מֶן וּמִנְחָתָ֖ם וְנִסְכֵּיהֶֽם׃
+</div>
+A basket of <i>matzos</i> of fine flour, loaves mixed with oil and <i>matzoh</i>-wafers spread with oil and their meal-offerings and libations.
+</span>
+<span class=h>
+<div class=h>
+וְהִקְרִ֥יב הַכֹּהֵ֖ן לִפְנֵ֣י יְהוָ֑ה וְעָשָׂ֥ה אֶת־חַטָּאת֖וֹ וְאֶת־עֹלָתֽוֹ׃
+וְהִקְרִ֥יב הַכֹּהֵ֖ן לִפְנֵ֣י יְהוָ֑ה וְעָשָׂ֥ה אֶת־חַטָּאת֖וֹ וְאֶת־עֹלָתֽוֹ׃
+</div>
+The <i>kohein</i> shall bring it before Adonoy and do the service of his sin-offering and of his burnt-offering.
+</span>
+<span class=h>
+<div class=h>
+וְאֶת־הָאַ֜יִל יַעֲשֶׂ֨ה זֶ֤בַח שְׁלָמִים֙ לַֽיהוָ֔ה עַ֖ל סַ֣ל הַמַּצּ֑וֹת וְעָשָׂה֙ הַכֹּהֵ֔ן אֶת־מִנְחָת֖וֹ וְאֶת־נִסְכּֽוֹ׃
+וְאֶת־הָאַ֜יִל יַעֲשֶׂ֨ה זֶ֤בַח שְׁלָמִים֙ לַֽיהוָ֔ה עַ֖ל סַ֣ל הַמַּצּ֑וֹת וְעָשָׂה֙ הַכֹּהֵ֔ן אֶת־מִנְחָת֖וֹ וְאֶת־נִסְכּֽוֹ׃
+</div>
+He shall make the ram a peace-offering for Adonoy along with the basket of <i>matzos,</i> and the <i>kohein</i> shall do the service of his meal-offering and libation.
+</span>
+<span class=h>
+<div class=h>
+וְגִלַּ֣ח הַנָּזִ֗יר פֶּ֛תַח אֹ֥הֶל מוֹעֵ֖ד אֶת־רֹ֣אשׁ נִזְר֑וֹ וְלָקַ֗ח אֶת־שְׂעַר֙ רֹ֣אשׁ נִזְר֔וֹ וְנָתַן֙ עַל־הָאֵ֔שׁ אֲשֶׁר־תַּ֖חַת זֶ֥בַח הַשְּׁלָמִֽים׃
+וְגִלַּ֣ח הַנָּזִ֗יר פֶּ֛תַח אֹ֥הֶל מוֹעֵ֖ד אֶת־רֹ֣אשׁ נִזְר֑וֹ וְלָקַ֗ח אֶת־שְׂעַר֙ רֹ֣אשׁ נִזְר֔וֹ וְנָתַן֙ עַל־הָאֵ֔שׁ אֲשֶׁר־תַּ֖חַת זֶ֥בַח הַשְּׁלָמִֽים׃
+</div>
+The <i>Nazir</i> shall shave—at the entrance to the Tent of Meeting—the nazirite crown of hair on his head, and he shall take the hair from the nazirite crown on his head and put it in the fire which is under the peace-offering sacrifice.
+</span>
+<span class=h>
+<div class=h>
+וְלָקַ֨ח הַכֹּהֵ֜ן אֶת־הַזְּרֹ֣עַ בְּשֵׁלָה֮ מִן־הָאַיִל֒ וְֽחַלַּ֨ת מַצָּ֤ה אַחַת֙ מִן־הַסַּ֔ל וּרְקִ֥יק מַצָּ֖ה אֶחָ֑ד וְנָתַן֙ עַל־כַּפֵּ֣י הַנָּזִ֔יר אַחַ֖ר הִֽתְגַּלְּח֥וֹ אֶת־נִזְרֽוֹ׃
+וְלָקַ֨ח הַכֹּהֵ֜ן אֶת־הַזְּרֹ֣עַ בְּשֵׁלָה֮ מִן־הָאַיִל֒ וְֽחַלַּ֨ת מַצָּ֤ה אַחַת֙ מִן־הַסַּ֔ל וּרְקִ֥יק מַצָּ֖ה אֶחָ֑ד וְנָתַן֙ עַל־כַּפֵּ֣י הַנָּזִ֔יר אַחַ֖ר הִֽתְגַּלְּח֥וֹ אֶת־נִזְרֽוֹ׃
+</div>
+The <i>kohein</i> shall take the cooked foreleg from the ram and one <i>matzoh</i>-loaf from the basket, and one <i>matzoh</i>-wafer, and put it on the palms of the <i>Nazir</i> after he has shaved his nazirite crown.
+</span>
+<span class=h>
+<div class=h>
+וְהֵנִיף֩ אוֹתָ֨ם הַכֹּהֵ֥ן ׀ תְּנוּפָה֮ לִפְנֵ֣י יְהוָה֒ קֹ֤דֶשׁ הוּא֙ לַכֹּהֵ֔ן עַ֚ל חֲזֵ֣ה הַתְּנוּפָ֔ה וְעַ֖ל שׁ֣וֹק הַתְּרוּמָ֑ה וְאַחַ֛ר יִשְׁתֶּ֥ה הַנָּזִ֖יר יָֽיִן׃
+וְהֵנִיף֩ אוֹתָ֨ם הַכֹּהֵ֥ן ׀ תְּנוּפָה֮ לִפְנֵ֣י יְהוָה֒ קֹ֤דֶשׁ הוּא֙ לַכֹּהֵ֔ן עַ֚ל חֲזֵ֣ה הַתְּנוּפָ֔ה וְעַ֖ל שׁ֣וֹק הַתְּרוּמָ֑ה וְאַחַ֛ר יִשְׁתֶּ֥ה הַנָּזִ֖יר יָֽיִן׃
+</div>
+The <i>kohein</i> shall wave them as a wave-offering, before Adonoy. It is consecrated to the <i>kohein</i> besides the breast of the wave-offering and the separated thigh portion. After this, the <i>Nazir</i> may drink wine.
+</span>
+<span class=h>
+<div class=h>
+זֹ֣את תּוֹרַ֣ת הַנָּזִיר֮ אֲשֶׁ֣ר יִדֹּר֒ קָרְבָּנ֤וֹ לַֽיהוָה֙ עַל־נִזְר֔וֹ מִלְּבַ֖ד אֲשֶׁר־תַּשִּׂ֣יג יָד֑וֹ כְּפִ֤י נִדְרוֹ֙ אֲשֶׁ֣ר יִדֹּ֔ר כֵּ֣ן יַעֲשֶׂ֔ה עַ֖ל תּוֹרַ֥ת נִזְרֽוֹ׃ (פ)
+זֹ֣את תּוֹרַ֣ת הַנָּזִיר֮ אֲשֶׁ֣ר יִדֹּר֒ קָרְבָּנ֤וֹ לַֽיהוָה֙ עַל־נִזְר֔וֹ מִלְּבַ֖ד אֲשֶׁר־תַּשִּׂ֣יג יָד֑וֹ כְּפִ֤י נִדְרוֹ֙ אֲשֶׁ֣ר יִדֹּ֔ר כֵּ֣ן יַעֲשֶׂ֔ה עַ֖ל תּוֹרַ֥ת נִזְרֽוֹ׃ (פ)
+</div>
+This is the law of the <i>Nazir</i> who has vowed—[this is] his offering to Adonoy for his nazirite vow, aside from what he can afford to bring according to his vow that he vows. So shall he fulfill in addition to the laws of his nazirite [vows.]
+</span>
+<span class=h>
+<div class=h>
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+</div>
+Adonoy spoke to Moshe, saying;
+</span>
+<span class=h>
+<div class=h>
+דַּבֵּ֤ר אֶֽל־אַהֲרֹן֙ וְאֶל־בָּנָ֣יו לֵאמֹ֔ר כֹּ֥ה תְבָרֲכ֖וּ אֶת־בְּנֵ֣י יִשְׂרָאֵ֑ל אָמ֖וֹר לָהֶֽם׃ (ס)
+דַּבֵּ֤ר אֶֽל־אַהֲרֹן֙ וְאֶל־בָּנָ֣יו לֵאמֹ֔ר כֹּ֥ה תְבָרֲכ֖וּ אֶת־בְּנֵ֣י יִשְׂרָאֵ֑ל אָמ֖וֹר לָהֶֽם׃ (ס)
+</div>
+Speak to Aharon and to his sons, saying; This is how you shall bless Bnei Yisroel, saying to them:
+</span>
+<span class=h>
+<div class=h>
+יְבָרֶכְךָ֥ יְהוָ֖ה וְיִשְׁמְרֶֽךָ׃ (ס)
+יְבָרֶכְךָ֥ יְהוָ֖ה וְיִשְׁמְרֶֽךָ׃ (ס)
+</div>
+May Adonoy bless you and protect you.
+</span>
+<span class=h>
+<div class=h>
+יָאֵ֨ר יְהוָ֧ה ׀ פָּנָ֛יו אֵלֶ֖יךָ וִֽיחֻנֶּֽךָּ׃ (ס)
+יָאֵ֨ר יְהוָ֧ה ׀ פָּנָ֛יו אֵלֶ֖יךָ וִֽיחֻנֶּֽךָּ׃ (ס)
+</div>
+May Adonoy cause His countenance to shine upon you and favor you.
+</span>
+<span class=h>
+<div class=h>
+יִשָּׂ֨א יְהוָ֤ה ׀ פָּנָיו֙ אֵלֶ֔יךָ וְיָשֵׂ֥ם לְךָ֖ שָׁלֽוֹם׃ (ס)
+יִשָּׂ֨א יְהוָ֤ה ׀ פָּנָיו֙ אֵלֶ֔יךָ וְיָשֵׂ֥ם לְךָ֖ שָׁלֽוֹם׃ (ס)
+</div>
+May Adonoy lift His face to you, and grant you peace.
+</span>
+<span class=h>
+<div class=h>
+וְשָׂמ֥וּ אֶת־שְׁמִ֖י עַל־בְּנֵ֣י יִשְׂרָאֵ֑ל וַאֲנִ֖י אֲבָרֲכֵֽם׃ (פ)
+וְשָׂמ֥וּ אֶת־שְׁמִ֖י עַל־בְּנֵ֣י יִשְׂרָאֵ֑ל וַאֲנִ֖י אֲבָרֲכֵֽם׃ (פ)
+</div>
+They shall bestow My Name upon Bnei Yisroel, and I will bless them.
+</span>
+<span class=h>
+<div class=h>
+
+
+
+<h4>Chapter 7</h4>
+
+
+
+
+
+וַיְהִ֡י בְּיוֹם֩ כַּלּ֨וֹת מֹשֶׁ֜ה לְהָקִ֣ים אֶת־הַמִּשְׁכָּ֗ן וַיִּמְשַׁ֨ח אֹת֜וֹ וַיְקַדֵּ֤שׁ אֹתוֹ֙ וְאֶת־כָּל־כֵּלָ֔יו וְאֶת־הַמִּזְבֵּ֖חַ וְאֶת־כָּל־כֵּלָ֑יו וַיִּמְשָׁחֵ֖ם וַיְקַדֵּ֥שׁ אֹתָֽם׃
+וַיְהִ֡י בְּיוֹם֩ כַּלּ֨וֹת מֹשֶׁ֜ה לְהָקִ֣ים אֶת־הַמִּשְׁכָּ֗ן וַיִּמְשַׁ֨ח אֹת֜וֹ וַיְקַדֵּ֤שׁ אֹתוֹ֙ וְאֶת־כָּל־כֵּלָ֔יו וְאֶת־הַמִּזְבֵּ֖חַ וְאֶת־כָּל־כֵּלָ֑יו וַיִּמְשָׁחֵ֖ם וַיְקַדֵּ֥שׁ אֹתָֽם׃
+</div>
+It came to pass, on the day Moshe finished erecting the <i>Mishkon,</i> and he anointed it and consecrated it and all of its utensils, and the Altar and all its utensils, and he anointed them and consecrated them.
+</span>
+<span class=h>
+<div class=h>
+וַיַּקְרִ֙יבוּ֙ נְשִׂיאֵ֣י יִשְׂרָאֵ֔ל רָאשֵׁ֖י בֵּ֣ית אֲבֹתָ֑ם הֵ֚ם נְשִׂיאֵ֣י הַמַּטֹּ֔ת הֵ֥ם הָעֹמְדִ֖ים עַל־הַפְּקֻדִֽים׃
+וַיַּקְרִ֙יבוּ֙ נְשִׂיאֵ֣י יִשְׂרָאֵ֔ל רָאשֵׁ֖י בֵּ֣ית אֲבֹתָ֑ם הֵ֚ם נְשִׂיאֵ֣י הַמַּטֹּ֔ת הֵ֥ם הָעֹמְדִ֖ים עַל־הַפְּקֻדִֽים׃
+</div>
+The leaders of Israel brought, [those who were] the heads of their fathers’ houses; they were the leaders of the tribes, they stood by during the counting.
+</span>
+<span class=h>
+<div class=h>
+וַיָּבִ֨יאוּ אֶת־קָרְבָּנָ֜ם לִפְנֵ֣י יְהוָ֗ה שֵׁשׁ־עֶגְלֹ֥ת צָב֙ וּשְׁנֵ֣י עָשָׂ֣ר בָּקָ֔ר עֲגָלָ֛ה עַל־שְׁנֵ֥י הַנְּשִׂאִ֖ים וְשׁ֣וֹר לְאֶחָ֑ד וַיַּקְרִ֥יבוּ אוֹתָ֖ם לִפְנֵ֥י הַמִּשְׁכָּֽן׃
+וַיָּבִ֨יאוּ אֶת־קָרְבָּנָ֜ם לִפְנֵ֣י יְהוָ֗ה שֵׁשׁ־עֶגְלֹ֥ת צָב֙ וּשְׁנֵ֣י עָשָׂ֣ר בָּקָ֔ר עֲגָלָ֛ה עַל־שְׁנֵ֥י הַנְּשִׂאִ֖ים וְשׁ֣וֹר לְאֶחָ֑ד וַיַּקְרִ֥יבוּ אוֹתָ֖ם לִפְנֵ֥י הַמִּשְׁכָּֽן׃
+</div>
+They brought their offerings before Adonoy; six covered wagons and twelve oxen; a wagon for each two leaders and an ox for each individual, and they placed them before the <i>Mishkon.</i>
+</span>
+<span class=h>
+<div class=h>
+וַיֹּ֥אמֶר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+וַיֹּ֥אמֶר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+</div>
+Adonoy said to Moshe, saying:
+</span>
+<span class=h>
+<div class=h>
+קַ֚ח מֵֽאִתָּ֔ם וְהָי֕וּ לַעֲבֹ֕ד אֶת־עֲבֹדַ֖ת אֹ֣הֶל מוֹעֵ֑ד וְנָתַתָּ֤ה אוֹתָם֙ אֶל־הַלְוִיִּ֔ם אִ֖ישׁ כְּפִ֥י עֲבֹדָתֽוֹ׃
+קַ֚ח מֵֽאִתָּ֔ם וְהָי֕וּ לַעֲבֹ֕ד אֶת־עֲבֹדַ֖ת אֹ֣הֶל מוֹעֵ֑ד וְנָתַתָּ֤ה אוֹתָם֙ אֶל־הַלְוִיִּ֔ם אִ֖ישׁ כְּפִ֥י עֲבֹדָתֽוֹ׃
+</div>
+Take [the offering] from them, and let them be used for the service of the Tent of Meeting. Give them to the Levites, each man according to his work.
+</span>
+<span class=h>
+<div class=h>
+וַיִּקַּ֣ח מֹשֶׁ֔ה אֶת־הָעֲגָלֹ֖ת וְאֶת־הַבָּקָ֑ר וַיִּתֵּ֥ן אוֹתָ֖ם אֶל־הַלְוִיִּֽם׃
+וַיִּקַּ֣ח מֹשֶׁ֔ה אֶת־הָעֲגָלֹ֖ת וְאֶת־הַבָּקָ֑ר וַיִּתֵּ֥ן אוֹתָ֖ם אֶל־הַלְוִיִּֽם׃
+</div>
+Moshe took the wagons and the oxen and gave them to the Levites.
+</span>
+<span class=h>
+<div class=h>
+אֵ֣ת ׀ שְׁתֵּ֣י הָעֲגָלֹ֗ת וְאֵת֙ אַרְבַּ֣עַת הַבָּקָ֔ר נָתַ֖ן לִבְנֵ֣י גֵרְשׁ֑וֹן כְּפִ֖י עֲבֹדָתָֽם׃
+אֵ֣ת ׀ שְׁתֵּ֣י הָעֲגָלֹ֗ת וְאֵת֙ אַרְבַּ֣עַת הַבָּקָ֔ר נָתַ֖ן לִבְנֵ֣י גֵרְשׁ֑וֹן כְּפִ֖י עֲבֹדָתָֽם׃
+</div>
+Two [of the] wagons and four [of the] oxen he gave to the sons of Gershon, according to their work.
+</span>
+<span class=h>
+<div class=h>
+וְאֵ֣ת ׀ אַרְבַּ֣ע הָעֲגָלֹ֗ת וְאֵת֙ שְׁמֹנַ֣ת הַבָּקָ֔ר נָתַ֖ן לִבְנֵ֣י מְרָרִ֑י כְּפִי֙ עֲבֹ֣דָתָ֔ם בְּיַד֙ אִֽיתָמָ֔ר בֶּֽן־אַהֲרֹ֖ן הַכֹּהֵֽן׃
+וְאֵ֣ת ׀ אַרְבַּ֣ע הָעֲגָלֹ֗ת וְאֵת֙ שְׁמֹנַ֣ת הַבָּקָ֔ר נָתַ֖ן לִבְנֵ֣י מְרָרִ֑י כְּפִי֙ עֲבֹ֣דָתָ֔ם בְּיַד֙ אִֽיתָמָ֔ר בֶּֽן־אַהֲרֹ֖ן הַכֹּהֵֽן׃
+</div>
+Four [of the] wagons and eight [of the] oxen he gave to the sons of Merori. According to their work they were in the charge of Isamar the son of Aharon the <i>kohein.</i>
+</span>
+<span class=h>
+<div class=h>
+וְלִבְנֵ֥י קְהָ֖ת לֹ֣א נָתָ֑ן כִּֽי־עֲבֹדַ֤ת הַקֹּ֙דֶשׁ֙ עֲלֵהֶ֔ם בַּכָּתֵ֖ף יִשָּֽׂאוּ׃
+וְלִבְנֵ֥י קְהָ֖ת לֹ֣א נָתָ֑ן כִּֽי־עֲבֹדַ֤ת הַקֹּ֙דֶשׁ֙ עֲלֵהֶ֔ם בַּכָּתֵ֖ף יִשָּֽׂאוּ׃
+</div>
+He did not give any to the sons of Kehos because the sacred work was [incumbent] upon them, which they had to carry on their shoulders.
+</span>
+<span class=h>
+<div class=h>
+וַיַּקְרִ֣יבוּ הַנְּשִׂאִ֗ים אֵ֚ת חֲנֻכַּ֣ת הַמִּזְבֵּ֔חַ בְּי֖וֹם הִמָּשַׁ֣ח אֹת֑וֹ וַיַּקְרִ֧יבוּ הַנְּשִׂיאִ֛ם אֶת־קָרְבָּנָ֖ם לִפְנֵ֥י הַמִּזְבֵּֽחַ׃
+וַיַּקְרִ֣יבוּ הַנְּשִׂאִ֗ים אֵ֚ת חֲנֻכַּ֣ת הַמִּזְבֵּ֔חַ בְּי֖וֹם הִמָּשַׁ֣ח אֹת֑וֹ וַיַּקְרִ֧יבוּ הַנְּשִׂיאִ֛ם אֶת־קָרְבָּנָ֖ם לִפְנֵ֥י הַמִּזְבֵּֽחַ׃
+</div>
+The leaders brought forward the [offerings for] the consecration of the altar on the day it was anointed. The leaders placed their offering before the altar.
+</span>
+<span class=h>
+<div class=h>
+וַיֹּ֥אמֶר יְהוָ֖ה אֶל־מֹשֶׁ֑ה נָשִׂ֨יא אֶחָ֜ד לַיּ֗וֹם נָשִׂ֤יא אֶחָד֙ לַיּ֔וֹם יַקְרִ֙יבוּ֙ אֶת־קָרְבָּנָ֔ם לַחֲנֻכַּ֖ת הַמִּזְבֵּֽחַ׃ (ס)
+וַיֹּ֥אמֶר יְהוָ֖ה אֶל־מֹשֶׁ֑ה נָשִׂ֨יא אֶחָ֜ד לַיּ֗וֹם נָשִׂ֤יא אֶחָד֙ לַיּ֔וֹם יַקְרִ֙יבוּ֙ אֶת־קָרְבָּנָ֔ם לַחֲנֻכַּ֖ת הַמִּזְבֵּֽחַ׃ (ס)
+</div>
+Adonoy said to Moshe: One leader each day, one leader each day, they shall bring forth their offering, for the dedication of the altar.
+</span>
+<span class=h>
+<div class=h>
+וַיְהִ֗י הַמַּקְרִ֛יב בַּיּ֥וֹם הָרִאשׁ֖וֹן אֶת־קָרְבָּנ֑וֹ נַחְשׁ֥וֹן בֶּן־עַמִּינָדָ֖ב לְמַטֵּ֥ה יְהוּדָֽה׃
+וַיְהִ֗י הַמַּקְרִ֛יב בַּיּ֥וֹם הָרִאשׁ֖וֹן אֶת־קָרְבָּנ֑וֹ נַחְשׁ֥וֹן בֶּן־עַמִּינָדָ֖ב לְמַטֵּ֥ה יְהוּדָֽה׃
+</div>
+The one that brought his offering on the first day [was] Nachshon the son of Aminadav, of the tribe of Yehudah.
+</span>
+<span class=h>
+<div class=h>
+וְקָרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃
+וְקָרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃
+</div>
+His offering was one silver tray, its weight was one hundred thirty <i>shekolim;</i> one silver bowl [that weighed] seventy <i>shekolim</i> according to sanctuary weights. Both were filled with fine flour kneaded with [olive] oil, for a meal-offering.
+</span>
+<span class=h>
+<div class=h>
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת׃
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת׃
+</div>
+One spoon of ten gold [<i>shekolim</i>], filled with incense.
+</span>
+<span class=h>
+<div class=h>
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+</div>
+One young bull, one ram, and one yearling sheep for a burnt-offering.
+</span>
+<span class=h>
+<div class=h>
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃
+</div>
+[And] one he-goat, for a sin-offering.
+</span>
+<span class=h>
+<div class=h>
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתּוּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵֽי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן נַחְשׁ֖וֹן בֶּן־עַמִּינָדָֽב׃ (פ)
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתּוּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵֽי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן נַחְשׁ֖וֹן בֶּן־עַמִּינָדָֽב׃ (פ)
+</div>
+For the peace -offering, two oxen, five rams, five kids, and five yearling sheep. This was the offering of Nachshon the son of Aminadav.
+</span>
+<span class=h>
+<div class=h>
+בַּיּוֹם֙ הַשֵּׁנִ֔י הִקְרִ֖יב נְתַנְאֵ֣ל בֶּן־צוּעָ֑ר נְשִׂ֖יא יִשָּׂשכָֽר׃
+בַּיּוֹם֙ הַשֵּׁנִ֔י הִקְרִ֖יב נְתַנְאֵ֣ל בֶּן־צוּעָ֑ר נְשִׂ֖יא יִשָּׂשכָֽר׃
+</div>
+On the second day, [he that] brought [was] Nesanel the son of Tzu’ar, the leader of Yissachar.
+</span>
+<span class=h>
+<div class=h>
+הִקְרִ֨ב אֶת־קָרְבָּנ֜וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃
+הִקְרִ֨ב אֶת־קָרְבָּנ֜וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃
+</div>
+He brought forward his offering, one silver tray, its weight was one hundred thirty [<i>shekolim</i>]; one silver bowl [that weighed] seventy <i>shekolim</i> according to sanctuary weights. Both were filled with fine flour kneaded with [olive] oil, for a meal-offering.
+</span>
+<span class=h>
+<div class=h>
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת׃
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת׃
+</div>
+One spoon of ten gold [<i>shekolim</i>] filled with incense.
+</span>
+<span class=h>
+<div class=h>
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+</div>
+One young bull, one ram, and one yearling sheep for a burnt-offering.
+</span>
+<span class=h>
+<div class=h>
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃
+</div>
+[And] one he-goat for a sin-offering.
+</span>
+<span class=h>
+<div class=h>
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתּוּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן נְתַנְאֵ֖ל בֶּן־צוּעָֽר׃ (פ)
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתּוּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן נְתַנְאֵ֖ל בֶּן־צוּעָֽר׃ (פ)
+</div>
+For the peace-offering sacrifice, two oxen, five rams, five kids, and five yearling sheep. This was the offering of Nesanel the son of Tzu’ar.
+</span>
+<span class=h>
+<div class=h>
+בַּיּוֹם֙ הַשְּׁלִישִׁ֔י נָשִׂ֖יא לִבְנֵ֣י זְבוּלֻ֑ן אֱלִיאָ֖ב בֶּן־חֵלֹֽן׃
+בַּיּוֹם֙ הַשְּׁלִישִׁ֔י נָשִׂ֖יא לִבְנֵ֣י זְבוּלֻ֑ן אֱלִיאָ֖ב בֶּן־חֵלֹֽן׃
+</div>
+On the third day, the leader of the sons of Zevulun, Eliav the son of Cheilon.
+</span>
+<span class=h>
+<div class=h>
+קָרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃
+קָרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃
+</div>
+His offering was one silver tray, its weight was one hundred thirty <i>shekolim</i>; one silver bowl [that weighed] seventy <i>shekolim</i> according to sanctuary weights. Both were filled with fine flour kneaded with [olive] oil, for a meal-offering.
+</span>
+<span class=h>
+<div class=h>
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת׃
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת׃
+</div>
+One spoon of ten gold [<i>shekolim</i>], filled with incense.
+</span>
+<span class=h>
+<div class=h>
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+</div>
+One young bull, one ram, and one yearling sheep for a burnt-offering.
+</span>
+<span class=h>
+<div class=h>
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃
+</div>
+[And] one he-goat for a sin-offering.
+</span>
+<span class=h>
+<div class=h>
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתֻּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן אֱלִיאָ֖ב בֶּן־חֵלֹֽן׃ (פ)
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתֻּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן אֱלִיאָ֖ב בֶּן־חֵלֹֽן׃ (פ)
+</div>
+For the peace-offering sacrifice, two oxen, five rams, five kids and five yearling sheep. This was the offering of of Eliav the son of Cheilon.
+</span>
+<span class=h>
+<div class=h>
+בַּיּוֹם֙ הָרְבִיעִ֔י נָשִׂ֖יא לִבְנֵ֣י רְאוּבֵ֑ן אֱלִיצ֖וּר בֶּן־שְׁדֵיאֽוּר׃
+בַּיּוֹם֙ הָרְבִיעִ֔י נָשִׂ֖יא לִבְנֵ֣י רְאוּבֵ֑ן אֱלִיצ֖וּר בֶּן־שְׁדֵיאֽוּר׃
+</div>
+On the fourth day, the leader of the sons of Reuven, Elitzur the son of Shdeiur.
+</span>
+<span class=h>
+<div class=h>
+קָרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃
+קָרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃
+</div>
+His offering was one silver tray, its weight was one hundred thirty <i>shekolim</i>; one silver bowl [that weighed] seventy <i>shekolim</i> according to sanctuary weights. Both were filled with fine flour kneaded with [olive] oil, for a meal-offering.
+</span>
+<span class=h>
+<div class=h>
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת
+</div>
+One spoon of ten gold [<i>shekolim</i>], filled with incense.
+</span>
+<span class=h>
+<div class=h>
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+</div>
+One young bull, one ram, and one yearling sheep for a burnt-offering.
+</span>
+<span class=h>
+<div class=h>
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃
+</div>
+[And] one he-goat for a sin-offering.
+</span>
+<span class=h>
+<div class=h>
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתֻּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵֽי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן אֱלִיצ֖וּר בֶּן־שְׁדֵיאֽוּר׃ (פ)
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתֻּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵֽי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן אֱלִיצ֖וּר בֶּן־שְׁדֵיאֽוּר׃ (פ)
+</div>
+For the peace-offering sacrifice, two oxen, five rams, five kids and five yearling sheep. This was the offering of Elitzur the son of Shdeiur.
+</span>
+<span class=h>
+<div class=h>
+בַּיּוֹם֙ הַחֲמִישִׁ֔י נָשִׂ֖יא לִבְנֵ֣י שִׁמְע֑וֹן שְׁלֻֽמִיאֵ֖ל בֶּן־צוּרִֽישַׁדָּֽי׃
+בַּיּוֹם֙ הַחֲמִישִׁ֔י נָשִׂ֖יא לִבְנֵ֣י שִׁמְע֑וֹן שְׁלֻֽמִיאֵ֖ל בֶּן־צוּרִֽישַׁדָּֽי׃
+</div>
+On the fifth day, the leader of the sons of Shimon, Shlumiel the son of Tzurishadai.
+</span>
+<span class=h>
+<div class=h>
+קָרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃
+קָרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃
+</div>
+His offering was one silver tray, its weight was one hundred thirty <i>shekolim</i>; one silver bowl [that weighed] seventy <i>shekolim</i> according to sanctuary weights. Both were filled with fine flour kneaded with [olive] oil, for a meal-offering.
+</span>
+<span class=h>
+<div class=h>
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת׃
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת׃
+</div>
+One spoon of ten gold [<i>shekolim</i>], filled with incense.
+</span>
+<span class=h>
+<div class=h>
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+</div>
+One young bull, one ram, and one yearling sheep for a burnt-offering.
+</span>
+<span class=h>
+<div class=h>
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת
+</div>
+[And] one he-goat for a sin-offering.
+</span>
+<span class=h>
+<div class=h>
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתֻּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן שְׁלֻמִיאֵ֖ל בֶּן־צוּרִֽישַׁדָּֽי׃ (פ)
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתֻּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן שְׁלֻמִיאֵ֖ל בֶּן־צוּרִֽישַׁדָּֽי׃ (פ)
+</div>
+For the peace-offering sacrifice, two oxen, five rams, five kids and five yearling sheep. This was the offering of Shlumiel the son of Tzurishadai.
+</span>
+<span class=h>
+<div class=h>
+בַּיּוֹם֙ הַשִּׁשִּׁ֔י נָשִׂ֖יא לִבְנֵ֣י גָ֑ד אֶלְיָסָ֖ף בֶּן־דְּעוּאֵֽל׃
+בַּיּוֹם֙ הַשִּׁשִּׁ֔י נָשִׂ֖יא לִבְנֵ֣י גָ֑ד אֶלְיָסָ֖ף בֶּן־דְּעוּאֵֽל׃
+</div>
+On the sixth day, the leader of the sons of Gad, Elyasaf the son of Deu’el.
+</span>
+<span class=h>
+<div class=h>
+קָרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃
+קָרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃
+</div>
+His offering was one silver tray, its weight was one hundred thirty <i>shekolim</i>; one silver bowl [that weighed] seventy <i>shekolim</i> according to sanctuary weights. Both were filled with fine flour kneaded with [olive] oil, for a meal-offering.
+</span>
+<span class=h>
+<div class=h>
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת׃
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת׃
+</div>
+One spoon of ten gold [<i>shekolim</i>], filled with incense.
+</span>
+<span class=h>
+<div class=h>
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+</div>
+One young bull, one ram, and one yearling sheep for a burnt-offering.
+</span>
+<span class=h>
+<div class=h>
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃
+</div>
+[And] one he-goat for a sin-offering.
+</span>
+<span class=h>
+<div class=h>
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתֻּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן אֶלְיָסָ֖ף בֶּן־דְּעוּאֵֽל׃ (פ)
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתֻּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן אֶלְיָסָ֖ף בֶּן־דְּעוּאֵֽל׃ (פ)
+</div>
+For the peace-offering sacrifice, two oxen, five rams, five kids and five yearling sheep. This was the offering of Elyasaf the son of Deu’el.
+</span>
+<span class=h>
+<div class=h>
+בַּיּוֹם֙ הַשְּׁבִיעִ֔י נָשִׂ֖יא לִבְנֵ֣י אֶפְרָ֑יִם אֱלִֽישָׁמָ֖ע בֶּן־עַמִּיהֽוּד׃
+בַּיּוֹם֙ הַשְּׁבִיעִ֔י נָשִׂ֖יא לִבְנֵ֣י אֶפְרָ֑יִם אֱלִֽישָׁמָ֖ע בֶּן־עַמִּיהֽוּד׃
+</div>
+On the seventh day, the leader of the sons of Ephraim, Elishamah the son of Amihud.
+</span>
+<span class=h>
+<div class=h>
+קָרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃
+קָרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃
+</div>
+His offering was one silver tray, its weight was one hundred thirty <i>shekolim</i>; one silver bowl [that weighed] seventy <i>shekolim</i> according to sanctuary weights. Both were filled with fine flour kneaded with [olive] oil, for a meal-offering.
+</span>
+<span class=h>
+<div class=h>
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת׃
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת׃
+</div>
+One spoon of ten gold [<i>shekolim</i>], filled with incense.
+</span>
+<span class=h>
+<div class=h>
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+</div>
+One young bull, one ram, and one yearling sheep for a burnt-offering.
+</span>
+<span class=h>
+<div class=h>
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃
+</div>
+[And] one he-goat for a sin-offering.
+</span>
+<span class=h>
+<div class=h>
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתֻּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵֽי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן אֱלִישָׁמָ֖ע בֶּן־עַמִּיהֽוּד׃ (פ)
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתֻּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵֽי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן אֱלִישָׁמָ֖ע בֶּן־עַמִּיהֽוּד׃ (פ)
+</div>
+For the peace-offering sacrifice, two oxen, five rams, five kids and five yearling sheep. This was the offering of Elishamah the son of Amihud.
+</span>
+<span class=h>
+<div class=h>
+בַּיּוֹם֙ הַשְּׁמִינִ֔י נָשִׂ֖יא לִבְנֵ֣י מְנַשֶּׁ֑ה גַּמְלִיאֵ֖ל בֶּן־פְּדָה־צֽוּר׃
+בַּיּוֹם֙ הַשְּׁמִינִ֔י נָשִׂ֖יא לִבְנֵ֣י מְנַשֶּׁ֑ה גַּמְלִיאֵ֖ל בֶּן־פְּדָה־צֽוּר׃
+</div>
+On the eighth day, the leader of the sons of Menashe, Gamliel the son of Pedahtzur.
+</span>
+<span class=h>
+<div class=h>
+קָרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה
+קָרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה
+</div>
+His offering was one silver tray, its weight was one hundred thirty <i>shekolim</i>; one silver bowl [that weighed] seventy <i>shekolim</i> according to sanctuary weights. Both were filled with fine flour kneaded with [olive] oil, for a meal-offering.
+</span>
+<span class=h>
+<div class=h>
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת׃
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת׃
+</div>
+One spoon of ten gold [<i>shekolim</i>], filled with incense.
+</span>
+<span class=h>
+<div class=h>
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+</div>
+One young bull, one ram, and one yearling sheep for a burnt-offering.
+</span>
+<span class=h>
+<div class=h>
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃
+</div>
+[And] one he-goat for a sin-offering.
+</span>
+<span class=h>
+<div class=h>
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתֻּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן גַּמְלִיאֵ֖ל בֶּן־פְּדָה צֽוּר׃ (פ)
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתֻּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן גַּמְלִיאֵ֖ל בֶּן־פְּדָה צֽוּר׃ (פ)
+</div>
+For the peace-offering sacrifice, two oxen, five rams, five kids and five yearling sheep. This was the offering of Gamliel the son of Pedahtzur.
+</span>
+<span class=h>
+<div class=h>
+בַּיּוֹם֙ הַתְּשִׁיעִ֔י נָשִׂ֖יא לִבְנֵ֣י בִנְיָמִ֑ן אֲבִידָ֖ן בֶּן־גִּדְעֹנִֽי׃
+בַּיּוֹם֙ הַתְּשִׁיעִ֔י נָשִׂ֖יא לִבְנֵ֣י בִנְיָמִ֑ן אֲבִידָ֖ן בֶּן־גִּדְעֹנִֽי׃
+</div>
+On the ninth day, the leader of the sons of Binyomin, Avidan the son of Gidoni.
+</span>
+<span class=h>
+<div class=h>
+קָרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃
+קָרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃
+</div>
+His offering was one silver tray, its weight was one hundred thirty <i>shekolim</i>; one silver bowl [that weighed] seventy <i>shekolim</i> according to sanctuary weights. Both were filled with fine flour kneaded with [olive] oil, for a meal-offering.
+</span>
+<span class=h>
+<div class=h>
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת׃
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת׃
+</div>
+One spoon of ten gold [<i>shekolim</i>], filled with incense.
+</span>
+<span class=h>
+<div class=h>
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+</div>
+One young bull, one ram, and one yearling sheep for a burnt-offering.
+</span>
+<span class=h>
+<div class=h>
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃
+</div>
+[And] one he-goat for a sin-offering.
+</span>
+<span class=h>
+<div class=h>
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתֻּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן אֲבִידָ֖ן בֶּן־גִּדְעֹנִֽי׃ (פ)
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתֻּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן אֲבִידָ֖ן בֶּן־גִּדְעֹנִֽי׃ (פ)
+</div>
+For the peace-offering sacrifice, two oxen, five rams, five kids and five yearling sheep. This was the offering of Avidan the son of Gidoni.
+</span>
+<span class=h>
+<div class=h>
+בַּיּוֹם֙ הָעֲשִׂירִ֔י נָשִׂ֖יא לִבְנֵ֣י דָ֑ן אֲחִיעֶ֖זֶר בֶּן־עַמִּישַׁדָּֽי׃
+בַּיּוֹם֙ הָעֲשִׂירִ֔י נָשִׂ֖יא לִבְנֵ֣י דָ֑ן אֲחִיעֶ֖זֶר בֶּן־עַמִּישַׁדָּֽי׃
+</div>
+On the tenth day, the leader of the sons of Don, Achiezer the son of Amishadai.
+</span>
+<span class=h>
+<div class=h>
+קָרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃
+קָרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃
+</div>
+His offering was one silver tray, its weight was one hundred thirty <i>shekolim</i>; one silver bowl [that weighed] seventy <i>shekolim</i> according to sanctuary weights. Both were filled with fine flour kneaded with [olive] oil, for a meal-offering.
+</span>
+<span class=h>
+<div class=h>
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת
+</div>
+One spoon weighing ten gold [<i>shekolim</i>], filled with incense.
+</span>
+<span class=h>
+<div class=h>
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+</div>
+One young bull, one ram, and one yearling sheep for a burnt-offering.
+</span>
+<span class=h>
+<div class=h>
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃
+</div>
+[And] one he-goat for a sin-offering.
+</span>
+<span class=h>
+<div class=h>
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתֻּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵֽי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן אֲחִיעֶ֖זֶר בֶּן־עַמִּישַׁדָּֽי׃ (פ)
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתֻּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵֽי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן אֲחִיעֶ֖זֶר בֶּן־עַמִּישַׁדָּֽי׃ (פ)
+</div>
+For the peace-offering sacrifice, two oxen, five rams, five kids and five yearling sheep. This was the offering of Achiezer the son of Amishadai.
+</span>
+<span class=h>
+<div class=h>
+בְּיוֹם֙ עַשְׁתֵּ֣י עָשָׂ֣ר י֔וֹם נָשִׂ֖יא לִבְנֵ֣י אָשֵׁ֑ר פַּגְעִיאֵ֖ל בֶּן־עָכְרָֽן׃
+בְּיוֹם֙ עַשְׁתֵּ֣י עָשָׂ֣ר י֔וֹם נָשִׂ֖יא לִבְנֵ֣י אָשֵׁ֑ר פַּגְעִיאֵ֖ל בֶּן־עָכְרָֽן׃
+</div>
+On the day of the eleventh day, the leader of the sons of Asher, Pagi’el the son of Ochran.
+</span>
+<span class=h>
+<div class=h>
+קָרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃
+קָרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃
+</div>
+His offering was one silver tray, its weight was one hundred thirty <i>shekolim</i>; one silver bowl [that weighed] seventy <i>shekolim</i> according to sanctuary weights. Both were filled with fine flour kneaded with [olive] oil, for a meal-offering.
+</span>
+<span class=h>
+<div class=h>
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת׃
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת׃
+</div>
+One spoon of ten gold [<i>shekolim</i>], filled with incense.
+</span>
+<span class=h>
+<div class=h>
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+</div>
+One young bull, one ram, and one yearling sheep for a burnt-offering.
+</span>
+<span class=h>
+<div class=h>
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃
+</div>
+[And] one he-goat for a sin-offering.
+</span>
+<span class=h>
+<div class=h>
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתֻּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵֽי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן פַּגְעִיאֵ֖ל בֶּן־עָכְרָֽן׃ (פ)
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתֻּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵֽי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן פַּגְעִיאֵ֖ל בֶּן־עָכְרָֽן׃ (פ)
+</div>
+For the peace-offering sacrifice, two oxen, five rams, five kids and five yearling sheep. This was the offering of Pagi’el the son of Ochran.
+</span>
+<span class=h>
+<div class=h>
+בְּיוֹם֙ שְׁנֵ֣ים עָשָׂ֣ר י֔וֹם נָשִׂ֖יא לִבְנֵ֣י נַפְתָּלִ֑י אֲחִירַ֖ע בֶּן־עֵינָֽן׃
+בְּיוֹם֙ שְׁנֵ֣ים עָשָׂ֣ר י֔וֹם נָשִׂ֖יא לִבְנֵ֣י נַפְתָּלִ֑י אֲחִירַ֖ע בֶּן־עֵינָֽן׃
+</div>
+On the day of the twelfth day, the leader of the sons of Naftali, Achirah the son of Einon.
+</span>
+<span class=h>
+<div class=h>
+קָרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃
+קָרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם ׀ מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃
+</div>
+His offering was one silver tray its weight was one hundred thirty <i>shekolim</i>; one silver bowl [that weighed] seventy <i>shekolim</i> according to sanctuary weights. Both were filled with fine flour kneaded with [olive] oil, for a meal-offering.
+</span>
+<span class=h>
+<div class=h>
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת׃
+כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת׃
+</div>
+One spoon of ten gold [<i>shekolim</i>], filled with incense.
+</span>
+<span class=h>
+<div class=h>
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃
+</div>
+One young bull, one ram, and one yearling sheep for a burnt-offering.
+</span>
+<span class=h>
+<div class=h>
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃
+שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃
+</div>
+[And] one he-goat for a sin-offering.
+</span>
+<span class=h>
+<div class=h>
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתֻּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵֽי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן אֲחִירַ֖ע בֶּן־עֵינָֽן׃ (פ)
+וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַיִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתֻּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵֽי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קָרְבַּ֥ן אֲחִירַ֖ע בֶּן־עֵינָֽן׃ (פ)
+</div>
+For the peace-offering sacrifice, two oxen, five rams, five kids and five yearling sheep. This was the offering of Achirah the son of Einon.
+</span>
+<span class=h>
+<div class=h>
+זֹ֣את ׀ חֲנֻכַּ֣ת הַמִּזְבֵּ֗חַ בְּיוֹם֙ הִמָּשַׁ֣ח אֹת֔וֹ מֵאֵ֖ת נְשִׂיאֵ֣י יִשְׂרָאֵ֑ל קַעֲרֹ֨ת כֶּ֜סֶף שְׁתֵּ֣ים עֶשְׂרֵ֗ה מִֽזְרְקֵי־כֶ֙סֶף֙ שְׁנֵ֣ים עָשָׂ֔ר כַּפּ֥וֹת זָהָ֖ב שְׁתֵּ֥ים עֶשְׂרֵֽה׃
+זֹ֣את ׀ חֲנֻכַּ֣ת הַמִּזְבֵּ֗חַ בְּיוֹם֙ הִמָּשַׁ֣ח אֹת֔וֹ מֵאֵ֖ת נְשִׂיאֵ֣י יִשְׂרָאֵ֑ל קַעֲרֹ֨ת כֶּ֜סֶף שְׁתֵּ֣ים עֶשְׂרֵ֗ה מִֽזְרְקֵי־כֶ֙סֶף֙ שְׁנֵ֣ים עָשָׂ֔ר כַּפּ֥וֹת זָהָ֖ב שְׁתֵּ֥ים עֶשְׂרֵֽה׃
+</div>
+This was the dedication of the altar on the day that it was anointed, given by the leaders of Israel; twelve silver trays twelve silver bowls and twelve golden spoons.
+</span>
+<span class=h>
+<div class=h>
+שְׁלֹשִׁ֣ים וּמֵאָ֗ה הַקְּעָרָ֤ה הָֽאַחַת֙ כֶּ֔סֶף וְשִׁבְעִ֖ים הַמִּזְרָ֣ק הָאֶחָ֑ד כֹּ֚ל כֶּ֣סֶף הַכֵּלִ֔ים אַלְפַּ֥יִם וְאַרְבַּע־מֵא֖וֹת בְּשֶׁ֥קֶל הַקֹּֽדֶשׁ׃
+שְׁלֹשִׁ֣ים וּמֵאָ֗ה הַקְּעָרָ֤ה הָֽאַחַת֙ כֶּ֔סֶף וְשִׁבְעִ֖ים הַמִּזְרָ֣ק הָאֶחָ֑ד כֹּ֚ל כֶּ֣סֶף הַכֵּלִ֔ים אַלְפַּ֥יִם וְאַרְבַּע־מֵא֖וֹת בְּשֶׁ֥קֶל הַקֹּֽדֶשׁ׃
+</div>
+One hundred thirty each silver tray and each bowl weighed seventy [<i>shekolim</i>]. All the silver vessels weighed two thousand four hundred [<i>shekolim</i>] according to sanctuary weights.
+</span>
+<span class=h>
+<div class=h>
+כַּפּ֨וֹת זָהָ֤ב שְׁתֵּים־עֶשְׂרֵה֙ מְלֵאֹ֣ת קְטֹ֔רֶת עֲשָׂרָ֧ה עֲשָׂרָ֛ה הַכַּ֖ף בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ כָּל־זְהַ֥ב הַכַּפּ֖וֹת עֶשְׂרִ֥ים וּמֵאָֽה׃
+כַּפּ֨וֹת זָהָ֤ב שְׁתֵּים־עֶשְׂרֵה֙ מְלֵאֹ֣ת קְטֹ֔רֶת עֲשָׂרָ֧ה עֲשָׂרָ֛ה הַכַּ֖ף בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ כָּל־זְהַ֥ב הַכַּפּ֖וֹת עֶשְׂרִ֥ים וּמֵאָֽה׃
+</div>
+Twelve golden spoons filled with incense; each spoon weighed ten [<i>shekolim</i>] according to sanctuary weights. The total of the golden spoons is one hundred twenty [<i>shekolim</i>].
+</span>
+<span class=h>
+<div class=h>
+כָּל־הַבָּקָ֨ר לָעֹלָ֜ה שְׁנֵ֧ים עָשָׂ֣ר פָּרִ֗ים אֵילִ֤ם שְׁנֵים־עָשָׂר֙ כְּבָשִׂ֧ים בְּנֵֽי־שָׁנָ֛ה שְׁנֵ֥ים עָשָׂ֖ר וּמִנְחָתָ֑ם וּשְׂעִירֵ֥י עִזִּ֛ים שְׁנֵ֥ים עָשָׂ֖ר לְחַטָּֽאת׃
+כָּל־הַבָּקָ֨ר לָעֹלָ֜ה שְׁנֵ֧ים עָשָׂ֣ר פָּרִ֗ים אֵילִ֤ם שְׁנֵים־עָשָׂר֙ כְּבָשִׂ֧ים בְּנֵֽי־שָׁנָ֛ה שְׁנֵ֥ים עָשָׂ֖ר וּמִנְחָתָ֑ם וּשְׂעִירֵ֥י עִזִּ֛ים שְׁנֵ֥ים עָשָׂ֖ר לְחַטָּֽאת׃
+</div>
+The total of the oxen for the burnt-offering is twelve oxen, twelve rams, twelve yearling sheep and their meal-offerings, and twelve he-goats for a sin-offering.
+</span>
+<span class=h>
+<div class=h>
+וְכֹ֞ל בְּקַ֣ר ׀ זֶ֣בַח הַשְּׁלָמִ֗ים עֶשְׂרִ֣ים וְאַרְבָּעָה֮ פָּרִים֒ אֵילִ֤ם שִׁשִּׁים֙ עַתֻּדִ֣ים שִׁשִּׁ֔ים כְּבָשִׂ֥ים בְּנֵי־שָׁנָ֖ה שִׁשִּׁ֑ים זֹ֚את חֲנֻכַּ֣ת הַמִּזְבֵּ֔חַ אַחֲרֵ֖י הִמָּשַׁ֥ח אֹתֽוֹ׃
+וְכֹ֞ל בְּקַ֣ר ׀ זֶ֣בַח הַשְּׁלָמִ֗ים עֶשְׂרִ֣ים וְאַרְבָּעָה֮ פָּרִים֒ אֵילִ֤ם שִׁשִּׁים֙ עַתֻּדִ֣ים שִׁשִּׁ֔ים כְּבָשִׂ֥ים בְּנֵי־שָׁנָ֖ה שִׁשִּׁ֑ים זֹ֚את חֲנֻכַּ֣ת הַמִּזְבֵּ֔חַ אַחֲרֵ֖י הִמָּשַׁ֥ח אֹתֽוֹ׃
+</div>
+The total of the oxen for the peace -offering sacrifice is twenty-four oxen, sixty rams, sixty kids and sixty yearling sheep. This was the dedication of the altar after it was anointed.
+</span>
+<span class=h>
+<div class=h>
+וּבְבֹ֨א מֹשֶׁ֜ה אֶל־אֹ֣הֶל מוֹעֵד֮ לְדַבֵּ֣ר אִתּוֹ֒ וַיִּשְׁמַ֨ע אֶת־הַקּ֜וֹל מִדַּבֵּ֣ר אֵלָ֗יו מֵעַ֤ל הַכַּפֹּ֙רֶת֙ אֲשֶׁר֙ עַל־אֲרֹ֣ן הָעֵדֻ֔ת מִבֵּ֖ין שְׁנֵ֣י הַכְּרֻבִ֑ים וַיְדַבֵּ֖ר אֵלָֽיו׃ (פ)
+וּבְבֹ֨א מֹשֶׁ֜ה אֶל־אֹ֣הֶל מוֹעֵד֮ לְדַבֵּ֣ר אִתּוֹ֒ וַיִּשְׁמַ֨ע אֶת־הַקּ֜וֹל מִדַּבֵּ֣ר אֵלָ֗יו מֵעַ֤ל הַכַּפֹּ֙רֶת֙ אֲשֶׁר֙ עַל־אֲרֹ֣ן הָעֵדֻ֔ת מִבֵּ֖ין שְׁנֵ֣י הַכְּרֻבִ֑ים וַיְדַבֵּ֖ר אֵלָֽיו׃ (פ)
+</div>
+When Moshe would enter the Tent of Meeting to speak with Him (God), he would hear the Voice being spoken to him from above the Ark-cover which is atop the Ark of the Testimony from between the two cherubim; and He spoke to him.
+</span>
+</body>

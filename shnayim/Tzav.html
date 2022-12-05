@@ -1,0 +1,740 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/@hebcal/core@3.45.2/dist/bundle.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    if (localStorage.getItem("shmos-scroll") != null) {
+      $(window).scrollTop(localStorage.getItem("shmos-scroll"));
+    }
+
+    $(window).on("scroll", function() {
+      localStorage.setItem("shmos-scroll", $(window).scrollTop());
+    });
+
+  });
+
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('/offline.js')
+             .then(function() { console.log("Service Worker Registered"); });
+  }
+</script>
+<style>
+  div.h { font-size:24pt; margin-right:auto; margin-left:auto; width:95%; padding:10pt; text-align:right; border-style:none; direction:rtl; }
+  span.h { font-size:16pt; line-height:150%; }
+</style>
+</head>
+<body>
+<div style="position:fixed; top:0; width:100%">
+<button onclick="window.location.href=(new hebcal.Sedra(new hebcal.HDate().getFullYear(), false).get(new hebcal.HDate()))+'.html'">start this week!</button>
+</div>
+<span class=h>
+<div class=h>
+
+
+
+<h3>Tzav</h3>
+
+<h4>Chapter 6</h4>
+
+
+
+
+
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+</div>
+And Adonoy spoke to Moshe, saying:
+</span>
+<span class=h>
+<div class=h>
+צַ֤ו אֶֽת־אַהֲרֹן֙ וְאֶת־בָּנָ֣יו לֵאמֹ֔ר זֹ֥את תּוֹרַ֖ת הָעֹלָ֑ה הִ֣וא הָעֹלָ֡ה עַל֩ מוֹקְדָ֨ה עַל־הַמִּזְבֵּ֤חַ כָּל־הַלַּ֙יְלָה֙ עַד־הַבֹּ֔קֶר וְאֵ֥שׁ הַמִּזְבֵּ֖חַ תּ֥וּקַד בּֽוֹ׃
+צַ֤ו אֶֽת־אַהֲרֹן֙ וְאֶת־בָּנָ֣יו לֵאמֹ֔ר זֹ֥את תּוֹרַ֖ת הָעֹלָ֑ה הִ֣וא הָעֹלָ֡ה עַל֩ מוֹקְדָ֨ה עַל־הַמִּזְבֵּ֤חַ כָּל־הַלַּ֙יְלָה֙ עַד־הַבֹּ֔קֶר וְאֵ֥שׁ הַמִּזְבֵּ֖חַ תּ֥וּקַד בּֽוֹ׃
+</div>
+Command Aharon and his sons, saying; this is the law of the burnt-offering. It is the burnt-offering [which remains] on its pyre on the altar all night, until the morning, and the fire of the altar will be kept burning on it.
+</span>
+<span class=h>
+<div class=h>
+וְלָבַ֨שׁ הַכֹּהֵ֜ן מִדּ֣וֹ בַ֗ד וּמִֽכְנְסֵי־בַד֮ יִלְבַּ֣שׁ עַל־בְּשָׂרוֹ֒ וְהֵרִ֣ים אֶת־הַדֶּ֗שֶׁן אֲשֶׁ֨ר תֹּאכַ֥ל הָאֵ֛שׁ אֶת־הָעֹלָ֖ה עַל־הַמִּזְבֵּ֑חַ וְשָׂמ֕וֹ אֵ֖צֶל הַמִּזְבֵּֽחַ׃
+וְלָבַ֨שׁ הַכֹּהֵ֜ן מִדּ֣וֹ בַ֗ד וּמִֽכְנְסֵי־בַד֮ יִלְבַּ֣שׁ עַל־בְּשָׂרוֹ֒ וְהֵרִ֣ים אֶת־הַדֶּ֗שֶׁן אֲשֶׁ֨ר תֹּאכַ֥ל הָאֵ֛שׁ אֶת־הָעֹלָ֖ה עַל־הַמִּזְבֵּ֑חַ וְשָׂמ֕וֹ אֵ֖צֶל הַמִּזְבֵּֽחַ׃
+</div>
+The <i>kohein</i> shall dress in his linen garment and he shall wear linen pants on his [body] skin; and he shall separate the ashes when the fire consumes the burnt-offering on the altar and place it next to the altar.
+</span>
+<span class=h>
+<div class=h>
+וּפָשַׁט֙ אֶת־בְּגָדָ֔יו וְלָבַ֖שׁ בְּגָדִ֣ים אֲחֵרִ֑ים וְהוֹצִ֤יא אֶת־הַדֶּ֙שֶׁן֙ אֶל־מִח֣וּץ לַֽמַּחֲנֶ֔ה אֶל־מָק֖וֹם טָהֽוֹר׃
+וּפָשַׁט֙ אֶת־בְּגָדָ֔יו וְלָבַ֖שׁ בְּגָדִ֣ים אֲחֵרִ֑ים וְהוֹצִ֤יא אֶת־הַדֶּ֙שֶׁן֙ אֶל־מִח֣וּץ לַֽמַּחֲנֶ֔ה אֶל־מָק֖וֹם טָהֽוֹר׃
+</div>
+He shall [then] remove his garments and dress in other garments. He shall take out the ashes beyond the encampment, to a pure [undefiled] place.
+</span>
+<span class=h>
+<div class=h>
+וְהָאֵ֨שׁ עַל־הַמִּזְבֵּ֤חַ תּֽוּקַד־בּוֹ֙ לֹ֣א תִכְבֶּ֔ה וּבִעֵ֨ר עָלֶ֧יהָ הַכֹּהֵ֛ן עֵצִ֖ים בַּבֹּ֣קֶר בַּבֹּ֑קֶר וְעָרַ֤ךְ עָלֶ֙יהָ֙ הָֽעֹלָ֔ה וְהִקְטִ֥יר עָלֶ֖יהָ חֶלְבֵ֥י הַשְּׁלָמִֽים׃
+וְהָאֵ֨שׁ עַל־הַמִּזְבֵּ֤חַ תּֽוּקַד־בּוֹ֙ לֹ֣א תִכְבֶּ֔ה וּבִעֵ֨ר עָלֶ֧יהָ הַכֹּהֵ֛ן עֵצִ֖ים בַּבֹּ֣קֶר בַּבֹּ֑קֶר וְעָרַ֤ךְ עָלֶ֙יהָ֙ הָֽעֹלָ֔ה וְהִקְטִ֥יר עָלֶ֖יהָ חֶלְבֵ֥י הַשְּׁלָמִֽים׃
+</div>
+The fire on the altar shall be kindled with it it shall not go out. The <i>kohein</i> shall burn logs upon it each and every morning and arrange the burnt-offering on it and burn upon it the fats of the peace-offering.
+</span>
+<span class=h>
+<div class=h>
+אֵ֗שׁ תָּמִ֛יד תּוּקַ֥ד עַל־הַמִּזְבֵּ֖חַ לֹ֥א תִכְבֶֽה׃ (ס)
+אֵ֗שׁ תָּמִ֛יד תּוּקַ֥ד עַל־הַמִּזְבֵּ֖חַ לֹ֥א תִכְבֶֽה׃ (ס)
+</div>
+A continual fire shall be lit on the altar; it shall not go out.
+</span>
+<span class=h>
+<div class=h>
+וְזֹ֥את תּוֹרַ֖ת הַמִּנְחָ֑ה הַקְרֵ֨ב אֹתָ֤הּ בְּנֵֽי־אַהֲרֹן֙ לִפְנֵ֣י יְהוָ֔ה אֶל־פְּנֵ֖י הַמִּזְבֵּֽחַ׃
+וְזֹ֥את תּוֹרַ֖ת הַמִּנְחָ֑ה הַקְרֵ֨ב אֹתָ֤הּ בְּנֵֽי־אַהֲרֹן֙ לִפְנֵ֣י יְהוָ֔ה אֶל־פְּנֵ֖י הַמִּזְבֵּֽחַ׃
+</div>
+This is the law of the meal-offering. The sons of Aharon bring it before Adonoy, to the front of the altar.
+</span>
+<span class=h>
+<div class=h>
+וְהֵרִ֨ים מִמֶּ֜נּוּ בְּקֻמְצ֗וֹ מִסֹּ֤לֶת הַמִּנְחָה֙ וּמִשַּׁמְנָ֔הּ וְאֵת֙ כָּל־הַלְּבֹנָ֔ה אֲשֶׁ֖ר עַל־הַמִּנְחָ֑ה וְהִקְטִ֣יר הַמִּזְבֵּ֗חַ רֵ֧יחַ נִיחֹ֛חַ אַזְכָּרָתָ֖הּ לַיהוָֽה׃
+וְהֵרִ֨ים מִמֶּ֜נּוּ בְּקֻמְצ֗וֹ מִסֹּ֤לֶת הַמִּנְחָה֙ וּמִשַּׁמְנָ֔הּ וְאֵת֙ כָּל־הַלְּבֹנָ֔ה אֲשֶׁ֖ר עַל־הַמִּנְחָ֑ה וְהִקְטִ֣יר הַמִּזְבֵּ֗חַ רֵ֧יחַ נִיחֹ֛חַ אַזְכָּרָתָ֖הּ לַיהוָֽה׃
+</div>
+He shall separate from it, when he takes his fistful, from some of the meal-offerings fine flour and some of its oil and all the frankincense which is on the meal-offering. He shall burn, on the altar a pleasing fragrance; its memorial portion, to Adonoy.
+</span>
+<span class=h>
+<div class=h>
+וְהַנּוֹתֶ֣רֶת מִמֶּ֔נָּה יֹאכְל֖וּ אַהֲרֹ֣ן וּבָנָ֑יו מַצּ֤וֹת תֵּֽאָכֵל֙ בְּמָק֣וֹם קָדֹ֔שׁ בַּחֲצַ֥ר אֹֽהֶל־מוֹעֵ֖ד יֹאכְלֽוּהָ׃
+וְהַנּוֹתֶ֣רֶת מִמֶּ֔נָּה יֹאכְל֖וּ אַהֲרֹ֣ן וּבָנָ֑יו מַצּ֤וֹת תֵּֽאָכֵל֙ בְּמָק֣וֹם קָדֹ֔שׁ בַּחֲצַ֥ר אֹֽהֶל־מוֹעֵ֖ד יֹאכְלֽוּהָ׃
+</div>
+Whatever remains from it shall be eaten by Aharon and his sons. It must be eaten as <i>matzoh,</i> in a sacred place. In the courtyard of the Tent of Meeting they shall eat it.
+</span>
+<span class=h>
+<div class=h>
+לֹ֤א תֵאָפֶה֙ חָמֵ֔ץ חֶלְקָ֛ם נָתַ֥תִּי אֹתָ֖הּ מֵאִשָּׁ֑י קֹ֤דֶשׁ קָֽדָשִׁים֙ הִ֔וא כַּחַטָּ֖את וְכָאָשָֽׁם׃
+לֹ֤א תֵאָפֶה֙ חָמֵ֔ץ חֶלְקָ֛ם נָתַ֥תִּי אֹתָ֖הּ מֵאִשָּׁ֑י קֹ֤דֶשׁ קָֽדָשִׁים֙ הִ֔וא כַּחַטָּ֖את וְכָאָשָֽׁם׃
+</div>
+It should not be baked [as] leavened. I have given it to them as their portion from my fire-offerings. It is holy of holies [most holy], as [are] the sin-offering and as the guilt-offering.
+</span>
+<span class=h>
+<div class=h>
+כָּל־זָכָ֞ר בִּבְנֵ֤י אַהֲרֹן֙ יֹֽאכֲלֶ֔נָּה חָק־עוֹלָם֙ לְדֹרֹ֣תֵיכֶ֔ם מֵאִשֵּׁ֖י יְהוָ֑ה כֹּ֛ל אֲשֶׁר־יִגַּ֥ע בָּהֶ֖ם יִקְדָּֽשׁ׃ (פ)
+כָּל־זָכָ֞ר בִּבְנֵ֤י אַהֲרֹן֙ יֹֽאכֲלֶ֔נָּה חָק־עוֹלָם֙ לְדֹרֹ֣תֵיכֶ֔ם מֵאִשֵּׁ֖י יְהוָ֑ה כֹּ֛ל אֲשֶׁר־יִגַּ֥ע בָּהֶ֖ם יִקְדָּֽשׁ׃ (פ)
+</div>
+Every male descendant of Aharon may eat it, an everlasting statute for all your descendants from the fire-offerings of Adonoy. whatever shall touch them will become sacred.
+</span>
+<span class=h>
+<div class=h>
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+</div>
+And Adonoy spoke to Moshe, saying:
+</span>
+<span class=h>
+<div class=h>
+זֶ֡ה קָרְבַּן֩ אַהֲרֹ֨ן וּבָנָ֜יו אֲשֶׁר־יַקְרִ֣יבוּ לַֽיהוָ֗ה בְּיוֹם֙ הִמָּשַׁ֣ח אֹת֔וֹ עֲשִׂירִ֨ת הָאֵפָ֥ה סֹ֛לֶת מִנְחָ֖ה תָּמִ֑יד מַחֲצִיתָ֣הּ בַּבֹּ֔קֶר וּמַחֲצִיתָ֖הּ בָּעָֽרֶב׃
+זֶ֡ה קָרְבַּן֩ אַהֲרֹ֨ן וּבָנָ֜יו אֲשֶׁר־יַקְרִ֣יבוּ לַֽיהוָ֗ה בְּיוֹם֙ הִמָּשַׁ֣ח אֹת֔וֹ עֲשִׂירִ֨ת הָאֵפָ֥ה סֹ֛לֶת מִנְחָ֖ה תָּמִ֑יד מַחֲצִיתָ֣הּ בַּבֹּ֔קֶר וּמַחֲצִיתָ֖הּ בָּעָֽרֶב׃
+</div>
+This is the offering of Aharon and his sons that they shall offer to Adonoy on the day that he is anointed; one tenth of an <i>ephah</i> of fine flour as a meal-offering, always [daily]. Half of it [he shall offer] in the morning and half of it [he shall offer] in the evening.
+</span>
+<span class=h>
+<div class=h>
+עַֽל־מַחֲבַ֗ת בַּשֶּׁ֛מֶן תֵּעָשֶׂ֖ה מֻרְבֶּ֣כֶת תְּבִיאֶ֑נָּה תֻּפִינֵי֙ מִנְחַ֣ת פִּתִּ֔ים תַּקְרִ֥יב רֵֽיחַ־נִיחֹ֖חַ לַיהוָֽה׃
+עַֽל־מַחֲבַ֗ת בַּשֶּׁ֛מֶן תֵּעָשֶׂ֖ה מֻרְבֶּ֣כֶת תְּבִיאֶ֑נָּה תֻּפִינֵי֙ מִנְחַ֣ת פִּתִּ֔ים תַּקְרִ֥יב רֵֽיחַ־נִיחֹ֖חַ לַיהוָֽה׃
+</div>
+In a frying pan, with oil it shall be made; you shall bring it saturated, well-baked, a meal-offering of broken pieces, you shall bring a pleasing fragrance to Adonoy.
+</span>
+<span class=h>
+<div class=h>
+וְהַכֹּהֵ֨ן הַמָּשִׁ֧יחַ תַּחְתָּ֛יו מִבָּנָ֖יו יַעֲשֶׂ֣ה אֹתָ֑הּ חָק־עוֹלָ֕ם לַיהוָ֖ה כָּלִ֥יל תָּקְטָֽר׃
+וְהַכֹּהֵ֨ן הַמָּשִׁ֧יחַ תַּחְתָּ֛יו מִבָּנָ֖יו יַעֲשֶׂ֣ה אֹתָ֑הּ חָק־עוֹלָ֕ם לַיהוָ֖ה כָּלִ֥יל תָּקְטָֽר׃
+</div>
+The <i>kohein</i> who is anointed in his stead from among his sons, he shall [also] do it; an everlasting statute to Adonoy, it shall be entirely burnt.
+</span>
+<span class=h>
+<div class=h>
+וְכָל־מִנְחַ֥ת כֹּהֵ֛ן כָּלִ֥יל תִּהְיֶ֖ה לֹ֥א תֵאָכֵֽל׃ (פ)
+וְכָל־מִנְחַ֥ת כֹּהֵ֛ן כָּלִ֥יל תִּהְיֶ֖ה לֹ֥א תֵאָכֵֽל׃ (פ)
+</div>
+Every meal-offering of a <i>kohein</i> shall be completely burnt and may not be eaten.
+</span>
+<span class=h>
+<div class=h>
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+</div>
+And Adonoy spoke to Moshe, saying:
+</span>
+<span class=h>
+<div class=h>
+דַּבֵּ֤ר אֶֽל־אַהֲרֹן֙ וְאֶל־בָּנָ֣יו לֵאמֹ֔ר זֹ֥את תּוֹרַ֖ת הַֽחַטָּ֑את בִּמְק֡וֹם אֲשֶׁר֩ תִּשָּׁחֵ֨ט הָעֹלָ֜ה תִּשָּׁחֵ֤ט הַֽחַטָּאת֙ לִפְנֵ֣י יְהוָ֔ה קֹ֥דֶשׁ קָֽדָשִׁ֖ים הִֽוא׃
+דַּבֵּ֤ר אֶֽל־אַהֲרֹן֙ וְאֶל־בָּנָ֣יו לֵאמֹ֔ר זֹ֥את תּוֹרַ֖ת הַֽחַטָּ֑את בִּמְק֡וֹם אֲשֶׁר֩ תִּשָּׁחֵ֨ט הָעֹלָ֜ה תִּשָּׁחֵ֤ט הַֽחַטָּאת֙ לִפְנֵ֣י יְהוָ֔ה קֹ֥דֶשׁ קָֽדָשִׁ֖ים הִֽוא׃
+</div>
+Speak to Aharon and his sons, saying: this is the law of the sin-offering. In the place where the burnt-offering is slaughtered, the sin-offering shall be slaughtered, before Adonoy; it is holy of holies [most holy].
+</span>
+<span class=h>
+<div class=h>
+הַכֹּהֵ֛ן הַֽמְחַטֵּ֥א אֹתָ֖הּ יֹאכֲלֶ֑נָּה בְּמָק֤וֹם קָדֹשׁ֙ תֵּֽאָכֵ֔ל בַּחֲצַ֖ר אֹ֥הֶל מוֹעֵֽד׃
+הַכֹּהֵ֛ן הַֽמְחַטֵּ֥א אֹתָ֖הּ יֹאכֲלֶ֑נָּה בְּמָק֤וֹם קָדֹשׁ֙ תֵּֽאָכֵ֔ל בַּחֲצַ֖ר אֹ֥הֶל מוֹעֵֽד׃
+</div>
+The <i>kohein</i> who offers it as a sin-offering, shall eat it. It shall be eaten in a sacred place, in the Courtyard of the Tent of Meeting.
+</span>
+<span class=h>
+<div class=h>
+כֹּ֛ל אֲשֶׁר־יִגַּ֥ע בִּבְשָׂרָ֖הּ יִקְדָּ֑שׁ וַאֲשֶׁ֨ר יִזֶּ֤ה מִדָּמָהּ֙ עַל־הַבֶּ֔גֶד אֲשֶׁר֙ יִזֶּ֣ה עָלֶ֔יהָ תְּכַבֵּ֖ס בְּמָק֥וֹם קָדֹֽשׁ׃
+כֹּ֛ל אֲשֶׁר־יִגַּ֥ע בִּבְשָׂרָ֖הּ יִקְדָּ֑שׁ וַאֲשֶׁ֨ר יִזֶּ֤ה מִדָּמָהּ֙ עַל־הַבֶּ֔גֶד אֲשֶׁר֙ יִזֶּ֣ה עָלֶ֔יהָ תְּכַבֵּ֖ס בְּמָק֥וֹם קָדֹֽשׁ׃
+</div>
+Whatever shall touch its flesh shall become holy and when of its blood is sprinkled on the garment, whatever it is sprinkled upon, you shall wash in a sacred place.
+</span>
+<span class=h>
+<div class=h>
+וּכְלִי־חֶ֛רֶשׂ אֲשֶׁ֥ר תְּבֻשַּׁל־בּ֖וֹ יִשָּׁבֵ֑ר וְאִם־בִּכְלִ֤י נְחֹ֙שֶׁת֙ בֻּשָּׁ֔לָה וּמֹרַ֥ק וְשֻׁטַּ֖ף בַּמָּֽיִם׃
+וּכְלִי־חֶ֛רֶשׂ אֲשֶׁ֥ר תְּבֻשַּׁל־בּ֖וֹ יִשָּׁבֵ֑ר וְאִם־בִּכְלִ֤י נְחֹ֙שֶׁת֙ בֻּשָּׁ֔לָה וּמֹרַ֥ק וְשֻׁטַּ֖ף בַּמָּֽיִם׃
+</div>
+An earthenware vessel in which it was cooked, must be broken. If it was cooked in a copper vessel, it must be scoured and rinsed with water.
+</span>
+<span class=h>
+<div class=h>
+כָּל־זָכָ֥ר בַּכֹּהֲנִ֖ים יֹאכַ֣ל אֹתָ֑הּ קֹ֥דֶשׁ קָֽדָשִׁ֖ים הִֽוא׃
+כָּל־זָכָ֥ר בַּכֹּהֲנִ֖ים יֹאכַ֣ל אֹתָ֑הּ קֹ֥דֶשׁ קָֽדָשִׁ֖ים הִֽוא׃
+</div>
+Every male among the <i>kohanim</i> may eat it; it is holy of holies [=most holy].
+</span>
+<span class=h>
+<div class=h>
+וְכָל־חַטָּ֡את אֲשֶׁר֩ יוּבָ֨א מִדָּמָ֜הּ אֶל־אֹ֧הֶל מוֹעֵ֛ד לְכַפֵּ֥ר בַּקֹּ֖דֶשׁ לֹ֣א תֵאָכֵ֑ל בָּאֵ֖שׁ תִּשָּׂרֵֽף׃ (פ)
+וְכָל־חַטָּ֡את אֲשֶׁר֩ יוּבָ֨א מִדָּמָ֜הּ אֶל־אֹ֧הֶל מוֹעֵ֛ד לְכַפֵּ֥ר בַּקֹּ֖דֶשׁ לֹ֣א תֵאָכֵ֑ל בָּאֵ֖שׁ תִּשָּׂרֵֽף׃ (פ)
+</div>
+Every sin-offering whose blood is to be brought inside the Tent of Meeting to bring about atonement inside the Sanctuary may not be eaten; it must be burned in fire.
+</span>
+<span class=h>
+<div class=h>
+
+
+
+<h4>Chapter 7</h4>
+
+
+
+
+
+וְזֹ֥את תּוֹרַ֖ת הָאָשָׁ֑ם קֹ֥דֶשׁ קָֽדָשִׁ֖ים הֽוּא׃
+וְזֹ֥את תּוֹרַ֖ת הָאָשָׁ֑ם קֹ֥דֶשׁ קָֽדָשִׁ֖ים הֽוּא׃
+</div>
+This is the law of the guilt-offering; it is holy of holies [=most holy].
+</span>
+<span class=h>
+<div class=h>
+בִּמְק֗וֹם אֲשֶׁ֤ר יִשְׁחֲטוּ֙ אֶת־הָ֣עֹלָ֔ה יִשְׁחֲט֖וּ אֶת־הָאָשָׁ֑ם וְאֶת־דָּמ֛וֹ יִזְרֹ֥ק עַל־הַמִּזְבֵּ֖חַ סָבִֽיב׃
+בִּמְק֗וֹם אֲשֶׁ֤ר יִשְׁחֲטוּ֙ אֶת־הָ֣עֹלָ֔ה יִשְׁחֲט֖וּ אֶת־הָאָשָׁ֑ם וְאֶת־דָּמ֛וֹ יִזְרֹ֥ק עַל־הַמִּזְבֵּ֖חַ סָבִֽיב׃
+</div>
+In the place where they will slaughter the burnt-offering they shall slaughter the guilt-offering, and they shall sprinkle its blood all around the altar.
+</span>
+<span class=h>
+<div class=h>
+וְאֵ֥ת כָּל־חֶלְבּ֖וֹ יַקְרִ֣יב מִמֶּ֑נּוּ אֵ֚ת הָֽאַלְיָ֔ה וְאֶת־הַחֵ֖לֶב הַֽמְכַסֶּ֥ה אֶת־הַקֶּֽרֶב׃
+וְאֵ֥ת כָּל־חֶלְבּ֖וֹ יַקְרִ֣יב מִמֶּ֑נּוּ אֵ֚ת הָֽאַלְיָ֔ה וְאֶת־הַחֵ֖לֶב הַֽמְכַסֶּ֥ה אֶת־הַקֶּֽרֶב׃
+</div>
+He shall bring all its fat from it; the [fat] tail, the fat covering the innards,
+</span>
+<span class=h>
+<div class=h>
+וְאֵת֙ שְׁתֵּ֣י הַכְּלָיֹ֔ת וְאֶת־הַחֵ֙לֶב֙ אֲשֶׁ֣ר עֲלֵיהֶ֔ן אֲשֶׁ֖ר עַל־הַכְּסָלִ֑ים וְאֶת־הַיֹּתֶ֙רֶת֙ עַל־הַכָּבֵ֔ד עַל־הַכְּלָיֹ֖ת יְסִירֶֽנָּה׃
+וְאֵת֙ שְׁתֵּ֣י הַכְּלָיֹ֔ת וְאֶת־הַחֵ֙לֶב֙ אֲשֶׁ֣ר עֲלֵיהֶ֔ן אֲשֶׁ֖ר עַל־הַכְּסָלִ֑ים וְאֶת־הַיֹּתֶ֙רֶת֙ עַל־הַכָּבֵ֔ד עַל־הַכְּלָיֹ֖ת יְסִירֶֽנָּה׃
+</div>
+the two kidneys and the fat on them that are on the flanks. The lobe on the liver, he shall remove together with the kidneys.
+</span>
+<span class=h>
+<div class=h>
+וְהִקְטִ֨יר אֹתָ֤ם הַכֹּהֵן֙ הַמִּזְבֵּ֔חָה אִשֶּׁ֖ה לַיהוָ֑ה אָשָׁ֖ם הֽוּא׃
+וְהִקְטִ֨יר אֹתָ֤ם הַכֹּהֵן֙ הַמִּזְבֵּ֔חָה אִשֶּׁ֖ה לַיהוָ֑ה אָשָׁ֖ם הֽוּא׃
+</div>
+The <i>kohein</i> shall burn them on the altar, a fire-offering to Adonoy; it is a guilt-offering.
+</span>
+<span class=h>
+<div class=h>
+כָּל־זָכָ֥ר בַּכֹּהֲנִ֖ים יֹאכְלֶ֑נּוּ בְּמָק֤וֹם קָדוֹשׁ֙ יֵאָכֵ֔ל קֹ֥דֶשׁ קָֽדָשִׁ֖ים הֽוּא׃
+כָּל־זָכָ֥ר בַּכֹּהֲנִ֖ים יֹאכְלֶ֑נּוּ בְּמָק֤וֹם קָדוֹשׁ֙ יֵאָכֵ֔ל קֹ֥דֶשׁ קָֽדָשִׁ֖ים הֽוּא׃
+</div>
+All males among the <i>kohanim</i> may eat it. It must be eaten in a sacred place; it is most holy.
+</span>
+<span class=h>
+<div class=h>
+כַּֽחַטָּאת֙ כָּֽאָשָׁ֔ם תּוֹרָ֥ה אַחַ֖ת לָהֶ֑ם הַכֹּהֵ֛ן אֲשֶׁ֥ר יְכַפֶּר־בּ֖וֹ ל֥וֹ יִהְיֶֽה׃
+כַּֽחַטָּאת֙ כָּֽאָשָׁ֔ם תּוֹרָ֥ה אַחַ֖ת לָהֶ֑ם הַכֹּהֵ֛ן אֲשֶׁ֥ר יְכַפֶּר־בּ֖וֹ ל֥וֹ יִהְיֶֽה׃
+</div>
+As the sin-offering is, so is the guilt-offering; one law applies to them both; the <i>kohein</i> who will bring about atonement with it, it shall belong to him.
+</span>
+<span class=h>
+<div class=h>
+וְהַ֨כֹּהֵ֔ן הַמַּקְרִ֖יב אֶת־עֹ֣לַת אִ֑ישׁ ע֤וֹר הָֽעֹלָה֙ אֲשֶׁ֣ר הִקְרִ֔יב לַכֹּהֵ֖ן ל֥וֹ יִהְיֶֽה׃
+וְהַ֨כֹּהֵ֔ן הַמַּקְרִ֖יב אֶת־עֹ֣לַת אִ֑ישׁ ע֤וֹר הָֽעֹלָה֙ אֲשֶׁ֣ר הִקְרִ֔יב לַכֹּהֵ֖ן ל֥וֹ יִהְיֶֽה׃
+</div>
+The <i>kohein</i> who brings a burnt-offering of an individual, the skin of the burnt-offering that he brought, shall belong to the <i>kohein,</i> it shall belong to him.
+</span>
+<span class=h>
+<div class=h>
+וְכָל־מִנְחָ֗ה אֲשֶׁ֤ר תֵּֽאָפֶה֙ בַּתַּנּ֔וּר וְכָל־נַעֲשָׂ֥ה בַמַּרְחֶ֖שֶׁת וְעַֽל־מַחֲבַ֑ת לַכֹּהֵ֛ן הַמַּקְרִ֥יב אֹתָ֖הּ ל֥וֹ תִֽהְיֶֽה׃
+וְכָל־מִנְחָ֗ה אֲשֶׁ֤ר תֵּֽאָפֶה֙ בַּתַּנּ֔וּר וְכָל־נַעֲשָׂ֥ה בַמַּרְחֶ֖שֶׁת וְעַֽל־מַחֲבַ֑ת לַכֹּהֵ֛ן הַמַּקְרִ֥יב אֹתָ֖הּ ל֥וֹ תִֽהְיֶֽה׃
+</div>
+Every meal-offering that shall be baked in an oven and every one made in a deep pot or frying pan, [belong] to the <i>kohein</i> who offers it; it shall belong to him.
+</span>
+<span class=h>
+<div class=h>
+וְכָל־מִנְחָ֥ה בְלוּלָֽה־בַשֶּׁ֖מֶן וַחֲרֵבָ֑ה לְכָל־בְּנֵ֧י אַהֲרֹ֛ן תִּהְיֶ֖ה אִ֥ישׁ כְּאָחִֽיו׃ (פ)
+וְכָל־מִנְחָ֥ה בְלוּלָֽה־בַשֶּׁ֖מֶן וַחֲרֵבָ֑ה לְכָל־בְּנֵ֧י אַהֲרֹ֛ן תִּהְיֶ֖ה אִ֥ישׁ כְּאָחִֽיו׃ (פ)
+</div>
+Every meal-offering mixed with oil or dry, shall belong to all the sons of Aharon, each equally.
+</span>
+<span class=h>
+<div class=h>
+וְזֹ֥את תּוֹרַ֖ת זֶ֣בַח הַשְּׁלָמִ֑ים אֲשֶׁ֥ר יַקְרִ֖יב לַיהוָֽה׃
+וְזֹ֥את תּוֹרַ֖ת זֶ֣בַח הַשְּׁלָמִ֑ים אֲשֶׁ֥ר יַקְרִ֖יב לַיהוָֽה׃
+</div>
+This is the law of the peace-offering that one will bring to Adonoy.
+</span>
+<span class=h>
+<div class=h>
+אִ֣ם עַל־תּוֹדָה֮ יַקְרִיבֶנּוּ֒ וְהִקְרִ֣יב ׀ עַל־זֶ֣בַח הַתּוֹדָ֗ה חַלּ֤וֹת מַצּוֹת֙ בְּלוּלֹ֣ת בַּשֶּׁ֔מֶן וּרְקִיקֵ֥י מַצּ֖וֹת מְשֻׁחִ֣ים בַּשָּׁ֑מֶן וְסֹ֣לֶת מֻרְבֶּ֔כֶת חַלֹּ֖ת בְּלוּלֹ֥ת בַּשָּֽׁמֶן׃
+אִ֣ם עַל־תּוֹדָה֮ יַקְרִיבֶנּוּ֒ וְהִקְרִ֣יב ׀ עַל־זֶ֣בַח הַתּוֹדָ֗ה חַלּ֤וֹת מַצּוֹת֙ בְּלוּלֹ֣ת בַּשֶּׁ֔מֶן וּרְקִיקֵ֥י מַצּ֖וֹת מְשֻׁחִ֣ים בַּשָּׁ֑מֶן וְסֹ֣לֶת מֻרְבֶּ֔כֶת חַלֹּ֖ת בְּלוּלֹ֥ת בַּשָּֽׁמֶן׃
+</div>
+If he brings it as thanksgiving offering he shall bring along with his thanksgiving offering <i>matzoh</i> [unleavened] loaves mixed with oil, <i>matzoh</i> [unleavened] wafers anointed with oil and loaves of saturated fine flour mixed with oil.
+</span>
+<span class=h>
+<div class=h>
+עַל־חַלֹּת֙ לֶ֣חֶם חָמֵ֔ץ יַקְרִ֖יב קָרְבָּנ֑וֹ עַל־זֶ֖בַח תּוֹדַ֥ת שְׁלָמָֽיו׃
+עַל־חַלֹּת֙ לֶ֣חֶם חָמֵ֔ץ יַקְרִ֖יב קָרְבָּנ֑וֹ עַל־זֶ֖בַח תּוֹדַ֥ת שְׁלָמָֽיו׃
+</div>
+With loaves of leavened bread he shall bring his offering, along with his peace-offering of thanksgiving.
+</span>
+<span class=h>
+<div class=h>
+וְהִקְרִ֨יב מִמֶּ֤נּוּ אֶחָד֙ מִכָּל־קָרְבָּ֔ן תְּרוּמָ֖ה לַיהוָ֑ה לַכֹּהֵ֗ן הַזֹּרֵ֛ק אֶת־דַּ֥ם הַשְּׁלָמִ֖ים ל֥וֹ יִהְיֶֽה׃
+וְהִקְרִ֨יב מִמֶּ֤נּוּ אֶחָד֙ מִכָּל־קָרְבָּ֔ן תְּרוּמָ֖ה לַיהוָ֑ה לַכֹּהֵ֗ן הַזֹּרֵ֛ק אֶת־דַּ֥ם הַשְּׁלָמִ֖ים ל֥וֹ יִהְיֶֽה׃
+</div>
+From it, he shall bring one from each offering as separated portion to Adonoy. To that <i>kohein</i> who sprinkles the blood of the peace-offering, it shall belong to him.
+</span>
+<span class=h>
+<div class=h>
+וּבְשַׂ֗ר זֶ֚בַח תּוֹדַ֣ת שְׁלָמָ֔יו בְּי֥וֹם קָרְבָּנ֖וֹ יֵאָכֵ֑ל לֹֽא־יַנִּ֥יחַ מִמֶּ֖נּוּ עַד־בֹּֽקֶר׃
+וּבְשַׂ֗ר זֶ֚בַח תּוֹדַ֣ת שְׁלָמָ֔יו בְּי֥וֹם קָרְבָּנ֖וֹ יֵאָכֵ֑ל לֹֽא־יַנִּ֥יחַ מִמֶּ֖נּוּ עַד־בֹּֽקֶר׃
+</div>
+The flesh of his thanksgiving peace-offering on the day of its sacrifice it may be eaten. He shall not leave over any of it until morning.
+</span>
+<span class=h>
+<div class=h>
+וְאִם־נֶ֣דֶר ׀ א֣וֹ נְדָבָ֗ה זֶ֚בַח קָרְבָּנ֔וֹ בְּי֛וֹם הַקְרִיב֥וֹ אֶת־זִבְח֖וֹ יֵאָכֵ֑ל וּמִֽמָּחֳרָ֔ת וְהַנּוֹתָ֥ר מִמֶּ֖נּוּ יֵאָכֵֽל׃
+וְאִם־נֶ֣דֶר ׀ א֣וֹ נְדָבָ֗ה זֶ֚בַח קָרְבָּנ֔וֹ בְּי֛וֹם הַקְרִיב֥וֹ אֶת־זִבְח֖וֹ יֵאָכֵ֑ל וּמִֽמָּחֳרָ֔ת וְהַנּוֹתָ֥ר מִמֶּ֖נּוּ יֵאָכֵֽל׃
+</div>
+If either a vow or a voluntary offering, are the sacrifices of his offerings, it shall be eaten on the day of his offering. And on the next day, the remnant of it may [also] be eaten.
+</span>
+<span class=h>
+<div class=h>
+וְהַנּוֹתָ֖ר מִבְּשַׂ֣ר הַזָּ֑בַח בַּיּוֹם֙ הַשְּׁלִישִׁ֔י בָּאֵ֖שׁ יִשָּׂרֵֽף׃
+וְהַנּוֹתָ֖ר מִבְּשַׂ֣ר הַזָּ֑בַח בַּיּוֹם֙ הַשְּׁלִישִׁ֔י בָּאֵ֖שׁ יִשָּׂרֵֽף׃
+</div>
+Whatever flesh is left over from the offering shall be burned in fire, on the third day.
+</span>
+<span class=h>
+<div class=h>
+וְאִ֣ם הֵאָכֹ֣ל יֵ֠אָכֵל מִבְּשַׂר־זֶ֨בַח שְׁלָמָ֜יו בַּיּ֣וֹם הַשְּׁלִישִׁי֮ לֹ֣א יֵרָצֶה֒ הַמַּקְרִ֣יב אֹת֗וֹ לֹ֧א יֵחָשֵׁ֛ב ל֖וֹ פִּגּ֣וּל יִהְיֶ֑ה וְהַנֶּ֛פֶשׁ הָאֹכֶ֥לֶת מִמֶּ֖נּוּ עֲוֺנָ֥הּ תִּשָּֽׂא׃
+וְאִ֣ם הֵאָכֹ֣ל יֵ֠אָכֵל מִבְּשַׂר־זֶ֨בַח שְׁלָמָ֜יו בַּיּ֣וֹם הַשְּׁלִישִׁי֮ לֹ֣א יֵרָצֶה֒ הַמַּקְרִ֣יב אֹת֗וֹ לֹ֧א יֵחָשֵׁ֛ב ל֖וֹ פִּגּ֣וּל יִהְיֶ֑ה וְהַנֶּ֛פֶשׁ הָאֹכֶ֥לֶת מִמֶּ֖נּוּ עֲוֺנָ֥הּ תִּשָּֽׂא׃
+</div>
+If it will be eaten, of the flesh of the peace-offering on the third day, it will not be favorably accepted. [As to] whoever brings it, it will not be credited to him; it is an abomination and anyone who eats of it shall bear [the burden of] its iniquity.
+</span>
+<span class=h>
+<div class=h>
+וְהַבָּשָׂ֞ר אֲשֶׁר־יִגַּ֤ע בְּכָל־טָמֵא֙ לֹ֣א יֵֽאָכֵ֔ל בָּאֵ֖שׁ יִשָּׂרֵ֑ף וְהַ֨בָּשָׂ֔ר כָּל־טָה֖וֹר יֹאכַ֥ל בָּשָֽׂר׃
+וְהַבָּשָׂ֞ר אֲשֶׁר־יִגַּ֤ע בְּכָל־טָמֵא֙ לֹ֣א יֵֽאָכֵ֔ל בָּאֵ֖שׁ יִשָּׂרֵ֑ף וְהַ֨בָּשָׂ֔ר כָּל־טָה֖וֹר יֹאכַ֥ל בָּשָֽׂר׃
+</div>
+The flesh [of offerings] that will touch any unclean [thing] may not be eaten; it shall be burned in fire. [As to] the [pure] flesh, every [ritually] pure person may eat [the] meat.
+</span>
+<span class=h>
+<div class=h>
+וְהַנֶּ֜פֶשׁ אֲשֶׁר־תֹּאכַ֣ל בָּשָׂ֗ר מִזֶּ֤בַח הַשְּׁלָמִים֙ אֲשֶׁ֣ר לַיהוָ֔ה וְטֻמְאָת֖וֹ עָלָ֑יו וְנִכְרְתָ֛ה הַנֶּ֥פֶשׁ הַהִ֖וא מֵעַמֶּֽיהָ׃
+וְהַנֶּ֜פֶשׁ אֲשֶׁר־תֹּאכַ֣ל בָּשָׂ֗ר מִזֶּ֤בַח הַשְּׁלָמִים֙ אֲשֶׁ֣ר לַיהוָ֔ה וְטֻמְאָת֖וֹ עָלָ֑יו וְנִכְרְתָ֛ה הַנֶּ֥פֶשׁ הַהִ֖וא מֵעַמֶּֽיהָ׃
+</div>
+The person who eats of the flesh of the peace-offering belonging to Adonoy while his uncleaness is yet on him, that persons soul shall be cut off from its people.
+</span>
+<span class=h>
+<div class=h>
+וְנֶ֜פֶשׁ כִּֽי־תִגַּ֣ע בְּכָל־טָמֵ֗א בְּטֻמְאַ֤ת אָדָם֙ א֣וֹ ׀ בִּבְהֵמָ֣ה טְמֵאָ֗ה א֚וֹ בְּכָל־שֶׁ֣קֶץ טָמֵ֔א וְאָכַ֛ל מִבְּשַׂר־זֶ֥בַח הַשְּׁלָמִ֖ים אֲשֶׁ֣ר לַיהוָ֑ה וְנִכְרְתָ֛ה הַנֶּ֥פֶשׁ הַהִ֖וא מֵעַמֶּֽיהָ׃ (פ)
+וְנֶ֜פֶשׁ כִּֽי־תִגַּ֣ע בְּכָל־טָמֵ֗א בְּטֻמְאַ֤ת אָדָם֙ א֣וֹ ׀ בִּבְהֵמָ֣ה טְמֵאָ֗ה א֚וֹ בְּכָל־שֶׁ֣קֶץ טָמֵ֔א וְאָכַ֛ל מִבְּשַׂר־זֶ֥בַח הַשְּׁלָמִ֖ים אֲשֶׁ֣ר לַיהוָ֑ה וְנִכְרְתָ֛ה הַנֶּ֥פֶשׁ הַהִ֖וא מֵעַמֶּֽיהָ׃ (פ)
+</div>
+A person who touches anything unclean, be it the impurities of man or an unclean animal, or any unclean creeping creature and then eats some flesh of the peace-offering belonging to Adonoy, that persons soul shall be cut off from its people.
+</span>
+<span class=h>
+<div class=h>
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+</div>
+And Adonoy spoke to Moshe, saying:
+</span>
+<span class=h>
+<div class=h>
+דַּבֵּ֛ר אֶל־בְּנֵ֥י יִשְׂרָאֵ֖ל לֵאמֹ֑ר כָּל־חֵ֜לֶב שׁ֥וֹר וְכֶ֛שֶׂב וָעֵ֖ז לֹ֥א תֹאכֵֽלוּ׃
+דַּבֵּ֛ר אֶל־בְּנֵ֥י יִשְׂרָאֵ֖ל לֵאמֹ֑ר כָּל־חֵ֜לֶב שׁ֥וֹר וְכֶ֛שֶׂב וָעֵ֖ז לֹ֥א תֹאכֵֽלוּ׃
+</div>
+Speak to Bnei Yisroel, saying: any fat of oxen, sheep or goats you must not eat.
+</span>
+<span class=h>
+<div class=h>
+וְחֵ֤לֶב נְבֵלָה֙ וְחֵ֣לֶב טְרֵפָ֔ה יֵעָשֶׂ֖ה לְכָל־מְלָאכָ֑ה וְאָכֹ֖ל לֹ֥א תֹאכְלֻֽהוּ׃
+וְחֵ֤לֶב נְבֵלָה֙ וְחֵ֣לֶב טְרֵפָ֔ה יֵעָשֶׂ֖ה לְכָל־מְלָאכָ֑ה וְאָכֹ֖ל לֹ֥א תֹאכְלֻֽהוּ׃
+</div>
+The fat of an improperly slaughtered animal and the fat of a fatally wounded animal may be used for any purpose, but you are surely not permitted to eat it.
+</span>
+<span class=h>
+<div class=h>
+כִּ֚י כָּל־אֹכֵ֣ל חֵ֔לֶב מִן־הַ֨בְּהֵמָ֔ה אֲשֶׁ֨ר יַקְרִ֥יב מִמֶּ֛נָּה אִשֶּׁ֖ה לַיהוָ֑ה וְנִכְרְתָ֛ה הַנֶּ֥פֶשׁ הָאֹכֶ֖לֶת מֵֽעַמֶּֽיהָ׃
+כִּ֚י כָּל־אֹכֵ֣ל חֵ֔לֶב מִן־הַ֨בְּהֵמָ֔ה אֲשֶׁ֨ר יַקְרִ֥יב מִמֶּ֛נָּה אִשֶּׁ֖ה לַיהוָ֑ה וְנִכְרְתָ֛ה הַנֶּ֥פֶשׁ הָאֹכֶ֖לֶת מֵֽעַמֶּֽיהָ׃
+</div>
+For, anyone who eats fat of an animal from which is offered a fire-offering to Adonoy, the soul who ate it shall be cut off from its people.
+</span>
+<span class=h>
+<div class=h>
+וְכָל־דָּם֙ לֹ֣א תֹאכְל֔וּ בְּכֹ֖ל מוֹשְׁבֹתֵיכֶ֑ם לָע֖וֹף וְלַבְּהֵמָֽה׃
+וְכָל־דָּם֙ לֹ֣א תֹאכְל֔וּ בְּכֹ֖ל מוֹשְׁבֹתֵיכֶ֑ם לָע֖וֹף וְלַבְּהֵמָֽה׃
+</div>
+You shall not eat any blood, in all your dwelling places, be it of fowl or of beast.
+</span>
+<span class=h>
+<div class=h>
+כָּל־נֶ֖פֶשׁ אֲשֶׁר־תֹּאכַ֣ל כָּל־דָּ֑ם וְנִכְרְתָ֛ה הַנֶּ֥פֶשׁ הַהִ֖וא מֵֽעַמֶּֽיהָ׃ (פ)
+כָּל־נֶ֖פֶשׁ אֲשֶׁר־תֹּאכַ֣ל כָּל־דָּ֑ם וְנִכְרְתָ֛ה הַנֶּ֥פֶשׁ הַהִ֖וא מֵֽעַמֶּֽיהָ׃ (פ)
+</div>
+Any person who eats any blood, that soul shall be cut off from its people.
+</span>
+<span class=h>
+<div class=h>
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+</div>
+And Adonoy spoke to Moshe, saying:
+</span>
+<span class=h>
+<div class=h>
+דַּבֵּ֛ר אֶל־בְּנֵ֥י יִשְׂרָאֵ֖ל לֵאמֹ֑ר הַמַּקְרִ֞יב אֶת־זֶ֤בַח שְׁלָמָיו֙ לַיהוָ֔ה יָבִ֧יא אֶת־קָרְבָּנ֛וֹ לַיהוָ֖ה מִזֶּ֥בַח שְׁלָמָֽיו׃
+דַּבֵּ֛ר אֶל־בְּנֵ֥י יִשְׂרָאֵ֖ל לֵאמֹ֑ר הַמַּקְרִ֞יב אֶת־זֶ֤בַח שְׁלָמָיו֙ לַיהוָ֔ה יָבִ֧יא אֶת־קָרְבָּנ֛וֹ לַיהוָ֖ה מִזֶּ֥בַח שְׁלָמָֽיו׃
+</div>
+Speak to Bnei Yisroel, saying: Whoever shall bring the sacrifice of his peace-offering to Adonoy, he shall bring his offering to Adonoy from his peace-offering.
+</span>
+<span class=h>
+<div class=h>
+יָדָ֣יו תְּבִיאֶ֔ינָה אֵ֖ת אִשֵּׁ֣י יְהוָ֑ה אֶת־הַחֵ֤לֶב עַל־הֶֽחָזֶה֙ יְבִיאֶ֔נּוּ אֵ֣ת הֶחָזֶ֗ה לְהָנִ֥יף אֹת֛וֹ תְּנוּפָ֖ה לִפְנֵ֥י יְהוָֽה׃
+יָדָ֣יו תְּבִיאֶ֔ינָה אֵ֖ת אִשֵּׁ֣י יְהוָ֑ה אֶת־הַחֵ֤לֶב עַל־הֶֽחָזֶה֙ יְבִיאֶ֔נּוּ אֵ֣ת הֶחָזֶ֗ה לְהָנִ֥יף אֹת֛וֹ תְּנוּפָ֖ה לִפְנֵ֥י יְהוָֽה׃
+</div>
+His hands shall bring the fire-offerings of Adonoy; he shall bring the fat on the breast and the breast [itself] to wave them as a wave-offering before Adonoy.
+</span>
+<span class=h>
+<div class=h>
+וְהִקְטִ֧יר הַכֹּהֵ֛ן אֶת־הַחֵ֖לֶב הַמִּזְבֵּ֑חָה וְהָיָה֙ הֶֽחָזֶ֔ה לְאַהֲרֹ֖ן וּלְבָנָֽיו׃
+וְהִקְטִ֧יר הַכֹּהֵ֛ן אֶת־הַחֵ֖לֶב הַמִּזְבֵּ֑חָה וְהָיָה֙ הֶֽחָזֶ֔ה לְאַהֲרֹ֖ן וּלְבָנָֽיו׃
+</div>
+The <i>kohein</i> shall burn the fat on the altar and the breast shall belong to Aharon and to his sons.
+</span>
+<span class=h>
+<div class=h>
+וְאֵת֙ שׁ֣וֹק הַיָּמִ֔ין תִּתְּנ֥וּ תְרוּמָ֖ה לַכֹּהֵ֑ן מִזִּבְחֵ֖י שַׁלְמֵיכֶֽם׃
+וְאֵת֙ שׁ֣וֹק הַיָּמִ֔ין תִּתְּנ֥וּ תְרוּמָ֖ה לַכֹּהֵ֑ן מִזִּבְחֵ֖י שַׁלְמֵיכֶֽם׃
+</div>
+The right thigh you shall give as a separated portion to the <i>kohein,</i> from your peace-offerings.
+</span>
+<span class=h>
+<div class=h>
+הַמַּקְרִ֞יב אֶת־דַּ֧ם הַשְּׁלָמִ֛ים וְאֶת־הַחֵ֖לֶב מִבְּנֵ֣י אַהֲרֹ֑ן ל֧וֹ תִהְיֶ֛ה שׁ֥וֹק הַיָּמִ֖ין לְמָנָֽה׃
+הַמַּקְרִ֞יב אֶת־דַּ֧ם הַשְּׁלָמִ֛ים וְאֶת־הַחֵ֖לֶב מִבְּנֵ֣י אַהֲרֹ֑ן ל֧וֹ תִהְיֶ֛ה שׁ֥וֹק הַיָּמִ֖ין לְמָנָֽה׃
+</div>
+Whoever offers the blood of the peace-offering and the fat who is of the sons of Aharon, the right thigh shall belong to him as a portion.
+</span>
+<span class=h>
+<div class=h>
+כִּי֩ אֶת־חֲזֵ֨ה הַתְּנוּפָ֜ה וְאֵ֣ת ׀ שׁ֣וֹק הַתְּרוּמָ֗ה לָקַ֙חְתִּי֙ מֵאֵ֣ת בְּנֵֽי־יִשְׂרָאֵ֔ל מִזִּבְחֵ֖י שַׁלְמֵיהֶ֑ם וָאֶתֵּ֣ן אֹ֠תָם לְאַהֲרֹ֨ן הַכֹּהֵ֤ן וּלְבָנָיו֙ לְחָק־עוֹלָ֔ם מֵאֵ֖ת בְּנֵ֥י יִשְׂרָאֵֽל׃
+כִּי֩ אֶת־חֲזֵ֨ה הַתְּנוּפָ֜ה וְאֵ֣ת ׀ שׁ֣וֹק הַתְּרוּמָ֗ה לָקַ֙חְתִּי֙ מֵאֵ֣ת בְּנֵֽי־יִשְׂרָאֵ֔ל מִזִּבְחֵ֖י שַׁלְמֵיהֶ֑ם וָאֶתֵּ֣ן אֹ֠תָם לְאַהֲרֹ֨ן הַכֹּהֵ֤ן וּלְבָנָיו֙ לְחָק־עוֹלָ֔ם מֵאֵ֖ת בְּנֵ֥י יִשְׂרָאֵֽל׃
+</div>
+Because the breast wave-offering and the thigh [that is] the uplifted portion I have taken from Bnei Yisroel. from their peace-offerings and I have given them to Aharon the <i>kohein</i> and to his sons, as an everlasting statute, from Bnei Yisroel.
+</span>
+<span class=h>
+<div class=h>
+זֹ֣את מִשְׁחַ֤ת אַהֲרֹן֙ וּמִשְׁחַ֣ת בָּנָ֔יו מֵאִשֵּׁ֖י יְהוָ֑ה בְּיוֹם֙ הִקְרִ֣יב אֹתָ֔ם לְכַהֵ֖ן לַיהוָֽה׃
+זֹ֣את מִשְׁחַ֤ת אַהֲרֹן֙ וּמִשְׁחַ֣ת בָּנָ֔יו מֵאִשֵּׁ֖י יְהוָ֑ה בְּיוֹם֙ הִקְרִ֣יב אֹתָ֔ם לְכַהֵ֖ן לַיהוָֽה׃
+</div>
+This is [for] the anointing of Aharon and [for] the anointing of his sons from the fire-offering of Adonoy, on the day He brought them to serve before Adonoy,
+</span>
+<span class=h>
+<div class=h>
+אֲשֶׁר֩ צִוָּ֨ה יְהוָ֜ה לָתֵ֣ת לָהֶ֗ם בְּיוֹם֙ מָשְׁח֣וֹ אֹתָ֔ם מֵאֵ֖ת בְּנֵ֣י יִשְׂרָאֵ֑ל חֻקַּ֥ת עוֹלָ֖ם לְדֹרֹתָֽם׃
+אֲשֶׁר֩ צִוָּ֨ה יְהוָ֜ה לָתֵ֣ת לָהֶ֗ם בְּיוֹם֙ מָשְׁח֣וֹ אֹתָ֔ם מֵאֵ֖ת בְּנֵ֣י יִשְׂרָאֵ֑ל חֻקַּ֥ת עוֹלָ֖ם לְדֹרֹתָֽם׃
+</div>
+that Adonoy commanded to give to them, on the day He anointed them, from Bnei Yisroel, an everlasting statute for all their descendants.
+</span>
+<span class=h>
+<div class=h>
+זֹ֣את הַתּוֹרָ֗ה לָֽעֹלָה֙ לַמִּנְחָ֔ה וְלַֽחַטָּ֖את וְלָאָשָׁ֑ם וְלַ֨מִּלּוּאִ֔ים וּלְזֶ֖בַח הַשְּׁלָמִֽים׃
+זֹ֣את הַתּוֹרָ֗ה לָֽעֹלָה֙ לַמִּנְחָ֔ה וְלַֽחַטָּ֖את וְלָאָשָׁ֑ם וְלַ֨מִּלּוּאִ֔ים וּלְזֶ֖בַח הַשְּׁלָמִֽים׃
+</div>
+This is the law for the burnt-offering, the meal-offering, the sin-offering and the guilt-offering; for the installation-sacrifices and for the peace-offering,
+</span>
+<span class=h>
+<div class=h>
+אֲשֶׁ֨ר צִוָּ֧ה יְהוָ֛ה אֶת־מֹשֶׁ֖ה בְּהַ֣ר סִינָ֑י בְּי֨וֹם צַוֺּת֜וֹ אֶת־בְּנֵ֣י יִשְׂרָאֵ֗ל לְהַקְרִ֧יב אֶת־קָרְבְּנֵיהֶ֛ם לַיהוָ֖ה בְּמִדְבַּ֥ר סִינָֽי׃ (פ)
+אֲשֶׁ֨ר צִוָּ֧ה יְהוָ֛ה אֶת־מֹשֶׁ֖ה בְּהַ֣ר סִינָ֑י בְּי֨וֹם צַוֺּת֜וֹ אֶת־בְּנֵ֣י יִשְׂרָאֵ֗ל לְהַקְרִ֧יב אֶת־קָרְבְּנֵיהֶ֛ם לַיהוָ֖ה בְּמִדְבַּ֥ר סִינָֽי׃ (פ)
+</div>
+that Adonoy commanded Moshe on Mount Sinai, on the day that he commanded Bnei Yisroel to bring their offerings to Adonoy in the desert of Sinai.
+</span>
+<span class=h>
+<div class=h>
+
+
+
+<h4>Chapter 8</h4>
+
+
+
+
+
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+וַיְדַבֵּ֥ר יְהוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃
+</div>
+And Adonoy spoke to Moshe, to say:
+</span>
+<span class=h>
+<div class=h>
+קַ֤ח אֶֽת־אַהֲרֹן֙ וְאֶת־בָּנָ֣יו אִתּ֔וֹ וְאֵת֙ הַבְּגָדִ֔ים וְאֵ֖ת שֶׁ֣מֶן הַמִּשְׁחָ֑ה וְאֵ֣ת ׀ פַּ֣ר הַֽחַטָּ֗את וְאֵת֙ שְׁנֵ֣י הָֽאֵילִ֔ים וְאֵ֖ת סַ֥ל הַמַּצּֽוֹת׃
+קַ֤ח אֶֽת־אַהֲרֹן֙ וְאֶת־בָּנָ֣יו אִתּ֔וֹ וְאֵת֙ הַבְּגָדִ֔ים וְאֵ֖ת שֶׁ֣מֶן הַמִּשְׁחָ֑ה וְאֵ֣ת ׀ פַּ֣ר הַֽחַטָּ֗את וְאֵת֙ שְׁנֵ֣י הָֽאֵילִ֔ים וְאֵ֖ת סַ֥ל הַמַּצּֽוֹת׃
+</div>
+Take Aharon, along with his sons, the garments, the anointing oil, the bull for the sin-offering, the two rams and a basket of <i>matzos</i>.
+</span>
+<span class=h>
+<div class=h>
+וְאֵ֥ת כָּל־הָעֵדָ֖ה הַקְהֵ֑ל אֶל־פֶּ֖תַח אֹ֥הֶל מוֹעֵֽד׃
+וְאֵ֥ת כָּל־הָעֵדָ֖ה הַקְהֵ֑ל אֶל־פֶּ֖תַח אֹ֥הֶל מוֹעֵֽד׃
+</div>
+Assemble the entire congrega-tion at the entrance of the Tent of Meeting.
+</span>
+<span class=h>
+<div class=h>
+וַיַּ֣עַשׂ מֹשֶׁ֔ה כַּֽאֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֹת֑וֹ וַתִּקָּהֵל֙ הָֽעֵדָ֔ה אֶל־פֶּ֖תַח אֹ֥הֶל מוֹעֵֽד׃
+וַיַּ֣עַשׂ מֹשֶׁ֔ה כַּֽאֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֹת֑וֹ וַתִּקָּהֵל֙ הָֽעֵדָ֔ה אֶל־פֶּ֖תַח אֹ֥הֶל מוֹעֵֽד׃
+</div>
+Moshe did that which Adonoy commanded him and the congregation was assembled at the entrance of the Tent of Meeting.
+</span>
+<span class=h>
+<div class=h>
+וַיֹּ֥אמֶר מֹשֶׁ֖ה אֶל־הָעֵדָ֑ה זֶ֣ה הַדָּבָ֔ר אֲשֶׁר־צִוָּ֥ה יְהוָ֖ה לַעֲשֽׂוֹת׃
+וַיֹּ֥אמֶר מֹשֶׁ֖ה אֶל־הָעֵדָ֑ה זֶ֣ה הַדָּבָ֔ר אֲשֶׁר־צִוָּ֥ה יְהוָ֖ה לַעֲשֽׂוֹת׃
+</div>
+Moshe said to the congregation, This is the edict that Adonoy commanded to do.
+</span>
+<span class=h>
+<div class=h>
+וַיַּקְרֵ֣ב מֹשֶׁ֔ה אֶֽת־אַהֲרֹ֖ן וְאֶת־בָּנָ֑יו וַיִּרְחַ֥ץ אֹתָ֖ם בַּמָּֽיִם׃
+וַיַּקְרֵ֣ב מֹשֶׁ֔ה אֶֽת־אַהֲרֹ֖ן וְאֶת־בָּנָ֑יו וַיִּרְחַ֥ץ אֹתָ֖ם בַּמָּֽיִם׃
+</div>
+Moshe brought Aharon and his sons near and bathed them in water.
+</span>
+<span class=h>
+<div class=h>
+וַיִּתֵּ֨ן עָלָ֜יו אֶת־הַכֻּתֹּ֗נֶת וַיַּחְגֹּ֤ר אֹתוֹ֙ בָּֽאַבְנֵ֔ט וַיַּלְבֵּ֤שׁ אֹתוֹ֙ אֶֽת־הַמְּעִ֔יל וַיִּתֵּ֥ן עָלָ֖יו אֶת־הָאֵפֹ֑ד וַיַּחְגֹּ֣ר אֹת֗וֹ בְּחֵ֙שֶׁב֙ הָֽאֵפֹ֔ד וַיֶּאְפֹּ֥ד ל֖וֹ בּֽוֹ׃
+וַיִּתֵּ֨ן עָלָ֜יו אֶת־הַכֻּתֹּ֗נֶת וַיַּחְגֹּ֤ר אֹתוֹ֙ בָּֽאַבְנֵ֔ט וַיַּלְבֵּ֤שׁ אֹתוֹ֙ אֶֽת־הַמְּעִ֔יל וַיִּתֵּ֥ן עָלָ֖יו אֶת־הָאֵפֹ֑ד וַיַּחְגֹּ֣ר אֹת֗וֹ בְּחֵ֙שֶׁב֙ הָֽאֵפֹ֔ד וַיֶּאְפֹּ֥ד ל֖וֹ בּֽוֹ׃
+</div>
+He placed the tunic on him, girded him with the sash, dressed him in the robe, placed the <i>ephod</i> on him girded him with the <i>ephod</i>-sash and tightened it for him.
+</span>
+<span class=h>
+<div class=h>
+וַיָּ֥שֶׂם עָלָ֖יו אֶת־הַחֹ֑שֶׁן וַיִּתֵּן֙ אֶל־הַחֹ֔שֶׁן אֶת־הָאוּרִ֖ים וְאֶת־הַתֻּמִּֽים׃
+וַיָּ֥שֶׂם עָלָ֖יו אֶת־הַחֹ֑שֶׁן וַיִּתֵּן֙ אֶל־הַחֹ֔שֶׁן אֶת־הָאוּרִ֖ים וְאֶת־הַתֻּמִּֽים׃
+</div>
+He put the breastplate on him and he placed in the breastplate the <i>urim</i> and the <i>tumim.</i>
+</span>
+<span class=h>
+<div class=h>
+וַיָּ֥שֶׂם אֶת־הַמִּצְנֶ֖פֶת עַל־רֹאשׁ֑וֹ וַיָּ֨שֶׂם עַֽל־הַמִּצְנֶ֜פֶת אֶל־מ֣וּל פָּנָ֗יו אֵ֣ת צִ֤יץ הַזָּהָב֙ נֵ֣זֶר הַקֹּ֔דֶשׁ כַּאֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת־מֹשֶֽׁה׃
+וַיָּ֥שֶׂם אֶת־הַמִּצְנֶ֖פֶת עַל־רֹאשׁ֑וֹ וַיָּ֨שֶׂם עַֽל־הַמִּצְנֶ֜פֶת אֶל־מ֣וּל פָּנָ֗יו אֵ֣ת צִ֤יץ הַזָּהָב֙ נֵ֣זֶר הַקֹּ֔דֶשׁ כַּאֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת־מֹשֶֽׁה׃
+</div>
+He placed the turban on his head and he placed, on the front of the turban, the golden plate, the crown of holiness, just as Adonoy commanded Moshe.
+</span>
+<span class=h>
+<div class=h>
+וַיִּקַּ֤ח מֹשֶׁה֙ אֶת־שֶׁ֣מֶן הַמִּשְׁחָ֔ה וַיִּמְשַׁ֥ח אֶת־הַמִּשְׁכָּ֖ן וְאֶת־כָּל־אֲשֶׁר־בּ֑וֹ וַיְקַדֵּ֖שׁ אֹתָֽם׃
+וַיִּקַּ֤ח מֹשֶׁה֙ אֶת־שֶׁ֣מֶן הַמִּשְׁחָ֔ה וַיִּמְשַׁ֥ח אֶת־הַמִּשְׁכָּ֖ן וְאֶת־כָּל־אֲשֶׁר־בּ֑וֹ וַיְקַדֵּ֖שׁ אֹתָֽם׃
+</div>
+Moshe took the anointing-oil and anointed the Tabernacle and everything inside it and sanctified them.
+</span>
+<span class=h>
+<div class=h>
+וַיַּ֥ז מִמֶּ֛נּוּ עַל־הַמִּזְבֵּ֖חַ שֶׁ֣בַע פְּעָמִ֑ים וַיִּמְשַׁ֨ח אֶת־הַמִּזְבֵּ֜חַ וְאֶת־כָּל־כֵּלָ֗יו וְאֶת־הַכִּיֹּ֛ר וְאֶת־כַּנּ֖וֹ לְקַדְּשָֽׁם׃
+וַיַּ֥ז מִמֶּ֛נּוּ עַל־הַמִּזְבֵּ֖חַ שֶׁ֣בַע פְּעָמִ֑ים וַיִּמְשַׁ֨ח אֶת־הַמִּזְבֵּ֜חַ וְאֶת־כָּל־כֵּלָ֗יו וְאֶת־הַכִּיֹּ֛ר וְאֶת־כַּנּ֖וֹ לְקַדְּשָֽׁם׃
+</div>
+He sprinkled some of it on the altar seven times; he anointed the altar and all its utensils, the washing basin and its base, to sanctify them.
+</span>
+<span class=h>
+<div class=h>
+וַיִּצֹק֙ מִשֶּׁ֣מֶן הַמִּשְׁחָ֔ה עַ֖ל רֹ֣אשׁ אַהֲרֹ֑ן וַיִּמְשַׁ֥ח אֹת֖וֹ לְקַדְּשֽׁוֹ׃
+וַיִּצֹק֙ מִשֶּׁ֣מֶן הַמִּשְׁחָ֔ה עַ֖ל רֹ֣אשׁ אַהֲרֹ֑ן וַיִּמְשַׁ֥ח אֹת֖וֹ לְקַדְּשֽׁוֹ׃
+</div>
+He poured some of the anointing-oil on Aharons head and anointed him, to sanctify him.
+</span>
+<span class=h>
+<div class=h>
+וַיַּקְרֵ֨ב מֹשֶׁ֜ה אֶת־בְּנֵ֣י אַהֲרֹ֗ן וַיַּלְבִּשֵׁ֤ם כֻּתֳּנֹת֙ וַיַּחְגֹּ֤ר אֹתָם֙ אַבְנֵ֔ט וַיַּחֲבֹ֥שׁ לָהֶ֖ם מִגְבָּע֑וֹת כַּאֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת־מֹשֶֽׁה׃
+וַיַּקְרֵ֨ב מֹשֶׁ֜ה אֶת־בְּנֵ֣י אַהֲרֹ֗ן וַיַּלְבִּשֵׁ֤ם כֻּתֳּנֹת֙ וַיַּחְגֹּ֤ר אֹתָם֙ אַבְנֵ֔ט וַיַּחֲבֹ֥שׁ לָהֶ֖ם מִגְבָּע֑וֹת כַּאֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת־מֹשֶֽׁה׃
+</div>
+Moshe brought near the sons of Aharon and dressed them in tunics, girded them with sashes, and tied high turbans for them [to wear], just as Adonoy commanded Moshe.
+</span>
+<span class=h>
+<div class=h>
+וַיַּגֵּ֕שׁ אֵ֖ת פַּ֣ר הַֽחַטָּ֑את וַיִּסְמֹ֨ךְ אַהֲרֹ֤ן וּבָנָיו֙ אֶת־יְדֵיהֶ֔ם עַל־רֹ֖אשׁ פַּ֥ר הַֽחַטָּֽאת׃
+וַיַּגֵּ֕שׁ אֵ֖ת פַּ֣ר הַֽחַטָּ֑את וַיִּסְמֹ֨ךְ אַהֲרֹ֤ן וּבָנָיו֙ אֶת־יְדֵיהֶ֔ם עַל־רֹ֖אשׁ פַּ֥ר הַֽחַטָּֽאת׃
+</div>
+He brought near the sin-offering bullock and Aharon and his sons laid their hands on the head of the sin-offering bullock.
+</span>
+<span class=h>
+<div class=h>
+וַיִּשְׁחָ֗ט וַיִּקַּ֨ח מֹשֶׁ֤ה אֶת־הַדָּם֙ וַ֠יִּתֵּן עַל־קַרְנ֨וֹת הַמִּזְבֵּ֤חַ סָבִיב֙ בְּאֶצְבָּע֔וֹ וַיְחַטֵּ֖א אֶת־הַמִּזְבֵּ֑חַ וְאֶת־הַדָּ֗ם יָצַק֙ אֶל־יְס֣וֹד הַמִּזְבֵּ֔חַ וַֽיְקַדְּשֵׁ֖הוּ לְכַפֵּ֥ר עָלָֽיו׃
+וַיִּשְׁחָ֗ט וַיִּקַּ֨ח מֹשֶׁ֤ה אֶת־הַדָּם֙ וַ֠יִּתֵּן עַל־קַרְנ֨וֹת הַמִּזְבֵּ֤חַ סָבִיב֙ בְּאֶצְבָּע֔וֹ וַיְחַטֵּ֖א אֶת־הַמִּזְבֵּ֑חַ וְאֶת־הַדָּ֗ם יָצַק֙ אֶל־יְס֣וֹד הַמִּזְבֵּ֔חַ וַֽיְקַדְּשֵׁ֖הוּ לְכַפֵּ֥ר עָלָֽיו׃
+</div>
+He slaughtered it; and Moshe took the blood and put it atop the corners of the altar all around with his finger and he purified the altar. He poured the blood into the base of the altar and sanctified it, to atone upon it.
+</span>
+<span class=h>
+<div class=h>
+וַיִּקַּ֗ח אֶֽת־כָּל־הַחֵלֶב֮ אֲשֶׁ֣ר עַל־הַקֶּרֶב֒ וְאֵת֙ יֹתֶ֣רֶת הַכָּבֵ֔ד וְאֶת־שְׁתֵּ֥י הַכְּלָיֹ֖ת וְאֶֽת־חֶלְבְּהֶ֑ן וַיַּקְטֵ֥ר מֹשֶׁ֖ה הַמִּזְבֵּֽחָה׃
+וַיִּקַּ֗ח אֶֽת־כָּל־הַחֵלֶב֮ אֲשֶׁ֣ר עַל־הַקֶּרֶב֒ וְאֵת֙ יֹתֶ֣רֶת הַכָּבֵ֔ד וְאֶת־שְׁתֵּ֥י הַכְּלָיֹ֖ת וְאֶֽת־חֶלְבְּהֶ֑ן וַיַּקְטֵ֥ר מֹשֶׁ֖ה הַמִּזְבֵּֽחָה׃
+</div>
+He took all the fat on the innards, the lobe of the liver, the two kidneys and their fats and Moshe burned [them] on the altar.
+</span>
+<span class=h>
+<div class=h>
+וְאֶת־הַפָּ֤ר וְאֶת־עֹרוֹ֙ וְאֶת־בְּשָׂר֣וֹ וְאֶת־פִּרְשׁ֔וֹ שָׂרַ֣ף בָּאֵ֔שׁ מִח֖וּץ לַֽמַּחֲנֶ֑ה כַּאֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת־מֹשֶֽׁה׃
+וְאֶת־הַפָּ֤ר וְאֶת־עֹרוֹ֙ וְאֶת־בְּשָׂר֣וֹ וְאֶת־פִּרְשׁ֔וֹ שָׂרַ֣ף בָּאֵ֔שׁ מִח֖וּץ לַֽמַּחֲנֶ֑ה כַּאֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת־מֹשֶֽׁה׃
+</div>
+The bullock, its skin, its flesh and its waste [that are in its intestines], he burned in fire, beyond the encampment, just as Adonoy commanded Moshe.
+</span>
+<span class=h>
+<div class=h>
+וַיַּקְרֵ֕ב אֵ֖ת אֵ֣יל הָעֹלָ֑ה וַֽיִּסְמְכ֞וּ אַהֲרֹ֧ן וּבָנָ֛יו אֶת־יְדֵיהֶ֖ם עַל־רֹ֥אשׁ הָאָֽיִל׃
+וַיַּקְרֵ֕ב אֵ֖ת אֵ֣יל הָעֹלָ֑ה וַֽיִּסְמְכ֞וּ אַהֲרֹ֧ן וּבָנָ֛יו אֶת־יְדֵיהֶ֖ם עַל־רֹ֥אשׁ הָאָֽיִל׃
+</div>
+He brought the burnt-offering ram and Aharon and his sons laid their hands on the rams head.
+</span>
+<span class=h>
+<div class=h>
+וַיִּשְׁחָ֑ט וַיִּזְרֹ֨ק מֹשֶׁ֧ה אֶת־הַדָּ֛ם עַל־הַמִּזְבֵּ֖חַ סָבִֽיב׃
+וַיִּשְׁחָ֑ט וַיִּזְרֹ֨ק מֹשֶׁ֧ה אֶת־הַדָּ֛ם עַל־הַמִּזְבֵּ֖חַ סָבִֽיב׃
+</div>
+He slaughtered it; and Moshe sprinkled the blood all around the altar.
+</span>
+<span class=h>
+<div class=h>
+וְאֶת־הָאַ֔יִל נִתַּ֖ח לִנְתָחָ֑יו וַיַּקְטֵ֤ר מֹשֶׁה֙ אֶת־הָרֹ֔אשׁ וְאֶת־הַנְּתָחִ֖ים וְאֶת־הַפָּֽדֶר׃
+וְאֶת־הָאַ֔יִל נִתַּ֖ח לִנְתָחָ֑יו וַיַּקְטֵ֤ר מֹשֶׁה֙ אֶת־הָרֹ֔אשׁ וְאֶת־הַנְּתָחִ֖ים וְאֶת־הַפָּֽדֶר׃
+</div>
+He severed the rams limbs; and Moshe burned the head and the severed limbs and the fat.
+</span>
+<span class=h>
+<div class=h>
+וְאֶת־הַקֶּ֥רֶב וְאֶת־הַכְּרָעַ֖יִם רָחַ֣ץ בַּמָּ֑יִם וַיַּקְטֵר֩ מֹשֶׁ֨ה אֶת־כָּל־הָאַ֜יִל הַמִּזְבֵּ֗חָה עֹלָ֨ה ה֤וּא לְרֵֽיחַ־נִיחֹ֙חַ֙ אִשֶּׁ֥ה הוּא֙ לַיהוָ֔ה כַּאֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת־מֹשֶֽׁה׃
+וְאֶת־הַקֶּ֥רֶב וְאֶת־הַכְּרָעַ֖יִם רָחַ֣ץ בַּמָּ֑יִם וַיַּקְטֵר֩ מֹשֶׁ֨ה אֶת־כָּל־הָאַ֜יִל הַמִּזְבֵּ֗חָה עֹלָ֨ה ה֤וּא לְרֵֽיחַ־נִיחֹ֙חַ֙ אִשֶּׁ֥ה הוּא֙ לַיהוָ֔ה כַּאֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת־מֹשֶֽׁה׃
+</div>
+He washed the innards and feet in water; and Moshe burned the entire ram on the altar. It is a burnt-offering; for a pleasing fragrance, a fire-offering to Adonoy, just as Adonoy commanded Moshe.
+</span>
+<span class=h>
+<div class=h>
+וַיַּקְרֵב֙ אֶת־הָאַ֣יִל הַשֵּׁנִ֔י אֵ֖יל הַמִּלֻּאִ֑ים וַֽיִּסְמְכ֞וּ אַהֲרֹ֧ן וּבָנָ֛יו אֶת־יְדֵיהֶ֖ם עַל־רֹ֥אשׁ הָאָֽיִל׃
+וַיַּקְרֵב֙ אֶת־הָאַ֣יִל הַשֵּׁנִ֔י אֵ֖יל הַמִּלֻּאִ֑ים וַֽיִּסְמְכ֞וּ אַהֲרֹ֧ן וּבָנָ֛יו אֶת־יְדֵיהֶ֖ם עַל־רֹ֥אשׁ הָאָֽיִל׃
+</div>
+He brought the second ram, the ram for the installation-offering; and Aharon and his sons laid their hands on the rams head.
+</span>
+<span class=h>
+<div class=h>
+וַיִּשְׁחָ֓ט ׀ וַיִּקַּ֤ח מֹשֶׁה֙ מִדָּמ֔וֹ וַיִּתֵּ֛ן עַל־תְּנ֥וּךְ אֹֽזֶן־אַהֲרֹ֖ן הַיְמָנִ֑ית וְעַל־בֹּ֤הֶן יָדוֹ֙ הַיְמָנִ֔ית וְעַל־בֹּ֥הֶן רַגְל֖וֹ הַיְמָנִֽית׃
+וַיִּשְׁחָ֓ט ׀ וַיִּקַּ֤ח מֹשֶׁה֙ מִדָּמ֔וֹ וַיִּתֵּ֛ן עַל־תְּנ֥וּךְ אֹֽזֶן־אַהֲרֹ֖ן הַיְמָנִ֑ית וְעַל־בֹּ֤הֶן יָדוֹ֙ הַיְמָנִ֔ית וְעַל־בֹּ֥הֶן רַגְל֖וֹ הַיְמָנִֽית׃
+</div>
+He slaughtered it; and Moshe took some of its blood and he put it on Aharons right earlobe, on the thumb of his right hand and the big toe of his right foot.
+</span>
+<span class=h>
+<div class=h>
+וַיַּקְרֵ֞ב אֶת־בְּנֵ֣י אַהֲרֹ֗ן וַיִּתֵּ֨ן מֹשֶׁ֤ה מִן־הַדָּם֙ עַל־תְּנ֤וּךְ אָזְנָם֙ הַיְמָנִ֔ית וְעַל־בֹּ֤הֶן יָדָם֙ הַיְמָנִ֔ית וְעַל־בֹּ֥הֶן רַגְלָ֖ם הַיְמָנִ֑ית וַיִּזְרֹ֨ק מֹשֶׁ֧ה אֶת־הַדָּ֛ם עַל־הַֽמִּזְבֵּ֖חַ סָבִֽיב׃
+וַיַּקְרֵ֞ב אֶת־בְּנֵ֣י אַהֲרֹ֗ן וַיִּתֵּ֨ן מֹשֶׁ֤ה מִן־הַדָּם֙ עַל־תְּנ֤וּךְ אָזְנָם֙ הַיְמָנִ֔ית וְעַל־בֹּ֤הֶן יָדָם֙ הַיְמָנִ֔ית וְעַל־בֹּ֥הֶן רַגְלָ֖ם הַיְמָנִ֑ית וַיִּזְרֹ֨ק מֹשֶׁ֧ה אֶת־הַדָּ֛ם עַל־הַֽמִּזְבֵּ֖חַ סָבִֽיב׃
+</div>
+He brought the sons of Aharon; and Moshe put some blood on their right earlobes and on the thumbs of their right hands and on the big toes of their right feet. Moshe sprinkled the blood all around the altar.
+</span>
+<span class=h>
+<div class=h>
+וַיִּקַּ֞ח אֶת־הַחֵ֣לֶב וְאֶת־הָֽאַלְיָ֗ה וְאֶֽת־כָּל־הַחֵלֶב֮ אֲשֶׁ֣ר עַל־הַקֶּרֶב֒ וְאֵת֙ יֹתֶ֣רֶת הַכָּבֵ֔ד וְאֶת־שְׁתֵּ֥י הַכְּלָיֹ֖ת וְאֶֽת־חֶלְבְּהֶ֑ן וְאֵ֖ת שׁ֥וֹק הַיָּמִֽין׃
+וַיִּקַּ֞ח אֶת־הַחֵ֣לֶב וְאֶת־הָֽאַלְיָ֗ה וְאֶֽת־כָּל־הַחֵלֶב֮ אֲשֶׁ֣ר עַל־הַקֶּרֶב֒ וְאֵת֙ יֹתֶ֣רֶת הַכָּבֵ֔ד וְאֶת־שְׁתֵּ֥י הַכְּלָיֹ֖ת וְאֶֽת־חֶלְבְּהֶ֑ן וְאֵ֖ת שׁ֥וֹק הַיָּמִֽין׃
+</div>
+He took the fat and the fat tail, all the fat on the innards, the lobe of the liver, the two kidneys and their fats and the right thigh.
+</span>
+<span class=h>
+<div class=h>
+וּמִסַּ֨ל הַמַּצּ֜וֹת אֲשֶׁ֣ר ׀ לִפְנֵ֣י יְהוָ֗ה לָ֠קַח חַלַּ֨ת מַצָּ֤ה אַחַת֙ וְֽחַלַּ֨ת לֶ֥חֶם שֶׁ֛מֶן אַחַ֖ת וְרָקִ֣יק אֶחָ֑ד וַיָּ֙שֶׂם֙ עַל־הַ֣חֲלָבִ֔ים וְעַ֖ל שׁ֥וֹק הַיָּמִֽין׃
+וּמִסַּ֨ל הַמַּצּ֜וֹת אֲשֶׁ֣ר ׀ לִפְנֵ֣י יְהוָ֗ה לָ֠קַח חַלַּ֨ת מַצָּ֤ה אַחַת֙ וְֽחַלַּ֨ת לֶ֥חֶם שֶׁ֛מֶן אַחַ֖ת וְרָקִ֣יק אֶחָ֑ד וַיָּ֙שֶׂם֙ עַל־הַ֣חֲלָבִ֔ים וְעַ֖ל שׁ֥וֹק הַיָּמִֽין׃
+</div>
+From the basket of <i>matzos</i> which [was] before Adonoy he took one <i>matzoh</i> loaf, one oil-bread and one wafer and he placed them on the fats and on the right thigh.
+</span>
+<span class=h>
+<div class=h>
+וַיִּתֵּ֣ן אֶת־הַכֹּ֔ל עַ֚ל כַּפֵּ֣י אַהֲרֹ֔ן וְעַ֖ל כַּפֵּ֣י בָנָ֑יו וַיָּ֧נֶף אֹתָ֛ם תְּנוּפָ֖ה לִפְנֵ֥י יְהוָֽה׃
+וַיִּתֵּ֣ן אֶת־הַכֹּ֔ל עַ֚ל כַּפֵּ֣י אַהֲרֹ֔ן וְעַ֖ל כַּפֵּ֣י בָנָ֑יו וַיָּ֧נֶף אֹתָ֛ם תְּנוּפָ֖ה לִפְנֵ֥י יְהוָֽה׃
+</div>
+He put them all on Aharons palms and on the palms of his sons and he waved them as a wave-offering before Adonoy.
+</span>
+<span class=h>
+<div class=h>
+וַיִּקַּ֨ח מֹשֶׁ֤ה אֹתָם֙ מֵעַ֣ל כַּפֵּיהֶ֔ם וַיַּקְטֵ֥ר הַמִּזְבֵּ֖חָה עַל־הָעֹלָ֑ה מִלֻּאִ֥ים הֵם֙ לְרֵ֣יחַ נִיחֹ֔חַ אִשֶּׁ֥ה ה֖וּא לַיהוָֽה׃
+וַיִּקַּ֨ח מֹשֶׁ֤ה אֹתָם֙ מֵעַ֣ל כַּפֵּיהֶ֔ם וַיַּקְטֵ֥ר הַמִּזְבֵּ֖חָה עַל־הָעֹלָ֑ה מִלֻּאִ֥ים הֵם֙ לְרֵ֣יחַ נִיחֹ֔חַ אִשֶּׁ֥ה ה֖וּא לַיהוָֽה׃
+</div>
+Moshe took them from their palms and he burned them on the altar in addition to the burnt-offering; they are installation-offerings for a pleasing fragrance, it is a fire-offering to Adonoy.
+</span>
+<span class=h>
+<div class=h>
+וַיִּקַּ֤ח מֹשֶׁה֙ אֶת־הֶ֣חָזֶ֔ה וַיְנִיפֵ֥הוּ תְנוּפָ֖ה לִפְנֵ֣י יְהוָ֑ה מֵאֵ֣יל הַמִּלֻּאִ֗ים לְמֹשֶׁ֤ה הָיָה֙ לְמָנָ֔ה כַּאֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת־מֹשֶֽׁה׃
+וַיִּקַּ֤ח מֹשֶׁה֙ אֶת־הֶ֣חָזֶ֔ה וַיְנִיפֵ֥הוּ תְנוּפָ֖ה לִפְנֵ֣י יְהוָ֑ה מֵאֵ֣יל הַמִּלֻּאִ֗ים לְמֹשֶׁ֤ה הָיָה֙ לְמָנָ֔ה כַּאֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת־מֹשֶֽׁה׃
+</div>
+Moshe took the breast and waved it [as] a wave-offering before Adonoy. From the ram for the installation-offering—that was the portion of Moshe—just as Adonoy commanded Moshe.
+</span>
+<span class=h>
+<div class=h>
+וַיִּקַּ֨ח מֹשֶׁ֜ה מִשֶּׁ֣מֶן הַמִּשְׁחָ֗ה וּמִן־הַדָּם֮ אֲשֶׁ֣ר עַל־הַמִּזְבֵּחַ֒ וַיַּ֤ז עַֽל־אַהֲרֹן֙ עַל־בְּגָדָ֔יו וְעַל־בָּנָ֛יו וְעַל־בִּגְדֵ֥י בָנָ֖יו אִתּ֑וֹ וַיְקַדֵּ֤שׁ אֶֽת־אַהֲרֹן֙ אֶת־בְּגָדָ֔יו וְאֶת־בָּנָ֛יו וְאֶת־בִּגְדֵ֥י בָנָ֖יו אִתּֽוֹ׃
+וַיִּקַּ֨ח מֹשֶׁ֜ה מִשֶּׁ֣מֶן הַמִּשְׁחָ֗ה וּמִן־הַדָּם֮ אֲשֶׁ֣ר עַל־הַמִּזְבֵּחַ֒ וַיַּ֤ז עַֽל־אַהֲרֹן֙ עַל־בְּגָדָ֔יו וְעַל־בָּנָ֛יו וְעַל־בִּגְדֵ֥י בָנָ֖יו אִתּ֑וֹ וַיְקַדֵּ֤שׁ אֶֽת־אַהֲרֹן֙ אֶת־בְּגָדָ֔יו וְאֶת־בָּנָ֛יו וְאֶת־בִּגְדֵ֥י בָנָ֖יו אִתּֽוֹ׃
+</div>
+Moshe took some anointing-oil and some blood that was on the altar and sprinkled it on Aharon, on his garments, and on his sons and on his sons garments with him. He sanctified Aharon and his garments and his sons and his sons garments with him.
+</span>
+<span class=h>
+<div class=h>
+וַיֹּ֨אמֶר מֹשֶׁ֜ה אֶל־אַהֲרֹ֣ן וְאֶל־בָּנָ֗יו בַּשְּׁל֣וּ אֶת־הַבָּשָׂר֮ פֶּ֣תַח אֹ֣הֶל מוֹעֵד֒ וְשָׁם֙ תֹּאכְל֣וּ אֹת֔וֹ וְאֶ֨ת־הַלֶּ֔חֶם אֲשֶׁ֖ר בְּסַ֣ל הַמִּלֻּאִ֑ים כַּאֲשֶׁ֤ר צִוֵּ֙יתִי֙ לֵאמֹ֔ר אַהֲרֹ֥ן וּבָנָ֖יו יֹאכְלֻֽהוּ׃
+וַיֹּ֨אמֶר מֹשֶׁ֜ה אֶל־אַהֲרֹ֣ן וְאֶל־בָּנָ֗יו בַּשְּׁל֣וּ אֶת־הַבָּשָׂר֮ פֶּ֣תַח אֹ֣הֶל מוֹעֵד֒ וְשָׁם֙ תֹּאכְל֣וּ אֹת֔וֹ וְאֶ֨ת־הַלֶּ֔חֶם אֲשֶׁ֖ר בְּסַ֣ל הַמִּלֻּאִ֑ים כַּאֲשֶׁ֤ר צִוֵּ֙יתִי֙ לֵאמֹ֔ר אַהֲרֹ֥ן וּבָנָ֖יו יֹאכְלֻֽהוּ׃
+</div>
+Moshe said to Aharon and to his sons Cook the flesh at the entrance of the Tent of Meeting and you shall eat it there [with] the bread that is in the installation basket just as I commanded, saying; Aharon and his sons shall eat them.
+</span>
+<span class=h>
+<div class=h>
+וְהַנּוֹתָ֥ר בַּבָּשָׂ֖ר וּבַלָּ֑חֶם בָּאֵ֖שׁ תִּשְׂרֹֽפוּ׃
+וְהַנּוֹתָ֥ר בַּבָּשָׂ֖ר וּבַלָּ֑חֶם בָּאֵ֖שׁ תִּשְׂרֹֽפוּ׃
+</div>
+Whatever flesh and bread is left over, you shall burn them in fire.
+</span>
+<span class=h>
+<div class=h>
+וּמִפֶּתַח֩ אֹ֨הֶל מוֹעֵ֜ד לֹ֤א תֵֽצְאוּ֙ שִׁבְעַ֣ת יָמִ֔ים עַ֚ד י֣וֹם מְלֹ֔את יְמֵ֖י מִלֻּאֵיכֶ֑ם כִּ֚י שִׁבְעַ֣ת יָמִ֔ים יְמַלֵּ֖א אֶת־יֶדְכֶֽם׃
+וּמִפֶּתַח֩ אֹ֨הֶל מוֹעֵ֜ד לֹ֤א תֵֽצְאוּ֙ שִׁבְעַ֣ת יָמִ֔ים עַ֚ד י֣וֹם מְלֹ֔את יְמֵ֖י מִלֻּאֵיכֶ֑ם כִּ֚י שִׁבְעַ֣ת יָמִ֔ים יְמַלֵּ֖א אֶת־יֶדְכֶֽם׃
+</div>
+From the entrance of the Tent of Meeting you shall not go out for seven days until the time that your days of installation are complete, because for seven days your hands will be filled.
+</span>
+<span class=h>
+<div class=h>
+כַּאֲשֶׁ֥ר עָשָׂ֖ה בַּיּ֣וֹם הַזֶּ֑ה צִוָּ֧ה יְהוָ֛ה לַעֲשֹׂ֖ת לְכַפֵּ֥ר עֲלֵיכֶֽם׃
+כַּאֲשֶׁ֥ר עָשָׂ֖ה בַּיּ֣וֹם הַזֶּ֑ה צִוָּ֧ה יְהוָ֛ה לַעֲשֹׂ֖ת לְכַפֵּ֥ר עֲלֵיכֶֽם׃
+</div>
+Just as you have done on this day, Adonoy commanded him to do, to bring about atonement.
+</span>
+<span class=h>
+<div class=h>
+וּפֶתַח֩ אֹ֨הֶל מוֹעֵ֜ד תֵּשְׁב֨וּ יוֹמָ֤ם וָלַ֙יְלָה֙ שִׁבְעַ֣ת יָמִ֔ים וּשְׁמַרְתֶּ֛ם אֶת־מִשְׁמֶ֥רֶת יְהוָ֖ה וְלֹ֣א תָמ֑וּתוּ כִּי־כֵ֖ן צֻוֵּֽיתִי׃
+וּפֶתַח֩ אֹ֨הֶל מוֹעֵ֜ד תֵּשְׁב֨וּ יוֹמָ֤ם וָלַ֙יְלָה֙ שִׁבְעַ֣ת יָמִ֔ים וּשְׁמַרְתֶּ֛ם אֶת־מִשְׁמֶ֥רֶת יְהוָ֖ה וְלֹ֣א תָמ֑וּתוּ כִּי־כֵ֖ן צֻוֵּֽיתִי׃
+</div>
+At the entrance of the Tent of Meeting you shall sit day and night for seven days and keep the charge of Adonoy and you will not die, because I have been thus commanded.
+</span>
+<span class=h>
+<div class=h>
+וַיַּ֥עַשׂ אַהֲרֹ֖ן וּבָנָ֑יו אֵ֚ת כָּל־הַדְּבָרִ֔ים אֲשֶׁר־צִוָּ֥ה יְהוָ֖ה בְּיַד־מֹשֶֽׁה׃ (ס)
+וַיַּ֥עַשׂ אַהֲרֹ֖ן וּבָנָ֑יו אֵ֚ת כָּל־הַדְּבָרִ֔ים אֲשֶׁר־צִוָּ֥ה יְהוָ֖ה בְּיַד־מֹשֶֽׁה׃ (ס)
+</div>
+Aharon and his sons fulfilled all the edicts that Adonoy commanded through Moshe.
+</span>
+</body>
