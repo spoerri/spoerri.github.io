@@ -4,12 +4,15 @@
 <script type="text/javascript">
   $(document).ready(function () {
 
-    if (localStorage.getItem("shmos-scroll") != null) {
-      $(window).scrollTop(localStorage.getItem("shmos-scroll"));
+    let href = $(window).location.href;
+    let storageKey = href.substr(0, href.lastIndexOf('/'))+"-scroll";
+
+    if (localStorage.getItem(storageKey) != null) {
+      $(window).scrollTop(localStorage.getItem(storageKey));
     }
 
     $(window).on("scroll", function() {
-      localStorage.setItem("shmos-scroll", $(window).scrollTop());
+      localStorage.setItem(storageKey, $(window).scrollTop());
     });
 
   });
