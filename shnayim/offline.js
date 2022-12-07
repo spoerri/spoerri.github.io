@@ -2,7 +2,8 @@ self.addEventListener('install', function(e) {
  e.waitUntil(
    caches.open('shmos').then(function(cache) {
      return cache.addAll([
-       '/shnayim/shnayim.html'
+       '/shnayim/',
+       '/shnayim/Bereshit.html'
      ]);
    })
  );
